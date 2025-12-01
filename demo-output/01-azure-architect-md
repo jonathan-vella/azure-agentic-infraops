@@ -1,0 +1,343 @@
+# Azure Well-Architected Framework Assessment
+
+## Multi-Tier E-Commerce Platform
+
+**Assessment Date**: December 1, 2025  
+**Region**: `swedencentral` (primary)  
+**Confidence Level**: **High** (based on complete requirements)
+
+---
+
+## WAF Pillar Assessment Summary
+
+| Pillar | Score | Assessment |
+|--------|-------|------------|
+| **Security** | 9/10 | Excellent - PCI-DSS alignment with private endpoints, WAF, Azure AD-only auth, managed identities |
+| **Reliability** | 8/10 | Good - Zone redundancy with P1v3, multi-zone distribution; DR plan needed for 99.9% guarantee |
+| **Performance Efficiency** | 8/10 | Good - Sub-100ms search via Cognitive Search S1, Redis caching for 10K sessions |
+| **Cost Optimization** | 7/10 | Adequate - Mid-tier ~$1,250/month; reserved instances could save 30-50% |
+| **Operational Excellence** | 8/10 | Good - Application Insights, Log Analytics, deployment slots; runbook automation recommended |
+
+**Overall Score: 8.0/10**
+
+---
+
+## Detailed Analysis
+
+### Security (9/10) 🔒
+
+**Strengths:**
+
+- ✅ **PCI-DSS alignment** via WAF (OWASP rules), private endpoints, network segmentation
+- ✅ **Azure AD-only authentication** for SQL Database (Microsoft-recommended, eliminates SQL auth attack vector)
+- ✅ **Managed identities** for all service-to-service communication (no secrets in code)
+- ✅ **Private endpoints** for SQL, Redis, Cognitive Search, Service Bus, Key Vault
+- ✅ **Azure Front Door WAF** with OWASP Core Rule Set for edge protection
+- ✅ **Network segmentation** with 3-tier subnet isolation (web, data, integration)
+- ✅ **NSG deny-by-default** at priority 4096
+- ✅ **TLS 1.2+ enforcement** for all connections
+
+**Recommendations:**
+
+- Enable **Microsoft Defender for SQL** for vulnerability scanning and threat detection
+- Implement **Conditional Access policies** for admin access to Azure resources
+- Consider **Azure DDoS Protection Standard** for enhanced DDoS mitigation (especially during sales events)
+- Implement **tokenization** for payment data to reduce PCI-DSS scope (use external PCI-compliant gateway like Stripe/Adyen)
+
+**Reference:** [Microsoft Entra PCI-DSS Guidance](https://learn.microsoft.com/en-us/entra/standards/pci-dss-guidance), [Azure SQL Security Best Practices](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-best-practice)
+
+---
+
+### Reliability (8/10) 🛡️
+
+**Strengths:**
+
+- ✅ **Zone redundancy** with App Service P1v3 (minimum 2 instances across availability zones)
+- ✅ **99.9% SLA achievable** with Premium SKU and multi-instance configuration
+- ✅ **Service Bus Premium** with private endpoints for reliable async processing
+- ✅ **Azure Functions EP1** with VNet integration for event-driven scaling
+- ✅ **Redis Standard C2** for session caching (handles 10K concurrent users)
+
+**Gap Analysis:**
+
+- ⚠️ **Single-region deployment** - no automatic DR failover configured
+- ⚠️ **SQL geo-replication** not included in baseline design
+- ⚠️ **RPO/RTO not defined** for disaster recovery scenarios
+
+**Recommendations:**
+
+1. **For 99.9% SLA guarantee**: Current design is adequate with zone redundancy
+2. **For enhanced DR** (add ~40% cost):
+   - Azure SQL active geo-replication to `germanywestcentral`
+   - Azure Front Door multi-origin routing for automatic failover
+   - Redis geo-replication for session continuity
+
+| Availability Target | Configuration Required |
+|---------------------|------------------------|
+| 99.9% (current) | Zone redundancy (P1v3, 2+ instances per zone) |
+| 99.95% | Add geo-replication, Traffic Manager failover |
+| 99.99% | Multi-region active-active with Front Door |
+
+**Reference:** [App Service Zone Redundancy](https://learn.microsoft.com/en-us/azure/reliability/reliability-app-service), [Azure SQL Geo-Replication](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview)
+
+---
+
+### Performance Efficiency (8/10) ⚡
+
+**Strengths:**
+
+- ✅ **Azure Cognitive Search S1** achieves sub-100ms catalog queries with faceted navigation
+- ✅ **Redis C2 (6GB)** handles 10K concurrent sessions with low latency
+- ✅ **Azure Front Door CDN** delivers static assets from edge locations globally
+- ✅ **App Service P1v3** provides dedicated compute with autoscale capability
+- ✅ **Static Web Apps** with global edge distribution for React SPA
+
+**Capacity Validation:**
+
+| Component | Requirement | Proposed SKU | Capacity |
+|-----------|-------------|--------------|----------|
+| Concurrent Users | 10,000 | App Service P1v3 x2 | ✅ Adequate (can scale to 12 instances) |
+| Catalog Queries | <100ms | Cognitive Search S1 | ✅ Adequate (15M docs, 35GB vector index) |
+| Session Cache | 10K sessions | Redis C2 (6GB) | ✅ Adequate (~600 bytes/session avg) |
+| Async Processing | Order queue | Service Bus Premium | ✅ 1M messages/day supported |
+
+**Recommendations:**
+
+- Enable **Application Insights** real-time metrics for performance monitoring
+- Configure **autoscale rules** based on CPU and request queue length
+- Implement **connection pooling** for SQL database connections
+- Use **SQL Database Query Performance Insight** for query optimization
+
+**Reference:** [Azure Cognitive Search Limits](https://learn.microsoft.com/en-us/azure/search/search-limits-quotas-capacity), [Redis Best Practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices)
+
+---
+
+### Cost Optimization (7/10) 💰
+
+**Current Estimate: ~$1,250/month**
+
+| Service | Monthly Cost | % of Total |
+|---------|-------------|------------|
+| App Service (P1v3 x2) | $300 | 24% |
+| Cognitive Search (S1) | $250 | 20% |
+| Service Bus + Functions | $200 | 16% |
+| Redis (C2) | $170 | 14% |
+| Azure SQL (S3) | $150 | 12% |
+| Front Door (Standard) | $100 | 8% |
+| Key Vault, Storage, Logs | $80 | 6% |
+
+**Optimization Opportunities:**
+
+| Strategy | Potential Savings | Complexity |
+|----------|------------------|------------|
+| Reserved Instances (1-year) | 30-40% | Low |
+| Reserved Instances (3-year) | 50-60% | Low |
+| Dev/Test environments on Basic SKUs | ~$800/mo for non-prod | Medium |
+| Azure Hybrid Benefit (if applicable) | Up to 55% on SQL | Low |
+| Cognitive Search Basic (if <1M docs) | $75/mo savings | High (retest perf) |
+
+**Right-sizing Recommendations:**
+
+- **Consider SQL Serverless** for variable workloads (pay per second of compute)
+- **Scale down Functions** to Consumption plan for dev/test
+- **Use spot VMs** for batch processing if applicable
+
+**Reference:** [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/), [Cost Optimization Best Practices](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/overview)
+
+---
+
+### Operational Excellence (8/10) 🔧
+
+**Strengths:**
+
+- ✅ **Application Insights** for distributed tracing and performance monitoring
+- ✅ **Log Analytics** with 90-day retention for compliance logging
+- ✅ **Deployment slots** for zero-downtime deployments
+- ✅ **Azure Functions** with runtime scale monitoring enabled
+- ✅ **Infrastructure as Code** approach (Bicep templates recommended)
+
+**Recommendations:**
+
+1. **Enable auto-heal** on App Service for automatic recovery from transient failures
+2. **Configure Azure Monitor alerts** for:
+   - Response time > 500ms
+   - Error rate > 1%
+   - SQL DTU utilization > 80%
+   - Redis memory > 80%
+3. **Implement CI/CD pipeline** with:
+   - Bicep validation (`bicep build`, `bicep lint`)
+   - What-If deployment preview
+   - Automated integration tests
+4. **Create operational runbooks** for common scenarios:
+   - Scale-out procedures for sales events
+   - Database failover procedures
+   - Secret rotation workflows
+
+**Reference:** [App Service Diagnostics](https://learn.microsoft.com/en-us/azure/app-service/overview-diagnostics), [Azure Monitor Best Practices](https://learn.microsoft.com/en-us/azure/azure-monitor/best-practices)
+
+---
+
+## Architecture Diagram
+
+```text
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         AZURE FRONT DOOR (WAF)                         │
+│                    ┌─────────────────────────────────┐                  │
+│                    │  OWASP Rules + Bot Protection   │                  │
+│                    │  DDoS Protection + Geo-Filter   │                  │
+│                    └─────────────────────────────────┘                  │
+└────────────────────────────────┬────────────────────────────────────────┘
+                                 │
+         ┌───────────────────────┴───────────────────────┐
+         │                                               │
+         ▼                                               ▼
+┌─────────────────────┐                    ┌─────────────────────────────┐
+│  STATIC WEB APPS    │                    │      VNet: 10.0.0.0/16      │
+│  (React SPA)        │                    │  ┌─────────────────────────┐│
+│  Standard Tier      │                    │  │ snet-web-prod           ││
+└─────────────────────┘                    │  │ 10.0.1.0/24             ││
+                                           │  │ ┌─────────────────────┐ ││
+                                           │  │ │ App Service (P1v3)  │ ││
+                                           │  │ │ .NET 8 REST API     │ ││
+                                           │  │ │ Zone Redundant (x2) │ ││
+                                           │  │ └──────────┬──────────┘ ││
+                                           │  └────────────┼────────────┘│
+                                           │               │             │
+                                           │  ┌────────────┼────────────┐│
+                                           │  │ snet-data-prod          ││
+                                           │  │ 10.0.2.0/24             ││
+                                           │  │ ┌──────────▼──────────┐ ││
+                                           │  │ │ Private Endpoints   │ ││
+                                           │  │ │ ┌─────┐ ┌─────────┐ │ ││
+                                           │  │ │ │ SQL │ │ Redis   │ │ ││
+                                           │  │ │ │ S3  │ │ C2      │ │ ││
+                                           │  │ │ └─────┘ └─────────┘ │ ││
+                                           │  │ │ ┌─────────────────┐ │ ││
+                                           │  │ │ │ Cognitive Search│ │ ││
+                                           │  │ │ │ S1              │ │ ││
+                                           │  │ │ └─────────────────┘ │ ││
+                                           │  │ └─────────────────────┘ ││
+                                           │  └─────────────────────────┘│
+                                           │               │             │
+                                           │  ┌────────────┼────────────┐│
+                                           │  │ snet-integration-prod   ││
+                                           │  │ 10.0.3.0/24             ││
+                                           │  │ ┌──────────▼──────────┐ ││
+                                           │  │ │ Azure Functions EP1 │ ││
+                                           │  │ │ Service Bus PE      │ ││
+                                           │  │ │ (Order Processing)  │ ││
+                                           │  │ └─────────────────────┘ ││
+                                           │  └─────────────────────────┘│
+                                           └─────────────────────────────┘
+                                                          │
+                                           ┌──────────────┴──────────────┐
+                                           │       KEY VAULT             │
+                                           │  (Managed Identity Access)  │
+                                           └─────────────────────────────┘
+
+Legend:
+  [PE] = Private Endpoint
+  [NSG] = Network Security Group (deny-by-default)
+```
+
+---
+
+## Risk Assessment
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| Regional outage | Low | High | Consider DR setup to `germanywestcentral` |
+| DDoS attack during sales | Medium | High | Enable DDoS Protection Standard |
+| SQL performance bottleneck | Medium | Medium | Monitor DTU, implement read replicas |
+| Secret exposure | Low | Critical | Key Vault + managed identities (already planned) |
+| PCI audit findings | Low | High | External payment gateway, reduce CDE scope |
+
+---
+
+## Recommended Azure Services
+
+| Component | Service | SKU | Rationale |
+|-----------|---------|-----|-----------|
+| React SPA Frontend | Azure Static Web Apps | Standard | Built-in CDN, global edge, no server management |
+| .NET 8 REST API | Azure App Service | P1v3 | Zone redundancy for 99.9% SLA, PaaS familiarity |
+| Product Catalog DB | Azure SQL Database | S3 (100 DTU) | Relational data, Azure AD-only auth |
+| Full-Text Search | Azure Cognitive Search | Standard S1 | Sub-100ms queries, faceted navigation |
+| Session Caching | Azure Cache for Redis | Standard C2 | 10K concurrent sessions, low latency |
+| Async Order Processing | Service Bus + Azure Functions | Premium / EP1 | Reliable queuing, event-driven scaling |
+| Secrets Management | Azure Key Vault | Standard | PCI-DSS, managed identity access |
+| CDN + WAF | Azure Front Door | Standard | Global CDN, integrated WAF for PCI-DSS |
+| Monitoring | Application Insights + Log Analytics | Pay-as-you-go | End-to-end tracing, compliance logging |
+
+---
+
+## Network Architecture
+
+| Tier | Subnet | Resources | NSG Rules |
+|------|--------|-----------|-----------|
+| Edge | - | Front Door (global) | WAF policies, geo-filtering |
+| Web | `snet-web-prod` (10.0.1.0/24) | App Service (VNet integrated) | Allow 443 from Front Door only |
+| Data | `snet-data-prod` (10.0.2.0/24) | SQL, Redis, Search (private endpoints) | Allow from web subnet only |
+| Integration | `snet-integration-prod` (10.0.3.0/24) | Functions (VNet integrated), Service Bus PE | Allow from web/data subnets |
+
+---
+
+## Implementation Phases
+
+### Phase 1 - Foundation (Week 1)
+
+- VNet `vnet-prod-main-swc` with address space 10.0.0.0/16
+- 3 subnets: web, data, integration
+- NSGs with segmentation rules
+- Resource group `rg-ecommerce-prod`
+
+### Phase 2 - Platform Services (Week 2)
+
+- Key Vault with soft-delete enabled
+- App Service Plan (P1v3, zone redundant)
+- Azure SQL (Azure AD-only auth)
+- Azure Cache for Redis with private endpoint
+- Azure Cognitive Search with private endpoint
+
+### Phase 3 - Application Tier (Week 3)
+
+- App Service (API) with VNet integration
+- Static Web App (SPA)
+- Azure Functions with VNet integration
+- Service Bus namespace with private endpoint
+- Front Door with WAF policies
+- CDN origin configuration
+
+### Phase 4 - Configuration (Week 4)
+
+- Managed identity RBAC assignments
+- Key Vault secrets population
+- Application Insights instrumentation
+- Alert rules for SLA monitoring
+- Deployment slots for zero-downtime deployments
+
+---
+
+## Open Questions
+
+1. **Disaster Recovery Requirements**: Is the ~40% additional cost for geo-replication to `germanywestcentral` acceptable for enhanced DR?
+
+2. **Payment Processing Strategy**:
+   - **Option A**: External PCI-compliant gateway (Stripe/Adyen) - reduces CDE scope significantly
+   - **Option B**: On-platform with Azure Payment HSM - higher compliance burden but more control
+
+3. **Search Index Strategy**: How should SQL → Cognitive Search sync work?
+   - **Option A**: Azure Data Factory scheduled sync (cost-effective)
+   - **Option B**: Change feed pattern with Azure Functions (near real-time, more complex)
+
+---
+
+## Next Steps
+
+To proceed with implementation, use the `bicep-plan` agent to create the detailed Bicep implementation plan, then use `bicep-implement` to generate the infrastructure code.
+
+```text
+Step 1: ✅ @plan (requirements gathered)
+Step 2: ✅ azure-principal-architect (this assessment)
+Step 3: ➡️  bicep-plan (create implementation plan)
+Step 4: ⬜ bicep-implement (generate Bicep templates)
+```
