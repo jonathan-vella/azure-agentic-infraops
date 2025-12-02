@@ -228,8 +228,10 @@ When generating Bicep code:
    - SQL Server: UseAzure AD-only auth
    - App Service Plan: Use P1v3 (not S1) for zone redundancy support
 7. **Add descriptive comments** for all parameters and resources
-8. **Include outputs** for resource IDs and endpoints
+8. **Include outputs** for resource IDs AND resource names (both are needed for downstream modules)
 9. **Follow modular design** (separate files for network, storage, compute)
+10. **Use symbolic references** for implicit dependencies (avoid explicit `dependsOn` unless necessary)
+11. **Use `existing` keyword** when referencing resources in diagnostic settings or extension resources
 
 Example parameter documentation:
 
@@ -390,6 +392,47 @@ var keyVaultName = 'kv-${take(replace(projectName, '-', ''), 8)}-${take(environm
 - Remove hyphens for Storage Accounts (no special chars allowed)
 - Shorten project names (e.g., "contoso-patient-portal" → "contosop")
 - Apply suffix to ALL resources for consistency
+
+### Diagnostic Settings Module Pattern
+
+When creating diagnostic settings, pass resource **names** (not IDs) and use the `existing` keyword:
+
+```bicep
+// ❌ WRONG: Resource ID strings cause BCP036 error
+module diagnosticsModule 'modules/diagnostics.bicep' = {
+  params: {
+    appServiceId: appServiceModule.outputs.appServiceId  // This fails!
+  }
+}
+
+// ✅ CORRECT: Pass resource names, use existing keyword in module
+module diagnosticsModule 'modules/diagnostics.bicep' = {
+  params: {
+    appServiceName: appServiceModule.outputs.appServiceName
+    logAnalyticsWorkspaceId: logAnalyticsModule.outputs.workspaceId
+  }
+}
+
+// In modules/diagnostics.bicep:
+param appServiceName string
+
+resource appService 'Microsoft.Web/sites@2023-12-01' existing = {
+  name: appServiceName
+}
+
+resource diagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview' = {
+  name: 'diag-appservice'
+  scope: appService  // ✅ Symbolic reference works
+  properties: {
+    workspaceId: logAnalyticsWorkspaceId
+    logs: [...]
+  }
+}
+```
+
+**Why**: The `scope` property requires a resource symbolic reference, not a string. Resource IDs are strings and cause `BCP036: The property "scope" expected a value of type "resource | tenant"` errors.
+
+**Module Output Rule**: Always output BOTH `resourceId` AND `resourceName` from modules to support downstream diagnostic settings.
 
 ### Azure Policy Workarounds for Demo Environments
 

@@ -1,6 +1,6 @@
 ---
-description: 'Infrastructure as Code best practices for Azure Bicep templates'
-applyTo: '**/*.bicep'
+description: "Infrastructure as Code best practices for Azure Bicep templates"
+applyTo: "**/*.bicep"
 ---
 
 # Bicep Development Best Practices
@@ -18,21 +18,21 @@ Guidelines for writing high-quality, secure, and maintainable Bicep infrastructu
 
 Use lowerCamelCase for all Bicep identifiers:
 
-| Element | Convention | Example |
-|---------|------------|---------|
-| Parameters | lowerCamelCase, descriptive | `storageAccountName`, `environment` |
-| Variables | lowerCamelCase | `uniqueSuffix`, `resourceNamePrefix` |
-| Resources | Descriptive symbolic name | `storageAccount` (not `sa` or `storage`) |
-| Modules | lowerCamelCase | `networkModule`, `keyVaultModule` |
+| Element    | Convention                  | Example                                  |
+| ---------- | --------------------------- | ---------------------------------------- |
+| Parameters | lowerCamelCase, descriptive | `storageAccountName`, `environment`      |
+| Variables  | lowerCamelCase              | `uniqueSuffix`, `resourceNamePrefix`     |
+| Resources  | Descriptive symbolic name   | `storageAccount` (not `sa` or `storage`) |
+| Modules    | lowerCamelCase              | `networkModule`, `keyVaultModule`        |
 
 ### Resource Naming Patterns
 
-| Resource Type | Max Length | Pattern | Example |
-|---------------|------------|---------|---------|
-| Storage Account | 24 chars | `st{project}{env}{suffix}` | `stcontosodev7xk2` |
-| Key Vault | 24 chars | `kv-{project}-{env}-{suffix}` | `kv-contoso-dev-abc123` |
-| SQL Server | 63 chars | `sql-{project}-{env}-{suffix}` | `sql-contoso-dev-abc123` |
-| App Service | 60 chars | `app-{project}-{env}-{suffix}` | `app-contoso-dev-abc123` |
+| Resource Type   | Max Length | Pattern                        | Example                  |
+| --------------- | ---------- | ------------------------------ | ------------------------ |
+| Storage Account | 24 chars   | `st{project}{env}{suffix}`     | `stcontosodev7xk2`       |
+| Key Vault       | 24 chars   | `kv-{project}-{env}-{suffix}`  | `kv-contoso-dev-abc123`  |
+| SQL Server      | 63 chars   | `sql-{project}-{env}-{suffix}` | `sql-contoso-dev-abc123` |
+| App Service     | 60 chars   | `app-{project}-{env}-{suffix}` | `app-contoso-dev-abc123` |
 
 ### Good Example - Resource naming with unique suffix
 
@@ -143,6 +143,44 @@ resource appService 'Microsoft.Web/sites@2023-01-01' = {
 }
 ```
 
+### Good Example - Referencing existing resources for diagnostic settings
+
+When creating diagnostic settings or other extension resources that need a `scope`, use the `existing` keyword to reference resources by name, not by resource ID string:
+
+```bicep
+// ✅ CORRECT: Use existing keyword to reference resources
+param appServiceName string
+param logAnalyticsWorkspaceId string
+
+resource appService 'Microsoft.Web/sites@2023-12-01' existing = {
+  name: appServiceName
+}
+
+resource diagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview' = {
+  name: 'diag-appservice'
+  scope: appService  // Symbolic reference to existing resource
+  properties: {
+    workspaceId: logAnalyticsWorkspaceId
+    logs: [
+      { category: 'AppServiceHTTPLogs', enabled: true }
+    ]
+  }
+}
+```
+
+### Bad Example - Using resource ID strings for scope
+
+```bicep
+// ❌ WRONG: Causes BCP036 error - scope expects resource type, not string
+param appServiceId string
+
+resource diagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview' = {
+  name: 'diag-appservice'
+  scope: resourceId('Microsoft.Web/sites', last(split(appServiceId, '/')))  // ERROR!
+  properties: { ... }
+}
+```
+
 ### Bad Example - Explicit dependsOn and reference functions
 
 ```bicep
@@ -222,14 +260,16 @@ resource blobService 'Microsoft.Storage/storageAccounts/blobServices@2023-01-01'
 
 ## Patterns to Avoid
 
-| Anti-Pattern | Problem | Solution |
-|--------------|---------|----------|
-| Hardcoded resource names | Deployment collisions | Use `uniqueString()` suffix |
-| Missing `@description` | Poor maintainability | Document all parameters |
-| Explicit `dependsOn` | Unnecessary complexity | Use symbolic references |
-| Secrets in outputs | Security vulnerability | Use Key Vault references |
-| S1 SKU for zone redundancy | Policy violation | Use P1v3 or higher |
-| Old API versions | Missing features | Use latest stable versions |
+| Anti-Pattern                              | Problem                      | Solution                                       |
+| ----------------------------------------- | ---------------------------- | ---------------------------------------------- |
+| Hardcoded resource names                  | Deployment collisions        | Use `uniqueString()` suffix                    |
+| Missing `@description`                    | Poor maintainability         | Document all parameters                        |
+| Explicit `dependsOn`                      | Unnecessary complexity       | Use symbolic references                        |
+| Secrets in outputs                        | Security vulnerability       | Use Key Vault references                       |
+| S1 SKU for zone redundancy                | Policy violation             | Use P1v3 or higher                             |
+| Old API versions                          | Missing features             | Use latest stable versions                     |
+| Resource ID strings for scope             | BCP036 type error            | Use `existing` resource references             |
+| Passing resource IDs to modules for scope | Scope requires resource type | Pass resource names and use `existing` keyword |
 
 ## Validation
 
