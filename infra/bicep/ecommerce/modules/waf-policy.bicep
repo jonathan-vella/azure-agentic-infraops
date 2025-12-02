@@ -57,7 +57,7 @@ resource wafPolicy 'Microsoft.Network/FrontDoorWebApplicationFirewallPolicies@20
               operator: 'IPMatch'
               negateCondition: true
               matchValue: [
-                '10.0.0.0/8' // Internal networks excluded
+                '10.0.0.0/8'  // Internal networks excluded
               ]
             }
           ]
@@ -70,7 +70,7 @@ resource wafPolicy 'Microsoft.Network/FrontDoorWebApplicationFirewallPolicies@20
           ruleType: 'MatchRule'
           matchConditions: [
             {
-              matchVariable: 'RequestHeaders'
+              matchVariable: 'RequestHeader'
               selector: 'User-Agent'
               operator: 'Contains'
               negateCondition: false

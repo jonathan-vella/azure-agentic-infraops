@@ -270,6 +270,23 @@ resource blobService 'Microsoft.Storage/storageAccounts/blobServices@2023-01-01'
 | Old API versions                          | Missing features             | Use latest stable versions                     |
 | Resource ID strings for scope             | BCP036 type error            | Use `existing` resource references             |
 | Passing resource IDs to modules for scope | Scope requires resource type | Pass resource names and use `existing` keyword |
+| WAF `RequestHeaders` matchVariable        | ARM EnumerationOutOfRange    | Use `RequestHeader` (singular) - see valid values below |
+
+### WAF Policy matchVariable Valid Values
+
+When creating WAF custom rules, use only these valid `matchVariable` values:
+
+- `RemoteAddr` - Client IP address
+- `RequestMethod` - HTTP method (GET, POST, etc.)
+- `QueryString` - URL query string
+- `PostArgs` - POST request body arguments
+- `RequestUri` - Request URI path
+- `RequestHeader` - HTTP request header (requires `selector` for header name)
+- `RequestBody` - Request body content
+- `Cookies` - HTTP cookies
+- `SocketAddr` - Socket address
+
+**Common Mistake**: Using `RequestHeaders` (plural) instead of `RequestHeader` (singular).
 
 ## Validation
 

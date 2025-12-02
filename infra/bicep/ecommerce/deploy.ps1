@@ -229,11 +229,10 @@ Write-Header "Resource Group"
 
 $rgExists = az group exists --name $ResourceGroupName 2>&1
 if ($rgExists -eq 'false') {
-    if ($PSCmdlet.ShouldProcess($ResourceGroupName, "Create resource group")) {
-        Write-Step "Creating resource group '$ResourceGroupName' in '$Location'..."
-        az group create --name $ResourceGroupName --location $Location --tags Environment=$Environment ManagedBy=Bicep Project=ecommerce-platform | Out-Null
-        Write-Success "Resource group created"
-    }
+    # Always create the RG (required for what-if analysis)
+    Write-Step "Creating resource group '$ResourceGroupName' in '$Location'..."
+    az group create --name $ResourceGroupName --location $Location --tags Environment=$Environment ManagedBy=Bicep Project=ecommerce-platform | Out-Null
+    Write-Success "Resource group created"
 } else {
     Write-Success "Resource group '$ResourceGroupName' already exists"
 }

@@ -441,6 +441,7 @@ resource diagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview' 
 1. **SQL Server Azure AD-only authentication**: Use Azure AD auth
 2. **App Service Plan zone redundancy**: Must use Premium SKU (P1v3+), not Standard
 3. **Key Vault name length**: Policy doesn't block, but Azure enforces 24-char limit
+4. **WAF matchVariable values**: Use `RequestHeader` (singular) not `RequestHeaders` - valid values are: `RemoteAddr`, `RequestMethod`, `QueryString`, `PostArgs`, `RequestUri`, `RequestHeader`, `RequestBody`, `Cookies`, `SocketAddr`
 
 **Implementation:**
 

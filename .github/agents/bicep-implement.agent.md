@@ -537,6 +537,7 @@ Before completing implementation, verify:
 | Skipping `bicep lint`                   | Best practice violations undetected           | Run lint and address all warnings                      |
 | Resource ID strings for `scope`         | BCP036 type error in diagnostic settings      | Use `existing` resource references, pass names not IDs |
 | Passing IDs instead of names to modules | Modules can't use IDs for `scope` property    | Pass resource names, use `existing` keyword in module  |
+| WAF `matchVariable: 'RequestHeaders'`   | ARM EnumerationOutOfRange validation error    | Use `RequestHeader` (singular) - valid values: RemoteAddr, RequestMethod, QueryString, PostArgs, RequestUri, RequestHeader, RequestBody, Cookies, SocketAddr |
 
 ---
 
