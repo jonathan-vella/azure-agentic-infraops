@@ -54,7 +54,6 @@ build/
 
 # Node (if any demos use it)
 node_modules/
-package-lock.json
 
 # Python (if any scripts)
 __pycache__/
