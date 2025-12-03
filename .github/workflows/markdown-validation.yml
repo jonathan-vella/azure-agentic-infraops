@@ -99,7 +99,7 @@ jobs:
         with:
           script: |
             const today = new Date().toISOString().split('T')[0];
-            const lintOutput = `${{ steps.markdownlint.outputs.lint_output }}`;
+            const lintOutput = process.env.LINT_OUTPUT || 'No output captured';
 
             const issueBody = [
               '## Automated Markdown Lint Report',
@@ -116,7 +116,7 @@ jobs:
               '',
               '1. Review the errors listed above',
               '2. Fix the markdown issues in the affected files',
-              '3. Run `markdownlint \'**/*.md\' --ignore node_modules --config .markdownlint.json` locally to verify fixes',
+              '3. Run `npm run lint:md` locally to verify fixes',
               '4. Commit and push changes',
               '',
               '---',
@@ -133,6 +133,8 @@ jobs:
             });
             console.log(`Created issue #${issue.number}: ${issue.html_url}`);
             core.setOutput('issue_number', issue.number);
+          env:
+            LINT_OUTPUT: ${{ steps.markdownlint.outputs.lint_output }}
 
       - name: Assign issue to Copilot
         if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && steps.markdownlint.outcome == 'failure' && steps.check_issue.outputs.exists == 'false' && steps.create_issue.outputs.issue_number != ''
