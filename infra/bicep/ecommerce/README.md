@@ -1,5 +1,7 @@
 # E-Commerce Platform Infrastructure
 
+> **Version 1.1.0** | Last Updated: December 3, 2025
+
 PCI-DSS compliant multi-tier e-commerce platform deployed to Azure using Bicep.
 
 ## Architecture Overview

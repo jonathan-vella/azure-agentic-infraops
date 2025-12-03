@@ -1,7 +1,6 @@
 # Azure Infrastructure Agent Workflow
 
-> **Version**: 2.0
-> **Last Updated**: 2025-12-03
+> **Version 2.1.0** | Last Updated: December 3, 2025
 
 This document describes the 4-step agent workflow for Azure infrastructure development in this repository.
 
@@ -67,9 +66,9 @@ graph TB
 
 ### Optional Integrations (During Step 2)
 
-| Tool/Agent        | When to Use                          | Triggered By                          |
-| ----------------- | ------------------------------------ | ------------------------------------- |
-| 💰 Azure Pricing MCP | Get real-time Azure pricing        | Automatic during architecture phase   |
+| Tool/Agent             | When to Use                       | Triggered By                        |
+| ---------------------- | --------------------------------- | ----------------------------------- |
+| 💰 Azure Pricing MCP   | Get real-time Azure pricing       | Automatic during architecture phase |
 | 📊 `diagram-generator` | Create architecture visualization | Ask: "generate diagram"             |
 | 📝 `adr-generator`     | Document key decisions            | Ask: "create ADR for this decision" |
 

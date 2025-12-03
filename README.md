@@ -1,5 +1,7 @@
 # GitHub Copilot Azure Infrastructure Workflow
 
+> **Version 2.1.0** | Last Updated: December 3, 2025 | [Changelog](VERSION.md)
+
 [![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Powered-8957e5?style=for-the-badge&logo=github)](https://github.com/features/copilot)
 [![Azure](https://img.shields.io/badge/Azure-Infrastructure-0078D4?style=for-the-badge&logo=microsoftazure)](https://azure.microsoft.com)
 [![Bicep](https://img.shields.io/badge/Bicep-IaC-00B4AB?style=for-the-badge&logo=microsoftazure)](https://learn.microsoft.com/azure/azure-resource-manager/bicep/)

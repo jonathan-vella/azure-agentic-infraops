@@ -1,5 +1,7 @@
 # Development Container for GitHub Copilot IT Pro Demo
 
+> **Version 1.0.0** | Last Updated: December 3, 2025
+
 This devcontainer provides a **complete, pre-configured development environment** for working with all demos
 and scenarios in this repository. It includes all required tools, extensions, and configurations out of the box.
 

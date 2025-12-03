@@ -1,5 +1,7 @@
 # E-Commerce Platform Demo Workflow
 
+> **Version 1.0.0** | Last Updated: December 3, 2025
+>
 > **Complete demonstration of GitHub Copilot agents for Azure infrastructure**
 
 ---
