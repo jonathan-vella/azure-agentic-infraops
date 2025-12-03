@@ -219,7 +219,7 @@ def create_infographic():
             fontsize=12, color=COLORS['secondary'],
             ha='center', va='center')
     
-    ax.text(6, 1.4, 'github.com/jonathan-vella/azure-agentic-infraops', 
+    ax.text(6, 1.4, 'github.com/jonathan-vella/github-copilot-itpro', 
             fontsize=11, color=COLORS['white'],
             ha='center', va='center', style='italic')
     

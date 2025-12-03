@@ -175,7 +175,7 @@ def create_one_slide():
     ax.plot([9, 9], [1.0, 1.9], color=COLORS['primary'], linewidth=1, alpha=0.3)
     
     # === FOOTER ===
-    ax.text(7, 0.4, 'github.com/jonathan-vella/azure-agentic-infraops', 
+    ax.text(7, 0.4, 'github.com/jonathan-vella/github-copilot-itpro', 
             fontsize=9, color=COLORS['dark'], style='italic',
             ha='center', va='center')
     

@@ -212,18 +212,18 @@ azure-agentic-infraops/
 
 Learn by doing with **10 hands-on scenarios**:
 
-| #   | Scenario                  | Time   | Difficulty   | Description                            |
-| --- | ------------------------- | ------ | ------------ | -------------------------------------- |
-| S01 | Bicep Baseline            | 30 min | Beginner     | Secure hub-spoke network foundation    |
-| S02 | Terraform Baseline        | 30 min | Beginner     | Multi-cloud IaC with Terraform         |
-| S03 | Five-Agent Workflow       | 45 min | Advanced     | End-to-end HIPAA patient portal        |
-| S04 | Documentation Generation  | 20 min | Beginner     | Auto-generate docs from code           |
-| S05 | Service Validation        | 30 min | Intermediate | Automated compliance testing           |
-| S06 | Troubleshooting           | 25 min | Intermediate | Diagnose infrastructure issues         |
-| S07 | SBOM Generator            | 20 min | Intermediate | Software Bill of Materials             |
-| S08 | Diagrams as Code          | 20 min | Beginner     | Python-generated architecture diagrams |
-| S09 | Coding Agent              | 30 min | Advanced     | Async implementation via GitHub Issues |
-| S10 | Quick Demos               | 15-30 min | Varies    | Single-prompt demo scenarios           |
+| #   | Scenario                 | Time      | Difficulty   | Description                            |
+| --- | ------------------------ | --------- | ------------ | -------------------------------------- |
+| S01 | Bicep Baseline           | 30 min    | Beginner     | Secure hub-spoke network foundation    |
+| S02 | Terraform Baseline       | 30 min    | Beginner     | Multi-cloud IaC with Terraform         |
+| S03 | Five-Agent Workflow      | 45 min    | Advanced     | End-to-end HIPAA patient portal        |
+| S04 | Documentation Generation | 20 min    | Beginner     | Auto-generate docs from code           |
+| S05 | Service Validation       | 30 min    | Intermediate | Automated compliance testing           |
+| S06 | Troubleshooting          | 25 min    | Intermediate | Diagnose infrastructure issues         |
+| S07 | SBOM Generator           | 20 min    | Intermediate | Software Bill of Materials             |
+| S08 | Diagrams as Code         | 20 min    | Beginner     | Python-generated architecture diagrams |
+| S09 | Coding Agent             | 30 min    | Advanced     | Async implementation via GitHub Issues |
+| S10 | Quick Demos              | 15-30 min | Varies       | Single-prompt demo scenarios           |
 
 📖 **[Full Scenarios Guide](scenarios/README.md)** — Learning paths, time savings, and deep-dive details
 

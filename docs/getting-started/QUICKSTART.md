@@ -74,12 +74,12 @@ Press `Ctrl+Alt+I` (Windows/Linux) or `Cmd+Alt+I` (Mac) to open the Copilot Chat
 
 We have pre-built scenarios ready to run:
 
-| Scenario               | Complexity   | Time   | Prompt File                             |
-| ---------------------- | ------------ | ------ | --------------------------------------- |
-| **Static Website**     | Beginner     | 15 min | `scenarios/S10-quick-demos/static-site-demo.md` |
+| Scenario               | Complexity   | Time   | Prompt File                                      |
+| ---------------------- | ------------ | ------ | ------------------------------------------------ |
+| **Static Website**     | Beginner     | 15 min | `scenarios/S10-quick-demos/static-site-demo.md`  |
 | **E-Commerce**         | Intermediate | 30 min | `scenarios/S10-quick-demos/ecommerce-prompts.md` |
-| **Healthcare Portal**  | Advanced     | 30 min | `scenarios/S10-quick-demos/healthcare-demo.md`  |
-| **Analytics Platform** | Intermediate | 30 min | `scenarios/S10-quick-demos/analytics-demo.md`   |
+| **Healthcare Portal**  | Advanced     | 30 min | `scenarios/S10-quick-demos/healthcare-demo.md`   |
+| **Analytics Platform** | Intermediate | 30 min | `scenarios/S10-quick-demos/analytics-demo.md`    |
 
 **Recommended first scenario:** Static Website (simplest, fastest)
 

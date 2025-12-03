@@ -190,7 +190,7 @@ def create_docs_overview():
                 ha='center', va='center')
     
     # === FOOTER ===
-    ax.text(8, 0.4, 'github.com/jonathan-vella/azure-agentic-infraops/docs', 
+    ax.text(8, 0.4, 'github.com/jonathan-vella/github-copilot-itpro/docs', 
             fontsize=10, color=COLORS['dark'], style='italic',
             ha='center', va='center')
     

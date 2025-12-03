@@ -8,13 +8,13 @@
 
 ## Quick Start
 
-| If you're...                     | Start with                                          |
-| -------------------------------- | --------------------------------------------------- |
-| **New to Copilot**               | [S01 Bicep Baseline](#s01-bicep-baseline)           |
+| If you're...                     | Start with                                              |
+| -------------------------------- | ------------------------------------------------------- |
+| **New to Copilot**               | [S01 Bicep Baseline](#s01-bicep-baseline)               |
 | **Want a quick demo**            | [S10 Quick Demos](S10-quick-demos/) - 15-30 min prompts |
-| **Experienced with IaC**         | [S03 Five-Agent Workflow](#s03-five-agent-workflow) |
-| **Focused on Terraform**         | [S02 Terraform Baseline](#s02-terraform-baseline)   |
-| **Looking for async automation** | [S09 Coding Agent](#s09-coding-agent)               |
+| **Experienced with IaC**         | [S03 Five-Agent Workflow](#s03-five-agent-workflow)     |
+| **Focused on Terraform**         | [S02 Terraform Baseline](#s02-terraform-baseline)       |
+| **Looking for async automation** | [S09 Coding Agent](#s09-coding-agent)                   |
 
 ---
 
@@ -22,8 +22,8 @@
 
 For simple, single-prompt scenarios, see the [S10 Quick Demos](S10-quick-demos/) folder:
 
-| Demo                                                   | Complexity      | Time   | Description                           |
-| ------------------------------------------------------ | --------------- | ------ | ------------------------------------- |
+| Demo                                                       | Complexity      | Time   | Description                           |
+| ---------------------------------------------------------- | --------------- | ------ | ------------------------------------- |
 | [E-Commerce Prompts](S10-quick-demos/ecommerce-prompts.md) | 🟡 Intermediate | 30 min | PCI-DSS compliant multi-tier platform |
 | [Healthcare Portal](S10-quick-demos/healthcare-demo.md)    | 🔴 Advanced     | 30 min | HIPAA-compliant patient portal        |
 | [Analytics Platform](S10-quick-demos/analytics-demo.md)    | 🟡 Intermediate | 30 min | Data analytics with Synapse           |
@@ -126,9 +126,9 @@ flowchart LR
 
 **Time Comparison**:
 
-| Approach | Duration |
-|----------|----------|
-| Traditional manual | 18+ hours |
+| Approach                 | Duration       |
+| ------------------------ | -------------- |
+| Traditional manual       | 18+ hours      |
 | With Five-Agent Workflow | **45 minutes** |
 
 **Key Insight**: Structured agent handoffs preserve context and produce near-production-ready code.
