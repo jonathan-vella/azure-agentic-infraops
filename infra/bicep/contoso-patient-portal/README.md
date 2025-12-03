@@ -186,13 +186,13 @@ az keyvault secret list --vault-name <keyvault-name>
 
 ### Resource Configuration
 
-| Resource | SKU | Quantity | Notes |
-|----------|-----|----------|-------|
-| App Service Plan | Standard S1 | 2 instances | Zone-redundant deployment |
-| SQL Database | Standard S2 | 1 | TDE encryption enabled |
-| Key Vault | Standard | 1 | RBAC-enabled |
-| Private Endpoints | Standard | 2 | Key Vault & SQL |
-| Log Analytics | Pay-as-you-go | 5-10 GB | Application monitoring |
+| Resource          | SKU           | Quantity    | Notes                     |
+| ----------------- | ------------- | ----------- | ------------------------- |
+| App Service Plan  | Standard S1   | 2 instances | Zone-redundant deployment |
+| SQL Database      | Standard S2   | 1           | TDE encryption enabled    |
+| Key Vault         | Standard      | 1           | RBAC-enabled              |
+| Private Endpoints | Standard      | 2           | Key Vault & SQL           |
+| Log Analytics     | Pay-as-you-go | 5-10 GB     | Application monitoring    |
 
 **Cost Estimation**: Use [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) for current regional pricing.
 
@@ -252,22 +252,24 @@ Solution: Run `bicep restore main.bicep` to download AVM modules
 **Issue**: SQL Server name already exists
 
 ```yaml
-Solution: SQL Server names are globally unique. The template includes uniqueString() 
-          to generate unique names. If deployment fails, delete failed resources and retry.
+Solution:
+  SQL Server names are globally unique. The template includes uniqueString()
+  to generate unique names. If deployment fails, delete failed resources and retry.
 ```
 
 **Issue**: Private endpoint deployment fails
 
 ```yaml
-Solution: Ensure Key Vault and SQL Server are deployed first. Check that subnet 
-          has privateEndpointNetworkPolicies set to 'Disabled'.
+Solution: Ensure Key Vault and SQL Server are deployed first. Check that subnet
+  has privateEndpointNetworkPolicies set to 'Disabled'.
 ```
 
 **Issue**: App Service can't access Key Vault
 
 ```yaml
-Solution: Verify RBAC role assignment completed. App Service needs 'Key Vault Secrets User' 
-          role. Check managed identity is enabled and role assignment exists.
+Solution:
+  Verify RBAC role assignment completed. App Service needs 'Key Vault Secrets User'
+  role. Check managed identity is enabled and role assignment exists.
 ```
 
 ### Rollback

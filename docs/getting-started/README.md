@@ -238,13 +238,13 @@ flowchart LR
 
 **Workflow Components:**
 
-| Agent | Type | Access |
-|-------|------|--------|
-| **@plan** | Built-in VS Code | Select from Agents dropdown (`Ctrl+Shift+A`) |
-| **adr_generator** | Custom | Select from Agents dropdown |
-| **azure-principal-architect** | Custom | Select from Agents dropdown |
-| **bicep-plan** | Custom | Select from Agents dropdown |
-| **bicep-implement** | Custom | Select from Agents dropdown |
+| Agent                         | Type             | Access                                       |
+| ----------------------------- | ---------------- | -------------------------------------------- |
+| **@plan**                     | Built-in VS Code | Select from Agents dropdown (`Ctrl+Shift+A`) |
+| **adr_generator**             | Custom           | Select from Agents dropdown                  |
+| **azure-principal-architect** | Custom           | Select from Agents dropdown                  |
+| **bicep-plan**                | Custom           | Select from Agents dropdown                  |
+| **bicep-implement**           | Custom           | Select from Agents dropdown                  |
 
 > **Note:** The Plan Agent (`@plan`) is a **built-in VS Code feature**, not a custom agent. It generates
 > reusable `*.prompt.md` files and provides automatic handoff buttons.
@@ -288,7 +288,7 @@ Delegate entire GitHub Issues to Copilot for autonomous implementation.
 | **Prerequisites**   | [docs/getting-started/prerequisites.md](prerequisites.md)                                                                | Tool requirements         |
 | **Model Selection** | [docs/getting-started/model-selection.md](model-selection.md)                                                            | Choose the right AI model |
 | **Scenarios**       | [scenarios/](../../scenarios/)                                                                                           | Hands-on learning         |
-| **Demo Script**     | [demos/30-MIN-DEMO-SCRIPT.md](../../scenarios/30-MIN-DEMO-SCRIPT.md)                                                         | Presenter guide           |
+| **Demo Script**     | [demos/30-MIN-DEMO-SCRIPT.md](../../scenarios/30-MIN-DEMO-SCRIPT.md)                                                     | Presenter guide           |
 | **ROI Calculator**  | [resources/presenter-toolkit/roi-calculator-worksheet.md](../../resources/presenter-toolkit/roi-calculator-worksheet.md) | Calculate savings         |
 
 ### Common Commands
@@ -309,13 +309,13 @@ pwsh -File validation/validate.ps1
 
 ### Agent Quick Access
 
-| Agent                       | Type     | Access                        | Use For             |
-| --------------------------- | -------- | ----------------------------- | ------------------- |
-| `@plan`                     | Built-in | `Ctrl+Shift+A` → Select       | Multi-step planning |
-| `adr_generator`             | Custom   | `Ctrl+Shift+A` → Select       | Document decisions  |
-| `azure-principal-architect` | Custom   | `Ctrl+Shift+A` → Select       | WAF assessment      |
-| `bicep-plan`                | Custom   | `Ctrl+Shift+A` → Select       | Module design       |
-| `bicep-implement`           | Custom   | `Ctrl+Shift+A` → Select       | Code generation     |
+| Agent                       | Type     | Access                  | Use For             |
+| --------------------------- | -------- | ----------------------- | ------------------- |
+| `@plan`                     | Built-in | `Ctrl+Shift+A` → Select | Multi-step planning |
+| `adr_generator`             | Custom   | `Ctrl+Shift+A` → Select | Document decisions  |
+| `azure-principal-architect` | Custom   | `Ctrl+Shift+A` → Select | WAF assessment      |
+| `bicep-plan`                | Custom   | `Ctrl+Shift+A` → Select | Module design       |
+| `bicep-implement`           | Custom   | `Ctrl+Shift+A` → Select | Code generation     |
 
 > 📖 **Plan Agent Documentation:** [VS Code Chat Planning](https://code.visualstudio.com/docs/copilot/chat/chat-planning)
 

@@ -10,13 +10,13 @@ This repository uses **five GitHub Copilot agents** (including the built-in Plan
 
 **Agents** (in `.github/agents/` + built-in):
 
-| # | Agent | Type | Purpose |
-|---|-------|------|---------|
-| 0 | **Plan Agent** (`@plan`) | Built-in VS Code | Create implementation plans with cost estimates |
-| 1 | **ADR Generator** (`adr_generator`) | Custom | Document architectural decisions |
-| 2 | **Azure Principal Architect** (`azure-principal-architect`) | Custom | WAF assessment and guidance |
-| 3 | **Bicep Planning Specialist** (`bicep-plan`) | Custom | Create machine-readable implementation plans |
-| 4 | **Bicep Implementation Specialist** (`bicep-implement`) | Custom | Generate near-production-ready Bicep code |
+| #   | Agent                                                       | Type             | Purpose                                         |
+| --- | ----------------------------------------------------------- | ---------------- | ----------------------------------------------- |
+| 0   | **Plan Agent** (`@plan`)                                    | Built-in VS Code | Create implementation plans with cost estimates |
+| 1   | **ADR Generator** (`adr_generator`)                         | Custom           | Document architectural decisions                |
+| 2   | **Azure Principal Architect** (`azure-principal-architect`) | Custom           | WAF assessment and guidance                     |
+| 3   | **Bicep Planning Specialist** (`bicep-plan`)                | Custom           | Create machine-readable implementation plans    |
+| 4   | **Bicep Implementation Specialist** (`bicep-implement`)     | Custom           | Generate near-production-ready Bicep code       |
 
 > **Note:** The Plan Agent is a **built-in VS Code feature** that generates reusable `*.prompt.md` files.
 > See [VS Code Plan Agent documentation](https://code.visualstudio.com/docs/copilot/chat/chat-planning) for details.

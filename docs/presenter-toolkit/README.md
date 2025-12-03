@@ -7,11 +7,11 @@ whether you're presenting to customers, colleagues, training sessions, or leader
 
 ## 🎯 Quick Links
 
-| Resource | Description |
-|----------|-------------|
-| [Demo Delivery Guide](demo-delivery-guide.md) | Step-by-step guide for running demos |
-| [Objection Handling](objection-handling.md) | Common concerns and evidence-based responses |
-| [ROI Calculator](roi-calculator.md) | Build a business case with time savings data |
+| Resource                                      | Description                                  |
+| --------------------------------------------- | -------------------------------------------- |
+| [Demo Delivery Guide](demo-delivery-guide.md) | Step-by-step guide for running demos         |
+| [Objection Handling](objection-handling.md)   | Common concerns and evidence-based responses |
+| [ROI Calculator](roi-calculator.md)           | Build a business case with time savings data |
 
 ## 📊 Key Value Proposition
 
@@ -20,17 +20,17 @@ whether you're presenting to customers, colleagues, training sessions, or leader
 
 ### Measured Results from Repository Scenarios (S01-S09)
 
-| Scenario | Manual Time | With Copilot | Savings |
-|----------|-------------|--------------|---------|
-| S01 - Bicep Baseline | 4-6 hours | 30-45 min | 85-90% |
-| S02 - Terraform Baseline | 4-6 hours | 30-45 min | 85-90% |
-| S03 - Five-Agent Workflow | 18 hours | 45 min | 96% |
-| S04 - Documentation | 3-4 hours | 20-30 min | 85-90% |
-| S05 - Service Validation | 2-3 hours | 15-20 min | 85-90% |
-| S06 - Troubleshooting | 1-4 hours | 10-15 min | 80-90% |
-| S07 - SBOM Generator | 2-3 hours | 15-20 min | 85-90% |
-| S08 - Diagrams as Code | 2-3 hours | 15-20 min | 85-90% |
-| S09 - Coding Agent | 2-4 hours | 15-30 min | 85-90% |
+| Scenario                  | Manual Time | With Copilot | Savings |
+| ------------------------- | ----------- | ------------ | ------- |
+| S01 - Bicep Baseline      | 4-6 hours   | 30-45 min    | 85-90%  |
+| S02 - Terraform Baseline  | 4-6 hours   | 30-45 min    | 85-90%  |
+| S03 - Five-Agent Workflow | 18 hours    | 45 min       | 96%     |
+| S04 - Documentation       | 3-4 hours   | 20-30 min    | 85-90%  |
+| S05 - Service Validation  | 2-3 hours   | 15-20 min    | 85-90%  |
+| S06 - Troubleshooting     | 1-4 hours   | 10-15 min    | 80-90%  |
+| S07 - SBOM Generator      | 2-3 hours   | 15-20 min    | 85-90%  |
+| S08 - Diagrams as Code    | 2-3 hours   | 15-20 min    | 85-90%  |
+| S09 - Coding Agent        | 2-4 hours   | 15-30 min    | 85-90%  |
 
 📖 **Methodology**: See [Time Savings Evidence](../../docs/time-savings-evidence.md) for measurement details.
 
