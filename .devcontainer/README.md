@@ -1,9 +1,9 @@
-# Development Container for GitHub Copilot IT Pro Demo
+# Development Container for Agentic InfraOps
 
-> **Version 1.0.0** | Last Updated: December 3, 2025
+> **Version 3.0.0** | Last Updated: December 3, 2025
 
-This devcontainer provides a **complete, pre-configured development environment** for working with all demos
-and scenarios in this repository. It includes all required tools, extensions, and configurations out of the box.
+This devcontainer provides a **complete, pre-configured development environment** for Agentic InfraOps.
+It includes all required tools, extensions, and configurations to build Azure infrastructure with AI agents.
 
 **Base Image:** `mcr.microsoft.com/devcontainers/base:ubuntu-24.04`
 
@@ -77,7 +77,7 @@ az account set --subscription "<your-subscription-id>"
 terraform version && az bicep version && pwsh --version
 
 # 4. Explore demos and infrastructure
-cd demos/ && ls -la
+cd scenarios/ && ls -la
 cd ../infra/bicep/ && tree -L 2
 ```
 
@@ -167,7 +167,7 @@ sudo npm update -g markdownlint-cli           # markdownlint
 ## 📚 Related Documentation
 
 - [Workflow Guide](../docs/WORKFLOW.md)
-- [Demo Prompts](../demos/demo-prompts.md)
+- [Scenario Prompts](../scenarios/scenario-prompts.md)
 - [Copilot Instructions](../.github/copilot-instructions.md)
 - [Repository README](../README.md)
 

@@ -1,6 +1,6 @@
-# Contributing to GitHub Copilot Azure Infrastructure Workflow
+# Contributing to Agentic InfraOps
 
-Thank you for your interest in contributing! This repository provides a 4-step agent workflow for building Azure infrastructure with GitHub Copilot.
+Thank you for your interest in contributing! Agentic InfraOps revolutionizes how IT Pros build Azure environments through coordinated AI agents.
 
 ## 🎯 What We're Looking For
 
@@ -67,9 +67,9 @@ npm run lint:md:fix
 ### 1. Fork & Clone
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/github-copilot-demo.git
-cd github-copilot-demo
-git remote add upstream https://github.com/jonathan-vella/github-copilot-demo.git
+git clone https://github.com/YOUR-USERNAME/azure-agentic-infraops.git
+cd azure-agentic-infraops
+git remote add upstream https://github.com/jonathan-vella/azure-agentic-infraops.git
 ```
 
 ### 2. Create a Branch

@@ -1,4 +1,4 @@
-# GitHub Copilot Azure Infrastructure Workflow - Version History
+# Agentic InfraOps - Version History
 
 ## Semantic Versioning
 
@@ -8,6 +8,30 @@ This repository follows [Semantic Versioning 2.0.0](https://semver.org/):
 - **MAJOR**: Breaking changes to workflow or agents
 - **MINOR**: New agents, significant features
 - **PATCH**: Bug fixes, documentation updates
+
+---
+
+## Version 3.0.0 (2025-12-03) - Agentic InfraOps Rebrand 🚀
+
+### Summary
+
+Major rebrand from "GitHub Copilot Demo" to **Agentic InfraOps**. New identity emphasizes AI-agent-driven Azure infrastructure development with Well-Architected alignment and Azure Verified Modules.
+
+### Changed
+
+- **Project Identity**: Rebranded to "Agentic InfraOps"
+- **Punch Line**: "Azure infrastructure engineered by agents. Verified. Well-Architected. Deployable."
+- **Repository Name**: `github-copilot-demo` → `azure-agentic-infraops`
+- **Folder Rename**: `demos/` → `scenarios/`, `demo-output/` → `scenario-output/`
+- **All Documentation**: Updated to reflect new branding and messaging
+- **Custom Badge**: New Agentic InfraOps branded badge
+
+### Highlights
+
+- Coordinated AI agents transform requirements into deploy-ready infrastructure
+- Real-time Azure pricing via MCP server integration
+- Aligned with Azure Well-Architected Framework best practices
+- Uses Azure Verified Modules (AVM) for Bicep templates
 
 ---
 
@@ -102,6 +126,6 @@ PATCH (Improvements):
 
 ---
 
-**Current Version**: **2.1.0**
+**Current Version**: **3.0.0**
 **Release Date**: December 3, 2025
 **Status**: Production Ready ✅

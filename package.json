@@ -1,7 +1,7 @@
 {
-  "name": "github-copilot-demo",
-  "version": "2.0.0",
-  "description": "4-step agent workflow for Azure infrastructure development with GitHub Copilot",
+  "name": "azure-agentic-infraops",
+  "version": "3.0.0",
+  "description": "Agentic InfraOps - Azure infrastructure engineered by agents. Verified. Well-Architected. Deployable.",
   "private": true,
   "scripts": {
     "prepare": "husky",
@@ -14,14 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonathan-vella/github-copilot-demo.git"
+    "url": "https://github.com/jonathan-vella/azure-agentic-infraops.git"
   },
   "keywords": [
     "azure",
     "bicep",
+    "terraform",
     "github-copilot",
     "infrastructure-as-code",
-    "agents"
+    "agents",
+    "agentic",
+    "well-architected",
+    "azure-verified-modules"
   ],
   "author": "Jonathan Vella",
   "license": "MIT"

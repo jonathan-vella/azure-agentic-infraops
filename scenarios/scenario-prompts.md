@@ -1,8 +1,8 @@
-# E-Commerce Platform Demo Prompts
+# E-Commerce Platform Scenario Prompts
 
 > **Scenario:** Build a PCI-DSS compliant, multi-tier e-commerce platform on Azure  
 > **Duration:** ~30 minutes  
-> **Output:** See `demo-output/` folder for complete agent responses
+> **Output:** See `scenario-output/` folder for complete agent responses
 
 ---
 
@@ -272,10 +272,10 @@ After running this demo, you should have:
 
 | Artifact                | Location                                     |
 | ----------------------- | -------------------------------------------- |
-| Plan output             | `demo-output/00-plan.md`                     |
-| WAF assessment          | `demo-output/01-azure-architect.md`          |
-| Planning strategy       | `demo-output/02-bicep-plan.md`               |
-| Implementation strategy | `demo-output/03-bicep-code-gen.md`           |
+| Plan output             | `scenario-output/00-plan.md`                     |
+| WAF assessment          | `scenario-output/01-azure-architect.md`          |
+| Planning strategy       | `scenario-output/02-bicep-plan.md`               |
+| Implementation strategy | `scenario-output/03-bicep-code-gen.md`           |
 | Architecture diagram    | `docs/diagrams/ecommerce/`                   |
 | Bicep planning files    | `.bicep-planning-files/INFRA.ecommerce-*.md` |
 | Bicep templates         | `infra/bicep/ecommerce/`                     |

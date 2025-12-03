@@ -378,7 +378,7 @@ pytest tests/
 ## 📁 Project Structure
 
 ```
-mcp/azure-pricing-mcp/           # Location within github-copilot-demo repo
+mcp/azure-pricing-mcp/           # Location within azure-agentic-infraops repo
 ├── .venv/                       # Virtual environment (auto-created)
 ├── src/
 │   └── azure_pricing_mcp/

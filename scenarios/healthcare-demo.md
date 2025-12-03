@@ -1,4 +1,4 @@
-# Healthcare Patient Portal Demo Prompts
+# Healthcare Patient Portal Scenario Prompts
 
 > **Scenario:** Build a HIPAA-compliant patient portal on Azure  
 > **Duration:** ~30 minutes  
@@ -25,8 +25,8 @@ graph LR
 
 | Step | Agent                       | Purpose                      | Output Folder               |
 | ---- | --------------------------- | ---------------------------- | --------------------------- |
-| 1    | `@plan`                     | Requirements & cost estimate | `demo-output/healthcare/`   |
-| 2    | `azure-principal-architect` | WAF + HIPAA assessment       | `demo-output/healthcare/`   |
+| 1    | `@plan`                     | Requirements & cost estimate | `scenario-output/healthcare/`   |
+| 2    | `azure-principal-architect` | WAF + HIPAA assessment       | `scenario-output/healthcare/`   |
 | 3    | `diagram-generator`         | Architecture visualization   | `docs/diagrams/healthcare/` |
 | 4    | `bicep-plan`                | Implementation planning      | `.bicep-planning-files/`    |
 | 5    | `bicep-implement`           | Code generation              | `infra/bicep/healthcare/`   |
@@ -284,8 +284,8 @@ After running this demo, you should have:
 
 | Artifact             | Location                                       |
 | -------------------- | ---------------------------------------------- |
-| Plan output          | `demo-output/healthcare/00-plan.md`            |
-| WAF assessment       | `demo-output/healthcare/01-azure-architect.md` |
+| Plan output          | `scenario-output/healthcare/00-plan.md`            |
+| WAF assessment       | `scenario-output/healthcare/01-azure-architect.md` |
 | Architecture diagram | `docs/diagrams/healthcare/`                    |
 | Bicep planning files | `.bicep-planning-files/INFRA.healthcare-*.md`  |
 | Bicep templates      | `infra/bicep/healthcare/`                      |

@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Get up and running with the GitHub Copilot Azure Infrastructure Workflow in under 10 minutes.
+Get up and running with Agentic InfraOps in under 10 minutes.
 
 ## Prerequisites
 
@@ -24,10 +24,10 @@ Before you begin, ensure you have:
 
 ```bash
 # Clone the repository
-git clone https://github.com/jonathan-vella/github-copilot-demo.git
+git clone https://github.com/jonathan-vella/azure-agentic-infraops.git
 
 # Open in VS Code
-code github-copilot-demo
+code azure-agentic-infraops
 ```
 
 ---
@@ -72,16 +72,16 @@ Press `Ctrl+Alt+I` (Windows/Linux) or `Cmd+Alt+I` (Mac) to open the Copilot Chat
 
 ## Step 4: Choose a Demo Scenario
 
-We have pre-built demos ready to run:
+We have pre-built scenarios ready to run:
 
-| Demo                   | Complexity   | Time   | Prompt File                 |
-| ---------------------- | ------------ | ------ | --------------------------- |
-| **Static Website**     | Beginner     | 15 min | `demos/static-site-demo.md` |
-| **E-Commerce**         | Intermediate | 30 min | `demos/demo-prompts.md`     |
-| **Healthcare Portal**  | Advanced     | 30 min | `demos/healthcare-demo.md`  |
-| **Analytics Platform** | Intermediate | 30 min | `demos/analytics-demo.md`   |
+| Scenario               | Complexity   | Time   | Prompt File                     |
+| ---------------------- | ------------ | ------ | ------------------------------- |
+| **Static Website**     | Beginner     | 15 min | `scenarios/static-site-demo.md` |
+| **E-Commerce**         | Intermediate | 30 min | `scenarios/scenario-prompts.md` |
+| **Healthcare Portal**  | Advanced     | 30 min | `scenarios/healthcare-demo.md`  |
+| **Analytics Platform** | Intermediate | 30 min | `scenarios/analytics-demo.md`   |
 
-**Recommended first demo:** Static Website (simplest, fastest)
+**Recommended first scenario:** Static Website (simplest, fastest)
 
 ---
 
@@ -89,7 +89,7 @@ We have pre-built demos ready to run:
 
 ### Option A: Quick Start (Copy-Paste)
 
-1. Open `demos/static-site-demo.md`
+1. Open `scenarios/static-site-demo.md`
 2. Copy the Step 1 prompt
 3. In Copilot Chat, type `@plan` then paste the prompt
 4. Follow the workflow through all steps
@@ -235,5 +235,5 @@ After completing the quick start:
 
 - **Workflow issues:** Check [docs/WORKFLOW.md](WORKFLOW.md)
 - **Agent behavior:** Review agent files in `.github/agents/`
-- **Demo prompts:** See files in `demos/` folder
+- **Scenario prompts:** See files in `scenarios/` folder
 - **Bug reports:** Open a GitHub issue

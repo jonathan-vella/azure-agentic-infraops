@@ -1,6 +1,8 @@
-# GitHub Copilot Instructions for Azure Infrastructure Workflow
+# Agentic InfraOps - Copilot Instructions
 
 This file provides context and guidance for GitHub Copilot when assisting with this repository.
+
+> **Agentic InfraOps** - Azure infrastructure engineered by agents. Verified. Well-Architected. Deployable.
 
 ## Quick Reference for AI Agents
 
@@ -67,10 +69,12 @@ This file provides context and guidance for GitHub Copilot when assisting with t
 
 ## Repository Purpose
 
-This repository demonstrates how GitHub Copilot serves as an **efficiency multiplier** for IT Professionals and Cloud Architects working with Azure infrastructure. The target audience is:
+**Agentic InfraOps** revolutionizes how IT Pros build Azure environments. Powered by GitHub Copilot and coordinated AI agents, it transforms requirements into architecture diagrams, validated designs, and deploy-ready Bicep/Terraform templates—all aligned with Azure Well-Architected best practices and Azure Verified Modules.
+
+The target audience is:
 
 - **Primary**: System Integrator (SI) partners delivering Azure infrastructure projects
-- **Secondary**: IT Pros learning cloud/IaC, customers evaluating GitHub Copilot
+- **Secondary**: IT Pros learning cloud/IaC, customers evaluating agentic workflows
 
 ## Four-Step Agent Workflow Architecture
 
@@ -162,7 +166,7 @@ Prompt: Generate Bicep templates from the plan
 ## Repository Structure
 
 ```
-github-copilot-demo/
+azure-agentic-infraops/
 ├── .devcontainer/                       # Pre-configured dev environment
 │   └── devcontainer.json                # Container configuration
 ├── .github/
@@ -176,7 +180,7 @@ github-copilot-demo/
 │   └── copilot-instructions.md          # THIS FILE - AI agent guidance
 ├── .bicep-planning-files/               # Generated implementation plans
 ├── infra/bicep/                         # Generated Bicep templates
-├── demos/                               # Demo scenarios (user-created)
+├── scenarios/                           # Example scenarios
 └── docs/
     ├── WORKFLOW.md                      # Workflow documentation
     ├── adr/                             # Architecture Decision Records
@@ -293,13 +297,13 @@ When generating documentation:
 
 ## Value Messaging
 
-**Core Value Proposition**: "GitHub Copilot is an **efficiency multiplier** for IT Pros, reducing infrastructure development time by 60-90% while teaching best practices through context-aware suggestions."
+**Core Value Proposition**: "Agentic InfraOps is an **efficiency multiplier** for IT Pros, reducing infrastructure development time by 60-90% while delivering Well-Architected, deploy-ready Azure infrastructure through coordinated AI agents."
 
 📊 **Time Savings Metrics**: See `docs/time-savings-evidence.md` for detailed methodology and scenario-specific data.
 
-🎯 **Real-World Portfolio**: See `docs/copilot-portfolio-showcase.md` for actual projects built by a non-developer using GitHub Copilot.
+🎯 **Real-World Portfolio**: See `docs/copilot-portfolio-showcase.md` for actual projects built using agentic workflows.
 
-**Messaging Focus**: Efficiency Multiplier (not pain points) • Augment Capabilities (not replace) • Infrastructure as Code (not just dev) • Learn by Doing (not tool training)
+**Messaging Focus**: Agentic Workflow (coordinated agents) • Well-Architected (Azure WAF aligned) • Verified Modules (AVM) • Deploy-Ready (validated templates)
 
 ## Copilot Prompting Best Practices
 
@@ -696,8 +700,8 @@ This repository includes a pre-configured dev container with all tools installed
 **Quick Start:**
 
 ```bash
-git clone https://github.com/jonathan-vella/github-copilot-demo.git
-code github-copilot-demo
+git clone https://github.com/jonathan-vella/azure-agentic-infraops.git
+code azure-agentic-infraops
 # F1 → "Dev Containers: Reopen in Container" → Wait 3-5 min
 az --version && bicep --version && pwsh --version
 ```
@@ -769,4 +773,4 @@ npm run lint:md
 
 ---
 
-**Repository Mission**: Provide a 4-step agent workflow for building Azure infrastructure with GitHub Copilot—from requirements to deployed Bicep templates.
+**Repository Mission**: Agentic InfraOps—Azure infrastructure engineered by agents. From requirements to deployed Bicep/Terraform templates, aligned with Azure Well-Architected best practices and Azure Verified Modules.

@@ -1,4 +1,4 @@
-# E-Commerce Platform Demo Workflow
+# E-Commerce Platform Scenario Workflow
 
 > **Version 1.0.0** | Last Updated: December 3, 2025
 >

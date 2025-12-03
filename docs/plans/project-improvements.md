@@ -35,13 +35,13 @@ Update agents to reference shared config instead of duplicating.
 
 ### 3. Add more demo scenarios
 
-**File**: `demos/demo-prompts.md` (add sections)
+**File**: `scenarios/scenario-prompts.md` (add sections)
 
 | Scenario                 | Complexity | Key Services                                  | New File                    |
 | ------------------------ | ---------- | --------------------------------------------- | --------------------------- |
-| Healthcare HIPAA Portal  | High       | App Service, SQL, FHIR API, Private Endpoints | `demos/healthcare-demo.md`  |
-| Data Analytics Platform  | Medium     | Synapse, Data Lake Gen2, Databricks           | `demos/analytics-demo.md`   |
-| Static Marketing Website | Low        | Static Web App, CDN, Storage                  | `demos/static-site-demo.md` |
+| Healthcare HIPAA Portal  | High       | App Service, SQL, FHIR API, Private Endpoints | `scenarios/healthcare-demo.md`  |
+| Data Analytics Platform  | Medium     | Synapse, Data Lake Gen2, Databricks           | `scenarios/analytics-demo.md`   |
+| Static Marketing Website | Low        | Static Web App, CDN, Storage                  | `scenarios/static-site-demo.md` |
 
 ### 4. Create project ADRs
 
@@ -71,7 +71,7 @@ Track changes by version (complement VERSION.md):
 
 Script to:
 
-- Clear `demo-output/` folder
+- Clear `scenario-output/` folder
 - Run each demo prompt through agents
 - Capture outputs to markdown files
 - Validate generated Bicep compiles
@@ -121,8 +121,8 @@ Simplified guide for first-time users:
 | `.github/workflows/validate.yml`              | Create                | High     |
 | `docs/adr/ADR-001-agent-workflow-design.md`   | Create                | Medium   |
 | `docs/adr/ADR-002-mcp-pricing-integration.md` | Create                | Medium   |
-| `demos/healthcare-demo.md`                    | Create                | Medium   |
-| `demos/analytics-demo.md`                     | Create                | Medium   |
+| `scenarios/healthcare-demo.md`                    | Create                | Medium   |
+| `scenarios/analytics-demo.md`                     | Create                | Medium   |
 | `CHANGELOG.md`                                | Create                | Medium   |
 | `.github/agents/_shared/defaults.md`          | Create                | Low      |
 | `docs/QUICKSTART.md`                          | Create                | Low      |

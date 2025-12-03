@@ -1,4 +1,4 @@
-# Static Website Demo Prompts
+# Static Website Scenario Prompts
 
 > **Scenario:** Deploy a static marketing website with global CDN and contact form  
 > **Duration:** ~15 minutes  
@@ -25,8 +25,8 @@ graph LR
 
 | Step | Agent                       | Purpose                      | Output Folder               |
 | ---- | --------------------------- | ---------------------------- | --------------------------- |
-| 1    | `@plan`                     | Requirements & cost estimate | `demo-output/staticsite/`   |
-| 2    | `azure-principal-architect` | WAF assessment               | `demo-output/staticsite/`   |
+| 1    | `@plan`                     | Requirements & cost estimate | `scenario-output/staticsite/`   |
+| 2    | `azure-principal-architect` | WAF assessment               | `scenario-output/staticsite/`   |
 | 3    | `diagram-generator`         | Architecture visualization   | `docs/diagrams/staticsite/` |
 | 4    | `bicep-plan`                | Implementation planning      | `.bicep-planning-files/`    |
 | 5    | `bicep-implement`           | Code generation              | `infra/bicep/staticsite/`   |
@@ -281,8 +281,8 @@ After running this demo, you should have:
 
 | Artifact             | Location                                       |
 | -------------------- | ---------------------------------------------- |
-| Plan output          | `demo-output/staticsite/00-plan.md`            |
-| WAF assessment       | `demo-output/staticsite/01-azure-architect.md` |
+| Plan output          | `scenario-output/staticsite/00-plan.md`            |
+| WAF assessment       | `scenario-output/staticsite/01-azure-architect.md` |
 | Architecture diagram | `docs/diagrams/staticsite/`                    |
 | Bicep planning file  | `.bicep-planning-files/INFRA.staticsite.md`    |
 | Bicep templates      | `infra/bicep/staticsite/`                      |

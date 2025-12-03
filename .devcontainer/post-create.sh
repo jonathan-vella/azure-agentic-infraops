@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "🚀 Running post-create setup for GitHub Copilot IT Pro environment..."
+echo "🚀 Running post-create setup for Agentic InfraOps..."
 
 # Log output to file for debugging
 exec 1> >(tee -a ~/.devcontainer-install.log)

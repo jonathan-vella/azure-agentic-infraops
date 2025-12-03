@@ -4,7 +4,7 @@
 **Region**: swedencentral (SE Central)  
 **Environment**: Production  
 **MCP Tools Used**: azure_price_search, azure_region_recommend, azure_sku_discovery  
-**Architecture Reference**: [WAF Assessment](../demo-output/01-azure-architect.md)
+**Architecture Reference**: [WAF Assessment](../scenario-output/01-azure-architect.md)
 
 ---
 
@@ -222,7 +222,7 @@ Using `azure_region_recommend` for App Service P1v4:
 ## References
 
 - [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/)
-- [WAF Assessment](../demo-output/01-azure-architect.md)
+- [WAF Assessment](../scenario-output/01-azure-architect.md)
 - [Azure Pricing MCP Architecture](diagrams/mcp/azure_pricing_mcp_architecture.png)
 - [Azure App Service Pricing](https://azure.microsoft.com/pricing/details/app-service/)
 - [Azure Cognitive Search Pricing](https://azure.microsoft.com/pricing/details/search/)

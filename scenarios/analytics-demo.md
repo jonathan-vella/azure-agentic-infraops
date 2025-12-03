@@ -1,4 +1,4 @@
-# Data Analytics Platform Demo Prompts
+# Data Analytics Platform Scenario Prompts
 
 > **Scenario:** Build a real-time analytics platform with data lakehouse architecture on Azure  
 > **Duration:** ~30 minutes  
@@ -25,8 +25,8 @@ graph LR
 
 | Step | Agent                       | Purpose                      | Output Folder              |
 | ---- | --------------------------- | ---------------------------- | -------------------------- |
-| 1    | `@plan`                     | Requirements & cost estimate | `demo-output/analytics/`   |
-| 2    | `azure-principal-architect` | WAF assessment               | `demo-output/analytics/`   |
+| 1    | `@plan`                     | Requirements & cost estimate | `scenario-output/analytics/`   |
+| 2    | `azure-principal-architect` | WAF assessment               | `scenario-output/analytics/`   |
 | 3    | `diagram-generator`         | Architecture visualization   | `docs/diagrams/analytics/` |
 | 4    | `bicep-plan`                | Implementation planning      | `.bicep-planning-files/`   |
 | 5    | `bicep-implement`           | Code generation              | `infra/bicep/analytics/`   |
@@ -323,8 +323,8 @@ After running this demo, you should have:
 
 | Artifact             | Location                                      |
 | -------------------- | --------------------------------------------- |
-| Plan output          | `demo-output/analytics/00-plan.md`            |
-| WAF assessment       | `demo-output/analytics/01-azure-architect.md` |
+| Plan output          | `scenario-output/analytics/00-plan.md`            |
+| WAF assessment       | `scenario-output/analytics/01-azure-architect.md` |
 | Architecture diagram | `docs/diagrams/analytics/`                    |
 | Bicep planning files | `.bicep-planning-files/INFRA.analytics-*.md`  |
 | Bicep templates      | `infra/bicep/analytics/`                      |

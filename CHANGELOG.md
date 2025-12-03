@@ -11,9 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - GitHub Actions CI workflow (`.github/workflows/validate.yml`) with 5 validation jobs
 - Shared agent configuration (`.github/agents/_shared/defaults.md`) for centralized settings
-- Healthcare patient portal demo scenario (`demos/healthcare-demo.md`)
-- Data analytics platform demo scenario (`demos/analytics-demo.md`)
-- Static website demo scenario (`demos/static-site-demo.md`)
+- Healthcare patient portal scenario (`scenarios/healthcare-demo.md`)
+- Data analytics platform scenario (`scenarios/analytics-demo.md`)
+- Static website scenario (`scenarios/static-site-demo.md`)
 - Architecture Decision Records (ADRs) for key design decisions:
   - ADR-001: Four-step agent workflow design
   - ADR-002: Azure Pricing MCP server integration
@@ -46,7 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Breaking**: Repository restructured to focus on 4-step agent workflow
 - Simplified folder structure (removed legacy scenarios folder)
-- Clean slate for `demos/`, `infra/bicep/`, `docs/adr/`, `docs/diagrams/`
+- Clean slate for `scenarios/`, `infra/bicep/`, `docs/adr/`, `docs/diagrams/`
 
 ### Added
 
@@ -58,7 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `adr-generator` - Architecture Decision Records
   - `infrastructure-specialist` - Unified agent (optional)
 - Comprehensive workflow documentation (`docs/WORKFLOW.md`)
-- E-commerce platform demo prompts (`demos/demo-prompts.md`)
+- E-commerce platform scenario prompts (`scenarios/scenario-prompts.md`)
 - Azure Pricing MCP server (`mcp/azure-pricing-mcp/`)
 - Dev container with pre-configured tooling
 
@@ -89,4 +89,4 @@ This project uses [Semantic Versioning](https://semver.org/):
 ## Links
 
 - [VERSION.md](VERSION.md) - Detailed version history
-- [GitHub Releases](https://github.com/jonathan-vella/github-copilot-demo/releases)
+- [GitHub Releases](https://github.com/jonathan-vella/azure-agentic-infraops/releases)

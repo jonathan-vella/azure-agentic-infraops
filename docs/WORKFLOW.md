@@ -1,8 +1,8 @@
-# Azure Infrastructure Agent Workflow
+# Agentic InfraOps - Agent Workflow
 
-> **Version 2.1.0** | Last Updated: December 3, 2025
+> **Version 3.0.0** | Last Updated: December 3, 2025
 
-This document describes the 4-step agent workflow for Azure infrastructure development in this repository.
+This document describes the 4-step agent workflow for Azure infrastructure development with Agentic InfraOps.
 
 ---
 
@@ -336,7 +336,7 @@ For simple infrastructure or quick iterations, use `infrastructure-specialist` w
 
 ## Related Documentation
 
-- [Demo Prompts](../demos/demo-prompts.md)
+- [Scenario Prompts](../scenarios/scenario-prompts.md)
 - [Copilot Instructions](../.github/copilot-instructions.md)
 - [Azure Pricing MCP README](../mcp/azure-pricing-mcp/README.md)
 - [README](../README.md)

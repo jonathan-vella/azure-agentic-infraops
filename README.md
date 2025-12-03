@@ -1,22 +1,25 @@
-# GitHub Copilot Azure Infrastructure Workflow
+# Agentic InfraOps
 
-> **Version 2.1.0** | Last Updated: December 3, 2025 | [Changelog](VERSION.md)
+> **Version 3.0.0** | Last Updated: December 3, 2025 | [Changelog](VERSION.md)
 
-[![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Powered-8957e5?style=for-the-badge&logo=github)](https://github.com/features/copilot)
+[![Agentic InfraOps](https://img.shields.io/badge/Agentic-InfraOps-FF6B35?style=for-the-badge&logo=robot&logoColor=white)](https://github.com/jonathan-vella/azure-agentic-infraops)
 [![Azure](https://img.shields.io/badge/Azure-Infrastructure-0078D4?style=for-the-badge&logo=microsoftazure)](https://azure.microsoft.com)
-[![Bicep](https://img.shields.io/badge/Bicep-IaC-00B4AB?style=for-the-badge&logo=microsoftazure)](https://learn.microsoft.com/azure/azure-resource-manager/bicep/)
-[![MCP](https://img.shields.io/badge/MCP-Azure%20Pricing-FFD700?style=for-the-badge)](mcp/azure-pricing-mcp/)
+[![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Powered-8957e5?style=for-the-badge&logo=github)](https://github.com/features/copilot)
+[![Well-Architected](https://img.shields.io/badge/Well--Architected-Aligned-00B4AB?style=for-the-badge&logo=microsoftazure)](https://learn.microsoft.com/azure/well-architected/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Dev Container](https://img.shields.io/badge/Dev%20Container-Ready-blue?style=flat-square&logo=docker)](https://code.visualstudio.com/docs/devcontainers/containers)
 
 ---
 
-> **Build Azure infrastructure with AI-powered agents.** A 4-step workflow that takes you from
-> requirements to deployed Bicep templates—with real-time Azure pricing, architecture diagrams,
-> validation, and best practices built in.
+> **Azure infrastructure engineered by agents. Verified. Well-Architected. Deployable.**
+>
+> Agentic InfraOps revolutionizes how IT Pros build Azure environments. Powered by GitHub Copilot
+> and coordinated AI agents, it transforms requirements into architecture diagrams, validated designs,
+> and deploy-ready Bicep/Terraform templates—all aligned with Azure Well-Architected best practices
+> and Azure Verified Modules. Real-time pricing, compliance checks, and automation included.
 
-📖 **[Quick Start Guide](docs/QUICKSTART.md)** | 📋 **[Full Workflow Docs](docs/WORKFLOW.md)** | 🎯 **[Demo Prompts](demos/)** | 💰 **[Azure Pricing MCP](mcp/azure-pricing-mcp/)**
+📖 **[Quick Start Guide](docs/QUICKSTART.md)** | 📋 **[Full Workflow Docs](docs/WORKFLOW.md)** | 🎯 **[Scenarios](scenarios/)** | 💰 **[Azure Pricing MCP](mcp/azure-pricing-mcp/)**
 
 <!-- TODO: Add animated demo GIF showing the workflow in action
      To create: Use https://github.com/charmbracelet/vhs or screen recording
@@ -96,8 +99,8 @@ The MCP server is **pre-configured** in the Dev Container. Just open in VS Code 
 ### 1. Open in Dev Container
 
 ```bash
-git clone https://github.com/jonathan-vella/github-copilot-demo.git
-code github-copilot-demo
+git clone https://github.com/jonathan-vella/azure-agentic-infraops.git
+code azure-agentic-infraops
 # F1 → "Dev Containers: Reopen in Container"
 ```
 
@@ -173,7 +176,7 @@ Each step requires your approval before proceeding:
 ## Project Structure
 
 ```
-github-copilot-demo/
+azure-agentic-infraops/
 ├── .github/agents/              # Agent definitions
 │   ├── azure-principal-architect.agent.md
 │   ├── bicep-plan.agent.md
@@ -191,8 +194,8 @@ github-copilot-demo/
 │   ├── WORKFLOW.md              # Workflow documentation
 │   ├── adr/                     # Architecture Decision Records
 │   └── diagrams/                # Generated architecture diagrams
-└── demos/                       # Demo scenarios
-    └── demo-prompts.md          # Ready-to-use demo prompts
+└── scenarios/                   # Example scenarios
+    └── scenario-prompts.md      # Ready-to-use scenario prompts
 ```
 
 ---
