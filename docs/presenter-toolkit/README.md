@@ -7,11 +7,14 @@ whether you're presenting to customers, colleagues, training sessions, or leader
 
 ## 🎯 Quick Links
 
-| Resource                                      | Description                                  |
-| --------------------------------------------- | -------------------------------------------- |
-| [Demo Delivery Guide](demo-delivery-guide.md) | Step-by-step guide for running demos         |
-| [Objection Handling](objection-handling.md)   | Common concerns and evidence-based responses |
-| [ROI Calculator](roi-calculator.md)           | Build a business case with time savings data |
+| Resource                                                            | Description                                  |
+| ------------------------------------------------------------------- | -------------------------------------------- |
+| [Demo Delivery Guide](demo-delivery-guide.md)                       | Step-by-step guide for running demos         |
+| [Objection Handling](objection-handling.md)                         | Common concerns and evidence-based responses |
+| [ROI Calculator](roi-calculator.md)                                 | Build a business case with time savings data |
+| [GitHub Copilot for IT Pros](github-copilot-for-itpros.md)          | Marp presentation slides                     |
+| [Visual Elements Guide](visual-elements-guide.md)                   | Image and diagram placement for slides       |
+| [Agentic InfraOps Presentation](agentic-infraops-presentation.md)   | Core presentation content                    |
 
 ## 📊 Key Value Proposition
 
@@ -32,7 +35,7 @@ whether you're presenting to customers, colleagues, training sessions, or leader
 | S08 - Diagrams as Code    | 2-3 hours   | 15-20 min    | 85-90%  |
 | S09 - Coding Agent        | 2-4 hours   | 15-30 min    | 85-90%  |
 
-📖 **Methodology**: See [Time Savings Evidence](../../docs/value-proposition/time-savings-evidence.md) for measurement details.
+📖 **Methodology**: See [Time Savings Evidence](../value-proposition/time-savings-evidence.md) for measurement details.
 
 ## 🎤 Demo Preparation Checklist
 

@@ -166,15 +166,17 @@ flowchart LR
 
 ### To PowerPoint (PPTX)
 
+Run these commands from the **repository root directory**:
+
 ```bash
 # Install Marp CLI
 npm install -g @marp-team/marp-cli
 
-# Export to PPTX
-marp docs/presentations/github-copilot-for-itpros.md --pptx -o github-copilot-for-itpros.pptx
+# Export to PPTX (run from repository root)
+marp docs/presenter-toolkit/github-copilot-for-itpros.md --pptx -o github-copilot-for-itpros.pptx
 
 # Export to PDF (for backup)
-marp docs/presentations/github-copilot-for-itpros.md --pdf -o github-copilot-for-itpros.pdf
+marp docs/presenter-toolkit/github-copilot-for-itpros.md --pdf -o github-copilot-for-itpros.pdf
 ```
 
 ### Using VS Code Extension
@@ -223,7 +225,7 @@ If you want to include a live demo video:
 ## File Locations Summary
 
 ```
-docs/presentations/
+docs/presenter-toolkit/
 ├── github-copilot-for-itpros.md          # Marp source
 ├── visual-elements-guide.md               # This file
 ├── assets/                                # Create this folder

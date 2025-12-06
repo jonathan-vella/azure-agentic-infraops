@@ -19,6 +19,7 @@ Welcome to the Agentic InfraOps documentation center. This hub provides quick na
 | Section                                      | Description                    |
 | -------------------------------------------- | ------------------------------ |
 | [Workflow Guide](workflow/WORKFLOW.md)       | Complete 4-step agent workflow |
+| [Guides](guides/)                            | Operational and troubleshooting guides |
 | [Troubleshooting](guides/troubleshooting.md) | Common issues and solutions    |
 
 ## 📊 Reference Materials
