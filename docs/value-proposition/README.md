@@ -1,6 +1,16 @@
 # Value Proposition
 
-This folder contains business-facing content for demonstrating the value of Agentic InfraOps and GitHub Copilot to stakeholders.
+> Business-facing content for demonstrating the value of Agentic InfraOps and GitHub Copilot to stakeholders.
+
+---
+
+## 📖 Start Here
+
+> **Building a business case?** Follow this path:
+>
+> 1️⃣ [Time Savings Evidence](time-savings-evidence.md) → 2️⃣ [Executive Pitch](executive-pitch.md) → 3️⃣ [ROI Calculator](../presenter-toolkit/roi-calculator.md)
+
+---
 
 ## Available Resources
 

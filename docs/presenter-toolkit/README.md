@@ -5,6 +5,16 @@
 This toolkit provides everything you need to deliver compelling Agentic InfraOps demonstrations to IT Professionals,
 whether you're presenting to customers, colleagues, training sessions, or leadership teams.
 
+---
+
+## 📖 Start Here
+
+> **First time presenting?** Follow this path:
+>
+> 1️⃣ [Demo Delivery Guide](demo-delivery-guide.md) → 2️⃣ [Character Reference](character-reference.md) → 3️⃣ [Objection Handling](objection-handling.md)
+
+---
+
 ## 🎯 Quick Links
 
 | Resource                                                          | Description                                  |

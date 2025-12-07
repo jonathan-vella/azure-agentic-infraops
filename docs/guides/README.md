@@ -6,6 +6,14 @@ This folder consolidates all operational guides for Agentic InfraOps, from getti
 
 ---
 
+## 📖 Start Here
+
+> **New to Agentic InfraOps?** Follow this path:
+>
+> 1️⃣ [Prerequisites](prerequisites.md) → 2️⃣ [Quick Start](quickstart.md) → 3️⃣ [Copilot Getting Started](copilot-getting-started.md)
+
+---
+
 ## 🚀 Getting Started
 
 | Guide                                                 | Description                                             | Time      |
