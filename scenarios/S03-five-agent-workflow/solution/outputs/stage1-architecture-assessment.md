@@ -61,7 +61,10 @@ Please provide:
 
 ### Executive Summary
 
-Based on current Microsoft documentation and HIPAA compliance guidance, I recommend a managed PaaS architecture optimized for healthcare workloads. This design prioritizes security and compliance while staying within budget constraints through careful service selection.
+Based on current Microsoft documentation and HIPAA compliance guidance,
+I recommend a managed PaaS architecture optimized for healthcare workloads.
+This design prioritizes security and compliance while staying within budget constraints through careful service
+selection.
 
 ---
 
@@ -121,7 +124,8 @@ Based on current Microsoft documentation and HIPAA compliance guidance, I recomm
 - **Composite SLO: ~99.93%** (exceeds 99.9% requirement)
 - Expected downtime: ~5 hours/year (within 8.76 hour budget)
 
-**Recommendation:** Meets SLA requirement. Consider adding Traffic Manager + secondary region in future phases for < 99.99% uptime.
+**Recommendation:** Meets SLA requirement. Consider adding Traffic Manager + secondary region in future phases for
+< 99.99% uptime.
 
 ---
 
@@ -177,7 +181,8 @@ Based on current Microsoft documentation and HIPAA compliance guidance, I recomm
 **Cost Optimization Notes:**
 
 - Front Door adds ~$431/month but provides global CDN, SSL offloading, and DDoS protection
-- Alternative: Use App Service custom domain + managed certificate ($0) + Traffic Manager ($7) = Save $424/month (total: $341/month)
+- Alternative: Use App Service custom domain + managed certificate ($0) + Traffic Manager ($7) = Save $424/month
+(total: $341/month)
 - **Recommended for budget:** Skip Front Door initially, add later if performance requires
 
 **Revised Cost Without Front Door: ~$334/month**
@@ -323,7 +328,8 @@ Based on current Microsoft documentation and HIPAA compliance guidance, I recomm
 - Simplified operations (fewer resources to manage)
 - Room for growth without immediate re-architecture
 
-**Justification:** For 10,000 patients and 3-month launch timeline, single-region architecture with zone redundancy meets all requirements. Budget headroom allows future enhancements.
+**Justification:** For 10,000 patients and 3-month launch timeline,
+single-region architecture with zone redundancy meets all requirements. Budget headroom allows future enhancements.
 
 ---
 
@@ -409,7 +415,8 @@ Based on current Microsoft documentation and HIPAA compliance guidance, I recomm
 **HIPAA Compliance:**
 
 - [Azure HIPAA/HITECH Compliance](https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-hipaa-us)
-- [Azure SQL Database HIPAA Controls](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-controls-policy)
+- [Azure SQL Database HIPAA
+Controls](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-controls-policy)
 - [App Service Security Best Practices](https://learn.microsoft.com/en-us/azure/app-service/overview-security)
 
 **Azure Services:**
@@ -422,7 +429,8 @@ Based on current Microsoft documentation and HIPAA compliance guidance, I recomm
 
 - [Managed Identities](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-identity)
 - [Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
-- [Transparent Data Encryption](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview)
+- [Transparent Data
+Encryption](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview)
 
 ---
 

@@ -2,7 +2,8 @@
 
 > **Version 3.1.0** | Last Updated: December 3, 2025
 
-Simple, copy-paste prompts for rapid infrastructure generation. These demos are designed for quick exploration of Agentic InfraOps capabilities.
+Simple, copy-paste prompts for rapid infrastructure generation.
+These demos are designed for quick exploration of Agentic InfraOps capabilities.
 
 For comprehensive learning scenarios with full solutions and validation, see the [S01-S09 scenarios](../).
 
@@ -34,19 +35,22 @@ For comprehensive learning scenarios with full solutions and validation, see the
 
 **File**: [static-site-demo.md](static-site-demo.md)
 
-A simple Azure Static Web App deployment. Perfect for first-time users to understand the agent workflow without complexity.
+A simple Azure Static Web App deployment. Perfect for first-time users to understand the agent workflow without
+complexity.
 
 ### 🛒 E-Commerce Platform
 
 **File**: [ecommerce-prompts.md](ecommerce-prompts.md)
 
-PCI-DSS compliant multi-tier platform with App Service, SQL Database, Redis Cache, and CDN. Demonstrates real-world enterprise patterns.
+PCI-DSS compliant multi-tier platform with App Service, SQL Database, Redis Cache, and CDN.
+Demonstrates real-world enterprise patterns.
 
 ### 🏥 Healthcare Portal
 
 **File**: [healthcare-demo.md](healthcare-demo.md)
 
-HIPAA-compliant patient portal with enhanced security, audit logging, and data protection. Shows compliance-driven architecture.
+HIPAA-compliant patient portal with enhanced security, audit logging, and data protection.
+Shows compliance-driven architecture.
 
 ### 📊 Analytics Platform
 

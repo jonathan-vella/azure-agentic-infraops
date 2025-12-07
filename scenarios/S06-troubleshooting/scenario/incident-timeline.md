@@ -371,4 +371,5 @@ Configuration deployed, issue resolved by 11:15 PM EST.
 
 ---
 
-**Timeline Mission**: Show realistic incident progression with emotional beats (confusion, frustration, breakthrough, relief) to contrast with Copilot-assisted efficiency.
+**Timeline Mission**: Show realistic incident progression with emotional beats (confusion, frustration, breakthrough,
+relief) to contrast with Copilot-assisted efficiency.

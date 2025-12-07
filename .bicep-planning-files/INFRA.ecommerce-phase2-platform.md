@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This implementation plan covers platform services for the PCI-DSS compliant e-commerce platform. Phase 2 deploys Key Vault, App Service Plan (P1v3 zone redundant), Azure SQL with Azure AD-only auth, and Redis Cache with private endpoints. **Depends on Phase 1 network foundation.** Region: `swedencentral`.
+This implementation plan covers platform services for the PCI-DSS compliant e-commerce platform.
+Phase 2 deploys Key Vault, App Service Plan (P1v3 zone redundant), Azure SQL with Azure AD-only auth,
+and Redis Cache with private endpoints. **Depends on Phase 1 network foundation.** Region: `swedencentral`.
 
 ---
 
@@ -614,7 +616,8 @@ az keyvault purge --name kv-ecom-prod-abc123
 
 ## High-Level Design
 
-Phase 2 establishes the secure platform foundation with all data services accessible only via private endpoints in the data subnet (10.0.2.0/24). Key architectural decisions:
+Phase 2 establishes the secure platform foundation with all data services accessible only via private endpoints in
+the data subnet (10.0.2.0/24). Key architectural decisions:
 
 - **Key Vault**: RBAC-enabled, soft-delete with purge protection for PCI-DSS
 - **App Service Plan**: P1v3 with zone redundancy for 99.9% SLA (minimum 2 instances)

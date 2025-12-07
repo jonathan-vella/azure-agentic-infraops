@@ -70,7 +70,8 @@ Copy everything below the line for quick issue creation:
 ## Add Basic Monitoring Alerts
 
 ### Context
-The patient portal infrastructure in `infra/bicep/contoso-patient-portal/` needs basic monitoring before production deployment. Currently there are no alert rules configured.
+The patient portal infrastructure in `infra/bicep/contoso-patient-portal/` needs basic monitoring before production
+deployment. Currently there are no alert rules configured.
 
 ### Requirements
 

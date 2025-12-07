@@ -10,7 +10,8 @@ This folder contains Azure pricing examples generated for various infrastructure
 
 ## About Cost Estimates
 
-Cost estimates are generated using the Azure Pricing MCP server, which queries real-time Azure retail prices. These estimates provide:
+Cost estimates are generated using the Azure Pricing MCP server, which queries real-time Azure retail prices.
+These estimates provide:
 
 - Monthly and annual cost projections
 - Cost breakdown by service category
@@ -19,7 +20,8 @@ Cost estimates are generated using the Azure Pricing MCP server, which queries r
 
 ## Generating New Estimates
 
-The `azure-principal-architect` agent can generate cost estimates as part of the architecture assessment. You can also use the Azure Pricing MCP tools directly:
+The `azure-principal-architect` agent can generate cost estimates as part of the architecture assessment.
+You can also use the Azure Pricing MCP tools directly:
 
 - `azure_price_get` - Get specific service pricing
 - `azure_region_recommend` - Compare regional costs

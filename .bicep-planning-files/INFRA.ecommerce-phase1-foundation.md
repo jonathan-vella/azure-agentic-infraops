@@ -2,7 +2,10 @@
 
 ## Introduction
 
-This implementation plan covers the foundational networking infrastructure for a PCI-DSS compliant multi-tier e-commerce platform. Phase 1 establishes the Virtual Network with three segmented subnets (web, data, integration) and Network Security Groups with deny-by-default rules. Region: `swedencentral`.
+This implementation plan covers the foundational networking infrastructure for
+a PCI-DSS compliant multi-tier e-commerce platform.
+Phase 1 establishes the Virtual Network with three segmented subnets (web, data,
+integration) and Network Security Groups with deny-by-default rules. Region: `swedencentral`.
 
 ---
 
@@ -379,11 +382,16 @@ references:
 
 Subnets are defined within the VNet module using the `subnets` parameter:
 
-| Subnet Name           | Address Prefix | Purpose                                    | NSG            | Service Endpoints                |
-| --------------------- | -------------- | ------------------------------------------ | -------------- | -------------------------------- |
-| snet-web-prod         | 10.0.1.0/24    | App Service VNet integration               | nsgWeb         | Microsoft.Web                    |
-| snet-data-prod        | 10.0.2.0/24    | Private endpoints for data services        | nsgData        | Microsoft.Sql, Microsoft.Storage |
-| snet-integration-prod | 10.0.3.0/24    | Functions VNet integration, Service Bus PE | nsgIntegration | Microsoft.ServiceBus             |
+| Subnet Name           | Address Prefix | Purpose                                    | NSG            | Service
+Endpoints                |
+| --------------------- | -------------- | ------------------------------------------ | -------------- |
+-------------------------------- |
+| snet-web-prod         | 10.0.1.0/24    | App Service VNet integration               | nsgWeb         | Microsoft.Web
+|
+| snet-data-prod        | 10.0.2.0/24    | Private endpoints for data services        | nsgData        | Microsoft.Sql,
+Microsoft.Storage |
+| snet-integration-prod | 10.0.3.0/24    | Functions VNet integration,
+Service Bus PE | nsgIntegration | Microsoft.ServiceBus             |
 
 ---
 
@@ -552,10 +560,13 @@ az deployment sub create \
 
 ## High-Level Design
 
-Phase 1 establishes the network foundation using a hub-less architecture optimized for a single-region PCI-DSS compliant e-commerce platform. The VNet (10.0.0.0/16) is segmented into three subnets with NSGs enforcing deny-by-default rules:
+Phase 1 establishes the network foundation using a hub-less architecture optimized for
+a single-region PCI-DSS compliant e-commerce platform.
+The VNet (10.0.0.0/16) is segmented into three subnets with NSGs enforcing deny-by-default rules:
 
 - **Web tier (10.0.1.0/24)**: Only accepts HTTPS from Azure Front Door
 - **Data tier (10.0.2.0/24)**: Only accepts traffic from web and integration tiers
 - **Integration tier (10.0.3.0/24)**: Hosts async processing, accessible from web and data tiers
 
-This foundation enables private endpoint deployment in subsequent phases while maintaining strict network isolation for PCI-DSS compliance.
+This foundation enables private endpoint deployment in subsequent phases while maintaining strict network isolation for
+PCI-DSS compliance.

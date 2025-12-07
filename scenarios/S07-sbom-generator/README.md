@@ -19,7 +19,10 @@
 
 ## Overview
 
-This demo shows how GitHub Copilot acts as your **SBOM expert partner**, teaching you how to discover, understand, and document software components while creating a near-production-ready Software Bill of Materials (SBOM). Unlike traditional automation approaches, Copilot guides you through the process conversationally, building your understanding of SBOM fundamentals along the way.
+This demo shows how GitHub Copilot acts as your **SBOM expert partner**, teaching you how to discover, understand,
+and document software components while creating a near-production-ready Software Bill of Materials (SBOM).
+Unlike traditional automation approaches, Copilot guides you through the process conversationally,
+building your understanding of SBOM fundamentals along the way.
 
 **Perfect for**: Security teams new to SBOMs, compliance officers, IT professionals learning component discovery
 
@@ -41,7 +44,8 @@ By completing this demo, participants will understand:
 
 **Character**: Sarah Chen, Security Engineer at HealthTech Solutions (Healthcare SaaS provider)
 
-**Situation**: Sarah receives an urgent email from Mayo Clinic (enterprise customer) requesting a comprehensive SBOM within 48 hours for procurement approval. The $2M contract renewal is blocked until the SBOM is delivered.
+**Situation**: Sarah receives an urgent email from Mayo Clinic (enterprise customer) requesting a comprehensive SBOM
+within 48 hours for procurement approval. The $2M contract renewal is blocked until the SBOM is delivered.
 
 **The Problem**: Sarah has never created an SBOM before. She doesn't know:
 
@@ -71,7 +75,8 @@ By completing this demo, participants will understand:
 - **Total: 1 hour 15 minutes** of guided discovery and learning
 - **Outcome**: 98% accuracy, near-production-ready SBOM + deep understanding for next time
 
-**Key Difference**: Sarah doesn't just get an SBOM - she **learns how to create SBOMs** through conversation. Next customer request will be even faster.
+**Key Difference**: Sarah doesn't just get an SBOM - she **learns how to create SBOMs** through conversation.
+Next customer request will be even faster.
 
 **Business Impact**:
 
@@ -143,7 +148,8 @@ graph TB
 
 ### Required Tools
 
-- ✅ [VS Code](https://code.visualstudio.com/) with [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
+- ✅ [VS Code](https://code.visualstudio.com/) with [GitHub Copilot
+Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 - ✅ Web browser (for viewing sample files and validation)
 - ✅ Text editor or JSON viewer (built into VS Code)
 
@@ -169,7 +175,8 @@ graph TB
 
 ### Sample Application (Included)
 
-- **sample-app/**: Real-world ToDo app from [Azure-Samples/todo-nodejs-mongo](https://github.com/Azure-Samples/todo-nodejs-mongo)
+- **sample-app/**: Real-world ToDo app from
+[Azure-Samples/todo-nodejs-mongo](https://github.com/Azure-Samples/todo-nodejs-mongo)
 - **No deployment needed**: Demo uses package.json files and documentation
 - **No Azure costs**: Infrastructure SBOM can use paste approach (no live queries)
 
@@ -199,7 +206,8 @@ Real-world ToDo application from Azure Samples:
 - **New-InfrastructureSBOM.ps1**: Azure Resource Graph queries
 - **Merge-SBOMDocuments.ps1**: SBOM combination script
 
-**Note**: This demo uses conversation-based approach, not scripts. See `examples/copilot-sbom-conversation.md` for the recommended workflow.
+**Note**: This demo uses conversation-based approach, not scripts.
+See `examples/copilot-sbom-conversation.md` for the recommended workflow.
 
 ### 📁 [prompts/](./prompts/)
 
@@ -376,7 +384,8 @@ Track these metrics during your demo:
 
 ## What is an SBOM?
 
-A **Software Bill of Materials (SBOM)** is a comprehensive inventory of all components, libraries, and dependencies that make up a software application. Think of it as an "ingredients list" for software.
+A **Software Bill of Materials (SBOM)** is a comprehensive inventory of all components, libraries,
+and dependencies that make up a software application. Think of it as an "ingredients list" for software.
 
 ### Why SBOMs Matter
 
@@ -586,13 +595,15 @@ Are there any components we missed? Let's review:
 
 ---
 
-📖 **For general issues** (Dev Container, Azure auth, Copilot problems), see the [Troubleshooting Guide](../../docs/guides/troubleshooting.md).
+📖 **For general issues** (Dev Container, Azure auth, Copilot problems),
+see the [Troubleshooting Guide](../../docs/guides/troubleshooting.md).
 
 ## Next Steps
 
 ### For Demo Presenters
 
-1. ✅ **Read the full conversation**: Review `examples/copilot-sbom-conversation.md` to see the complete 1.25-hour session
+1. ✅ **Read the full conversation**: Review `examples/copilot-sbom-conversation.md` to
+see the complete 1.25-hour session
 2. ✅ **Practice the demo**: Run through DEMO-SCRIPT.md 2-3 times to internalize the flow
 3. ✅ **Try your own conversation**: Start a fresh Copilot Chat and ask about SBOMs
 4. ✅ **Customize for your audience**: Adapt the scenario (swap HealthTech for Finance, Manufacturing, etc.)

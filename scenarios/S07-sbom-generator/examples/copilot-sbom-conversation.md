@@ -1,6 +1,8 @@
 # Full SBOM Generation Conversation with GitHub Copilot
 
-**Scenario**: Sarah Chen, Security Engineer at HealthTech Solutions, receives urgent SBOM request from Mayo Clinic (enterprise customer) for procurement approval. She has 48 hours to deliver a comprehensive SBOM for their patient portal application.
+**Scenario**: Sarah Chen, Security Engineer at HealthTech Solutions,
+receives urgent SBOM request from Mayo Clinic (enterprise customer) for procurement approval.
+She has 48 hours to deliver a comprehensive SBOM for their patient portal application.
 
 **Duration**: 1 hour 15 minutes  
 **Date**: November 25, 2025  
@@ -1506,7 +1508,8 @@ in plain language for Mayo Clinic's non-technical stakeholders?
             <li><strong>OpenSSL License</strong> (1 component): OpenSSL-specific, compatible with commercial use</li>
             <li><strong>MPL-2.0</strong> (1 component): Mozilla Public License, file-level copyleft</li>
         </ul>
-        <p><strong>✅ Compliance Status:</strong> All licenses are compatible with commercial healthcare software deployment. No GPL or copyleft restrictions.</p>
+        <p><strong>✅ Compliance Status:</strong> All licenses are compatible with
+        commercial healthcare software deployment. No GPL or copyleft restrictions.</p>
     </div>
 
     <div class="section">
@@ -1518,7 +1521,8 @@ in plain language for Mayo Clinic's non-technical stakeholders?
             <li><strong>express 4.18.2</strong>: Web framework with potential HTTP vulnerabilities</li>
             <li><strong>mongoose 7.4.3</strong>: Database connector with potential injection risks</li>
         </ul>
-        <p><strong>Recommendation:</strong> Subscribe to security advisories for these components via GitHub Advisory Database or NVD.</p>
+        <p><strong>Recommendation:</strong> Subscribe to security advisories for
+        these components via GitHub Advisory Database or NVD.</p>
     </div>
 
     <div class="section">
@@ -1530,7 +1534,9 @@ in plain language for Mayo Clinic's non-technical stakeholders?
             </tr>
             <tr>
                 <td><strong>Specification:</strong></td>
-                <td><a href="https://cyclonedx.org/specification/overview/">https://cyclonedx.org/specification/overview/</a></td>
+                <td><a
+                href="https://cyclonedx.org/specification/overview/">https://cyclonedx.org/specification/overview/</a></
+                td>
             </tr>
             <tr>
                 <td><strong>Serial Number:</strong></td>
@@ -1559,19 +1565,26 @@ in plain language for Mayo Clinic's non-technical stakeholders?
         <h2>❓ Frequently Asked Questions</h2>
 
         <h3>What is an SBOM?</h3>
-        <p>A Software Bill of Materials is a complete inventory of all software components in an application, similar to an ingredient list on food packaging. It helps identify security vulnerabilities, manage licenses, and ensure supply chain transparency.</p>
+        <p>A Software Bill of Materials is a complete inventory of all software components in an application,
+        similar to an ingredient list on food packaging.
+        It helps identify security vulnerabilities, manage licenses, and ensure supply chain transparency.</p>
 
         <h3>Why is this important for healthcare?</h3>
-        <p>Healthcare organizations require SBOMs to comply with HIPAA, manage cybersecurity risks, and meet vendor security questionnaire requirements. It enables rapid response to security vulnerabilities like Log4Shell.</p>
+        <p>Healthcare organizations require SBOMs to comply with HIPAA, manage cybersecurity risks,
+        and meet vendor security questionnaire requirements.
+        It enables rapid response to security vulnerabilities like Log4Shell.</p>
 
         <h3>How do you keep this updated?</h3>
-        <p>SBOMs should be regenerated with each application release. We can automate this in our CI/CD pipeline to provide always-current component inventories.</p>
+        <p>SBOMs should be regenerated with each application release.
+        We can automate this in our CI/CD pipeline to provide always-current component inventories.</p>
 
         <h3>Can you search for specific vulnerabilities?</h3>
-        <p>Yes! This SBOM can be imported into vulnerability scanning tools like Dependency-Track, Grype, or GitHub Advanced Security to automatically check for known CVEs.</p>
+        <p>Yes! This SBOM can be imported into vulnerability scanning tools like Dependency-Track, Grype,
+        or GitHub Advanced Security to automatically check for known CVEs.</p>
 
         <h3>What about transitive dependencies?</h3>
-        <p>This SBOM shows direct dependencies. A complete SBOM would include transitive dependencies (dependencies of dependencies). We can provide an expanded version if needed.</p>
+        <p>This SBOM shows direct dependencies. A complete SBOM would include transitive dependencies (dependencies of
+        dependencies). We can provide an expanded version if needed.</p>
     </div>
 
     <div class="footer">

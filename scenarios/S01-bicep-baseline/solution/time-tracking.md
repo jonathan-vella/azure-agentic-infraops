@@ -276,9 +276,13 @@ Assuming:
 
 ## Conclusion
 
-GitHub Copilot transformed a 55-minute task into a 10-minute task, saving 82% of development time. The code quality was excellent, with zero errors on first deployment, and all security best practices were included automatically.
+GitHub Copilot transformed a 55-minute task into a 10-minute task, saving 82% of development time.
+The code quality was excellent, with zero errors on first deployment,
+and all security best practices were included automatically.
 
-**Key Takeaway**: Copilot isn't just about typing less—it's about thinking at a higher level. Instead of worrying about Bicep syntax and API versions, I focused on architecture and business requirements. That's the real value.
+**Key Takeaway**: Copilot isn't just about typing less—it's about thinking at a higher level.
+Instead of worrying about Bicep syntax and API versions, I focused on architecture and business requirements.
+That's the real value.
 
 ---
 

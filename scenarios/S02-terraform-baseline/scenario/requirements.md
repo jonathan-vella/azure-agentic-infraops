@@ -10,7 +10,8 @@
 
 ### Business Context
 
-TechCorp Solutions provides a multi-tenant SaaS platform for project management and collaboration. They operate in a competitive market where time-to-market and reliability are critical success factors.
+TechCorp Solutions provides a multi-tenant SaaS platform for project management and collaboration.
+They operate in a competitive market where time-to-market and reliability are critical success factors.
 
 **Recent Growth**:
 

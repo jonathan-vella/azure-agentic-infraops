@@ -25,7 +25,8 @@ graph TB
                 end
             end
             
-            Storage[Storage Account: stdigitalbankingprodxxxx<br/>Hot Tier, GRS<br/>Private Endpoint Only<br/>TLS 1.2, Soft Delete 7d]
+            Storage[Storage Account: stdigitalbankingprodxxxx<br/>Hot Tier, GRS<br/>
+            Private Endpoint Only<br/>TLS 1.2, Soft Delete 7d]
         end
     end
     

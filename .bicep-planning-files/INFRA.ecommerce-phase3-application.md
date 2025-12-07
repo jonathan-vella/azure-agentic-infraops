@@ -2,7 +2,10 @@
 
 ## Introduction
 
-This implementation plan covers the application tier for the PCI-DSS compliant e-commerce platform. Phase 3 deploys App Service (.NET 8 API), Azure Cognitive Search, Service Bus Premium, and Azure Functions for async order processing. **Depends on Phase 1 (network) and Phase 2 (platform services).** Region: `swedencentral`.
+This implementation plan covers the application tier for the PCI-DSS compliant e-commerce platform.
+Phase 3 deploys App Service (.NET 8 API), Azure Cognitive Search, Service Bus Premium,
+and Azure Functions for async order processing. **Depends on Phase 1 (network) and
+Phase 2 (platform services).** Region: `swedencentral`.
 
 ---
 
@@ -418,7 +421,8 @@ references:
 | **Phase 3 Total**         |                    |          | **~$1,107**  |
 | **Running Total (P1-P3)** |                    |          | **~$1,732**  |
 
-**Cost Note:** Service Bus Premium is expensive but required for private endpoints. Consider Standard tier if private endpoints are not mandatory for initial deployment.
+**Cost Note:** Service Bus Premium is expensive but required for private endpoints.
+Consider Standard tier if private endpoints are not mandatory for initial deployment.
 
 ---
 

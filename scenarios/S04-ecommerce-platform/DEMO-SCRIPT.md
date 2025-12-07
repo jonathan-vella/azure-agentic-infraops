@@ -72,13 +72,15 @@ Constraints:
 
 ### 🎙️ Talking Points
 
-> "Notice how the Plan Agent researches comprehensively before suggesting any changes. It creates a structured plan we can refine."
+> "Notice how the Plan Agent researches comprehensively before suggesting any changes.
+> It creates a structured plan we can refine."
 >
 > "The plan estimates ~$1,250/month - we'll validate this with real-time pricing later."
 
 ### ➡️ Transition
 
-Click **"Save Plan"** to create `*.prompt.md` file, then click **"Hand off to implementation agent"** → Azure Principal Architect
+Click **"Save Plan"** to create `*.prompt.md` file, then click **"Hand off to
+implementation agent"** → Azure Principal Architect
 
 ---
 
@@ -127,9 +129,11 @@ Provide WAF scores and any compliance gaps.
 
 ### 🎙️ Talking Points
 
-> "The architect gives us an 8.0/10 WAF score - solid for production. Security scores high because of private endpoints and Azure AD-only auth."
+> "The architect gives us an 8.0/10 WAF score - solid for production.
+> Security scores high because of private endpoints and Azure AD-only auth."
 >
-> "Notice Cost Optimization at 7/10 - that's the trade-off for PCI-DSS. Premium Service Bus is required for private endpoints."
+> "Notice Cost Optimization at 7/10 - that's the trade-off for PCI-DSS.
+> Premium Service Bus is required for private endpoints."
 
 ### ➡️ Transition
 
@@ -174,7 +178,8 @@ Use the Azure Pricing MCP tools to get real-time pricing for our e-commerce plat
 
 ### 🎙️ Talking Points
 
-> "Real-time pricing from Azure API - more accurate than initial estimates. We're at ~$1,595/month, about $345 higher than the initial plan estimate."
+> "Real-time pricing from Azure API - more accurate than initial estimates.
+> We're at ~$1,595/month, about $345 higher than the initial plan estimate."
 >
 > "The difference is mainly Front Door Premium ($330 vs $100) - required for PCI-DSS WAF with managed rules."
 >
@@ -216,7 +221,8 @@ Save to scenarios/scenario-output/ecommerce/architecture.py
 
 > "This diagram is generated from our architecture context - perfect for documentation and stakeholder presentations."
 >
-> "Notice the clear separation: Edge (Front Door) → Web (App Service) → Data (SQL, Redis) → Integration (Functions, Service Bus)."
+> "Notice the clear separation: Edge (Front Door) → Web (App Service) → Data (SQL, Redis) → Integration (Functions,
+> Service Bus)."
 
 ---
 
@@ -303,7 +309,8 @@ Include deploy.ps1 with:
 
 ### 🎙️ Talking Points
 
-> "Notice the unique suffix generation in main.bicep - this prevents naming collisions for globally unique resources like Key Vault and Storage."
+> "Notice the unique suffix generation in main.bicep - this prevents naming collisions for
+> globally unique resources like Key Vault and Storage."
 >
 > "All modules follow CAF naming conventions with region abbreviations."
 
@@ -358,7 +365,8 @@ cd infra/bicep/ecommerce
 
 ### 🎙️ Talking Points
 
-> "The deployment script validates templates before any Azure changes. Lint warnings are shown but don't block deployment."
+> "The deployment script validates templates before any Azure changes.
+> Lint warnings are shown but don't block deployment."
 >
 > "61 resources will be created - that's a full enterprise-grade e-commerce platform in under 15 minutes."
 

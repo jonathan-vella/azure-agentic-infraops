@@ -2,7 +2,8 @@
 
 > **Version 3.1.0** | Last Updated: December 3, 2025
 >
-> **From zero to productive in 30 minutes.** This guide walks you through everything—from setup to your first deployment to mastering advanced workflows.
+> **From zero to productive in 30 minutes.** This guide walks you through everything—from setup to
+> your first deployment to mastering advanced workflows.
 
 ---
 
@@ -36,12 +37,18 @@ flowchart LR
 
 Before you begin, ensure you have:
 
-| Requirement                | How to Verify                     | Get It                                                      |
-| -------------------------- | --------------------------------- | ----------------------------------------------------------- |
-| **GitHub account**         | Can you log in to github.com?     | [Sign up](https://github.com/signup)                        |
-| **GitHub Copilot license** | Check github.com/settings/copilot | [Get Copilot](https://github.com/features/copilot)          |
-| **VS Code**                | `code --version` in terminal      | [Download](https://code.visualstudio.com/)                  |
-| **Docker Desktop**         | Docker icon in system tray        | [Download](https://www.docker.com/products/docker-desktop/) |
+| Requirement                | How to Verify                     | Get It
+|
+| -------------------------- | --------------------------------- |
+----------------------------------------------------------- |
+| **GitHub account**         | Can you log in to github.com?
+| [Sign up](https://github.com/signup)                        |
+| **GitHub Copilot license** | Check github.com/settings/copilot | [Get Copilot](https://github.com/features/copilot)
+|
+| **VS Code**                | `code --version` in terminal      | [Download](https://code.visualstudio.com/)
+|
+| **Docker Desktop**         | Docker icon in system tray        |
+[Download](https://www.docker.com/products/docker-desktop/) |
 
 ### Step 1.2: Clone and Open
 
@@ -283,13 +290,20 @@ Delegate entire GitHub Issues to Copilot for autonomous implementation.
 
 ### Key Resources
 
-| Resource            | Location                                                                           | Purpose                   |
-| ------------------- | ---------------------------------------------------------------------------------- | ------------------------- |
-| **Prerequisites**   | [docs/getting-started/prerequisites.md](prerequisites.md)                          | Tool requirements         |
-| **Model Selection** | [docs/getting-started/model-selection.md](model-selection.md)                      | Choose the right AI model |
-| **Scenarios**       | [scenarios/](../../scenarios/)                                                     | Hands-on learning         |
-| **Demo Script**     | [S01 Demo Script](../../scenarios/S01-bicep-baseline/DEMO-SCRIPT.md)               | Presenter guide           |
-| **ROI Calculator**  | [docs/presenter-toolkit/roi-calculator.md](../presenter-toolkit/roi-calculator.md) | Calculate savings         |
+| Resource            | Location                                                                           | Purpose
+|
+| ------------------- | ---------------------------------------------------------------------------------- |
+------------------------- |
+| **Prerequisites**   | [docs/getting-started/prerequisites.md](prerequisites.md)                          | Tool
+requirements         |
+| **Model Selection** | [docs/getting-started/model-selection.md](model-selection.md)                      | Choose the
+right AI model |
+| **Scenarios**       | [scenarios/](../../scenarios/)                                                     | Hands-on
+learning         |
+| **Demo Script**     | [S01 Demo Script](../../scenarios/S01-bicep-baseline/DEMO-SCRIPT.md)               | Presenter
+guide           |
+| **ROI Calculator**  | [docs/presenter-toolkit/roi-calculator.md](../presenter-toolkit/roi-calculator.md) | Calculate
+savings         |
 
 ### Common Commands
 
@@ -335,7 +349,8 @@ pwsh -File validation/validate.ps1
 
 📖 **Full troubleshooting guide:** [docs/guides/troubleshooting.md](../guides/troubleshooting.md)
 
-Covers: Dev Container issues, Copilot problems, Azure deployment errors, custom agents, network/proxy issues, and a complete error message reference.
+Covers: Dev Container issues, Copilot problems, Azure deployment errors, custom agents, network/proxy issues,
+and a complete error message reference.
 
 ---
 

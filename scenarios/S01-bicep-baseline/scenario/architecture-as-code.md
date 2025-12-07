@@ -1,6 +1,8 @@
 # Infrastructure Architecture (Diagrams as Code)
 
-This document demonstrates the "Diagrams as Code" approach for the Bicep Baseline scenario, using Python to generate the architecture diagram. This ensures the diagram remains consistent with the code and can be version controlled.
+This document demonstrates the "Diagrams as Code" approach for the Bicep Baseline scenario,
+using Python to generate the architecture diagram.
+This ensures the diagram remains consistent with the code and can be version controlled.
 
 ## Generated Diagram
 
@@ -8,7 +10,8 @@ This document demonstrates the "Diagrams as Code" approach for the Bicep Baselin
 
 ## Python Code
 
-The following Python code generates the diagram above. It uses the `diagrams` library to define resources and relationships.
+The following Python code generates the diagram above.
+It uses the `diagrams` library to define resources and relationships.
 
 ```python
 from diagrams import Cluster, Diagram, Edge

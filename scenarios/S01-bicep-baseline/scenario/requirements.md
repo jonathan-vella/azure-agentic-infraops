@@ -9,7 +9,9 @@
 
 ## Business Context
 
-The bank is launching a new digital banking platform and needs to establish Azure infrastructure quickly. The existing IT team has strong Windows Server and networking skills but limited cloud experience. They've committed to a 6-month timeline for the first phase.
+The bank is launching a new digital banking platform and needs to establish Azure infrastructure quickly.
+The existing IT team has strong Windows Server and networking skills but limited cloud experience.
+They've committed to a 6-month timeline for the first phase.
 
 **Key Stakeholders:**
 
@@ -296,7 +298,8 @@ This scenario is based on actual customer engagements where:
 - **Compliance requirements** demand security-first design
 - **Budget constraints** make efficiency critical
 
-GitHub Copilot bridges the gap between traditional IT expertise and modern cloud practices, enabling teams to deliver faster without sacrificing quality.
+GitHub Copilot bridges the gap between traditional IT expertise and modern cloud practices,
+enabling teams to deliver faster without sacrificing quality.
 
 ---
 

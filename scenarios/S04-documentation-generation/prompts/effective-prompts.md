@@ -11,22 +11,26 @@
 ### 1. Be Specific About Output Format
 
 ❌ **Vague**: "Generate documentation"  
-✅ **Specific**: "Generate a Markdown architecture document with Mermaid diagrams, resource inventory table, and cost analysis section"
+✅ **Specific**: "Generate a Markdown architecture document with Mermaid diagrams, resource inventory table,
+and cost analysis section"
 
 ### 2. Provide Context
 
 ❌ **No Context**: "Document these Azure resources"  
-✅ **With Context**: "Generate operational runbook for production e-commerce infrastructure deployed via Bicep, including deployment steps, scaling procedures, and rollback instructions"
+✅ **With Context**: "Generate operational runbook for production e-commerce infrastructure deployed via Bicep,
+including deployment steps, scaling procedures, and rollback instructions"
 
 ### 3. Specify Structure
 
 ❌ **Unstructured**: "Make docs"  
-✅ **Structured**: "Create documentation with these sections: Overview, Prerequisites, Architecture, Deployment Steps, Validation Checklist, Troubleshooting, References"
+✅ **Structured**: "Create documentation with these sections: Overview, Prerequisites, Architecture, Deployment Steps,
+Validation Checklist, Troubleshooting, References"
 
 ### 4. Use Templates
 
 ❌ **Ad-hoc**: Generate from scratch every time  
-✅ **Template-based**: "Use this template structure: [paste template], fill with Azure Resource Graph data for resource group rg-prod"
+✅ **Template-based**: "Use this template structure: [paste template],
+fill with Azure Resource Graph data for resource group rg-prod"
 
 ---
 

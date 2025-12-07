@@ -174,7 +174,8 @@ az deployment sub what-if --location eastus2 --template-file main.bicep --parame
 az group show --name rg-contoso-patient-portal-prod
 
 # Test App Service
-$appUrl = az webapp show --name app-contoso-patient-portal-prod --resource-group rg-contoso-patient-portal-prod --query defaultHostName -o tsv
+$appUrl = az webapp show --name app-contoso-patient-portal-prod \
+  --resource-group rg-contoso-patient-portal-prod --query defaultHostName -o tsv
 curl "https://$appUrl"
 
 # Test Key Vault connectivity
@@ -310,7 +311,8 @@ az resource delete --ids <resource-id>
 
 ## 🤝 Contributing
 
-This infrastructure is part of the [azure-agentic-infraops](../../) repository demonstrating GitHub Copilot capabilities for IT professionals.
+This infrastructure is part of the [azure-agentic-infraops](../../) repository demonstrating GitHub Copilot
+capabilities for IT professionals.
 
 For issues or improvements, please create an issue in the main repository.
 

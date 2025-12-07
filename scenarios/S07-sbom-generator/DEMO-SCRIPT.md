@@ -53,14 +53,22 @@ code sample-app/src/api/Dockerfile     # For Phase 3
 
 ## Demo Structure Overview
 
-| Time      | Phase                                     | Focus                              | Key Message                         |
-| --------- | ----------------------------------------- | ---------------------------------- | ----------------------------------- |
-| 0-5 min   | **Intro & Scene Setting**                 | Sarah's urgent Mayo Clinic request | "I've never created an SBOM before" |
-| 5-10 min  | **Phase 1: Problem Definition**           | What is an SBOM?                   | Copilot teaches fundamentals        |
-| 10-18 min | **Phase 2: Application Discovery**        | Analyzing package.json             | PURL format, licenses               |
-| 18-23 min | **Phase 3-4: Container & Infrastructure** | Docker image, Azure services       | Component completeness              |
-| 23-28 min | **Phase 5: Assembly & Validation**        | CycloneDX JSON generation          | Production deliverables             |
-| 28-30 min | **Wrap-Up & Metrics**                     | Knowledge transfer value           | 79% time savings + learning         |
+| Time      | Phase                                     | Focus                              | Key Message
+|
+| --------- | ----------------------------------------- | ---------------------------------- |
+----------------------------------- |
+| 0-5 min   | **Intro & Scene Setting**                 | Sarah's urgent Mayo Clinic request | "I've never created an
+SBOM before" |
+| 5-10 min  | **Phase 1: Problem Definition**           | What is an SBOM?
+| Copilot teaches fundamentals        |
+| 10-18 min | **Phase 2: Application Discovery**        | Analyzing package.json             | PURL format,
+licenses               |
+| 18-23 min | **Phase 3-4: Container & Infrastructure** | Docker image,
+Azure services       | Component completeness              |
+| 23-28 min | **Phase 5: Assembly & Validation**        | CycloneDX JSON generation          | Production deliverables
+|
+| 28-30 min | **Wrap-Up & Metrics**                     | Knowledge transfer value           | 79% time savings +
+learning         |
 
 ---
 
@@ -76,14 +84,18 @@ code sample-app/src/api/Dockerfile     # For Phase 3
 >
 > Sarah,
 >
-> Our security team requires a complete Software Bill of Materials (SBOM) for your Patient Portal application before we can approve the $2M contract renewal. Please provide by end of week (48 hours).
+> Our security team requires a complete Software Bill of Materials (SBOM) for
+> your Patient Portal application before we can approve the $2M contract renewal.
+> Please provide by end of week (48 hours).
 >
 > Best,  
 > Mayo Clinic Security Team
 
 **[NARRATE]**:
 
-> "Meet Sarah Chen. She's a security engineer at HealthTech Solutions, a healthcare SaaS company. She just received this email from her biggest customer, Mayo Clinic. They need an SBOM in 48 hours or the $2M contract renewal is blocked."
+> "Meet Sarah Chen. She's a security engineer at HealthTech Solutions, a healthcare SaaS company.
+> She just received this email from her biggest customer, Mayo Clinic.
+> They need an SBOM in 48 hours or the $2M contract renewal is blocked."
 >
 > "Sarah's problem: She has **never created an SBOM before**. She doesn't know:"
 >
@@ -95,9 +107,11 @@ code sample-app/src/api/Dockerfile     # For Phase 3
 
 **[PAUSE FOR IMPACT]**
 
-> "Traditionally, Sarah would spend the next 6 hours Googling specifications, reading Docker Hub docs, manually listing packages, and hoping she didn't miss anything. 80% accuracy is typical for manual SBOM creation."
+> "Traditionally, Sarah would spend the next 6 hours Googling specifications, reading Docker Hub docs,
+> manually listing packages, and hoping she didn't miss anything. 80% accuracy is typical for manual SBOM creation."
 >
-> "But Sarah has GitHub Copilot. Let's watch her ask Copilot to teach her how to create an SBOM - **while she's creating it**."
+> "But Sarah has GitHub Copilot. Let's watch her ask Copilot to teach her how to
+> create an SBOM - **while she's creating it**."
 
 ### Value Proposition
 
@@ -122,7 +136,8 @@ code sample-app/src/api/Dockerfile     # For Phase 3
 
 **[NARRATE]**:
 
-> "Sarah starts by admitting she doesn't know what an SBOM is. Instead of spending 30 minutes reading specifications, she asks Copilot directly."
+> "Sarah starts by admitting she doesn't know what an SBOM is.
+> Instead of spending 30 minutes reading specifications, she asks Copilot directly."
 
 ### Step 2: Initial Question
 
@@ -136,7 +151,8 @@ can you help me understand what it is and what I need to include?
 
 **[NARRATE WHILE COPILOT RESPONDS]**:
 
-> "Notice how Sarah frames this: She's honest about being new to SBOMs, provides context (healthcare, Mayo Clinic, procurement), and asks for **understanding**, not just instructions."
+> "Notice how Sarah frames this: She's honest about being new to SBOMs, provides context (healthcare, Mayo Clinic,
+> procurement), and asks for **understanding**, not just instructions."
 
 ### Step 3: Teaching Response
 
@@ -151,7 +167,8 @@ can you help me understand what it is and what I need to include?
 
 **[PAUSE]**:
 
-> "In **2 minutes**, Sarah understands what an SBOM is and has a clear path forward. That would have taken 30 minutes reading NTIA specifications."
+> "In **2 minutes**, Sarah understands what an SBOM is and has a clear path forward.
+> That would have taken 30 minutes reading NTIA specifications."
 
 ### Step 4: Follow-Up Question (Show Iterative Learning)
 
@@ -163,7 +180,8 @@ What's the difference between CycloneDX and SPDX? Which should I use?
 
 **[NARRATE]**:
 
-> "Sarah can ask follow-up questions naturally. Copilot explains SPDX is Linux Foundation standard (license-focused), CycloneDX is OWASP standard (security-focused). For healthcare and Mayo Clinic, CycloneDX is better."
+> "Sarah can ask follow-up questions naturally. Copilot explains SPDX is Linux Foundation standard (license-focused),
+> CycloneDX is OWASP standard (security-focused). For healthcare and Mayo Clinic, CycloneDX is better."
 
 ### Step 5: Strategy Confirmation
 
@@ -180,7 +198,8 @@ Let's start with the application layer. How do I analyze package.json?
 
 **[NARRATE]**:
 
-> "Sarah now has a **structured plan**. She understands the 'why' and the 'what'. Now she's ready for the 'how'. Let's start with application dependencies."
+> "Sarah now has a **structured plan**. She understands the 'why' and the 'what'. Now she's ready for the 'how'.
+> Let's start with application dependencies."
 
 **[TEACHING MOMENT - TO AUDIENCE]**:
 
@@ -233,7 +252,8 @@ in the SBOM? What fields are required?
 
 **[NARRATE WHILE READING]**:
 
-> "Copilot teaches Sarah about **PURL** - Package URL. It's the standard way to reference components across different ecosystems (npm, Maven, PyPI, Alpine, etc.)."
+> "Copilot teaches Sarah about **PURL** - Package URL.
+> It's the standard way to reference components across different ecosystems (npm, Maven, PyPI, Alpine, etc.)."
 
 **[READ COPILOT'S EXAMPLE]**:
 
@@ -327,7 +347,8 @@ Use PURL format and include license information.
 
 **[NARRATE]**:
 
-> "6 application components documented. Sarah understands the PURL format, knows why licenses matter, and can do this herself next time. **20 minutes total** vs 2 hours manually researching each package."
+> "6 application components documented. Sarah understands the PURL format, knows why licenses matter,
+> and can do this herself next time. **20 minutes total** vs 2 hours manually researching each package."
 
 ---
 
@@ -337,7 +358,8 @@ Use PURL format and include license information.
 
 **[NARRATE]**:
 
-> "Application layer is done. But Sarah's app runs in a Docker container on Azure App Service. Does she need to document those components too?"
+> "Application layer is done. But Sarah's app runs in a Docker container on Azure App Service.
+> Does she need to document those components too?"
 
 ### Step 1: Ask About Container Components
 
@@ -414,7 +436,8 @@ Use PURL format for Alpine packages (pkg:alpine/...)
 
 **[NARRATE]**:
 
-> "5 container components added. Notice PURL format changed: `pkg:alpine/openssl@3.1.0` for Alpine packages. Sarah is learning the PURL specification across ecosystems."
+> "5 container components added. Notice PURL format changed: `pkg:alpine/openssl@3.1.0` for Alpine packages.
+> Sarah is learning the PURL specification across ecosystems."
 
 ### Step 3: Infrastructure Components (Quick)
 
@@ -447,7 +470,8 @@ these Azure services as components?
 
 **[NARRATE]**:
 
-> "Let's skip the detailed generation for demo time. Sarah would ask Copilot to generate 4 Azure components. **Total so far: 6 npm + 5 container + 4 Azure = 15 components**."
+> "Let's skip the detailed generation for demo time. Sarah would ask Copilot to generate 4 Azure components.
+> **Total so far: 6 npm + 5 container + 4 Azure = 15 components**."
 
 ---
 
@@ -526,7 +550,8 @@ How can I validate this SBOM is correct? Are there any required fields missing?
 
 **[TEACHING MOMENT - TO AUDIENCE]**:
 
-> "Sarah now knows **how to validate** SBOMs. She didn't just get a document - she learned the quality assurance process."
+> "Sarah now knows **how to validate** SBOMs. She didn't just get a document - she learned the quality assurance
+> process."
 
 ### Step 3: Generate Stakeholder Report
 
@@ -621,7 +646,8 @@ and risk assessment.
 > - "✅ Generated stakeholder-friendly HTML report"
 > - "✅ Validated output against industry standards"
 >
-> "**Most importantly**: Sarah can now explain to Mayo Clinic auditors exactly how she created this SBOM and what each component represents."
+> "**Most importantly**: Sarah can now explain to Mayo Clinic auditors exactly how she created this SBOM and
+> what each component represents."
 
 ### Time Comparison
 
@@ -654,7 +680,8 @@ and risk assessment.
 
 **[NARRATE]**:
 
-> "For a single security engineer managing 10 applications, that's **over 5 weeks of time** recovered annually—time that can be spent on proactive security improvements."
+> "For a single security engineer managing 10 applications, that's **over 5 weeks of
+> time** recovered annually—time that can be spent on proactive security improvements."
 
 ### Key Takeaways
 
@@ -675,11 +702,13 @@ and risk assessment.
 
 **[OPTIONAL - IF TIME ALLOWS]**:
 
-> "Once Sarah creates 2-3 SBOMs manually with Copilot, she'll recognize the repetition. Then she can ask Copilot to generate PowerShell automation scripts (see the `solution/` folder for examples)."
+> "Once Sarah creates 2-3 SBOMs manually with Copilot, she'll recognize the repetition.
+> Then she can ask Copilot to generate PowerShell automation scripts (see the `solution/` folder for examples)."
 >
 > "The progression is: **Learn → Manual → Automate → CI/CD**"
 >
-> "But you **must understand** SBOMs before automating them. Otherwise, you're blindly generating documents you can't explain or troubleshoot."
+> "But you **must understand** SBOMs before automating them.
+> Otherwise, you're blindly generating documents you can't explain or troubleshoot."
 
 ---
 
@@ -689,27 +718,39 @@ and risk assessment.
 
 **Q: "Can Copilot integrate with Syft or other SBOM tools?"**
 
-A: "Yes! Once you understand SBOM concepts through this conversation approach, you can ask Copilot to generate scripts that call Syft, CycloneDX CLI, or other tools. The key is: Learn the concepts first, then automate. See the `solution/` folder for PowerShell automation examples."
+A: "Yes! Once you understand SBOM concepts through this conversation approach,
+you can ask Copilot to generate scripts that call Syft, CycloneDX CLI, or other tools.
+The key is: Learn the concepts first, then automate. See the `solution/` folder for PowerShell automation examples."
 
 **Q: "What if Copilot makes a mistake in the SBOM?"**
 
-A: "This is why validation is built into the workflow. Sarah validated against CycloneDX schema. Also, because she **understands** SBOMs now (not just copying output), she can review and correct mistakes. Knowledge transfer provides quality assurance."
+A: "This is why validation is built into the workflow. Sarah validated against CycloneDX schema.
+Also, because she **understands** SBOMs now (not just copying output), she can review and correct mistakes.
+Knowledge transfer provides quality assurance."
 
 **Q: "How does this scale to 100+ applications?"**
 
-A: "First 2-3 SBOMs: Conversation approach (learning). Next 10-20: Manual with Copilot (faster). After that: Build automation scripts with Copilot's help. By then, your team understands SBOMs deeply and can troubleshoot automation. The conversation approach is the **foundation** for scaling."
+A: "First 2-3 SBOMs: Conversation approach (learning). Next 10-20: Manual with Copilot (faster).
+After that: Build automation scripts with Copilot's help.
+By then, your team understands SBOMs deeply and can troubleshoot automation.
+The conversation approach is the **foundation** for scaling."
 
 **Q: "Does this work for other ecosystems (Java, Python, .NET)?"**
 
-A: "Absolutely! PURL format supports Maven, PyPI, NuGet, etc. The concepts are the same: dependencies, container, infrastructure. Copilot will teach the ecosystem-specific details (e.g., `pkg:maven/spring-boot` instead of `pkg:npm/express`)."
+A: "Absolutely! PURL format supports Maven, PyPI, NuGet, etc.
+The concepts are the same: dependencies, container, infrastructure.
+Copilot will teach the ecosystem-specific details (e.g., `pkg:maven/spring-boot` instead of `pkg:npm/express`)."
 
 **Q: "What if Mayo Clinic asks for SPDX instead of CycloneDX?"**
 
-A: "Sarah can ask Copilot: 'Can you convert this to SPDX 2.3 format?' Copilot will explain the differences and generate SPDX output. Because Sarah understands the underlying concepts (components, licenses, PURL), the format is just syntax."
+A: "Sarah can ask Copilot: 'Can you convert this to SPDX 2.3 format?' Copilot will explain the differences and
+generate SPDX output. Because Sarah understands the underlying concepts (components, licenses, PURL),
+the format is just syntax."
 
 **Q: "How much does GitHub Copilot cost?"**
 
-A: "$10/month per user (Individual) or $19/month (Business). The ROI is 27,150% in the first year for a single engineer. This pays for itself in hours, not months."
+A: "$10/month per user (Individual) or $19/month (Business).
+The ROI is 27,150% in the first year for a single engineer. This pays for itself in hours, not months."
 
 ---
 
@@ -757,7 +798,8 @@ A: "$10/month per user (Individual) or $19/month (Business). The ROI is 27,150% 
 
 ### Encourage Hands-On
 
-> "Try this yourself! Open VS Code with Copilot and ask: 'What is an SBOM and how do I create one?' See how Copilot teaches you."
+> "Try this yourself! Open VS Code with Copilot and ask: 'What is an SBOM and
+> how do I create one?' See how Copilot teaches you."
 
 ### Related Demos
 
@@ -810,7 +852,8 @@ You've delivered this demo successfully if attendees:
 
 ## Appendix: Detailed Conversation Flow
 
-For reference, here's the complete 5-phase conversation structure (see `examples/copilot-sbom-conversation.md` for full transcript):
+For reference, here's the complete 5-phase conversation structure (see `examples/copilot-sbom-conversation.md` for
+full transcript):
 
 ### Phase 1: Problem Definition (10 min)
 

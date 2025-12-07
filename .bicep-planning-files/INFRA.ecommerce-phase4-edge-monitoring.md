@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This implementation plan covers edge services and monitoring for the PCI-DSS compliant e-commerce platform. Phase 4 deploys Azure Front Door with WAF, Static Web App for the React SPA, Application Insights, and Log Analytics. **Depends on Phase 1-3.** Region: `swedencentral`.
+This implementation plan covers edge services and monitoring for the PCI-DSS compliant e-commerce platform.
+Phase 4 deploys Azure Front Door with WAF, Static Web App for the React SPA, Application Insights, and Log Analytics.
+**Depends on Phase 1-3.** Region: `swedencentral`.
 
 ---
 

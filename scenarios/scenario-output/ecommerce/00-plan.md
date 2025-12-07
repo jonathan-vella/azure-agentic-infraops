@@ -44,7 +44,11 @@ Please provide a detailed implementation plan including:
 
 # Multi-Tier E-Commerce Platform on Azure
 
-Deploy a PCI-DSS compliant, high-availability e-commerce platform using Azure PaaS services in `swedencentral`. The architecture uses App Service for the .NET 8 API, Azure Static Web Apps for the React SPA, Azure SQL with Cognitive Search for sub-100ms catalog queries, Redis for session caching, and Service Bus with Functions for async order processing—all secured via private endpoints, Key Vault, and Azure Front Door with WAF.
+Deploy a PCI-DSS compliant, high-availability e-commerce platform using Azure PaaS services in `swedencentral`.
+The architecture uses App Service for the .NET 8 API, Azure Static Web Apps for the React SPA,
+Azure SQL with Cognitive Search for sub-100ms catalog queries, Redis for session caching,
+and Service Bus with Functions for async order processing—all secured via private endpoints, Key Vault,
+and Azure Front Door with WAF.
 
 ---
 
@@ -61,28 +65,45 @@ Deploy a PCI-DSS compliant, high-availability e-commerce platform using Azure Pa
 
 ## Recommended Azure Services
 
-| Component              | Service                              | SKU           | Rationale                                       |
-| ---------------------- | ------------------------------------ | ------------- | ----------------------------------------------- |
-| React SPA Frontend     | Azure Static Web Apps                | Standard      | Built-in CDN, global edge, no server management |
-| .NET 8 REST API        | Azure App Service                    | P1v4          | Zone redundancy for 99.9% SLA, PaaS familiarity |
-| Product Catalog DB     | Azure SQL Database                   | S3 (100 DTU)  | Relational data, Azure AD-only auth             |
-| Full-Text Search       | Azure Cognitive Search               | Standard S1   | Sub-100ms queries, faceted navigation           |
-| Session Caching        | Azure Cache for Redis                | Standard C2   | 10K concurrent sessions, low latency            |
-| Async Order Processing | Service Bus + Azure Functions        | Premium / EP1 | Reliable queuing, event-driven scaling          |
-| Secrets Management     | Azure Key Vault                      | Standard      | PCI-DSS, managed identity access                |
-| CDN + WAF              | Azure Front Door                     | Standard      | Global CDN, integrated WAF for PCI-DSS          |
-| Monitoring             | Application Insights + Log Analytics | Pay-as-you-go | End-to-end tracing, compliance logging          |
+| Component              | Service                              | SKU           | Rationale
+|
+| ---------------------- | ------------------------------------ | ------------- |
+----------------------------------------------- |
+| React SPA Frontend     | Azure Static Web Apps                | Standard      | Built-in CDN, global edge,
+no server management |
+| .NET 8 REST API        | Azure App Service                    | P1v4          | Zone redundancy for 99.9% SLA,
+PaaS familiarity |
+| Product Catalog DB     | Azure SQL Database                   | S3 (100 DTU)  | Relational data,
+Azure AD-only auth             |
+| Full-Text Search       | Azure Cognitive Search               | Standard S1   | Sub-100ms queries,
+faceted navigation           |
+| Session Caching        | Azure Cache for Redis                | Standard C2   | 10K concurrent sessions,
+low latency            |
+| Async Order Processing | Service Bus + Azure Functions        | Premium / EP1 | Reliable queuing,
+event-driven scaling          |
+| Secrets Management     | Azure Key Vault                      | Standard      | PCI-DSS,
+managed identity access                |
+| CDN + WAF              | Azure Front Door                     | Standard      | Global CDN,
+integrated WAF for PCI-DSS          |
+| Monitoring             | Application Insights + Log Analytics | Pay-as-you-go | End-to-end tracing,
+compliance logging          |
 
 ---
 
 ## Network Architecture
 
-| Tier        | Subnet                                | Resources                                   | NSG Rules                      |
-| ----------- | ------------------------------------- | ------------------------------------------- | ------------------------------ |
-| Edge        | —                                     | Front Door (global)                         | WAF policies, geo-filtering    |
-| Web         | `snet-web-prod` (10.0.1.0/24)         | App Service (VNet integrated)               | Allow 443 from Front Door only |
-| Data        | `snet-data-prod` (10.0.2.0/24)        | SQL, Redis, Search (private endpoints)      | Allow from web subnet only     |
-| Integration | `snet-integration-prod` (10.0.3.0/24) | Functions (VNet integrated), Service Bus PE | Allow from web/data subnets    |
+| Tier        | Subnet                                | Resources                                   | NSG Rules
+|
+| ----------- | ------------------------------------- | ------------------------------------------- |
+------------------------------ |
+| Edge        | —                                     | Front Door (global)                         | WAF policies,
+geo-filtering    |
+| Web         | `snet-web-prod` (10.0.1.0/24)         | App Service (VNet integrated)               | Allow 443 from
+Front Door only |
+| Data        | `snet-data-prod` (10.0.2.0/24)        | SQL, Redis,
+Search (private endpoints)      | Allow from web subnet only     |
+| Integration | `snet-integration-prod` (10.0.3.0/24) | Functions (VNet integrated),
+Service Bus PE | Allow from web/data subnets    |
 
 ---
 

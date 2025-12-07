@@ -62,6 +62,7 @@ supporting revenue generation and customer retention goals.
 
 ### Cost Distribution
 
+<!-- markdownlint-disable MD013 -->
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': {'pie1': '#0078D4', 'pie2': '#107C10', 'pie3': '#5C2D91', 'pie4': '#D83B01', 'pie5': '#FFB900'}}}%%
 pie showData
@@ -72,6 +73,7 @@ pie showData
     "📨 Messaging" : 200
     "🔐 Security/Mgmt" : 18
 ```
+<!-- markdownlint-enable MD013 -->
 
 ### Key Design Decisions Affecting Cost
 
@@ -269,7 +271,8 @@ Cost Distribution:
 ## 📊 Pricing Data Accuracy
 
 > **📊 Data Source**: All prices queried in real-time from the
-> [Azure Retail Prices API](https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices).
+> [Azure Retail Prices
+> API](https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices).
 >
 > ✅ **Included**: Retail list prices (PAYG), Savings Plan pricing, Spot pricing
 >

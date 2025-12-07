@@ -2,7 +2,8 @@
 
 ## Overview
 
-This directory contains User Acceptance Testing (UAT) scripts for the SAIF API v2 deployment. UAT validates that the application meets business requirements and functions correctly from an end-user perspective.
+This directory contains User Acceptance Testing (UAT) scripts for the SAIF API v2 deployment.
+UAT validates that the application meets business requirements and functions correctly from an end-user perspective.
 
 ## Test Coverage
 

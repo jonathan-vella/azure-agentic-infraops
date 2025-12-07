@@ -2,7 +2,9 @@
 
 ## System Overview
 
-The HealthTech Patient Portal is a modern, cloud-native application built for scalability, security, and compliance with healthcare regulations (HIPAA, HITRUST). This document describes the architecture and component inventory that will be captured in the SBOM.
+The HealthTech Patient Portal is a modern, cloud-native application built for scalability, security,
+and compliance with healthcare regulations (HIPAA, HITRUST).
+This document describes the architecture and component inventory that will be captured in the SBOM.
 
 ## High-Level Architecture
 

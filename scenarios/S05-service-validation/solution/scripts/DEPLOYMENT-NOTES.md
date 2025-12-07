@@ -2,7 +2,8 @@
 
 ## Overview
 
-The `deploy.ps1` script has been customized from the SAIF reference implementation to align with S05 Service Validation scenario naming conventions and workflow.
+The `deploy.ps1` script has been customized from the SAIF reference implementation to
+align with S05 Service Validation scenario naming conventions and workflow.
 
 ## Key Customizations
 
@@ -210,4 +211,5 @@ az group delete --name rg-s05-validation-swc01 --yes --no-wait
 
 ---
 
-**Note:** This script is based on SAIF Deploy-SAIF-v2.ps1 and has been customized for the S05 Service Validation scenario. For SAIF-specific deployment, refer to the original SAIF repository.
+**Note:** This script is based on SAIF Deploy-SAIF-v2.ps1 and has been customized for
+the S05 Service Validation scenario. For SAIF-specific deployment, refer to the original SAIF repository.

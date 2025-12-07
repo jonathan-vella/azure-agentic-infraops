@@ -378,6 +378,7 @@ Results:
 
 ### Validation Commands Cheat Sheet
 
+<!-- markdownlint-disable MD013 -->
 ```bash
 # Check app status
 az webapp list -g rg-s05-validation-swc01 --query "[].{name:name, state:state}" -o table
@@ -398,6 +399,7 @@ az webapp log tail -g rg-s05-validation-swc01 -n app-saifv2-api-ss4xs2
 # Check resource health
 az resource list -g rg-s05-validation-swc01 --query "[].{name:name, type:type, status:properties.provisioningState}" -o table
 ```
+<!-- markdownlint-enable MD013 -->
 
 ---
 

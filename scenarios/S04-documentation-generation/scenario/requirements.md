@@ -19,7 +19,8 @@
 
 ### The Documentation Challenge
 
-**Situation**: Migration complete, infrastructure deployed, applications running successfully in Azure. Customer now expects comprehensive documentation as part of project deliverable.
+**Situation**: Migration complete, infrastructure deployed, applications running successfully in Azure.
+Customer now expects comprehensive documentation as part of project deliverable.
 
 **Customer Expectations**:
 
@@ -30,7 +31,8 @@
 5. Disaster recovery procedures
 6. Cost management and optimization guidance
 
-**Problem**: TechCorp sold migration services, not documentation services. Documentation wasn't scoped or budgeted. But customer (rightfully) expects professional handoff documentation.
+**Problem**: TechCorp sold migration services, not documentation services. Documentation wasn't scoped or budgeted.
+But customer (rightfully) expects professional handoff documentation.
 
 ### Business Impact
 
@@ -337,4 +339,5 @@
 
 ---
 
-*This requirements document demonstrates real-world documentation challenges faced by MSPs and SIs delivering Azure projects.*
+*This requirements document demonstrates real-world documentation challenges faced by MSPs and
+SIs delivering Azure projects.*

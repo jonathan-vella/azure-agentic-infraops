@@ -19,7 +19,8 @@
 
 ### Audit Objective
 
-Demonstrate compliance with **Azure Infrastructure Specialization - Module B Control 4.1: Service Validation and Testing** for the SAIF API v2 deployment to Azure App Services.
+Demonstrate compliance with **Azure Infrastructure Specialization - Module B Control 4.1: Service Validation and
+Testing** for the SAIF API v2 deployment to Azure App Services.
 
 ### Scope
 
@@ -49,7 +50,8 @@ Demonstrate compliance with **Azure Infrastructure Specialization - Module B Con
 
 ### Module B Control 4.1: Service Validation and Testing
 
-> *Partners must demonstrate systematic service validation and testing practices including load testing, API validation, performance baselines, and documented evidence of test execution.*
+> *Partners must demonstrate systematic service validation and testing practices including load testing,
+> API validation, performance baselines, and documented evidence of test execution.*
 
 #### 4.1.1 Load Testing
 
@@ -143,7 +145,8 @@ Demonstrate compliance with **Azure Infrastructure Specialization - Module B Con
 
 #### 4.1.4 Database Connectivity
 
-**Requirement**: Validate database connectivity using secure authentication (managed identity, no hardcoded credentials).
+**Requirement**: Validate database connectivity using secure authentication (managed identity,
+no hardcoded credentials).
 
 **Evidence**:
 
@@ -577,7 +580,9 @@ Complete list of evidence files included in this audit package:
 
 ### D. References
 
-- [Azure Infrastructure Specialization](https://partner.microsoft.com/en-us/training/assets/collection/azure-infrastructure-and-database-migration-specialization)
+- [Azure Infrastructure
+Specialization](https://partner.microsoft.com/en-us/training/assets/collection/azure-infrastructure-and-database-migrati
+on-specialization)
 - [Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/)
 - [Azure Security Benchmark](https://learn.microsoft.com/security/benchmark/azure/)
 - [Module B Control 4.1 Requirements](https://partner.microsoft.com/)
@@ -626,4 +631,5 @@ I approve this audit evidence package for submission to certification authoritie
 
 ---
 
-*This audit evidence package demonstrates compliance with Azure Infrastructure Specialization - Module B Control 4.1: Service Validation and Testing. All evidence is available for review and verification.*
+*This audit evidence package demonstrates compliance with Azure Infrastructure Specialization - Module B Control 4.1:
+Service Validation and Testing. All evidence is available for review and verification.*

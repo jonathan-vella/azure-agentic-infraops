@@ -257,7 +257,8 @@
 
 ### Technical Approval
 
-I confirm that the deployment meets all technical requirements, security standards, and performance baselines as documented above.
+I confirm that the deployment meets all technical requirements, security standards,
+and performance baselines as documented above.
 
 **Name**: ________________________________  
 **Title**: DevOps Engineer / Technical Lead  
@@ -268,7 +269,8 @@ I confirm that the deployment meets all technical requirements, security standar
 
 ### Security Approval
 
-I confirm that the deployment meets all security requirements, including managed identity configuration, Entra ID authentication, and compliance with Azure policies.
+I confirm that the deployment meets all security requirements, including managed identity configuration,
+Entra ID authentication, and compliance with Azure policies.
 
 **Name**: ________________________________  
 **Title**: Security Engineer / CISO  
@@ -279,7 +281,8 @@ I confirm that the deployment meets all security requirements, including managed
 
 ### Business Approval
 
-I approve this deployment for [Production / Staging / Development] environment and confirm it meets business requirements.
+I approve this deployment for [Production / Staging / Development] environment and
+confirm it meets business requirements.
 
 **Name**: ________________________________  
 **Title**: Project Manager / Product Owner  
@@ -346,4 +349,5 @@ requests
 
 ---
 
-*This document serves as formal approval for deployment to the specified environment. All parties should retain a signed copy for audit and compliance purposes.*
+*This document serves as formal approval for deployment to the specified environment.
+All parties should retain a signed copy for audit and compliance purposes.*

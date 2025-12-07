@@ -13,7 +13,8 @@ This folder contains Architecture Decision Records documenting key design choice
 
 ## About ADRs
 
-ADRs capture important architectural decisions made along with their context and consequences. They provide a historical record of why certain design choices were made.
+ADRs capture important architectural decisions made along with their context and consequences.
+They provide a historical record of why certain design choices were made.
 
 ## Creating New ADRs
 

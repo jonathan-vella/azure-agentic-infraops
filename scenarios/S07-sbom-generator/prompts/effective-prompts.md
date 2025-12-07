@@ -1,6 +1,7 @@
 # Effective Prompts for SBOM Discovery with GitHub Copilot
 
-This guide provides conversation-based prompts for learning SBOM creation with GitHub Copilot as your expert partner. These prompts emphasize **understanding concepts** while building production deliverables.
+This guide provides conversation-based prompts for learning SBOM creation with GitHub Copilot as your expert partner.
+These prompts emphasize **understanding concepts** while building production deliverables.
 
 ---
 
@@ -450,7 +451,8 @@ You know you've used prompts effectively when:
 
 ## Legacy: Script Generation Prompts (Automation Approach)
 
-**Note**: These prompts are for the **OLD approach** (building PowerShell automation scripts). Use these only **after** you understand SBOMs through conversation.
+**Note**: These prompts are for the **OLD approach** (building PowerShell automation scripts).
+Use these only **after** you understand SBOMs through conversation.
 
 For script automation prompts, see `effective-prompts-old.md` or the `solution/` folder README.
 
@@ -464,4 +466,5 @@ For script automation prompts, see `effective-prompts-old.md` or the `solution/`
 
 ---
 
-**Philosophy**: Learn first, automate later. Understanding SBOMs makes you effective; automation makes you efficient. Both matter, but knowledge is the foundation.
+**Philosophy**: Learn first, automate later. Understanding SBOMs makes you effective; automation makes you efficient.
+Both matter, but knowledge is the foundation.

@@ -1,6 +1,7 @@
 # CI/CD Integration Guide - S05 Service Validation
 
-This guide demonstrates how to integrate the `quick-load-test.sh` script into your CI/CD pipelines for automated service validation.
+This guide demonstrates how to integrate the `quick-load-test.sh` script into your CI/CD pipelines for
+automated service validation.
 
 ---
 

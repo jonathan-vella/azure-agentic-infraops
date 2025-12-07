@@ -331,4 +331,5 @@ See "Troubleshooting Challenges" section above for detailed breakdown.
 
 ---
 
-**Scenario Mission**: Create emotional connection with on-call stress while demonstrating Copilot's practical value in high-pressure, revenue-impacting incidents.
+**Scenario Mission**: Create emotional connection with on-call stress while demonstrating Copilot's practical value in
+high-pressure, revenue-impacting incidents.

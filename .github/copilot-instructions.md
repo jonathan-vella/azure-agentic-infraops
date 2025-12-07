@@ -9,7 +9,8 @@ This file provides context and guidance for GitHub Copilot when assisting with t
 **Essential Knowledge for Immediate Productivity:**
 
 1. **Default Region**: Always use `swedencentral` (alternative: `germanywestcentral` when encountering quota issues)
-2. **Unique Resource Names**: Generate `var uniqueSuffix = uniqueString(resourceGroup().id)` in main.bicep, pass to ALL modules
+2. **Unique Resource Names**: Generate `var uniqueSuffix = uniqueString(resourceGroup().id)` in main.bicep,
+pass to ALL modules
 3. **Name Length Limits**: Key Vault ≤24 chars, Storage ≤24 chars (no hyphens), SQL ≤63 chars
 4. **Azure SQL Auth Policy**: Azure AD-only auth for SQL Server
 5. **Zone Redundancy**: App Service Plans need P1v4 SKU (not S1/P1v2) for zone redundancy
@@ -53,7 +54,8 @@ This file provides context and guidance for GitHub Copilot when assisting with t
 - **Switzerland**: Use `switzerlandnorth` for Swiss banking/healthcare regulations
 - **UK**: Use `uksouth` or `ukwest` for UK GDPR requirements
 - **France**: Use `francecentral` for French data sovereignty
-- **Specific Regulations**: Check compliance requirements at [Azure Compliance](https://learn.microsoft.com/azure/compliance/)
+- **Specific Regulations**: Check compliance requirements at [Azure
+Compliance](https://learn.microsoft.com/azure/compliance/)
 
 ### Service Availability
 
@@ -103,12 +105,18 @@ graph LR
     ADR[adr-generator] -.->|decisions| A
 ```
 
-| Step | Agent                       | Purpose                                             | Optional Integrations            |
-| ---- | --------------------------- | --------------------------------------------------- | -------------------------------- |
-| 1    | `@plan` (Built-in)          | Create implementation plans with cost estimates     | -                                |
-| 2    | `azure-principal-architect` | Azure Well-Architected Framework guidance (NO CODE) | 💰 Pricing MCP, 📊 Diagrams, ADR |
-| 3    | `bicep-plan`                | Infrastructure planning with AVM modules            | 💰 Pricing MCP                   |
-| 4    | `bicep-implement`           | Bicep code generation                               | ADR                              |
+| Step | Agent                       | Purpose                                             | Optional Integrations
+|
+| ---- | --------------------------- | --------------------------------------------------- |
+-------------------------------- |
+| 1    | `@plan` (Built-in)          | Create implementation plans with cost estimates     | -
+|
+| 2    | `azure-principal-architect` | Azure Well-Architected Framework guidance (NO CODE) | 💰 Pricing MCP, 📊 Diagrams,
+ADR |
+| 3    | `bicep-plan`                | Infrastructure planning with AVM modules            | 💰 Pricing MCP
+|
+| 4    | `bicep-implement`           | Bicep code generation                               | ADR
+|
 
 **Optional Integrations (during Step 2: Architecture):**
 
@@ -488,7 +496,8 @@ to support downstream diagnostic settings.
 5. **WAF policy naming**: Names must start with letter, alphanumeric only (NO hyphens) -
    use `wafpolicy{project}{env}001`
 6. **Storage Account allowSharedKeyAccess**: Many orgs block shared key access - use identity-based storage connections
-7. **SQL Server diagnostic settings**: Don't use `SQLSecurityAuditEvents` category - use `auditingSettings` resource instead
+7. **SQL Server diagnostic settings**: Don't use `SQLSecurityAuditEvents` category - use `auditingSettings` resource
+instead
 
 **Implementation:**
 
@@ -746,7 +755,8 @@ code azure-agentic-infraops
 az --version && bicep --version && pwsh --version
 ```
 
-**MCP Server Setup:** The dev container automatically sets up the Azure Pricing MCP server via `post-create.sh`. To verify:
+**MCP Server Setup:** The dev container automatically sets up the Azure Pricing MCP server via `post-create.sh`.
+To verify:
 
 1. Open Command Palette (`Ctrl+Shift+P`)
 2. Run: **MCP: List Servers**
@@ -789,8 +799,10 @@ npm run lint:md
 
 - [Azure Bicep Documentation](https://learn.microsoft.com/azure/azure-resource-manager/bicep/)
 - [Terraform Azure Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
-- [PowerShell Best Practices](https://learn.microsoft.com/powershell/scripting/developer/cmdlet/cmdlet-development-guidelines)
-- [Azure Naming Conventions](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging)
+- [PowerShell Best
+Practices](https://learn.microsoft.com/powershell/scripting/developer/cmdlet/cmdlet-development-guidelines)
+- [Azure Naming
+Conventions](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging)
 - [GitHub Copilot for Azure](https://learn.microsoft.com/azure/developer/github/github-copilot-azure)
 - [GitHub Copilot Best Practices](https://docs.github.com/en/copilot/tutorials/coding-agent/get-the-best-results)
 - [VS Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers)

@@ -13,7 +13,9 @@
 
 ## Business Context
 
-Contoso Retail is expanding their online presence to serve European customers. They need a scalable, secure e-commerce platform that can handle peak traffic during sales events while maintaining PCI-DSS compliance for payment card processing.
+Contoso Retail is expanding their online presence to serve European customers.
+They need a scalable, secure e-commerce platform that can handle peak traffic during sales events while maintaining
+PCI-DSS compliance for payment card processing.
 
 ## Key Requirements
 

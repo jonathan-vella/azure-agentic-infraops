@@ -1,6 +1,7 @@
 # Step 2: Azure Principal Architect
 
-> **Agent Used:** `azure-principal-architect` > **Purpose:** Azure Well-Architected Framework assessment and architecture validation
+> **Agent Used:** `azure-principal-architect` > **Purpose:** Azure Well-Architected Framework assessment and
+> architecture validation
 
 ---
 

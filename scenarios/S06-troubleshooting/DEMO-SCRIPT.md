@@ -83,11 +83,14 @@ By the end of this demo, participants will understand:
 
 #### Opening Hook (60 seconds)
 
-> "It's 2 AM. You're on-call. Your phone buzzes: **'E-commerce checkout failing - 15% error rate - revenue impact $22K per hour.'** And oh, by the way, Black Friday is in 3 days."
+> "It's 2 AM. You're on-call. Your phone buzzes: **'E-commerce checkout failing - 15% error rate - revenue impact $22K
+> per hour.'** And oh, by the way, Black Friday is in 3 days."
 >
-> "This is every IT Pro's nightmare. Typically, you're looking at 30 hours of troubleshooting: documentation searches, trial-and-error fixes, vendor support tickets."
+> "This is every IT Pro's nightmare. Typically, you're looking at 30 hours of troubleshooting: documentation searches,
+> trial-and-error fixes, vendor support tickets."
 >
-> "Today, I'll show you a different approach: **having a conversation with GitHub Copilot** to troubleshoot together. Same incident, 5 hours instead of 30 - that's **83% faster**."
+> "Today, I'll show you a different approach: **having a conversation with GitHub Copilot** to troubleshoot together.
+> Same incident, 5 hours instead of 30 - that's **83% faster**."
 
 #### Present the Scenario (2 minutes)
 
@@ -102,7 +105,8 @@ By the end of this demo, participants will understand:
 - Team stress: On-call engineer needs fast resolution
 
 **Quick scroll through document**:
-> "The incident started 2 hours ago. 15% of checkout transactions failing. Users are angry, management is watching. Every minute counts."
+> "The incident started 2 hours ago. 15% of checkout transactions failing. Users are angry, management is watching.
+> Every minute counts."
 
 #### Manual Approach Pain Points (2 minutes)
 
@@ -131,7 +135,8 @@ By the end of this demo, participants will understand:
    - "Next person faces same problem in 3 months"
 
 **Pause for Effect**:
-> "30 hours total. 3-4 work days. Brutal. **But what if you had a senior SRE sitting next to you, guiding you through it?**"
+> "30 hours total. 3-4 work days. Brutal. **But what if you had a senior SRE sitting next to you,
+> guiding you through it?**"
 
 **Transition**:
 > "That's what GitHub Copilot does. Let me show you."
@@ -279,6 +284,7 @@ exceptions
 
 **Action**: Paste results into Copilot Chat
 
+<!-- markdownlint-disable MD013 -->
 ```
 I ran the query and got these results:
 
@@ -289,6 +295,7 @@ I ran the query and got these results:
 
 What does this tell us?
 ```
+<!-- markdownlint-enable MD013 -->
 
 **Narrate**:
 > "I'm sharing the **actual data** with Copilot. It can't see my screen, so I paste the results."
@@ -562,16 +569,20 @@ Can you generate a post-mortem report for this incident?
 **Common Questions**:
 
 **Q**: "What if Copilot gives wrong queries?"
-**A**: "You validate everything. Run the query, check if results make sense. Copilot is a partner, not autopilot. You're still the expert."
+**A**: "You validate everything. Run the query, check if results make sense. Copilot is a partner, not autopilot.
+You're still the expert."
 
 **Q**: "Does this work for services besides App Service and SQL?"
-**A**: "Yes! Same conversation pattern works for AKS, Functions, Storage, anything with Application Insights or Log Analytics."
+**A**: "Yes! Same conversation pattern works for AKS, Functions, Storage,
+anything with Application Insights or Log Analytics."
 
 **Q**: "What if I don't have Application Insights?"
-**A**: "Copilot can help with any log source - Azure Monitor, custom logs, even on-premises logs. The conversation pattern is the same."
+**A**: "Copilot can help with any log source - Azure Monitor, custom logs, even on-premises logs.
+The conversation pattern is the same."
 
 **Q**: "How do I get started?"
-**A**: "Just open Copilot Chat and describe your next incident. Start with 'I have an issue with [service]. Symptoms are [X]. Help me troubleshoot.' The AI will guide you."
+**A**: "Just open Copilot Chat and describe your next incident. Start with 'I have an issue with [service].
+Symptoms are [X]. Help me troubleshoot.' The AI will guide you."
 
 ---
 

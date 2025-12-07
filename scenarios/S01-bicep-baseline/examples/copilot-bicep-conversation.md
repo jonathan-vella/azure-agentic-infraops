@@ -1067,6 +1067,7 @@ Every resource shows who/what/when/where it was deployed.
 
 ### Final network.bicep
 
+<!-- markdownlint-disable MD013 -->
 ```bicep
 // Network Infrastructure Module
 // Creates VNet, Subnets, and NSGs for three-tier architecture
@@ -1147,6 +1148,7 @@ output webSubnetId string = virtualNetwork.properties.subnets[0].id
 output appSubnetId string = virtualNetwork.properties.subnets[1].id
 output dataSubnetId string = virtualNetwork.properties.subnets[2].id
 ```
+<!-- markdownlint-enable MD013 -->
 
 ### Final storage.bicep
 

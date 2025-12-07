@@ -4,12 +4,18 @@ goal: HIPAA-Compliant Patient Portal Infrastructure for Contoso Healthcare
 
 # Introduction
 
-This plan provides a comprehensive implementation guide for deploying a HIPAA-compliant Azure infrastructure supporting Contoso Healthcare's patient portal. The architecture uses Azure App Service (Standard S1) for the web tier, Azure SQL Database (Standard S2) for data persistence, Azure Key Vault for secrets management, Application Insights for monitoring, and private endpoints for secure network isolation. The design prioritizes security, reliability, and cost-effectiveness while meeting stringent healthcare compliance requirements.
+This plan provides a comprehensive implementation guide for deploying a HIPAA-compliant Azure infrastructure supporting
+Contoso Healthcare's patient portal. The architecture uses Azure App Service (Standard S1) for the web tier,
+Azure SQL Database (Standard S2) for data persistence, Azure Key Vault for secrets management,
+Application Insights for monitoring, and private endpoints for secure network isolation.
+The design prioritizes security, reliability, and cost-effectiveness while meeting stringent healthcare compliance
+requirements.
 
 ## Resources
 
 ### resourceGroup
 
+<!-- markdownlint-disable MD013 -->
 ```yaml
 name: rg-contoso-patient-portal
 kind: Raw
@@ -50,9 +56,11 @@ estimatedCost:
 references:
   docs: https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
 ```
+<!-- markdownlint-enable MD013 -->
 
 ### virtualNetwork
 
+<!-- markdownlint-disable MD013 -->
 ```yaml
 name: vnet-contoso-patient-portal
 kind: AVM
@@ -108,9 +116,11 @@ references:
   docs: https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview
   avm: https://github.com/Azure/bicep-registry-modules/tree/avm/res/network/virtual-network/0.7.1
 ```
+<!-- markdownlint-enable MD013 -->
 
 ### networkSecurityGroupWeb
 
+<!-- markdownlint-disable MD013 -->
 ```yaml
 name: nsg-web-prod
 kind: AVM
@@ -154,9 +164,11 @@ references:
   docs: https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview
   avm: https://github.com/Azure/bicep-registry-modules/tree/avm/res/network/network-security-group/0.5.2
 ```
+<!-- markdownlint-enable MD013 -->
 
 ### networkSecurityGroupData
 
+<!-- markdownlint-disable MD013 -->
 ```yaml
 name: nsg-data-prod
 kind: AVM
@@ -197,6 +209,7 @@ references:
   docs: https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview
   avm: https://github.com/Azure/bicep-registry-modules/tree/avm/res/network/network-security-group/0.5.2
 ```
+<!-- markdownlint-enable MD013 -->
 
 ### appServicePlan
 
@@ -529,6 +542,7 @@ references:
 
 ### privateEndpointKeyVault
 
+<!-- markdownlint-disable MD013 -->
 ```yaml
 name: pe-keyvault-prod
 kind: AVM
@@ -587,6 +601,7 @@ references:
   docs: https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview
   avm: https://github.com/Azure/bicep-registry-modules/tree/avm/res/network/private-endpoint/0.11.1
 ```
+<!-- markdownlint-enable MD013 -->
 
 ### privateEndpointSqlServer
 
@@ -866,13 +881,16 @@ graph TD
 
 # Implementation Plan
 
-This implementation follows a phased approach to ensure each foundational component is deployed and validated before dependent resources are created. The plan prioritizes security configurations and ensures HIPAA compliance requirements are met at each stage.
+This implementation follows a phased approach to ensure each foundational component is deployed and
+validated before dependent resources are created. The plan prioritizes security configurations and
+ensures HIPAA compliance requirements are met at each stage.
 
 ## Phase 1 — Foundation & Networking
 
 **Objective:** Establish core networking infrastructure with security controls and network isolation
 
-**IMPLEMENT-GOAL-001:** Deploy resource group and virtual network with segmented subnets for web, data, and private endpoints
+**IMPLEMENT-GOAL-001:** Deploy resource group and virtual network with segmented subnets for web, data,
+and private endpoints
 
 | Task | Description | Action |
 |------|-------------|--------|
@@ -880,7 +898,8 @@ This implementation follows a phased approach to ensure each foundational compon
 | TASK-002 | Deploy virtual network | Create VNet with 10.0.0.0/16 address space |
 | TASK-003 | Configure web tier subnet | Deploy snet-web-prod (10.0.1.0/24) for App Service VNet integration |
 | TASK-004 | Configure data tier subnet | Deploy snet-data-prod (10.0.2.0/24) for database private endpoint |
-| TASK-005 | Configure private endpoint subnet | Deploy snet-privateendpoints-prod (10.0.3.0/24) with private endpoint policies disabled |
+| TASK-005 | Configure private endpoint subnet | Deploy snet-privateendpoints-prod (10.0.3.0/24) with
+private endpoint policies disabled |
 | TASK-006 | Deploy web tier NSG | Create NSG with HTTPS allow rule (priority 100) and deny-all rule (priority 4096) |
 | TASK-007 | Deploy data tier NSG | Create NSG with web-to-SQL allow rule and deny-all default |
 | TASK-008 | Associate NSGs to subnets | Link NSGs to respective subnets for traffic filtering |
@@ -895,7 +914,8 @@ This implementation follows a phased approach to ensure each foundational compon
 |------|-------------|--------|
 | TASK-001 | Deploy App Service Plan | Create Standard S1 plan with 2 instances and zone redundancy |
 | TASK-002 | Deploy SQL Server | Create logical SQL Server with TLS 1.2 minimum and public access disabled |
-| TASK-003 | Configure SQL admin credentials | Store SQL admin password in deployment parameter (to be moved to Key Vault) |
+| TASK-003 | Configure SQL admin credentials | Store SQL admin password in deployment parameter (to be moved to
+Key Vault) |
 | TASK-004 | Deploy Key Vault | Create Key Vault with soft delete (90 days), purge protection, and RBAC enabled |
 | TASK-005 | Configure Key Vault network | Set Key Vault to deny public access and allow Azure services bypass |
 | TASK-006 | Deploy Log Analytics Workspace | Create workspace with pay-as-you-go pricing and 90-day retention |
@@ -906,7 +926,8 @@ This implementation follows a phased approach to ensure each foundational compon
 
 **Objective:** Implement private endpoints, deploy application, and configure secure database access
 
-**IMPLEMENT-GOAL-003:** Deploy SQL Database, establish private connectivity, and configure App Service with managed identity
+**IMPLEMENT-GOAL-003:** Deploy SQL Database, establish private connectivity,
+and configure App Service with managed identity
 
 | Task | Description | Action |
 |------|-------------|--------|
@@ -931,7 +952,8 @@ This implementation follows a phased approach to ensure each foundational compon
 | TASK-001 | Assign Key Vault RBAC role | Grant 'Key Vault Secrets User' role to App Service managed identity |
 | TASK-002 | Store SQL connection string | Add database connection string to Key Vault as secret |
 | TASK-003 | Store Application Insights key | Add instrumentation key to Key Vault |
-| TASK-004 | Configure App Service settings | Add Key Vault references for connection strings using @Microsoft.KeyVault syntax |
+| TASK-004 | Configure App Service settings | Add Key Vault references for connection strings using @Microsoft.KeyVault
+syntax |
 | TASK-005 | Configure diagnostic settings | Enable diagnostic logs for App Service to Log Analytics |
 | TASK-006 | Configure SQL diagnostic settings | Enable database logs and metrics to Log Analytics |
 | TASK-007 | Configure Key Vault logging | Enable audit logs to Log Analytics for compliance |
@@ -945,24 +967,38 @@ This implementation follows a phased approach to ensure each foundational compon
 
 | Phase | Validation Method | Success Criteria | Tools |
 |-------|-------------------|------------------|-------|
-| Pre-deployment | Bicep build & lint | No errors, warnings reviewed and addressed | `bicep build`, `bicep lint`, `az bicep build` |
+| Pre-deployment | Bicep build & lint | No errors, warnings reviewed and addressed | `bicep build`, `bicep lint`,
+`az bicep build` |
 | Pre-deployment | What-if analysis | Expected changes match implementation plan | `az deployment group what-if` |
-| Phase 1 | Network connectivity | VNet and subnets created, NSGs applied correctly | Azure Portal, `az network vnet show`, `az network nsg show` |
-| Phase 1 | NSG rule validation | HTTPS allowed to web tier, SQL port 1433 allowed from web to data | `az network nsg rule list`, NSG effective rules in portal |
-| Phase 2 | App Service Plan capacity | 2 instances provisioned, zone redundancy enabled | `az appservice plan show`, portal metrics |
-| Phase 2 | SQL Server configuration | TLS 1.2 enforced, public access disabled | `az sql server show`, server properties |
-| Phase 2 | Key Vault security | Soft delete enabled, purge protection on, RBAC enabled | `az keyvault show`, portal security settings |
-| Phase 2 | Log Analytics workspace | Workspace operational, daily cap configured | `az monitor log-analytics workspace show`, usage metrics |
+| Phase 1 | Network connectivity | VNet and subnets created, NSGs applied correctly | Azure Portal,
+`az network vnet show`, `az network nsg show` |
+| Phase 1 | NSG rule validation | HTTPS allowed to web tier, SQL port 1433 allowed from web to
+data | `az network nsg rule list`, NSG effective rules in portal |
+| Phase 2 | App Service Plan capacity | 2 instances provisioned, zone redundancy enabled | `az appservice plan show`,
+portal metrics |
+| Phase 2 | SQL Server configuration | TLS 1.2 enforced, public access disabled | `az sql server show`,
+server properties |
+| Phase 2 | Key Vault security | Soft delete enabled, purge protection on, RBAC enabled | `az keyvault show`,
+portal security settings |
+| Phase 2 | Log Analytics workspace | Workspace operational, daily cap configured | `az monitor log-analytics workspace
+show`, usage metrics |
 | Phase 3 | SQL Database encryption | TDE enabled, backups encrypted | `az sql db show`, encryption status |
-| Phase 3 | Private endpoint connectivity | Private IPs assigned, DNS resolution working | `nslookup <keyvault>.vault.azure.net`, `nslookup <sqlserver>.database.windows.net` |
-| Phase 3 | App Service managed identity | System-assigned identity created, principal ID available | `az webapp identity show` |
+| Phase 3 | Private endpoint connectivity | Private IPs assigned,
+DNS resolution working | `nslookup <keyvault>.vault.azure.net`, `nslookup <sqlserver>.database.windows.net` |
+| Phase 3 | App Service managed identity | System-assigned identity created,
+principal ID available | `az webapp identity show` |
 | Phase 3 | VNet integration | App Service integrated with web subnet | `az webapp vnet-integration list` |
 | Phase 4 | RBAC assignments | App Service identity has Key Vault Secrets User role | `az role assignment list` |
-| Phase 4 | Key Vault secret retrieval | App Service can read secrets via managed identity | App Service configuration test, application logs |
-| Phase 4 | Database connectivity | App Service can connect to SQL via private endpoint | Application test, SQL query execution, connection logs |
-| Phase 4 | Application Insights telemetry | Telemetry flowing to workspace, live metrics visible | Application Insights portal, Log Analytics queries |
-| Post-deployment | Cost validation | Actual costs align with estimates ($331-346/month) | Azure Cost Management, billing portal |
-| Post-deployment | Compliance audit | HIPAA controls verified (encryption, logging, access) | Azure Policy compliance, Security Center |
+| Phase 4 | Key Vault secret retrieval | App Service can read secrets via managed identity | App Service configuration
+test, application logs |
+| Phase 4 | Database connectivity | App Service can connect to SQL via private endpoint | Application test,
+SQL query execution, connection logs |
+| Phase 4 | Application Insights telemetry | Telemetry flowing to workspace,
+live metrics visible | Application Insights portal, Log Analytics queries |
+| Post-deployment | Cost validation | Actual costs align with estimates ($331-346/month) | Azure Cost Management,
+billing portal |
+| Post-deployment | Compliance audit | HIPAA controls verified (encryption, logging, access) | Azure Policy compliance,
+Security Center |
 
 ## Rollback Strategy
 
@@ -995,6 +1031,7 @@ This implementation follows a phased approach to ensure each foundational compon
 
 **Rollback Commands:**
 
+<!-- markdownlint-disable MD013 -->
 ```powershell
 # Delete entire resource group (dev/test only - DESTRUCTIVE)
 az group delete --name rg-contoso-patient-portal-prod --yes --no-wait
@@ -1021,26 +1058,36 @@ az deployment group create `
   --template-file main.bicep `
   --parameters main.bicepparam
 ```
+<!-- markdownlint-enable MD013 -->
 
 **Phase-Specific Rollback Considerations:**
 
-- **Phase 1 (Networking)**: Deleting VNet requires first removing all dependent resources (private endpoints, VNet-integrated apps)
-- **Phase 2 (Platform Services)**: Key Vault soft delete means deleted vaults remain reserved for 90 days - use `--force-purge` only in dev/test
+- **Phase 1 (Networking)**: Deleting VNet requires first removing all dependent resources (private endpoints,
+VNet-integrated apps)
+- **Phase 2 (Platform Services)**: Key Vault soft delete means deleted vaults remain reserved for
+90 days - use `--force-purge` only in dev/test
 - **Phase 3 (Security)**: Private endpoints must be deleted before associated service resources (Key Vault, SQL Server)
-- **Phase 4 (Configuration)**: RBAC role assignments and Key Vault secrets can be safely deleted and recreated without service impact
+- **Phase 4 (Configuration)**: RBAC role assignments and Key Vault secrets can be safely deleted and
+recreated without service impact
 
 # High-level design
 
 ## Architecture Overview
 
-The Contoso Healthcare patient portal uses a **secure, zone-redundant, HIPAA-compliant architecture** deployed in Azure East US 2. The design follows a three-tier approach with network segmentation, private connectivity, and centralized monitoring.
+The Contoso Healthcare patient portal uses a **secure, zone-redundant,
+HIPAA-compliant architecture** deployed in Azure East US 2.
+The design follows a three-tier approach with network segmentation, private connectivity, and centralized monitoring.
 
 **Key Design Principles:**
 
-1. **Security by Default**: All data at rest encrypted (TDE for SQL, Key Vault for secrets), HTTPS-only communication, TLS 1.2 minimum
-2. **Network Isolation**: Private endpoints for data-tier services (Key Vault, SQL Database), VNet integration for App Service
-3. **High Availability**: Zone-redundant App Service Plan (2 instances across availability zones), SQL Database Standard tier with geo-redundant backups
-4. **Compliance**: HIPAA BAA automatically included, audit logging to Log Analytics, managed identities for passwordless authentication
+1. **Security by Default**: All data at rest encrypted (TDE for SQL, Key Vault for secrets), HTTPS-only communication,
+TLS 1.2 minimum
+2. **Network Isolation**: Private endpoints for data-tier services (Key Vault, SQL Database),
+VNet integration for App Service
+3. **High Availability**: Zone-redundant App Service Plan (2 instances across availability zones),
+SQL Database Standard tier with geo-redundant backups
+4. **Compliance**: HIPAA BAA automatically included, audit logging to Log Analytics,
+managed identities for passwordless authentication
 5. **Cost Optimization**: Right-sized resources ($331-346/month), commitment tier opportunities for 30-50% savings
 
 **Architecture Diagram:**
@@ -1119,7 +1166,8 @@ The Contoso Healthcare patient portal uses a **secure, zone-redundant, HIPAA-com
 
 1. **User Request**: Patient accesses portal via HTTPS → App Service (port 443)
 2. **Application Layer**: App Service processes request, authenticates via managed identity
-3. **Secret Retrieval**: App Service fetches connection strings from Key Vault via managed identity (no passwords stored in app)
+3. **Secret Retrieval**: App Service fetches connection strings from Key Vault via managed identity (no passwords
+stored in app)
 4. **Database Query**: App Service queries SQL Database via private endpoint (no internet exposure)
 5. **Monitoring**: Application Insights captures telemetry, logs flow to Log Analytics
 6. **Audit Trail**: All resource operations logged to Log Analytics for HIPAA compliance

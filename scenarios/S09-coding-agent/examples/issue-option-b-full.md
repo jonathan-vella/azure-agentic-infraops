@@ -100,7 +100,8 @@ Copy everything below the line for quick issue creation:
 ## Add Azure Monitor Alerts with Action Group
 
 ### Context
-The patient portal infrastructure in `infra/bicep/contoso-patient-portal/` was deployed but lacks monitoring. Before production go-live, we need comprehensive alerting with email notifications for the operations team.
+The patient portal infrastructure in `infra/bicep/contoso-patient-portal/` was deployed but lacks monitoring.
+Before production go-live, we need comprehensive alerting with email notifications for the operations team.
 
 ### Requirements
 

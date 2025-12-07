@@ -10,7 +10,8 @@ This folder contains compliance verification checklists for Azure infrastructure
 
 ## Purpose
 
-Audit checklists help ensure that deployed infrastructure meets organizational compliance and security requirements before going to production.
+Audit checklists help ensure that deployed infrastructure meets organizational compliance and
+security requirements before going to production.
 
 ## Related Documentation
 

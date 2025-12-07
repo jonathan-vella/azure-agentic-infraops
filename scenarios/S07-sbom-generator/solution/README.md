@@ -1,12 +1,15 @@
 # Solution Folder: Legacy Automation Scripts
 
-This folder contains **PowerShell automation scripts** for SBOM generation. These represent the **original (legacy) approach** to this demo, which focused on building automation tools with GitHub Copilot.
+This folder contains **PowerShell automation scripts** for SBOM generation.
+These represent the **original (legacy) approach** to this demo,
+which focused on building automation tools with GitHub Copilot.
 
 ---
 
 ## ⚠️ Important: Approach Change
 
-**This demo has been refactored** to use a **conversation-based learning approach** where GitHub Copilot acts as your SBOM expert partner, teaching you concepts while creating production deliverables.
+**This demo has been refactored** to use a **conversation-based learning approach** where GitHub Copilot acts as
+your SBOM expert partner, teaching you concepts while creating production deliverables.
 
 ### New Recommended Approach (Conversation-Based)
 
@@ -303,7 +306,8 @@ az account set --subscription "your-subscription-id"
 
 **"Learn first, automate later."**
 
-Understanding SBOMs makes you **effective**. Automation makes you **efficient**. Both matter, but knowledge is the foundation.
+Understanding SBOMs makes you **effective**. Automation makes you **efficient**.
+Both matter, but knowledge is the foundation.
 
 Start with conversation-based learning, then progress to these automation scripts when you're ready to scale.
 

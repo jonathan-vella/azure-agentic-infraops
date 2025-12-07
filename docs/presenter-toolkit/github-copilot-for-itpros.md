@@ -45,7 +45,9 @@ December 2025
 
 <!--
 SPEAKER NOTES:
-Welcome everyone. Today we're going to explore how GitHub Copilot has evolved beyond code completion into something that fundamentally changes how IT Professionals work. This isn't about replacing developers - it's about empowering IT Pros to build infrastructure at the speed of thought.
+Welcome everyone. Today we're going to explore how GitHub Copilot has evolved beyond code completion into something
+that fundamentally changes how IT Professionals work.
+This isn't about replacing developers - it's about empowering IT Pros to build infrastructure at the speed of thought.
 -->
 
 ---
@@ -65,7 +67,9 @@ Welcome everyone. Today we're going to explore how GitHub Copilot has evolved be
 
 <!--
 SPEAKER NOTES:
-GitHub Copilot started as smart autocomplete - impressive but limited. In 2023, Chat made it conversational. But 2024 changed everything with agents - AI that can research, plan, and execute multi-step tasks autonomously. Today, we can go from business requirements to deployed Azure infrastructure in under an hour.
+GitHub Copilot started as smart autocomplete - impressive but limited. In 2023, Chat made it conversational.
+But 2024 changed everything with agents - AI that can research, plan, and execute multi-step tasks autonomously.
+Today, we can go from business requirements to deployed Azure infrastructure in under an hour.
 -->
 
 ---
@@ -85,7 +89,9 @@ GitHub Copilot started as smart autocomplete - impressive but limited. In 2023, 
 
 <!--
 SPEAKER NOTES:
-Think of these as layers. Inline suggestions are always-on assistance. Chat is for complex questions. Agents are specialized experts - Azure architect, Bicep planner, implementation specialist. MCP tools connect to external systems like Azure pricing APIs.
+Think of these as layers. Inline suggestions are always-on assistance. Chat is for complex questions.
+Agents are specialized experts - Azure architect, Bicep planner, implementation specialist.
+MCP tools connect to external systems like Azure pricing APIs.
 -->
 
 ---
@@ -105,7 +111,8 @@ Think of these as layers. Inline suggestions are always-on assistance. Chat is f
 
 <!--
 SPEAKER NOTES:
-For IT Pros, start with Individual to prove value, then move to Business for team adoption. The $19/month pays for itself in the first hour of work.
+For IT Pros, start with Individual to prove value, then move to Business for team adoption.
+The $19/month pays for itself in the first hour of work.
 -->
 
 ---
@@ -136,7 +143,9 @@ For IT Pros, start with Individual to prove value, then move to Business for tea
 
 <!--
 SPEAKER NOTES:
-This is the biggest misconception I encounter. If you touch a keyboard to configure infrastructure, Copilot is for you. I'm not a developer - my programming skills were minimal. Yet I've built production systems that would have taken months without Copilot.
+This is the biggest misconception I encounter. If you touch a keyboard to configure infrastructure, Copilot is for you.
+I'm not a developer - my programming skills were minimal.
+Yet I've built production systems that would have taken months without Copilot.
 -->
 
 ---
@@ -164,7 +173,9 @@ for Key Vault and Storage"
 
 <!--
 SPEAKER NOTES:
-You don't need to know that Azure SQL requires azureADOnlyAuthentication: true. You say "HIPAA compliant SQL database" and Copilot knows. You leverage your architectural knowledge; Copilot handles implementation.
+You don't need to know that Azure SQL requires azureADOnlyAuthentication: true.
+You say "HIPAA compliant SQL database" and Copilot knows.
+You leverage your architectural knowledge; Copilot handles implementation.
 -->
 
 ---
@@ -185,7 +196,8 @@ _Sources: GitHub (55%), Forrester (88%), Accenture (60-80%)_
 
 <!--
 SPEAKER NOTES:
-These aren't theoretical - they're from our demo scenarios. Traditional patient portal design: 18 hours. With agents: 45 minutes. That's transformational.
+These aren't theoretical - they're from our demo scenarios. Traditional patient portal design: 18 hours.
+With agents: 45 minutes. That's transformational.
 -->
 
 ---
@@ -204,7 +216,8 @@ These aren't theoretical - they're from our demo scenarios. Traditional patient 
 
 <!--
 SPEAKER NOTES:
-Experts skip boilerplate. Mid-level pros produce expert-quality work. Newcomers learn correct patterns immediately. Everyone levels up.
+Experts skip boilerplate. Mid-level pros produce expert-quality work. Newcomers learn correct patterns immediately.
+Everyone levels up.
 -->
 
 ---
@@ -235,7 +248,8 @@ Experts skip boilerplate. Mid-level pros produce expert-quality work. Newcomers 
 
 <!--
 SPEAKER NOTES:
-Four specialized agents. @plan is built into VS Code. The architect assesses against WAF. The planner creates module specs. The implementer generates Bicep. Between each step? You approve.
+Four specialized agents. @plan is built into VS Code. The architect assesses against WAF.
+The planner creates module specs. The implementer generates Bicep. Between each step? You approve.
 -->
 
 ---
@@ -259,7 +273,8 @@ Four specialized agents. @plan is built into VS Code. The architect assesses aga
 
 <!--
 SPEAKER NOTES:
-This is our flagship demo. A real e-commerce platform - Front Door, App Services, SQL Database, Redis, Service Bus. We do this live, from a single prompt to deployed infrastructure.
+This is our flagship demo. A real e-commerce platform - Front Door, App Services, SQL Database, Redis, Service Bus.
+We do this live, from a single prompt to deployed infrastructure.
 -->
 
 ---
@@ -279,7 +294,8 @@ This is our flagship demo. A real e-commerce platform - Front Door, App Services
 
 <!--
 SPEAKER NOTES:
-Notice steps 3 and 4. The Pricing MCP queries Azure APIs for real costs. We discovered Front Door Premium is $330/month - required for PCI-DSS WAF rules. Real trade-offs, before you spend.
+Notice steps 3 and 4. The Pricing MCP queries Azure APIs for real costs.
+We discovered Front Door Premium is $330/month - required for PCI-DSS WAF rules. Real trade-offs, before you spend.
 -->
 
 ---
@@ -298,7 +314,8 @@ Notice steps 3 and 4. The Pricing MCP queries Azure APIs for real costs. We disc
 
 <!--
 SPEAKER NOTES:
-This diagram is generated automatically by the diagram-generator agent using Python's diagrams library. Notice the layered architecture: CDN and WAF in front, app tier, data tier with private endpoints.
+This diagram is generated automatically by the diagram-generator agent using Python's diagrams library.
+Notice the layered architecture: CDN and WAF in front, app tier, data tier with private endpoints.
 -->
 
 ---
@@ -325,7 +342,8 @@ This diagram is generated automatically by the diagram-generator agent using Pyt
 
 <!--
 SPEAKER NOTES:
-Transparency before deployment. Front Door Premium is $330 because PCI-DSS needs managed WAF rules. App Services are P1v4 for zone redundancy - Standard doesn't support it.
+Transparency before deployment. Front Door Premium is $330 because PCI-DSS needs managed WAF rules.
+App Services are P1v4 for zone redundancy - Standard doesn't support it.
 -->
 
 ---
@@ -344,7 +362,8 @@ Transparency before deployment. Front Door Premium is $330 because PCI-DSS needs
 
 ## From Architect with Limited IaC Skills → Building Production Systems
 
-> "I'm not a developer. My IaC skills were limited at best. Yet with GitHub Copilot, I built production-ready infrastructure that would have been impossible just a year ago."
+> "I'm not a developer. My IaC skills were limited at best.
+> Yet with GitHub Copilot, I built production-ready infrastructure that would have been impossible just a year ago."
 
 | Before Copilot            | After Copilot                     |
 | ------------------------- | --------------------------------- |
@@ -354,7 +373,9 @@ Transparency before deployment. Front Door Premium is $330 because PCI-DSS needs
 
 <!--
 SPEAKER NOTES:
-This is my story. I could design elegant architectures on a whiteboard, but translating them to code was painful and slow. Copilot changed that. My architectural expertise became directly actionable.
+This is my story. I could design elegant architectures on a whiteboard,
+but translating them to code was painful and slow. Copilot changed that.
+My architectural expertise became directly actionable.
 -->
 
 ---
@@ -375,7 +396,8 @@ This is my story. I could design elegant architectures on a whiteboard, but tran
 
 <!--
 SPEAKER NOTES:
-Look at SAIF - PHP frontend, Python backend, SQL database, Docker containers, Bicep deployment. 3-4 months for a developer team. 3 weeks for me with Copilot.
+Look at SAIF - PHP frontend, Python backend, SQL database, Docker containers, Bicep deployment.
+3-4 months for a developer team. 3 weeks for me with Copilot.
 -->
 
 ---
@@ -398,7 +420,8 @@ Look at SAIF - PHP frontend, Python backend, SQL database, Docker containers, Bi
 
 <!--
 SPEAKER NOTES:
-8,000 transactions per second with zero data loss on failover. Complex Kubernetes configurations I'd never written. Copilot didn't just help - it enabled work that wouldn't have happened.
+8,000 transactions per second with zero data loss on failover. Complex Kubernetes configurations I'd never written.
+Copilot didn't just help - it enabled work that wouldn't have happened.
 -->
 
 ---
@@ -429,7 +452,8 @@ SPEAKER NOTES:
 
 <!--
 SPEAKER NOTES:
-AI doesn't replace judgment. It replaces typing. You decide whether to use private endpoints, which SKU fits the budget, how to handle DR. Copilot executes your vision faster.
+AI doesn't replace judgment. It replaces typing. You decide whether to use private endpoints,
+which SKU fits the budget, how to handle DR. Copilot executes your vision faster.
 -->
 
 ---
@@ -454,7 +478,8 @@ Agent Output → Human Review → bicep build → Deploy
 
 <!--
 SPEAKER NOTES:
-Don't trust blindly - you don't have to. Every agent step requires your approval. We run bicep build/lint, do what-if, Azure Policy blocks non-compliant resources.
+Don't trust blindly - you don't have to. Every agent step requires your approval.
+We run bicep build/lint, do what-if, Azure Policy blocks non-compliant resources.
 -->
 
 ---
@@ -475,7 +500,8 @@ Don't trust blindly - you don't have to. Every agent step requires your approval
 
 <!--
 SPEAKER NOTES:
-Conservative: save 10 hours/month at $75/hour = $750 value. Cost: $19. ROI is 39:1. Even saving 2 hours/month, you're ahead.
+Conservative: save 10 hours/month at $75/hour = $750 value. Cost: $19. ROI is 39:1.
+Even saving 2 hours/month, you're ahead.
 -->
 
 ---
@@ -495,7 +521,8 @@ Conservative: save 10 hours/month at $75/hour = $750 value. Cost: $19. ROI is 39
 
 <!--
 SPEAKER NOTES:
-Enterprise tier: your code is NOT used for training. Period. SOC 2 Type II. Restrict repos, filter content, audit everything. For regulated industries, Enterprise with IP indemnification.
+Enterprise tier: your code is NOT used for training. Period. SOC 2 Type II.
+Restrict repos, filter content, audit everything. For regulated industries, Enterprise with IP indemnification.
 -->
 
 ---
@@ -521,7 +548,8 @@ Enterprise tier: your code is NOT used for training. Period. SOC 2 Type II. Rest
 
 <!--
 SPEAKER NOTES:
-Start small. Natural language, gentle curve. For org approval: don't ask permission - build evidence. "I saved 10 hours last month" beats any vendor pitch.
+Start small. Natural language, gentle curve. For org approval: don't ask permission - build evidence.
+"I saved 10 hours last month" beats any vendor pitch.
 -->
 
 ---
@@ -552,7 +580,8 @@ Start small. Natural language, gentle curve. For org approval: don't ask permiss
 
 <!--
 SPEAKER NOTES:
-15 minutes to get started. VS Code, GitHub account, Copilot extension, Azure CLI. Our repo includes a Dev Container with everything pre-configured.
+15 minutes to get started. VS Code, GitHub account, Copilot extension, Azure CLI.
+Our repo includes a Dev Container with everything pre-configured.
 -->
 
 ---
@@ -573,7 +602,8 @@ SPEAKER NOTES:
 
 <!--
 SPEAKER NOTES:
-Day 1: explain code - zero risk. Day 2: documentation - safe and useful. Day 3: scripts. Day 4: infrastructure. Day 5: full agent workflow. Progressive complexity.
+Day 1: explain code - zero risk. Day 2: documentation - safe and useful. Day 3: scripts. Day 4: infrastructure.
+Day 5: full agent workflow. Progressive complexity.
 -->
 
 ---
@@ -599,7 +629,8 @@ Day 1: explain code - zero risk. Day 2: documentation - safe and useful. Day 3: 
 
 <!--
 SPEAKER NOTES:
-Everything is open source. Clone, Dev Container, and you have my environment. Start with @plan agent. Track results. Share what you build.
+Everything is open source. Clone, Dev Container, and you have my environment. Start with @plan agent. Track results.
+Share what you build.
 -->
 
 ---
@@ -636,7 +667,8 @@ github.com/jonathan-vella/azure-agentic-infraops
 
 <!--
 SPEAKER NOTES:
-Four takeaways: efficiency multiplier with real savings, requirements to deployed in an hour, Well-Architected aligned, start today. The learning curve is gentle, ROI is immediate. Questions?
+Four takeaways: efficiency multiplier with real savings, requirements to deployed in an hour, Well-Architected aligned,
+start today. The learning curve is gentle, ROI is immediate. Questions?
 -->
 
 ---

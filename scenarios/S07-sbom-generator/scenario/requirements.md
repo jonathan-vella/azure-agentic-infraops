@@ -11,7 +11,9 @@
 
 ## Current Situation
 
-HealthTech Solutions develops a patient engagement platform that includes appointment scheduling, secure messaging, prescription management, and health record access. The platform is built on modern cloud technologies and deployed on Microsoft Azure.
+HealthTech Solutions develops a patient engagement platform that includes appointment scheduling, secure messaging,
+prescription management, and health record access.
+The platform is built on modern cloud technologies and deployed on Microsoft Azure.
 
 ### Application Stack
 

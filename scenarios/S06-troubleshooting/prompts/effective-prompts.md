@@ -2,9 +2,11 @@
 
 ## Overview
 
-This guide provides proven prompting patterns for using GitHub Copilot to accelerate Azure troubleshooting. Each pattern includes context on when to use it, example prompts, and tips for best results.
+This guide provides proven prompting patterns for using GitHub Copilot to accelerate Azure troubleshooting.
+Each pattern includes context on when to use it, example prompts, and tips for best results.
 
-**Time Savings**: Using these prompts effectively can reduce troubleshooting time from 30 hours to 5 hours (83% reduction).
+**Time Savings**: Using these prompts effectively can reduce troubleshooting time from 30 hours to
+5 hours (83% reduction).
 
 ---
 
@@ -701,9 +703,11 @@ Before every troubleshooting session:
 - [ ] What would confirm/disprove it? (Expected query results)
 - [ ] What does "fixed" look like? (Success criteria)
 
-With these patterns, you can achieve the 83% time reduction demonstrated in this scenario, transforming Azure troubleshooting from a 30-hour ordeal into a 5-hour guided workflow.
+With these patterns, you can achieve the 83% time reduction demonstrated in this scenario,
+transforming Azure troubleshooting from a 30-hour ordeal into a 5-hour guided workflow.
 
-**Remember**: You're still the expert. Copilot is your AI diagnostic partner, not an autopilot. Review, validate, and apply your judgment to every suggestion.
+**Remember**: You're still the expert. Copilot is your AI diagnostic partner, not an autopilot.
+Review, validate, and apply your judgment to every suggestion.
 
 ---
 
@@ -711,5 +715,6 @@ With these patterns, you can achieve the 83% time reduction demonstrated in this
 
 - [GitHub Copilot Documentation](https://docs.github.com/copilot)
 - [Azure Monitor KQL Reference](https://learn.microsoft.com/azure/azure-monitor/logs/kql-quick-reference)
-- [PowerShell Best Practices](https://learn.microsoft.com/powershell/scripting/developer/cmdlet/cmdlet-development-guidelines)
+- [PowerShell Best
+Practices](https://learn.microsoft.com/powershell/scripting/developer/cmdlet/cmdlet-development-guidelines)
 - [Azure Troubleshooting Guides](https://learn.microsoft.com/azure/well-architected/operational-excellence/)

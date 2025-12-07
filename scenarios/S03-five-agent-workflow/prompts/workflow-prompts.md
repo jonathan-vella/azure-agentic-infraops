@@ -350,7 +350,8 @@ Understanding AVM modules:
 ### Prompt
 
 ```bicep
-Create a detailed Bicep implementation plan for the Contoso Healthcare patient portal architecture recommended in the previous assessment.
+Create a detailed Bicep implementation plan for the Contoso Healthcare patient portal architecture
+recommended in the previous assessment.
 
 **Context from Architecture Assessment:**
 - Azure App Service (Standard S1 or higher)

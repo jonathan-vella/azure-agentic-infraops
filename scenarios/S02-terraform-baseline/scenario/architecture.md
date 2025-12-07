@@ -508,7 +508,8 @@ terraform {
 
 ### 1. Network Isolation
 
-✅ **Private Endpoints**: All data services (App Service, SQL Database, Key Vault) accessible only via private endpoints  
+✅ **Private Endpoints**: All data services (App Service, SQL Database,
+Key Vault) accessible only via private endpoints  
 ✅ **No Public Access**: `public_network_access_enabled = false` on all resources  
 ✅ **NSG Rules**: Deny-by-default with explicit allow rules between tiers
 

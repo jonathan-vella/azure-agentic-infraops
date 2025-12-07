@@ -12,7 +12,9 @@
 
 ### Business Challenge
 
-Contoso Healthcare is undergoing a digital transformation and migrating their patient management system to Azure. As part of their Azure Infrastructure Specialization journey, they must demonstrate **Module B Control 4.1: Service Validation and Testing**.
+Contoso Healthcare is undergoing a digital transformation and migrating their patient management system to Azure.
+As part of their Azure Infrastructure Specialization journey, they must demonstrate **Module B Control 4.1: Service
+Validation and Testing**.
 
 **Key Pain Points:**
 
@@ -370,10 +372,13 @@ Contoso Healthcare is undergoing a digital transformation and migrating their pa
 ## References
 
 - [Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/)
-- [Azure SQL Managed Identity](https://learn.microsoft.com/azure/azure-sql/database/authentication-azure-ad-only-authentication)
+- [Azure SQL Managed
+Identity](https://learn.microsoft.com/azure/azure-sql/database/authentication-azure-ad-only-authentication)
 - [Azure App Service Best Practices](https://learn.microsoft.com/azure/app-service/deploy-best-practices)
 - [Application Insights](https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview)
-- [Azure Infrastructure Specialization - Module B](https://partner.microsoft.com/en-us/training/assets/collection/azure-infrastructure-and-database-migration-specialization)
+- [Azure Infrastructure Specialization - Module
+B](https://partner.microsoft.com/en-us/training/assets/collection/azure-infrastructure-and-database-migration-specializa
+tion)
 
 ---
 
