@@ -9,8 +9,8 @@
 > **Today's Challenge**: Validate HIPAA-compliant API deployment with UAT and load testing  
 > **The Twist**: Manual validation takes 25+ hours, delaying every release
 
-*"I know how to write test cases and find bugs. But I spend more time setting up tests than
-actually testing. I want to understand what makes GOOD testing, not just pass the checkbox."*
+_"I know how to write test cases and find bugs. But I spend more time setting up tests than
+actually testing. I want to understand what makes GOOD testing, not just pass the checkbox."_
 
 **What Marcus will discover**: How to use AI agents as testing partners that help him understand
 WHY certain patterns work, reducing 25+ hours of validation to 75 minutes.
@@ -32,6 +32,7 @@ performance metrics, and when to use different testing patterns—not just execu
 **Stack:** Python FastAPI + Azure SQL Database + Managed Identity  
 **Compliance:** HIPAA-sensitive healthcare data  
 **Validation Required:**
+
 - User Acceptance Testing (functional correctness)
 - Load Testing (performance under pressure)
 - Audit-ready documentation
@@ -49,13 +50,13 @@ By working through this scenario, you'll understand:
 
 ## Time Investment
 
-| Phase | Duration | Focus |
-|-------|----------|-------|
-| Understanding Patterns | 15 min | UAT vs. Load, acceptance criteria |
-| UAT Testing | 15-20 min | Functional validation with agent |
-| Load Testing | 20-30 min | Performance validation with agent |
-| Analysis & Reporting | 10 min | Interpret results, generate reports |
-| **Total** | **60-75 min** | **vs. 25+ hours manual** |
+| Phase                  | Duration      | Focus                               |
+| ---------------------- | ------------- | ----------------------------------- |
+| Understanding Patterns | 15 min        | UAT vs. Load, acceptance criteria   |
+| UAT Testing            | 15-20 min     | Functional validation with agent    |
+| Load Testing           | 20-30 min     | Performance validation with agent   |
+| Analysis & Reporting   | 10 min        | Interpret results, generate reports |
+| **Total**              | **60-75 min** | **vs. 25+ hours manual**            |
 
 ## Quick Start
 
@@ -126,11 +127,11 @@ Ask the UAT Assistant:
 
 **Understanding Performance Metrics:**
 
-| Metric | What It Means | Why It Matters |
-|--------|---------------|----------------|
-| RPS | Requests per second | Throughput capacity |
-| p95 | 95th percentile latency | Real user experience |
-| Error Rate | Failed requests | Reliability |
+| Metric     | What It Means           | Why It Matters       |
+| ---------- | ----------------------- | -------------------- |
+| RPS        | Requests per second     | Throughput capacity  |
+| p95        | 95th percentile latency | Real user experience |
+| Error Rate | Failed requests         | Reliability          |
 
 **Key Discovery Questions:**
 
@@ -144,6 +145,7 @@ Ask the Load Test Assistant:
 ### Phase 4: Analysis and Reporting (10 min)
 
 **Understanding Results:**
+
 - Green metrics ≠ production ready (understand the WHY)
 - Bottleneck analysis reveals root causes
 - Recommendations should include cost impact
@@ -203,12 +205,12 @@ T - Time-bound: Per-request, not "eventually"
 
 ### Pattern 3: Load Pattern Selection
 
-| Pattern | Question Answered | When to Use |
-|---------|-------------------|-------------|
-| Ramp-up | "At what point does it degrade?" | Capacity planning |
-| Spike | "Can it handle sudden bursts?" | Auto-scale testing |
-| Sustained | "Does it degrade over time?" | Memory leak detection |
-| Step | "What's the breaking point?" | Stress testing |
+| Pattern   | Question Answered                | When to Use           |
+| --------- | -------------------------------- | --------------------- |
+| Ramp-up   | "At what point does it degrade?" | Capacity planning     |
+| Spike     | "Can it handle sudden bursts?"   | Auto-scale testing    |
+| Sustained | "Does it degrade over time?"     | Memory leak detection |
+| Step      | "What's the breaking point?"     | Stress testing        |
 
 ### Pattern 4: Agent Discovery Workflow
 
@@ -224,27 +226,27 @@ Agent asks → You provide domain knowledge → Agent adds testing patterns
 
 ### Understanding Testing Types
 
-| Question | Why Ask It |
-|----------|------------|
+| Question                                   | Why Ask It                   |
+| ------------------------------------------ | ---------------------------- |
 | When is UAT enough vs. needing load tests? | Know what to skip/prioritize |
-| What failure modes only appear under load? | Understand load test value |
-| How do I handle flaky tests? | Realistic expectations |
+| What failure modes only appear under load? | Understand load test value   |
+| How do I handle flaky tests?               | Realistic expectations       |
 
 ### Understanding Metrics
 
-| Question | Why Ask It |
-|----------|------------|
-| Why p95 instead of average? | Focus on real user experience |
-| What's the relationship between VUs, RPS, response time? | Interpret results correctly |
-| What grade is acceptable for production? | Set realistic thresholds |
+| Question                                                 | Why Ask It                    |
+| -------------------------------------------------------- | ----------------------------- |
+| Why p95 instead of average?                              | Focus on real user experience |
+| What's the relationship between VUs, RPS, response time? | Interpret results correctly   |
+| What grade is acceptable for production?                 | Set realistic thresholds      |
 
 ### Understanding the Agents
 
-| Question | Why Ask It |
-|----------|------------|
-| How does the agent know what to test? | Understand agent limitations |
-| What if I disagree with recommendations? | Know you have control |
-| How do I customize for my domain? | Apply to your projects |
+| Question                                 | Why Ask It                   |
+| ---------------------------------------- | ---------------------------- |
+| How does the agent know what to test?    | Understand agent limitations |
+| What if I disagree with recommendations? | Know you have control        |
+| How do I customize for my domain?        | Apply to your projects       |
 
 ## Success Metrics
 
@@ -258,18 +260,19 @@ Agent asks → You provide domain knowledge → Agent adds testing patterns
 
 ### Efficiency Success
 
-| Metric | Manual | With Agents | Target |
-|--------|--------|-------------|--------|
-| UAT Planning + Execution | 5 hours | 20 min | 93% reduction |
-| Load Test Setup + Analysis | 7 hours | 25 min | 94% reduction |
-| Report Generation | 4 hours | 5 min | 98% reduction |
-| **Total** | **16 hours** | **50 min** | **95% reduction** |
+| Metric                     | Manual       | With Agents | Target            |
+| -------------------------- | ------------ | ----------- | ----------------- |
+| UAT Planning + Execution   | 5 hours      | 20 min      | 93% reduction     |
+| Load Test Setup + Analysis | 7 hours      | 25 min      | 94% reduction     |
+| Report Generation          | 4 hours      | 5 min       | 98% reduction     |
+| **Total**                  | **16 hours** | **50 min**  | **95% reduction** |
 
 ## Common Questions
 
 **Q: Why use agents instead of just running test scripts?**
 
 A: Scripts execute tests; agents guide the entire workflow. The agent:
+
 - Asks discovery questions to ensure coverage
 - Generates appropriate test plans
 - Interprets results and identifies root causes

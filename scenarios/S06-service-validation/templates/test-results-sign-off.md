@@ -2,16 +2,16 @@
 
 ## Test Execution Summary
 
-| Field | Value |
-|-------|-------|
-| **Project Name** | SAIF API v2 Service Validation |
-| **Test Type** | [Load Testing / API Validation / Performance Baseline] |
-| **Test Environment** | [Production / Staging / Development] |
-| **Test Date** | [YYYY-MM-DD] |
-| **Test Duration** | [HH:MM:SS] |
-| **Executed By** | [Name, Title] |
-| **Reviewed By** | [Name, Title] |
-| **Overall Result** | ✅ PASS / ❌ FAIL |
+| Field                | Value                                                  |
+| -------------------- | ------------------------------------------------------ |
+| **Project Name**     | SAIF API v2 Service Validation                         |
+| **Test Type**        | [Load Testing / API Validation / Performance Baseline] |
+| **Test Environment** | [Production / Staging / Development]                   |
+| **Test Date**        | [YYYY-MM-DD]                                           |
+| **Test Duration**    | [HH:MM:SS]                                             |
+| **Executed By**      | [Name, Title]                                          |
+| **Reviewed By**      | [Name, Title]                                          |
+| **Overall Result**   | ✅ PASS / ❌ FAIL                                      |
 
 ---
 
@@ -19,44 +19,44 @@
 
 ### Test Configuration
 
-| Parameter | Value |
-|-----------|-------|
-| Test Tool | quick-load-test.sh (bash/curl) |
-| Test Duration | [30 seconds] |
-| Concurrent Users | [20] |
-| Target Endpoint | https://app-saifv2-api-[suffix].azurewebsites.net |
-| Test Start Time | [YYYY-MM-DD HH:MM:SS UTC] |
-| Test End Time | [YYYY-MM-DD HH:MM:SS UTC] |
+| Parameter        | Value                                             |
+| ---------------- | ------------------------------------------------- |
+| Test Tool        | quick-load-test.sh (bash/curl)                    |
+| Test Duration    | [30 seconds]                                      |
+| Concurrent Users | [20]                                              |
+| Target Endpoint  | https://app-saifv2-api-[suffix].azurewebsites.net |
+| Test Start Time  | [YYYY-MM-DD HH:MM:SS UTC]                         |
+| Test End Time    | [YYYY-MM-DD HH:MM:SS UTC]                         |
 
 ### Performance Metrics
 
-| Metric | Target | Actual | Status |
-|--------|--------|--------|--------|
-| **Total Requests** | N/A | [Fill in] | ℹ️ Info |
-| **Successful Requests** | > 99% | [Fill in] | [ ] ✅ Pass / [ ] ❌ Fail |
-| **Failed Requests** | < 1% | [Fill in] | [ ] ✅ Pass / [ ] ❌ Fail |
-| **Success Rate** | > 99% | [Fill in]% | [ ] ✅ Pass / [ ] ❌ Fail |
-| **Average Response Time** | < 500ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| **Minimum Response Time** | N/A | [Fill in] ms | ℹ️ Info |
+| Metric                    | Target   | Actual       | Status                    |
+| ------------------------- | -------- | ------------ | ------------------------- |
+| **Total Requests**        | N/A      | [Fill in]    | ℹ️ Info                   |
+| **Successful Requests**   | > 99%    | [Fill in]    | [ ] ✅ Pass / [ ] ❌ Fail |
+| **Failed Requests**       | < 1%     | [Fill in]    | [ ] ✅ Pass / [ ] ❌ Fail |
+| **Success Rate**          | > 99%    | [Fill in]%   | [ ] ✅ Pass / [ ] ❌ Fail |
+| **Average Response Time** | < 500ms  | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| **Minimum Response Time** | N/A      | [Fill in] ms | ℹ️ Info                   |
 | **Maximum Response Time** | < 2000ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| **Requests per Second** | > 10 | [Fill in] | [ ] ✅ Pass / [ ] ❌ Fail |
+| **Requests per Second**   | > 10     | [Fill in]    | [ ] ✅ Pass / [ ] ❌ Fail |
 
 ### Response Time Distribution
 
-| Percentile | Target | Actual | Status |
-|------------|--------|--------|--------|
+| Percentile       | Target  | Actual       | Status                    |
+| ---------------- | ------- | ------------ | ------------------------- |
 | **P50 (Median)** | < 300ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| **P75** | < 400ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| **P90** | < 450ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| **P95** | < 500ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| **P99** | < 750ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| **P75**          | < 400ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| **P90**          | < 450ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| **P95**          | < 500ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| **P99**          | < 750ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
 
 ### Error Analysis
 
-| Error Type | Count | Percentage | HTTP Status | Impact |
-|------------|-------|------------|-------------|--------|
-| [Error description] | [0] | [0%] | [500] | [None/Low/Medium/High] |
-| **Total Errors** | [0] | [0%] | N/A | [ ] ✅ Acceptable / [ ] ❌ Unacceptable |
+| Error Type          | Count | Percentage | HTTP Status | Impact                                  |
+| ------------------- | ----- | ---------- | ----------- | --------------------------------------- |
+| [Error description] | [0]   | [0%]       | [500]       | [None/Low/Medium/High]                  |
+| **Total Errors**    | [0]   | [0%]       | N/A         | [ ] ✅ Acceptable / [ ] ❌ Unacceptable |
 
 ---
 
@@ -64,14 +64,14 @@
 
 ### Endpoint Test Results
 
-| Endpoint | Method | Expected Status | Actual Status | Response Time | Result |
-|----------|--------|-----------------|---------------|---------------|--------|
-| `/` | GET | 200 | [Fill in] | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| `/api/version` | GET | 200 | [Fill in] | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| `/api/whoami` | GET | 200 | [Fill in] | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| `/api/sourceip` | GET | 200 | [Fill in] | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| `/api/sqlwhoami` | GET | 200 | [Fill in] | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| `/api/sqlsrcip` | GET | 200 | [Fill in] | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| Endpoint         | Method | Expected Status | Actual Status | Response Time | Result                    |
+| ---------------- | ------ | --------------- | ------------- | ------------- | ------------------------- |
+| `/`              | GET    | 200             | [Fill in]     | [Fill in] ms  | [ ] ✅ Pass / [ ] ❌ Fail |
+| `/api/version`   | GET    | 200             | [Fill in]     | [Fill in] ms  | [ ] ✅ Pass / [ ] ❌ Fail |
+| `/api/whoami`    | GET    | 200             | [Fill in]     | [Fill in] ms  | [ ] ✅ Pass / [ ] ❌ Fail |
+| `/api/sourceip`  | GET    | 200             | [Fill in]     | [Fill in] ms  | [ ] ✅ Pass / [ ] ❌ Fail |
+| `/api/sqlwhoami` | GET    | 200             | [Fill in]     | [Fill in] ms  | [ ] ✅ Pass / [ ] ❌ Fail |
+| `/api/sqlsrcip`  | GET    | 200             | [Fill in]     | [Fill in] ms  | [ ] ✅ Pass / [ ] ❌ Fail |
 
 ### Response Validation
 
@@ -148,20 +148,20 @@
 
 ### Baseline Comparison
 
-| Metric | Baseline | Current Test | Variance | Status |
-|--------|----------|--------------|----------|--------|
-| Average Response Time | [150ms] | [Fill in] ms | [+X%] | [ ] ✅ Within 10% / [ ] ⚠️ > 10% / [ ] ❌ > 25% |
-| Requests per Second | [40] | [Fill in] | [+X%] | [ ] ✅ Within 10% / [ ] ⚠️ > 10% / [ ] ❌ > 25% |
-| Success Rate | [99.6%] | [Fill in]% | [+X%] | [ ] ✅ Maintained / [ ] ❌ Degraded |
-| P95 Response Time | [180ms] | [Fill in] ms | [+X%] | [ ] ✅ Within 10% / [ ] ⚠️ > 10% / [ ] ❌ > 25% |
+| Metric                | Baseline | Current Test | Variance | Status                                          |
+| --------------------- | -------- | ------------ | -------- | ----------------------------------------------- |
+| Average Response Time | [150ms]  | [Fill in] ms | [+X%]    | [ ] ✅ Within 10% / [ ] ⚠️ > 10% / [ ] ❌ > 25% |
+| Requests per Second   | [40]     | [Fill in]    | [+X%]    | [ ] ✅ Within 10% / [ ] ⚠️ > 10% / [ ] ❌ > 25% |
+| Success Rate          | [99.6%]  | [Fill in]%   | [+X%]    | [ ] ✅ Maintained / [ ] ❌ Degraded             |
+| P95 Response Time     | [180ms]  | [Fill in] ms | [+X%]    | [ ] ✅ Within 10% / [ ] ⚠️ > 10% / [ ] ❌ > 25% |
 
 ### Performance Trend Analysis
 
-| Date | Avg Response Time | RPS | Success Rate | Notes |
-|------|-------------------|-----|--------------|-------|
-| [YYYY-MM-DD] | [150ms] | [40] | [99.6%] | Baseline established |
-| [YYYY-MM-DD] | [Fill in] | [Fill in] | [Fill in]% | [Notes] |
-| [YYYY-MM-DD] | [Fill in] | [Fill in] | [Fill in]% | [Notes] |
+| Date         | Avg Response Time | RPS       | Success Rate | Notes                |
+| ------------ | ----------------- | --------- | ------------ | -------------------- |
+| [YYYY-MM-DD] | [150ms]           | [40]      | [99.6%]      | Baseline established |
+| [YYYY-MM-DD] | [Fill in]         | [Fill in] | [Fill in]%   | [Notes]              |
+| [YYYY-MM-DD] | [Fill in]         | [Fill in] | [Fill in]%   | [Notes]              |
 
 ---
 
@@ -187,12 +187,12 @@
 
 ### Database Performance
 
-| Operation | Average Time | Target | Status |
-|-----------|--------------|--------|--------|
+| Operation     | Average Time | Target  | Status                    |
+| ------------- | ------------ | ------- | ------------------------- |
 | Simple SELECT | [Fill in] ms | < 100ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| Complex JOIN | [Fill in] ms | < 300ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| INSERT | [Fill in] ms | < 200ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| UPDATE | [Fill in] ms | < 200ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| Complex JOIN  | [Fill in] ms | < 300ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| INSERT        | [Fill in] ms | < 200ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| UPDATE        | [Fill in] ms | < 200ms | [ ] ✅ Pass / [ ] ❌ Fail |
 
 ---
 
@@ -258,20 +258,20 @@
 
 ### Critical Issues (Blockers)
 
-| Issue ID | Description | Impact | Mitigation | Status |
-|----------|-------------|--------|------------|--------|
+| Issue ID   | Description   | Impact   | Mitigation   | Status                  |
+| ---------- | ------------- | -------- | ------------ | ----------------------- |
 | [CRIT-001] | [Description] | [Impact] | [Mitigation] | [ ] Open / [ ] Resolved |
 
 ### High Priority Issues
 
-| Issue ID | Description | Impact | Mitigation | Status |
-|----------|-------------|--------|------------|--------|
+| Issue ID   | Description   | Impact   | Mitigation   | Status                  |
+| ---------- | ------------- | -------- | ------------ | ----------------------- |
 | [HIGH-001] | [Description] | [Impact] | [Mitigation] | [ ] Open / [ ] Resolved |
 
 ### Medium/Low Priority Issues
 
-| Issue ID | Description | Impact | Mitigation | Status |
-|----------|-------------|--------|------------|--------|
+| Issue ID  | Description   | Impact   | Mitigation   | Status                  |
+| --------- | ------------- | -------- | ------------ | ----------------------- |
 | [MED-001] | [Description] | [Impact] | [Mitigation] | [ ] Open / [ ] Resolved |
 
 ### Observations & Recommendations
@@ -286,14 +286,14 @@
 
 ### Pass/Fail Criteria
 
-| Criterion | Requirement | Result | Status |
-|-----------|-------------|--------|--------|
-| Success Rate | > 99% | [Fill in]% | [ ] ✅ Pass / [ ] ❌ Fail |
-| Average Response Time | < 500ms | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
-| Error Rate | < 1% | [Fill in]% | [ ] ✅ Pass / [ ] ❌ Fail |
-| API Endpoints | All return 200 | [X/6] | [ ] ✅ Pass / [ ] ❌ Fail |
-| Database Connectivity | Successful | [Yes/No] | [ ] ✅ Pass / [ ] ❌ Fail |
-| Security Compliance | All checks pass | [X/Y] | [ ] ✅ Pass / [ ] ❌ Fail |
+| Criterion             | Requirement     | Result       | Status                    |
+| --------------------- | --------------- | ------------ | ------------------------- |
+| Success Rate          | > 99%           | [Fill in]%   | [ ] ✅ Pass / [ ] ❌ Fail |
+| Average Response Time | < 500ms         | [Fill in] ms | [ ] ✅ Pass / [ ] ❌ Fail |
+| Error Rate            | < 1%            | [Fill in]%   | [ ] ✅ Pass / [ ] ❌ Fail |
+| API Endpoints         | All return 200  | [X/6]        | [ ] ✅ Pass / [ ] ❌ Fail |
+| Database Connectivity | Successful      | [Yes/No]     | [ ] ✅ Pass / [ ] ❌ Fail |
+| Security Compliance   | All checks pass | [X/Y]        | [ ] ✅ Pass / [ ] ❌ Fail |
 
 ### Overall Test Result
 
@@ -353,10 +353,10 @@
 
 I confirm that the tests were executed according to the test plan and the results documented above are accurate.
 
-**Name**: ________________________________  
+**Name**: **************\_\_\_\_**************  
 **Title**: QA Engineer / Test Lead  
-**Signature**: ________________________________  
-**Date**: ________________________________
+**Signature**: **************\_\_\_\_**************  
+**Date**: **************\_\_\_\_**************
 
 ---
 
@@ -364,10 +364,10 @@ I confirm that the tests were executed according to the test plan and the result
 
 I have reviewed the test results and confirm they meet the technical acceptance criteria.
 
-**Name**: ________________________________  
+**Name**: **************\_\_\_\_**************  
 **Title**: DevOps Engineer / Technical Lead  
-**Signature**: ________________________________  
-**Date**: ________________________________
+**Signature**: **************\_\_\_\_**************  
+**Date**: **************\_\_\_\_**************
 
 ---
 
@@ -375,10 +375,10 @@ I have reviewed the test results and confirm they meet the technical acceptance 
 
 I approve these test results and authorize progression to the next phase.
 
-**Name**: ________________________________  
+**Name**: **************\_\_\_\_**************  
 **Title**: Project Manager / Product Owner  
-**Signature**: ________________________________  
-**Date**: ________________________________
+**Signature**: **************\_\_\_\_**************  
+**Date**: **************\_\_\_\_**************
 
 ---
 
@@ -403,7 +403,7 @@ curl -i https://app-saifv2-api-[suffix].azurewebsites.net/api/sqlwhoami
 // Request Statistics (Last Hour)
 requests
 | where timestamp > ago(1h)
-| summarize 
+| summarize
     TotalRequests = count(),
     SuccessRate = countif(success == true) * 100.0 / count(),
     AvgDuration = avg(duration),
@@ -435,4 +435,4 @@ requests
 
 ---
 
-*This document serves as formal approval of test results. Retain a signed copy for audit and compliance purposes.*
+_This document serves as formal approval of test results. Retain a signed copy for audit and compliance purposes._

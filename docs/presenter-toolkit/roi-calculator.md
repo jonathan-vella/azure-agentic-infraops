@@ -23,18 +23,18 @@ cost. Most IT Pros report saving 1-2 hours on their first day.
 
 These measurements come from the repository's documented scenarios (S01-S11):
 
-| Scenario                  | Manual Time | With Copilot | Time Saved     | Savings % |
-| ------------------------- | ----------- | ------------ | -------------- | --------- |
-| S01 - Bicep Baseline      | 4-6 hours   | 30-45 min    | 3.5-5.5 hours  | 85-90%    |
-| S02 - Terraform Baseline  | 4-6 hours   | 30-45 min    | 3.5-5.5 hours  | 85-90%    |
-| S03 - Five-Agent Workflow | 18 hours    | 45 min       | 17.25 hours    | 96%       |
-| S04 - E-Commerce Platform | 24 hours    | 60 min       | 23 hours       | 96%       |
-| S05 - Documentation Gen   | 20 hours    | 90 min       | 18.5 hours     | 93%       |
-| S06 - Service Validation  | 4-6 hours   | 30 min       | 3.5-5.5 hours  | 85-90%    |
-| S07 - Troubleshooting     | 30 hours    | 5 hours      | 25 hours       | 83%       |
-| S08 - SBOM Generator      | 6 hours     | 75 min       | 4.75 hours     | 79%       |
-| S09 - Diagrams as Code    | 45 min      | 20 min       | 25 min         | 56%       |
-| S10 - Coding Agent        | 8+ hours    | 30 min       | 7.5+ hours     | 94%       |
+| Scenario                  | Manual Time | With Copilot | Time Saved    | Savings % |
+| ------------------------- | ----------- | ------------ | ------------- | --------- |
+| S01 - Bicep Baseline      | 4-6 hours   | 30-45 min    | 3.5-5.5 hours | 85-90%    |
+| S02 - Terraform Baseline  | 4-6 hours   | 30-45 min    | 3.5-5.5 hours | 85-90%    |
+| S03 - Five-Agent Workflow | 18 hours    | 45 min       | 17.25 hours   | 96%       |
+| S04 - E-Commerce Platform | 24 hours    | 60 min       | 23 hours      | 96%       |
+| S05 - Documentation Gen   | 20 hours    | 90 min       | 18.5 hours    | 93%       |
+| S06 - Service Validation  | 4-6 hours   | 30 min       | 3.5-5.5 hours | 85-90%    |
+| S07 - Troubleshooting     | 30 hours    | 5 hours      | 25 hours      | 83%       |
+| S08 - SBOM Generator      | 6 hours     | 75 min       | 4.75 hours    | 79%       |
+| S09 - Diagrams as Code    | 45 min      | 20 min       | 25 min        | 56%       |
+| S10 - Coding Agent        | 8+ hours    | 30 min       | 7.5+ hours    | 94%       |
 
 📖 **Methodology**: See [Time Savings Evidence](../value-proposition/time-savings-evidence.md) for measurement details.
 
@@ -44,11 +44,11 @@ These measurements come from the repository's documented scenarios (S01-S11):
 
 ### Step 1: Enter Your Team Details
 
-| Input                   | Your Value | Example | Notes                                            |
-| ----------------------- | ---------- | ------- | ------------------------------------------------ |
-| **Number of IT Pros**   | _____      | 5       | Cloud architects, infra engineers, DevOps        |
-| **Average hourly rate** | $_____ /hr | $100    | Fully loaded cost (salary + benefits + overhead) |
-| **Working hours/month** | _____      | 160     | Standard assumption                              |
+| Input                   | Your Value  | Example | Notes                                            |
+| ----------------------- | ----------- | ------- | ------------------------------------------------ |
+| **Number of IT Pros**   | **\_**      | 5       | Cloud architects, infra engineers, DevOps        |
+| **Average hourly rate** | $**\_** /hr | $100    | Fully loaded cost (salary + benefits + overhead) |
+| **Working hours/month** | **\_**      | 160     | Standard assumption                              |
 
 ---
 
@@ -58,12 +58,12 @@ _Based on research, IT Pros typically spend their time as follows. Adjust percen
 
 | Task Category                             | Industry Avg | Your Team % | Hours/Month (per person) |
 | ----------------------------------------- | ------------ | ----------- | ------------------------ |
-| IaC Development (Bicep, Terraform, ARM)   | 25%          | _____%      | _____ hrs                |
-| Scripting & Automation (PowerShell, Bash) | 15%          | _____%      | _____ hrs                |
-| Troubleshooting & Debugging               | 20%          | _____%      | _____ hrs                |
-| Documentation                             | 15%          | _____%      | _____ hrs                |
-| Research & Learning                       | 15%          | _____%      | _____ hrs                |
-| Strategic Architecture                    | 10%          | _____%      | _____ hrs                |
+| IaC Development (Bicep, Terraform, ARM)   | 25%          | **\_**%     | **\_** hrs               |
+| Scripting & Automation (PowerShell, Bash) | 15%          | **\_**%     | **\_** hrs               |
+| Troubleshooting & Debugging               | 20%          | **\_**%     | **\_** hrs               |
+| Documentation                             | 15%          | **\_**%     | **\_** hrs               |
+| Research & Learning                       | 15%          | **\_**%     | **\_** hrs               |
+| Strategic Architecture                    | 10%          | **\_**%     | **\_** hrs               |
 | **TOTAL**                                 | 100%         | 100%        | 160 hrs                  |
 
 ---
@@ -74,11 +74,11 @@ _Research-backed savings percentages. Use conservative (low) estimates for pilot
 
 | Task Category          | Conservative | Moderate | Aggressive | Your Estimate |
 | ---------------------- | ------------ | -------- | ---------- | ------------- |
-| IaC Development        | 60%          | 75%      | 85%        | _____%        |
-| Scripting & Automation | 55%          | 70%      | 80%        | _____%        |
-| Troubleshooting        | 50%          | 65%      | 80%        | _____%        |
-| Documentation          | 65%          | 80%      | 90%        | _____%        |
-| Research & Learning    | 40%          | 55%      | 70%        | _____%        |
+| IaC Development        | 60%          | 75%      | 85%        | **\_**%       |
+| Scripting & Automation | 55%          | 70%      | 80%        | **\_**%       |
+| Troubleshooting        | 50%          | 65%      | 80%        | **\_**%       |
+| Documentation          | 65%          | 80%      | 90%        | **\_**%       |
+| Research & Learning    | 40%          | 55%      | 70%        | **\_**%       |
 
 **Research Sources:**
 
@@ -98,14 +98,14 @@ Hours Saved = (Current Hours × Savings %) for each task category
 Monthly Value = Total Hours Saved × Hourly Rate
 ```
 
-| Task Category          | Current Hrs | Savings % | Hours Saved | Value Saved |
-| ---------------------- | ----------- | --------- | ----------- | ----------- |
-| IaC Development        | _____       | _____%    | _____       | $_____      |
-| Scripting & Automation | _____       | _____%    | _____       | $_____      |
-| Troubleshooting        | _____       | _____%    | _____       | $_____      |
-| Documentation          | _____       | _____%    | _____       | $_____      |
-| Research & Learning    | _____       | _____%    | _____       | $_____      |
-| **TOTAL per IT Pro**   |             |           | **_____ hrs** | **$_____**  |
+| Task Category          | Current Hrs | Savings % | Hours Saved        | Value Saved     |
+| ---------------------- | ----------- | --------- | ------------------ | --------------- |
+| IaC Development        | **\_**      | **\_**%   | **\_**             | $**\_**         |
+| Scripting & Automation | **\_**      | **\_**%   | **\_**             | $**\_**         |
+| Troubleshooting        | **\_**      | **\_**%   | **\_**             | $**\_**         |
+| Documentation          | **\_**      | **\_**%   | **\_**             | $**\_**         |
+| Research & Learning    | **\_**      | **\_**%   | **\_**             | $**\_**         |
+| **TOTAL per IT Pro**   |             |           | \***\*\_** hrs\*\* | **$**\_\*\*\*\* |
 
 ---
 
@@ -113,12 +113,12 @@ Monthly Value = Total Hours Saved × Hourly Rate
 
 | Metric                         | Calculation                | Result        |
 | ------------------------------ | -------------------------- | ------------- |
-| **Monthly savings per IT Pro** | From Step 4                | $_____        |
-| **Team size**                  | From Step 1                | _____ people  |
-| **Total monthly savings**      | Savings × Team size        | $_____        |
-| **GitHub Copilot cost**        | $19 × Team size            | $_____        |
-| **Net monthly benefit**        | Savings - Cost             | $_____        |
-| **Monthly ROI**                | (Net benefit ÷ Cost) × 100 | _____%        |
+| **Monthly savings per IT Pro** | From Step 4                | $**\_**       |
+| **Team size**                  | From Step 1                | **\_** people |
+| **Total monthly savings**      | Savings × Team size        | $**\_**       |
+| **GitHub Copilot cost**        | $19 × Team size            | $**\_**       |
+| **Net monthly benefit**        | Savings - Cost             | $**\_**       |
+| **Monthly ROI**                | (Net benefit ÷ Cost) × 100 | **\_**%       |
 
 ---
 
@@ -126,47 +126,47 @@ Monthly Value = Total Hours Saved × Hourly Rate
 
 ### Small Team (3 engineers, 4 projects/month)
 
-| Metric                   | Value           |
-| ------------------------ | --------------- |
-| Copilot Cost             | $57/month       |
-| Hours Saved              | 16.3 hours/month |
-| Dollar Savings           | $1,632/month    |
-| Net Savings              | $1,575/month    |
-| **Annual Net Savings**   | **$18,900**     |
-| ROI                      | 2,763%          |
+| Metric                 | Value            |
+| ---------------------- | ---------------- |
+| Copilot Cost           | $57/month        |
+| Hours Saved            | 16.3 hours/month |
+| Dollar Savings         | $1,632/month     |
+| Net Savings            | $1,575/month     |
+| **Annual Net Savings** | **$18,900**      |
+| ROI                    | 2,763%           |
 
 ### Medium Team (10 engineers, 12 projects/month)
 
-| Metric                   | Value           |
-| ------------------------ | --------------- |
-| Copilot Cost             | $190/month      |
-| Hours Saved              | 48.9 hours/month |
-| Dollar Savings           | $4,896/month    |
-| Net Savings              | $4,706/month    |
-| **Annual Net Savings**   | **$56,472**     |
-| ROI                      | 2,477%          |
+| Metric                 | Value            |
+| ---------------------- | ---------------- |
+| Copilot Cost           | $190/month       |
+| Hours Saved            | 48.9 hours/month |
+| Dollar Savings         | $4,896/month     |
+| Net Savings            | $4,706/month     |
+| **Annual Net Savings** | **$56,472**      |
+| ROI                    | 2,477%           |
 
 ### Large Team (25 engineers, 30 projects/month)
 
-| Metric                   | Value            |
-| ------------------------ | ---------------- |
-| Copilot Cost             | $475/month       |
-| Hours Saved              | 122.4 hours/month |
-| Dollar Savings           | $12,240/month    |
-| Net Savings              | $11,765/month    |
-| **Annual Net Savings**   | **$141,180**     |
-| ROI                      | 2,477%           |
+| Metric                 | Value             |
+| ---------------------- | ----------------- |
+| Copilot Cost           | $475/month        |
+| Hours Saved            | 122.4 hours/month |
+| Dollar Savings         | $12,240/month     |
+| Net Savings            | $11,765/month     |
+| **Annual Net Savings** | **$141,180**      |
+| ROI                    | 2,477%            |
 
 ### Enterprise Team (50 IT Pros)
 
-| Metric                   | Value            |
-| ------------------------ | ---------------- |
-| Copilot Cost             | $950/month       |
-| Hours Saved              | 45 hours/month per person |
-| Dollar Savings           | $225,000/month   |
-| Net Savings              | $224,050/month   |
-| **Annual Net Savings**   | **$2.7M**        |
-| ROI                      | 23,584%          |
+| Metric                 | Value                     |
+| ---------------------- | ------------------------- |
+| Copilot Cost           | $950/month                |
+| Hours Saved            | 45 hours/month per person |
+| Dollar Savings         | $225,000/month            |
+| Net Savings            | $224,050/month            |
+| **Annual Net Savings** | **$2.7M**                 |
+| ROI                    | 23,584%                   |
 
 ---
 
@@ -188,30 +188,30 @@ Beyond direct time savings, consider these benefits:
 
 ### Quality Improvements
 
-| Benefit                        | Impact                          |
-| ------------------------------ | ------------------------------- |
-| Reduced misconfigurations      | Fewer production incidents      |
-| Built-in security defaults     | Lower security risk             |
-| Consistent naming conventions  | Easier maintenance              |
-| Better documentation           | Faster knowledge transfer       |
+| Benefit                       | Impact                     |
+| ----------------------------- | -------------------------- |
+| Reduced misconfigurations     | Fewer production incidents |
+| Built-in security defaults    | Lower security risk        |
+| Consistent naming conventions | Easier maintenance         |
+| Better documentation          | Faster knowledge transfer  |
 
 ### Team Benefits
 
-| Benefit                 | Impact                             |
-| ----------------------- | ---------------------------------- |
-| Faster onboarding       | Junior engineers productive sooner |
-| Reduced cognitive load  | Less burnout, higher retention     |
-| Knowledge sharing       | Best practices spread organically  |
-| Focus on architecture   | More time for high-value work      |
+| Benefit                | Impact                             |
+| ---------------------- | ---------------------------------- |
+| Faster onboarding      | Junior engineers productive sooner |
+| Reduced cognitive load | Less burnout, higher retention     |
+| Knowledge sharing      | Best practices spread organically  |
+| Focus on architecture  | More time for high-value work      |
 
 ### Organizational Benefits
 
-| Benefit              | Impact                        |
-| -------------------- | ----------------------------- |
-| Faster time-to-market | Competitive advantage         |
-| Standardization      | Cross-team consistency        |
-| Reduced technical debt | Cleaner codebase over time   |
-| Audit trail          | Copilot history for compliance |
+| Benefit                | Impact                         |
+| ---------------------- | ------------------------------ |
+| Faster time-to-market  | Competitive advantage          |
+| Standardization        | Cross-team consistency         |
+| Reduced technical debt | Cleaner codebase over time     |
+| Audit trail            | Copilot history for compliance |
 
 ---
 
@@ -252,13 +252,13 @@ Beyond direct time savings, consider these benefits:
 
 ## 📊 Comparison: Copilot vs. Alternatives
 
-| Alternative          | Cost             | Effectiveness      | Notes                        |
-| -------------------- | ---------------- | ------------------ | ---------------------------- |
-| **Do Nothing**       | $0               | 0% savings         | Status quo, no improvement   |
-| **More Training**    | $2-5K/person     | 10-20% improvement | One-time, decays over time   |
-| **Hire More Staff**  | $150K+/year      | Linear scaling     | Expensive, slow to ramp      |
-| **Better Templates** | $0 (internal time) | 20-30% improvement | Maintenance overhead         |
-| **GitHub Copilot**   | $228/year        | 85-95% improvement | Continuous improvement       |
+| Alternative          | Cost               | Effectiveness      | Notes                      |
+| -------------------- | ------------------ | ------------------ | -------------------------- |
+| **Do Nothing**       | $0                 | 0% savings         | Status quo, no improvement |
+| **More Training**    | $2-5K/person       | 10-20% improvement | One-time, decays over time |
+| **Hire More Staff**  | $150K+/year        | Linear scaling     | Expensive, slow to ramp    |
+| **Better Templates** | $0 (internal time) | 20-30% improvement | Maintenance overhead       |
+| **GitHub Copilot**   | $228/year          | 85-95% improvement | Continuous improvement     |
 
 ---
 

@@ -139,6 +139,7 @@ After deployment, verify:
    ```
 
 2. **Application Accessible:**
+
    - API: `https://app-{name}.azurewebsites.net`
    - API Docs: `https://app-{name}.azurewebsites.net/docs`
 

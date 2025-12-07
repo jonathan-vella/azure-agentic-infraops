@@ -133,18 +133,21 @@ that evidence...
 # UAT Test Plan - SAIF v2 API
 
 ## Functional Validation (16 tests)
+
 - Health and readiness endpoints
 - Authentication and authorization
 - Data operations (CRUD)
 - Error handling and edge cases
 
 ## Compliance Validation (4 tests)
+
 - No PHI in response headers or logs
 - HTTPS-only enforcement
 - Audit trail generation
 - Session timeout compliance
 
 ## Performance Baseline (4 tests)
+
 - Response time SLAs (< 600ms)
 - Concurrent user handling
 - Database connection efficiency
@@ -251,26 +254,26 @@ real traffic is bursty. This changes everything about our approach.
 
 ```javascript
 // load-test.js - Designed for YOUR traffic pattern
-import http from 'k6/http';
-import { check, sleep } from 'k6';
+import http from "k6/http";
+import { check, sleep } from "k6";
 
 export const options = {
   scenarios: {
     // Morning spike simulation
     morning_spike: {
-      executor: 'ramping-vus',
+      executor: "ramping-vus",
       startVUs: 10,
       stages: [
-        { duration: '30s', target: 200 },  // 8 AM spike
-        { duration: '2m', target: 150 },   // Settling
-        { duration: '2m', target: 100 },   // Steady state
-        { duration: '30s', target: 20 },   // Evening drop
+        { duration: "30s", target: 200 }, // 8 AM spike
+        { duration: "2m", target: 150 }, // Settling
+        { duration: "2m", target: 100 }, // Steady state
+        { duration: "30s", target: 20 }, // Evening drop
       ],
     },
   },
   thresholds: {
-    http_req_duration: ['p(95)<500'],      // SLA target
-    http_req_failed: ['rate<0.01'],        // 99% success
+    http_req_duration: ["p(95)<500"], // SLA target
+    http_req_failed: ["rate<0.01"], // 99% success
   },
 };
 ```
@@ -327,20 +330,23 @@ validation/
 # UAT Validation Report - SAIF v2 API
 
 ## Executive Summary
+
 All 24 acceptance criteria validated. System ready for production
 deployment with HIPAA compliance evidence documented.
 
 ## Compliance Evidence
-| Requirement | Test | Evidence |
-|------------|------|----------|
-| No PHI exposure | TC-15 | Headers verified, logs checked |
-| Encryption in transit | TC-16 | TLS 1.2+ confirmed |
-| Audit trail | TC-24 | Correlation IDs logged |
+
+| Requirement           | Test  | Evidence                       |
+| --------------------- | ----- | ------------------------------ |
+| No PHI exposure       | TC-15 | Headers verified, logs checked |
+| Encryption in transit | TC-16 | TLS 1.2+ confirmed             |
+| Audit trail           | TC-24 | Correlation IDs logged         |
 
 ## Sign-Off
-- [ ] QA Lead: _____________ Date: _____
-- [ ] Security: ____________ Date: _____
-- [ ] Compliance: __________ Date: _____
+
+- [ ] QA Lead: **\*\***\_**\*\*** Date: **\_**
+- [ ] Security: \***\*\_\_\_\_\*\*** Date: **\_**
+- [ ] Compliance: \***\*\_\_\*\*** Date: **\_**
 ```
 
 ### The Time Transformation
@@ -419,12 +425,12 @@ Extend Act 4 to show:
 
 ## Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| Agents not responding | Verify Copilot subscription active |
-| Tests fail unexpectedly | Check `API_BASE_URL` environment variable |
-| k6 not available | Use Azure Load Testing or simulate results |
-| Reports not generating | Ensure test output captured in conversation |
+| Issue                   | Solution                                    |
+| ----------------------- | ------------------------------------------- |
+| Agents not responding   | Verify Copilot subscription active          |
+| Tests fail unexpectedly | Check `API_BASE_URL` environment variable   |
+| k6 not available        | Use Azure Load Testing or simulate results  |
+| Reports not generating  | Ensure test output captured in conversation |
 
 ---
 
@@ -449,5 +455,5 @@ Extend Act 4 to show:
 
 ---
 
-*"The best tests don't prove your code works. They prove your
-system delivers what stakeholders actually need."* — Marcus Chen
+_"The best tests don't prove your code works. They prove your
+system delivers what stakeholders actually need."_ — Marcus Chen

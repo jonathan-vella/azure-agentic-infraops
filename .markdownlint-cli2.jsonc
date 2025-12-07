@@ -61,6 +61,6 @@
     "scenarios/**/agents/**",
     "scenarios/**/validation/**",
     "scenarios/**/DEMO-SCRIPT.md",
-    "scenarios/S07-sbom-generator/README.md"
+    "scenarios/S08-sbom-generator/README.md"
   ]
 }

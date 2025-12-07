@@ -20,13 +20,13 @@ not just a query generator.
 
 ### What You'll Discover
 
-| Phase | Traditional Approach | With Discovery |
-|-------|---------------------|----------------|
-| Problem Definition | "It's broken" | "What exactly is failing, for whom, and why does it matter?" |
-| Data Discovery | "Where do I look?" | "What questions do the logs need to answer?" |
-| Log Extraction | "What's the KQL syntax?" | "What hypothesis am I testing with this query?" |
-| Analysis | "What do these numbers mean?" | "What story does this data tell?" |
-| Root Cause | "I think I found it" | "How do I validate this conclusion?" |
+| Phase              | Traditional Approach          | With Discovery                                               |
+| ------------------ | ----------------------------- | ------------------------------------------------------------ |
+| Problem Definition | "It's broken"                 | "What exactly is failing, for whom, and why does it matter?" |
+| Data Discovery     | "Where do I look?"            | "What questions do the logs need to answer?"                 |
+| Log Extraction     | "What's the KQL syntax?"      | "What hypothesis am I testing with this query?"              |
+| Analysis           | "What do these numbers mean?" | "What story does this data tell?"                            |
+| Root Cause         | "I think I found it"          | "How do I validate this conclusion?"                         |
 
 ### Sarah's Key Insight
 
@@ -234,15 +234,15 @@ The REAL question: Why is payment processing taking 12 seconds?
 
 ## Time Savings
 
-| Phase | Manual Approach | With AI Partner | Savings |
-|-------|-----------------|-----------------|---------|
-| Problem Definition | 30 min (vague) | 10 min (precise) | 67% |
-| Data Discovery | 4 hours (docs) | 10 min (guided) | 96% |
-| Log Extraction | 8 hours (KQL) | 15 min (generated) | 97% |
-| Analysis | 4 hours (guessing) | 20 min (interpreted) | 92% |
-| Root Cause | 8 hours (trial/error) | 15 min (validated) | 97% |
-| Documentation | 2 hours (manual) | 5 min (auto) | 96% |
-| **Total** | **30 hours** | **5 hours** | **83%** |
+| Phase              | Manual Approach       | With AI Partner      | Savings |
+| ------------------ | --------------------- | -------------------- | ------- |
+| Problem Definition | 30 min (vague)        | 10 min (precise)     | 67%     |
+| Data Discovery     | 4 hours (docs)        | 10 min (guided)      | 96%     |
+| Log Extraction     | 8 hours (KQL)         | 15 min (generated)   | 97%     |
+| Analysis           | 4 hours (guessing)    | 20 min (interpreted) | 92%     |
+| Root Cause         | 8 hours (trial/error) | 15 min (validated)   | 97%     |
+| Documentation      | 2 hours (manual)      | 5 min (auto)         | 96%     |
+| **Total**          | **30 hours**          | **5 hours**          | **83%** |
 
 ### Business Impact
 
@@ -356,4 +356,4 @@ S07-troubleshooting/
 
 ---
 
-*"The goal isn't faster queries. It's better questions."* — Maya Patel
+_"The goal isn't faster queries. It's better questions."_ — Maya Patel

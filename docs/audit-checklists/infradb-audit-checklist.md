@@ -107,7 +107,7 @@ Partners must use the following assessments to build their plan:
 - **✅ Required:** The FinOps Review (required for all partners and specializations)
 - **Choose one:**
   - Cloud Adoption Strategy Evaluator (CASE) assessment output, **OR**
-  - The Technical Assessment for Generative AI in Azure (TAGA) - *required for AI Applications on Azure and AI Platform on Azure specializations*
+  - The Technical Assessment for Generative AI in Azure (TAGA) - _required for AI Applications on Azure and AI Platform on Azure specializations_
 
 **Timeline:** These projects should have been completed in the past **twelve (12) months**.
 
@@ -177,10 +177,11 @@ The partner must use the following guidance and assessments:
 
 - **Reference architectures** in Architecture Center
 - **One (1) of the two (2) assessments:**
+
   - Well-Architected Review, **OR**
   - Go-Live Well-Architected Review
-  
-  *(Completed for workloads about to be deployed)*
+
+  _(Completed for workloads about to be deployed)_
 
 #### Required Evidence
 
@@ -241,11 +242,11 @@ The partner must demonstrate which of the following approaches they used when th
    If the partner follows a proprietary approach or a mixture of the two (2) approaches above, the partner must clearly articulate their approach to environment configuration.
 
 4. **Brownfield scenario**  
-   The partner's customer has a landing zone that does not follow best practices, and an update is required to follow best practices in the Cloud Adoption Framework.Required evidence:The partner must provide documented evidence of a repeatable deployment
-they used to create landing zones, aligned to the Azure landing zone
-(ALZ) conceptual architecture , deployed to two (2) unique customer
-environments using Bicep or Terraform modules, and ARM (AZURE Resource
-Manager) templates, to automatically deploy the environment
+    The partner's customer has a landing zone that does not follow best practices, and an update is required to follow best practices in the Cloud Adoption Framework.Required evidence:The partner must provide documented evidence of a repeatable deployment
+   they used to create landing zones, aligned to the Azure landing zone
+   (ALZ) conceptual architecture , deployed to two (2) unique customer
+   environments using Bicep or Terraform modules, and ARM (AZURE Resource
+   Manager) templates, to automatically deploy the environment
 
 #### Required Evidence
 
@@ -272,7 +273,7 @@ In either case, the output evidence must demonstrate the configuration of the id
 
 > **⚠️ Special Evidence Note:**  
 > **For Analytics on Azure specialization deployments and Data Warehouse Migration to Azure specialization deployments only:**  
-> If no Identity or Networking components are deployed in the Azure Landing Zone, a documented focus on Resource organization attributes is sufficient to pass this control. Identity and Networking repeatable deployment attributes only are waived.  
+> If no Identity or Networking components are deployed in the Azure Landing Zone, a documented focus on Resource organization attributes is sufficient to pass this control. Identity and Networking repeatable deployment attributes only are waived.
 >
 > Demonstration of the approach type for ALZ is required for two (2) unique customers for Analytics on Azure and Data Warehouse Migration to Azure specializations.
 
@@ -288,6 +289,7 @@ When customers adopt the cloud, their existing technical staff will need a varie
 
 1. **Skills Assessment**  
    A description of the new skills for the technical roles the customer will need to achieve to successfully manage the new environment. The Partner must document key customer technical roles and the plan for the customer to obtain skills required such as, but not limited to:
+
    - IT Admins
    - IT Governance
    - IT Operations
@@ -556,8 +558,8 @@ The partner must provide evidence of their ability to migrate infrastructure to 
 
 The partner chooses **one (1) scenario** to demonstrate, either 1 or 2:
 
-1. Move the application from an **on-premises Windows/Linux Server** to Azure infrastructure as a service (IaaS) (*)
-2. Move the application that is running on **Windows Server/Linux from another public cloud platform** to Azure IaaS (*)
+1. Move the application from an **on-premises Windows/Linux Server** to Azure infrastructure as a service (IaaS) (\*)
+2. Move the application that is running on **Windows Server/Linux from another public cloud platform** to Azure IaaS (\*)
 
 **\*Note:** Azure includes Microsoft datacenters, Arc enabled Azure on-prem or Arc enabled multi-cloud. For Azure Arc information see Azure Arc as a landing zone accelerator.
 
@@ -595,7 +597,7 @@ The partner chooses **either option 1 Migrations to Azure SQL OR option 2 Migrat
 #### �� Scenario 1: Migrations to Azure SQL
 
 - **Rehosting** from SQL Server on-premises or from another public cloud to **SQL IaaS on Azure**
-- **Replatforming** from SQL Server on-premises or from another public cloud to SQL platform as a service (PaaS) on Azure (**SQL Database** or **SQL Managed Instance**, or **Azure Arc**)*
+- **Replatforming** from SQL Server on-premises or from another public cloud to SQL platform as a service (PaaS) on Azure (**SQL Database** or **SQL Managed Instance**, or **Azure Arc**)\*
 - **Replatform** from **Oracle** to **Azure SQL IaaS or PaaS**
 
 > **⚠️ Note:** Azure includes Microsoft datacenters, Arc enabled Azure on-prem or Arc enabled multi-cloud.
@@ -603,7 +605,7 @@ The partner chooses **either option 1 Migrations to Azure SQL OR option 2 Migrat
 #### 🗄️ Scenario 2: Migrations to Azure Open-Source Databases and Cosmos DB
 
 - **Replatform Oracle** to **Azure Database for PostgreSQL**
-- **Replatform or rehost PostgreSQL** to **Azure Database for PostgreSQL***
+- **Replatform or rehost PostgreSQL** to **Azure Database for PostgreSQL\***
 - **Replatform or rehost MariaDB** to **Azure SQL Database for MariaDB**
 - **Replatform or rehost MySQL** to **Azure SQL Database for MySQL**
 - **Replatform or rehost Cassandra** to **Azure Cosmos DB** or **Azure Managed Instance for Apache Cassandra**
@@ -729,8 +731,8 @@ The partner must demonstrate validated deployment for **both** of the scenarios 
 
 **Scenario 2:**
 
-1. Migration of Microsoft SQL databases to Azure (can include Arc-enabled SQL Managed Instance (MI))*, **OR**
-2. Migration of MySQL, PostgreSQL, MariaDB **OR** MongoDB database to Azure*
+1. Migration of Microsoft SQL databases to Azure (can include Arc-enabled SQL Managed Instance (MI))\*, **OR**
+2. Migration of MySQL, PostgreSQL, MariaDB **OR** MongoDB database to Azure\*
 
 > **⚠️ Notes:**
 >
@@ -768,8 +770,8 @@ The partner must provide post-deployment operational documentation to show that 
 
 **Scenario 2:**
 
-1. Migration of Microsoft SQL to Azure (including Arc-enabled SQL MI)*, **OR**
-2. Migration of MySQL, PostgreSQL, MariaDB **OR** MongoDB database to Azure*
+1. Migration of Microsoft SQL to Azure (including Arc-enabled SQL MI)\*, **OR**
+2. Migration of MySQL, PostgreSQL, MariaDB **OR** MongoDB database to Azure\*
 
 > **⚠️ Notes:**
 >
@@ -793,10 +795,10 @@ The documentation must be provided for each customer. The documentation must ind
 
 This repository provides practical scenarios to help you prepare for the audit controls:
 
-| Audit Control | Scenario | Description |
-|--------------|----------|-------------|
-| **3.1 Repeatable Deployment** | [S01-bicep-baseline](../../scenarios/S01-bicep-baseline) | Bicep implementation of Hub & Spoke ALZ |
-| **3.1 Repeatable Deployment** | [S02-terraform-baseline](../../scenarios/S02-terraform-baseline) | Terraform implementation of Hub & Spoke ALZ |
-| **4.1 Service Validation** | [S06-service-validation](../../scenarios/S06-service-validation) | Automated testing of migrated workloads |
-| **3.3 Migration Tools** | [S03-five-agent-workflow](../../scenarios/S03-five-agent-workflow) | Planning and executing migrations with Copilot |
-| **2.2 Well-Architected Review** | [S07-troubleshooting](../../scenarios/S07-troubleshooting) | Identifying and fixing architectural issues |
+| Audit Control                   | Scenario                                                           | Description                                    |
+| ------------------------------- | ------------------------------------------------------------------ | ---------------------------------------------- |
+| **3.1 Repeatable Deployment**   | [S01-bicep-baseline](../../scenarios/S01-bicep-baseline)           | Bicep implementation of Hub & Spoke ALZ        |
+| **3.1 Repeatable Deployment**   | [S02-terraform-baseline](../../scenarios/S02-terraform-baseline)   | Terraform implementation of Hub & Spoke ALZ    |
+| **4.1 Service Validation**      | [S06-service-validation](../../scenarios/S06-service-validation)   | Automated testing of migrated workloads        |
+| **3.3 Migration Tools**         | [S03-five-agent-workflow](../../scenarios/S03-five-agent-workflow) | Planning and executing migrations with Copilot |
+| **2.2 Well-Architected Review** | [S07-troubleshooting](../../scenarios/S07-troubleshooting)         | Identifying and fixing architectural issues    |

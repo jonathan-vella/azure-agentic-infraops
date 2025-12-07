@@ -432,10 +432,10 @@ Each scenario should:
 
 ## Document Info
 
-|                |                               |
-| -------------- | ----------------------------- |
-| **Created**    | November 2025                 |
-| **Updated**    | December 2025                 |
-| **Scenarios**  | 11 (S01-S11)                  |
-| **Total Time** | ~8-10 hours (all scenarios)   |
-| **Maintainer** | Repository maintainers        |
+|                |                             |
+| -------------- | --------------------------- |
+| **Created**    | November 2025               |
+| **Updated**    | December 2025               |
+| **Scenarios**  | 11 (S01-S11)                |
+| **Total Time** | ~8-10 hours (all scenarios) |
+| **Maintainer** | Repository maintainers      |
