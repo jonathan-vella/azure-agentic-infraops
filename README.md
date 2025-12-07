@@ -115,14 +115,14 @@ Each agent asks for approval before proceeding. Say `yes` to continue, or provid
 | `mcp/azure-pricing-mcp/` | 💰 Real-time Azure pricing MCP server |
 | `infra/bicep/`           | Generated Bicep templates             |
 | `docs/`                  | Documentation, guides, diagrams       |
-| `scenarios/`             | 10 hands-on learning scenarios        |
+| `scenarios/`             | 11 hands-on learning scenarios        |
 
 ---
 
 <details>
 <summary><h2>🎯 Scenarios</h2></summary>
 
-**10 hands-on scenarios** from beginner to advanced (15-45 min each):
+**11 hands-on scenarios** from beginner to advanced (15-45 min each):
 
 | Level            | Topics                                                                |
 | ---------------- | --------------------------------------------------------------------- |

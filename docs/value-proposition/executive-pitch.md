@@ -133,7 +133,7 @@ _The challenges below are drawn from hundreds of conversations with IT professio
 
 **With Copilot:** Documentation that generates from code. Diagrams that stay in sync.
 
-### James Park — Platform Engineer
+### Maya Patel — Platform Engineer
 
 > _"Production is down. The error message is cryptic. I've been Googling for an hour."_
 

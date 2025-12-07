@@ -179,7 +179,7 @@
 
 ### Executive Sponsors
 
-- **Chief Medical Officer (CMO)**: Dr. Sarah Chen
+- **Chief Medical Officer (CMO)**: Dr. Jennifer Liu
 - **Chief Information Officer (CIO)**: Michael Rodriguez
 
 ### Project Team

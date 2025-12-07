@@ -1,4 +1,4 @@
-# S04: Documentation Generation - Learning Documentation Automation with Copilot
+# S05: Documentation Generation - Learning Documentation Automation with Copilot
 
 ---
 

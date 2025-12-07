@@ -337,7 +337,7 @@ TechCorp Solutions provides a multi-tenant SaaS platform for project management 
 
 ### Primary Stakeholders
 
-**CTO - Sarah Chen**
+**CTO - Michelle Chen**
 
 - **Concern**: "We're scaling fast but infrastructure is a bottleneck"
 - **Success Criteria**: 50% faster time-to-market for new features

@@ -14,7 +14,7 @@ The bank is launching a new digital banking platform and needs to establish Azur
 **Key Stakeholders:**
 
 - **John Martinez** - IT Director: Focused on security and compliance
-- **Sarah Chen** - Network Administrator: Responsible for connectivity and segmentation
+- **Lisa Chen** - Network Administrator: Responsible for connectivity and segmentation
 - **Mike Johnson** - Systems Engineer: Will manage deployments and operations
 
 ## Technical Requirements
