@@ -18,24 +18,12 @@ whether you're presenting to customers, colleagues, training sessions, or leader
 
 ## 📊 Key Value Proposition
 
-**GitHub Copilot is an efficiency multiplier for IT Professionals**, reducing infrastructure development time by
-60-95% while teaching best practices through context-aware suggestions.
+GitHub Copilot delivers **60-95% time savings** on infrastructure development tasks, with measured results
+across all 9 repository scenarios.
 
-### Measured Results from Repository Scenarios (S01-S09)
+**Highlights**: S03 Five-Agent Workflow achieves 96% savings (18 hours → 45 min).
 
-| Scenario                  | Manual Time | With Copilot | Savings |
-| ------------------------- | ----------- | ------------ | ------- |
-| S01 - Bicep Baseline      | 4-6 hours   | 30-45 min    | 85-90%  |
-| S02 - Terraform Baseline  | 4-6 hours   | 30-45 min    | 85-90%  |
-| S03 - Five-Agent Workflow | 18 hours    | 45 min       | 96%     |
-| S04 - Documentation       | 3-4 hours   | 20-30 min    | 85-90%  |
-| S05 - Service Validation  | 2-3 hours   | 15-20 min    | 85-90%  |
-| S06 - Troubleshooting     | 1-4 hours   | 10-15 min    | 80-90%  |
-| S07 - SBOM Generator      | 2-3 hours   | 15-20 min    | 85-90%  |
-| S08 - Diagrams as Code    | 2-3 hours   | 15-20 min    | 85-90%  |
-| S09 - Coding Agent        | 2-4 hours   | 15-30 min    | 85-90%  |
-
-📖 **Methodology**: See [Time Savings Evidence](../value-proposition/time-savings-evidence.md) for measurement details.
+📖 **Full data & methodology**: [Time Savings Evidence](../value-proposition/time-savings-evidence.md)
 
 ## 🎤 Demo Preparation Checklist
 
@@ -90,10 +78,13 @@ whether you're presenting to customers, colleagues, training sessions, or leader
 - Demonstrate **context awareness** (Copilot understands the full stack)
 - Highlight **reduced context switching** (stay in VS Code for everything)
 
-## 📁 Additional Resources
+## 📁 Related Resources
 
+- **Value Proposition Content**: [value-proposition/](../value-proposition/) — Time savings evidence, executive pitch,
+  portfolio showcase (the *what to say*)
 - **Scenario Index**: [scenarios/README.md](../../scenarios/README.md) — All 10 scenarios with learning paths
-- **Workflow Guide**: [docs/workflow/WORKFLOW.md](../workflow/WORKFLOW.md) — Complete agent workflow documentation
+- **Workflow Guide**: [workflow/WORKFLOW.md](../workflow/WORKFLOW.md) — Complete agent workflow documentation
+- **Quick Start**: [guides/quickstart.md](../guides/quickstart.md) — 10-minute setup for demo prep
 
 ## 🤝 Contributing
 

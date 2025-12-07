@@ -1,6 +1,9 @@
 # Quick Start Guide
 
-Get up and running with Agentic InfraOps in under 10 minutes.
+> **10 minutes to your first AI-assisted infrastructure deployment.**
+>
+> This guide gets you running fast. For a comprehensive learning journey with phases and learning paths,
+> see [Getting Started Journey](getting-started-journey.md).
 
 ## Prerequisites
 

@@ -8,11 +8,13 @@ This folder consolidates all operational guides for Agentic InfraOps, from getti
 
 ## 🚀 Getting Started
 
-| Guide                                                 | Description                                    | Time      |
-| ----------------------------------------------------- | ---------------------------------------------- | --------- |
-| [Quick Start](quickstart.md)                          | Get up and running in under 10 minutes         | 10 min    |
-| [Prerequisites](prerequisites.md)                     | Required tools, Azure setup, knowledge prereqs | Reference |
-| [Getting Started Journey](getting-started-journey.md) | Complete onboarding from zero to productive    | 30 min    |
+| Guide                                                 | Description                                             | Time      |
+| ----------------------------------------------------- | ------------------------------------------------------- | --------- |
+| [Quick Start](quickstart.md)                          | Clone, Dev Container, run first demo — minimal steps    | 10 min    |
+| [Getting Started Journey](getting-started-journey.md) | Comprehensive onboarding with phases and learning paths | 30 min    |
+| [Prerequisites](prerequisites.md)                     | Required tools, Azure setup, knowledge prereqs          | Reference |
+
+> **Which one?** Use Quick Start if you just want to run something. Use the Journey for structured learning.
 
 ## 🤖 GitHub Copilot
 

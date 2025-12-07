@@ -2,8 +2,8 @@
 
 > **Version 3.1.0** | Last Updated: December 3, 2025
 >
-> **From zero to productive in 30 minutes.** This guide walks you through everything—from setup
-> to your first deployment to mastering advanced workflows.
+> **From zero to productive in 30 minutes.** This comprehensive guide covers setup, your first scenario,
+> exploration paths, and mastery.\n>\n> ⚡ **In a hurry?** Use [Quick Start](quickstart.md) for 10-minute setup + first demo.
 
 ---
 

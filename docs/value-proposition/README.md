@@ -18,25 +18,16 @@ This content is designed for:
 - **IT Leadership** - Risk reduction and skill acceleration
 - **Sales/Partners** - Customer-facing value messaging
 
-## Key Messages
+## Key Message
 
-### Efficiency Multiplier
+> **GitHub Copilot is an efficiency multiplier for IT Professionals** — delivering 60-95% time savings
+> on infrastructure development while teaching best practices through context-aware suggestions.
 
-GitHub Copilot is an **efficiency multiplier** for IT Professionals:
-
-- 60-95% reduction in infrastructure development time
-- Best practices taught through context-aware suggestions
-- Learning happens during work, not separate training
-
-### Measured Results
-
-| Scenario | Time Savings |
-| -------- | ------------ |
-| Bicep/Terraform Baseline | 85-90% |
-| Full Five-Agent Workflow | 96% |
-| Documentation Generation | 85-90% |
+For detailed data and methodology, see [Time Savings Evidence](time-savings-evidence.md).
 
 ## Related Resources
 
-- [Presenter Toolkit](../presenter-toolkit/) - Demo guides and objection handling
-- [ROI Calculator](../presenter-toolkit/roi-calculator.md) - Build a custom business case
+- [Presenter Toolkit](../presenter-toolkit/) — Demo delivery guides, objection handling (the *how to present*)
+- [ROI Calculator](../presenter-toolkit/roi-calculator.md) — Build a custom business case
+- [Scenarios](../../scenarios/) — Hands-on demos with measured time savings
+- [Workflow Guide](../workflow/WORKFLOW.md) — Complete agent workflow for live demonstrations
