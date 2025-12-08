@@ -11,11 +11,32 @@ Follow these guidelines to ensure documentation quality across the repository.
 ## General Instructions
 
 - Use ATX-style headings (`##`, `###`) - never use H1 (`#`) in content (reserved for document title)
-- Limit line length to 120 characters for readability (configure markdownlint MD013 to 120)
+- **CRITICAL: Limit line length to 120 characters** - this is enforced by CI/CD and pre-commit hooks
+- Break long lines at natural points (after punctuation, before conjunctions)
 - Use LF line endings (enforced by `.gitattributes`)
 - Include meaningful alt text for all images
 - Validate with `markdownlint` before committing
 - Refer to `docs/guides/markdown-style-guide.md` for quick rules and examples
+
+## Line Length Guidelines
+
+The 120-character limit is strictly enforced. When lines exceed this limit:
+
+1. **Sentences**: Break after punctuation (period, comma, em-dash)
+2. **Lists**: Break after the list marker or continue on next line with indentation
+3. **Links**: Break before `[` or use reference-style links for long URLs
+4. **Code spans**: If unavoidable, use a code block instead
+
+**Example - Breaking long lines:**
+
+```markdown
+<!-- BAD: 130+ characters -->
+This is a very long line that contains important information about Azure resources and best practices that exceeds the limit.
+
+<!-- GOOD: Natural break after punctuation -->
+This is a very long line that contains important information about Azure resources
+and best practices that stays within the limit.
+```
 
 ## Content Structure
 

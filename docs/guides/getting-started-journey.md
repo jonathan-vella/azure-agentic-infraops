@@ -287,7 +287,7 @@ Delegate entire GitHub Issues to Copilot for autonomous implementation.
 | Resource            | Location                                                                           | Purpose                   |
 | ------------------- | ---------------------------------------------------------------------------------- | ------------------------- |
 | **Prerequisites**   | [docs/getting-started/prerequisites.md](prerequisites.md)                          | Tool requirements         |
-| **Model Selection** | [docs/getting-started/model-selection.md](model-selection.md)                      | Choose the right AI model |
+| **Model Selection** | [docs/guides/copilot-model-selection.md](copilot-model-selection.md)               | Choose the right AI model |
 | **Scenarios**       | [scenarios/](../../scenarios/)                                                     | Hands-on learning         |
 | **Demo Script**     | [S01 Demo Script](../../scenarios/S01-bicep-baseline/DEMO-SCRIPT.md)               | Presenter guide           |
 | **ROI Calculator**  | [docs/presenter-toolkit/roi-calculator.md](../presenter-toolkit/roi-calculator.md) | Calculate savings         |

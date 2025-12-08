@@ -17,6 +17,16 @@ echo "🔐 Configuring Git..."
 git config --global --add safe.directory "${PWD}"
 git config --global core.autocrlf input
 
+# Configure Husky git hooks
+echo "🪝 Setting up Git hooks (Husky)..."
+git config core.hooksPath .husky
+if [ -f ".husky/pre-commit" ]; then
+    chmod +x .husky/pre-commit
+    echo "  ✅ Pre-commit hook enabled"
+else
+    echo "  ⚠️  Pre-commit hook not found"
+fi
+
 # Verify Python packages (installed via pip or should be)
 echo "🐍 Verifying Python packages..."
 python3 -c "import checkov; import diagrams" 2>/dev/null && echo "  ✅ checkov and diagrams available" || {

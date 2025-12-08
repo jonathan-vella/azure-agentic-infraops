@@ -23,7 +23,7 @@ resources.
 | [Quick Start](guides/quickstart.md)                   | Get up and running in 10 minutes        |
 | [Prerequisites](guides/prerequisites.md)              | Required tools and setup                |
 | [Complete Journey](guides/getting-started-journey.md) | Full onboarding from zero to productive |
-| [Model Selection](guides/model-selection.md)          | Choosing the right AI model             |
+| [Model Selection](guides/copilot-model-selection.md)  | Choosing the right AI model             |
 
 ## 🤖 GitHub Copilot
 

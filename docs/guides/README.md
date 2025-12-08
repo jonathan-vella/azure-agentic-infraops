@@ -30,7 +30,7 @@ This folder consolidates all operational guides for Agentic InfraOps, from getti
 | ----------------------------------------------------- | ---------------------------------------------- | --------- |
 | [Copilot Getting Started](copilot-getting-started.md) | Install, configure, and use Copilot in VS Code | 15 min    |
 | [Copilot Best Practices](copilot-best-practices.md)   | Prompting tips, validation, IT Pro patterns    | Reference |
-| [Model Selection](model-selection.md)                 | Choose the right AI model for your task        | Reference |
+| [Model Selection](copilot-model-selection.md)         | Choose the right AI model for your task        | Reference |
 
 ## 🔧 Operations
 

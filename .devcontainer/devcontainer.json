@@ -66,11 +66,17 @@
       "settings": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.rulers": [120],
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 120,
         "terminal.integrated.defaultProfile.linux": "bash",
         "files.eol": "\n",
         "editor.tabSize": 2,
         "[markdown]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.rulers": [120],
+          "editor.wordWrap": "wordWrapColumn",
+          "editor.wordWrapColumn": 120
         },
         "[bicep]": {
           "editor.tabSize": 2

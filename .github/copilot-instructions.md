@@ -9,7 +9,8 @@ This file provides context and guidance for GitHub Copilot when assisting with t
 **Essential Knowledge for Immediate Productivity:**
 
 1. **Default Region**: Always use `swedencentral` (alternative: `germanywestcentral` when encountering quota issues)
-2. **Unique Resource Names**: Generate `var uniqueSuffix = uniqueString(resourceGroup().id)` in main.bicep, pass to ALL modules
+2. **Unique Resource Names**: Generate `var uniqueSuffix = uniqueString(resourceGroup().id)` in main.bicep,
+   pass to ALL modules
 3. **Name Length Limits**: Key Vault ≤24 chars, Storage ≤24 chars (no hyphens), SQL ≤63 chars
 4. **Azure SQL Auth Policy**: Azure AD-only auth for SQL Server
 5. **Zone Redundancy**: App Service Plans need P1v4 SKU (not S1/P1v2) for zone redundancy

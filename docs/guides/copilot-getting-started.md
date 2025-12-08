@@ -195,7 +195,7 @@ See the [Workflow Guide](../workflow/WORKFLOW.md) for the complete four-step pro
 ## Next Steps
 
 - **Best practices** → [Copilot Best Practices](copilot-best-practices.md)
-- **Model selection** → [Choosing the Right Model](model-selection.md)
+- **Model selection** → [Choosing the Right Model](copilot-model-selection.md)
 - **First scenario** → [S01 Bicep Baseline](../../scenarios/S01-bicep-baseline/)
 - **Troubleshooting** → [Troubleshooting Guide](troubleshooting.md)
 

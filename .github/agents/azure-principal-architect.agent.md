@@ -106,7 +106,8 @@ Always evaluate all 5 pillars, even if not explicitly requested.
 - 3-4: Poor - Significant issues, requires major improvements
 - 1-2: Critical - Fundamental problems, not recommended for production
 
-**Include Confidence Level**: High (based on complete requirements) | Medium (some assumptions made) | Low (significant unknowns)
+**Include Confidence Level**: High (based on complete requirements) | Medium (some assumptions made)
+| Low (significant unknowns)
 
 ## Architectural Approach
 

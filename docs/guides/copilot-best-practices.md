@@ -294,7 +294,7 @@ Copilot features evolve rapidly. Stay updated:
 
 - [GitHub Copilot Changelog](https://github.blog/changelog/label/copilot/)
 - [VS Code Copilot Updates](https://code.visualstudio.com/updates)
-- [Model Selection Guide](model-selection.md) — model capabilities change
+- [Model Selection Guide](copilot-model-selection.md) — model capabilities change
 
 ---
 
