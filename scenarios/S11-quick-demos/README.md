@@ -1,6 +1,6 @@
 # Quick Demo Prompts
 
-> **Version 3.2.0** | [Changelog](../../VERSION.md)
+> **Version 3.6.0** | [Changelog](../../VERSION.md)
 
 Simple, copy-paste prompts for rapid infrastructure generation. These demos are designed for quick
 exploration of Agentic InfraOps capabilities.

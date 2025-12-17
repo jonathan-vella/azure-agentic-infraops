@@ -1,6 +1,6 @@
 # Getting Started: Your Complete Journey
 
-> **Version 3.2.0** | [Changelog](../../VERSION.md)
+> **Version 3.6.0** | [Changelog](../../VERSION.md)
 >
 > **From zero to productive in 30 minutes.** This comprehensive guide covers setup, your first scenario,
 > exploration paths, and mastery.\n>\n> ⚡ **In a hurry?** Use [Quick Start](quickstart.md) for 10-minute setup + first demo.

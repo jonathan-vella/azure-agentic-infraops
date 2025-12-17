@@ -1,6 +1,6 @@
 # Presenter Toolkit
 
-> **Version 3.2.0** | [Changelog](../../VERSION.md)
+> **Version 3.6.0** | [Changelog](../../VERSION.md)
 
 This toolkit provides everything you need to deliver compelling Agentic InfraOps demonstrations to IT Professionals,
 whether you're presenting to customers, colleagues, training sessions, or leadership teams.

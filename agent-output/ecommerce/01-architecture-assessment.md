@@ -1,3 +1,6 @@
+> ⚠️ **Legacy Output (v3.0)**: This document uses older terminology.
+> See [WORKFLOW.md](/docs/workflow/WORKFLOW.md) for current Seven-Step workflow.
+
 # Step 2: Azure Principal Architect Agent
 
 > **Agent Used:** `azure-principal-architect`  

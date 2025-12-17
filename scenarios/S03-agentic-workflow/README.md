@@ -66,7 +66,7 @@ Traditional infrastructure design involves:
 | [Presenter Toolkit](../../docs/presenter-toolkit/)                  | Demo delivery guides                 |
 | [S04: E-Commerce](../S04-ecommerce-platform/)                       | Next: full workflow with deployment  |
 
-## 🤖 The Six Steps
+## 🤖 The Seven Steps
 
 ### Step 1: Plan Agent (`@plan`) - _VS Code Built-in - Start Here_
 

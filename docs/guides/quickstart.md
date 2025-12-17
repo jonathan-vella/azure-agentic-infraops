@@ -262,3 +262,32 @@ After completing the quick start:
 - **Agent behavior:** Review agent files in `.github/agents/`
 - **Scenario prompts:** See files in `scenarios/` folder
 - **Bug reports:** Open a GitHub issue
+
+---
+
+## GitHub Copilot Fundamentals
+
+New to GitHub Copilot? Here are the essentials for IaC workflows:
+
+### What Copilot Does Best
+
+| Strength           | Example Use Case                                |
+| ------------------ | ----------------------------------------------- |
+| ✅ Writing tests   | Generate unit tests for Bicep modules           |
+| ✅ Repetitive code | Create similar resource blocks, parameter files |
+| ✅ Debugging       | "Why does this Bicep template fail validation?" |
+| ✅ Explaining code | "Explain what this Terraform module does"       |
+| ✅ Boilerplate     | Scaffold new modules, scripts, README files     |
+
+### Essential Keyboard Shortcuts
+
+| Action             | Windows/Linux | Mac          |
+| ------------------ | ------------- | ------------ |
+| Accept suggestion  | `Tab`         | `Tab`        |
+| Dismiss suggestion | `Esc`         | `Esc`        |
+| See alternatives   | `Ctrl+Enter`  | `Ctrl+Enter` |
+| Open Copilot Chat  | `Ctrl+Alt+I`  | `Cmd+Alt+I`  |
+| Inline chat        | `Ctrl+I`      | `Cmd+I`      |
+
+> 📖 **Deep Dive**: For complete Copilot setup, plans comparison, and detailed tutorials,
+> see [Getting Started with GitHub Copilot](copilot-getting-started.md).

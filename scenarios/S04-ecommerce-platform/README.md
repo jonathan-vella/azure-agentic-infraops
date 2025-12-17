@@ -58,7 +58,7 @@ This demo extends the 7-step workflow by adding:
 | [ADR-003: AVM-First](../../docs/adr/ADR-003-avm-first-approach.md)    | Module selection rationale          |
 | [Presenter Toolkit](../../docs/presenter-toolkit/)                    | Demo delivery guides                |
 
-## 🤖 The Six Steps
+## 🤖 The Seven Steps
 
 ```mermaid
 %%{init: {'theme':'neutral'}}%%

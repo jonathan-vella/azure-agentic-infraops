@@ -1,6 +1,6 @@
 # Agentic InfraOps
 
-> **Version 3.5.0** | [Changelog](VERSION.md)
+> **Version 3.6.0** | [Changelog](VERSION.md)
 
 [![Agentic InfraOps](https://img.shields.io/badge/Agentic-InfraOps-FF6B35?style=for-the-badge&logo=robot&logoColor=white)](https://github.com/jonathan-vella/azure-agentic-infraops)
 [![Azure](https://img.shields.io/badge/Azure-Infrastructure-0078D4?style=for-the-badge&logo=microsoftazure)](https://azure.microsoft.com)
