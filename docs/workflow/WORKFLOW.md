@@ -89,14 +89,14 @@ Use the VS Code built-in `@plan` agent to gather comprehensive requirements.
 
 **Key Information to Capture:**
 
-| Category                   | Examples                                                     |
-| -------------------------- | ------------------------------------------------------------ |
-| **Project Overview**       | Name, type, timeline, stakeholders                           |
-| **Functional Requirements**| Core capabilities, user types, integrations, data types      |
-| **Non-Functional (NFRs)**  | SLA (99.9%/99.95%/99.99%), RTO, RPO, performance targets     |
-| **Compliance & Security**  | HIPAA, PCI-DSS, GDPR, SOC 2, data residency, auth method     |
-| **Cost Constraints**       | Monthly/annual budget, optimization priorities, FinOps       |
-| **Operational**            | Monitoring needs, support SLAs, backup/DR requirements       |
+| Category                    | Examples                                                 |
+| --------------------------- | -------------------------------------------------------- |
+| **Project Overview**        | Name, type, timeline, stakeholders                       |
+| **Functional Requirements** | Core capabilities, user types, integrations, data types  |
+| **Non-Functional (NFRs)**   | SLA (99.9%/99.95%/99.99%), RTO, RPO, performance targets |
+| **Compliance & Security**   | HIPAA, PCI-DSS, GDPR, SOC 2, data residency, auth method |
+| **Cost Constraints**        | Monthly/annual budget, optimization priorities, FinOps   |
+| **Operational**             | Monitoring needs, support SLAs, backup/DR requirements   |
 
 **Example Prompt:**
 

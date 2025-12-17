@@ -67,12 +67,12 @@ to ensure recommendations align with current Microsoft guidance.
 
 **Before starting the WAF assessment**, validate that requirements from Step 1 (@plan) include:
 
-| Category               | Required Information                                | If Missing                       |
-| ---------------------- | --------------------------------------------------- | -------------------------------- |
-| **NFRs (mandatory)**   | SLA target, RTO, RPO, performance targets           | Ask user for specifics           |
-| **Compliance**         | Regulatory framework (HIPAA, PCI-DSS, GDPR, etc.)   | Ask if any compliance applies    |
-| **Cost Constraints**   | Monthly/annual budget or "optimize for cost"        | Ask for budget range             |
-| **Scale Requirements** | Expected users, transactions, data volume           | Ask for growth projections       |
+| Category               | Required Information                              | If Missing                    |
+| ---------------------- | ------------------------------------------------- | ----------------------------- |
+| **NFRs (mandatory)**   | SLA target, RTO, RPO, performance targets         | Ask user for specifics        |
+| **Compliance**         | Regulatory framework (HIPAA, PCI-DSS, GDPR, etc.) | Ask if any compliance applies |
+| **Cost Constraints**   | Monthly/annual budget or "optimize for cost"      | Ask for budget range          |
+| **Scale Requirements** | Expected users, transactions, data volume         | Ask for growth projections    |
 
 **Validation Prompt Template:**
 
