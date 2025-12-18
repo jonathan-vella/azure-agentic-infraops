@@ -21,7 +21,7 @@
 > and deploy-ready Bicep/Terraform templates—all aligned with Azure Well-Architected best practices
 > and Azure Verified Modules. Real-time pricing, compliance checks, and automation included.
 
-📖 **[Quick Start Guide](docs/guides/quickstart.md)** |
+📖 **[Quick Start Guide](docs/getting-started/quickstart.md)** |
 📋 **[Full Workflow Docs](docs/workflow/WORKFLOW.md)** |
 🎯 **[Scenarios](scenarios/)** |
 💰 **[Azure Pricing MCP](mcp/azure-pricing-mcp/)**
@@ -32,7 +32,7 @@
 <!-- markdownlint-disable MD013 -->
 <p align="center">
   <img
-    src="docs/presenter-toolkit/infographics/generated/demo-workflow.gif"
+    src="docs/presenter/infographics/generated/demo-workflow.gif"
     alt="Agentic InfraOps workflow demo showing coordinated AI agents transforming requirements into Azure infrastructure"
     width="700" />
 </p>
@@ -109,7 +109,7 @@ graph LR
 
 Each agent asks for approval before proceeding. Say `yes` to continue, or provide feedback to refine.
 
-📖 **[Full Quick Start Guide →](docs/guides/quickstart.md)**
+📖 **[Full Quick Start Guide →](docs/getting-started/quickstart.md)**
 (includes troubleshooting, demo scenarios, deployment instructions)
 
 ### Using the Accelerator
@@ -160,8 +160,8 @@ and workflows.
 | Benefit             | Details                                                                                                                     |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | **AVM-First**       | Azure Verified Modules for policy-compliant deployments ([ADR-003](docs/adr/ADR-003-avm-first-approach.md))                 |
-| **Time Savings**    | Quantified evidence: 45 min vs 18+ hours ([time-savings-evidence](docs/value-proposition/time-savings-evidence.md))         |
-| **Real Portfolios** | See real projects built with agentic workflows ([portfolio showcase](docs/value-proposition/copilot-portfolio-showcase.md)) |
+| **Time Savings**    | Quantified evidence: 45 min vs 18+ hours ([time-savings-evidence](docs/presenter/time-savings-evidence.md))         |
+| **Real Portfolios** | See real projects built with agentic workflows ([portfolio showcase](docs/presenter/copilot-portfolio-showcase.md)) |
 
 ---
 
