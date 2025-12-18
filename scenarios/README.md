@@ -45,19 +45,25 @@ For simple, single-prompt scenarios, see the [S11 Quick Demos](S11-quick-demos/)
 
 ## Scenario Index
 
-| #   | Scenario                                                  | Character       | Challenge                              | Time      | Difficulty   |
-| --- | --------------------------------------------------------- | --------------- | -------------------------------------- | --------- | ------------ |
-| S01 | [Bicep Baseline](#s01-bicep-baseline)                     | Elena Rodriguez | Build secure Azure network foundation  | 30 min    | Beginner     |
-| S02 | [Terraform Baseline](#s02-terraform-baseline)             | Jordan Martinez | Multi-cloud IaC with Terraform         | 30 min    | Beginner     |
-| S03 | [Agentic Workflow](#s03-agentic-workflow)                 | Jennifer Chen   | End-to-end infrastructure design       | 45-60 min | Advanced     |
-| S04 | [E-Commerce Platform](#s04-e-commerce-platform)           | Carlos Mendez   | PCI-DSS compliant retail platform      | 60-90 min | Advanced     |
-| S05 | [Documentation Generation](#s05-documentation-generation) | Priya Sharma    | Auto-generate docs from code           | 90 min    | Intermediate |
-| S06 | [Service Validation](#s06-service-validation)             | Marcus Chen     | Automated UAT and load testing         | 30 min    | Intermediate |
-| S07 | [Troubleshooting](#s07-troubleshooting)                   | Maya Patel      | Diagnose infrastructure issues         | 25 min    | Intermediate |
-| S08 | [SBOM Generator](#s08-sbom-generator)                     | Sarah Chen      | Software Bill of Materials             | 75 min    | Intermediate |
-| S09 | [Diagrams as Code](#s09-diagrams-as-code)                 | David Kim       | Python-generated architecture diagrams | 20 min    | Beginner     |
-| S10 | [Coding Agent](#s10-coding-agent)                         | Alex Petrov     | Async implementation via GitHub Issues | 30 min    | Advanced     |
-| S11 | [Quick Demos](#s11-quick-demos)                           | —               | Single-prompt scenarios                | 15-30 min | Varies       |
+| #   | Scenario                                                  | Character       | Challenge                              | Time      | Difficulty        |
+| --- | --------------------------------------------------------- | --------------- | -------------------------------------- | --------- | ----------------- |
+| S01 | [Bicep Baseline](#s01-bicep-baseline)                     | Elena Rodriguez | Build secure Azure network foundation  | 30 min    | 🟢 Beginner       |
+| S02 | [Terraform Baseline](#s02-terraform-baseline)             | Jordan Martinez | Multi-cloud IaC with Terraform         | 30 min    | 🟢 Beginner       |
+| S03 | [Agentic Workflow](#s03-agentic-workflow)                 | Jennifer Chen   | End-to-end infrastructure design       | 45-60 min | 🔴 Advanced       |
+| S04 | [E-Commerce Platform](#s04-e-commerce-platform)           | Carlos Mendez   | PCI-DSS compliant retail platform      | 60-90 min | 🔴 Advanced       |
+| S05 | [Documentation Generation](#s05-documentation-generation) | Priya Sharma    | Auto-generate docs from code           | 90 min    | 🟡 Intermediate   |
+| S06 | [Service Validation](#s06-service-validation)             | Marcus Chen     | Automated UAT and load testing         | 30 min    | 🟡 Intermediate   |
+| S07 | [Troubleshooting](#s07-troubleshooting)                   | Maya Patel      | Diagnose infrastructure issues         | 25 min    | 🟡 Intermediate   |
+| S08 | [SBOM Generator](#s08-sbom-generator)                     | Sarah Chen      | Software Bill of Materials             | 75 min    | 🟡 Intermediate   |
+| S09 | [Diagrams as Code](#s09-diagrams-as-code)                 | David Kim       | Python-generated architecture diagrams | 20 min    | 🟢 Beginner       |
+| S10 | [Coding Agent](#s10-coding-agent)                         | Alex Petrov     | Async implementation via GitHub Issues | 30 min    | 🔴 Advanced       |
+| S11 | [Quick Demos](#s11-quick-demos)                           | —               | Single-prompt scenarios                | 15-30 min | 🟢🟡🔴 Varies     |
+
+**Difficulty Legend:**
+
+- 🟢 **Beginner** — No prior Azure/IaC experience required. Good first scenarios.
+- 🟡 **Intermediate** — Familiarity with Azure basics and IaC concepts expected.
+- 🔴 **Advanced** — Multi-step workflows, compliance requirements, production-grade patterns.
 
 ---
 
