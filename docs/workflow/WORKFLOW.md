@@ -376,17 +376,6 @@ Implementer: [Executes deployment to Azure]
 
 ---
 
-## Alternative: Unified Agent
-
-For simple infrastructure or quick iterations, use `infrastructure-specialist` which combines all steps
-into a single agent. This is useful for:
-
-- Small projects (< 5 resources)
-- Prototyping and experimentation
-- Users familiar with Azure who don't need step-by-step guidance
-
----
-
 ## File Locations
 
 | Artifact               | Location                                                |

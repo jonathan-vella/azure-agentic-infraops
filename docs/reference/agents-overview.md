@@ -232,17 +232,6 @@ for the deployed patient portal infrastructure.
 
 ---
 
-### infrastructure-specialist
-
-> **Optional** | Unified agent for experienced users
-
-**Purpose**: Combines capabilities of multiple agents for users who prefer a single agent interface.
-Recommended for experienced users who understand the workflow.
-
-**📖 Definition**: [`.github/agents/infrastructure-specialist.agent.md`](../../.github/agents/infrastructure-specialist.agent.md)
-
----
-
 ## Workflow Summary
 
 ```mermaid

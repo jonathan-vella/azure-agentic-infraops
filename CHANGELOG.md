@@ -220,7 +220,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `bicep-implement` - Bicep code generation
   - `diagram-generator` - Python architecture diagrams
   - `adr-generator` - Architecture Decision Records
-  - `infrastructure-specialist` - Unified agent (optional)
+  - `workload-documentation-generator` - Customer-deliverable documentation
 - Comprehensive workflow documentation (`docs/workflow/WORKFLOW.md`)
 - E-commerce platform scenario prompts (`scenarios/quick-demos/ecommerce-prompts.md`)
 - Azure Pricing MCP server (`mcp/azure-pricing-mcp/`)
