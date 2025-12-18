@@ -24,9 +24,9 @@ flowchart LR
     E --> REF
     P --> DEMO
 
-    click QS "./getting-started/QUICKSTART.md" _self
-    click REF "./reference/" _self
-    click DEMO "./presenter-toolkit/" _self
+    click QS "https://github.com/jonathan-vella/azure-agentic-infraops/blob/main/docs/getting-started/QUICKSTART.md"
+    click REF "https://github.com/jonathan-vella/azure-agentic-infraops/tree/main/docs/reference"
+    click DEMO "https://github.com/jonathan-vella/azure-agentic-infraops/tree/main/docs/presenter-toolkit"
 ```
 
 ---
