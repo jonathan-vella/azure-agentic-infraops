@@ -56,7 +56,7 @@ const TITLE_MISSING = "Missing Template or Agent";
 const STRICTNESS = process.env.STRICTNESS || "relaxed";
 
 const AGENTS = {
-  "01-requirements.md": null, // Built-in @plan agent
+  "01-requirements.md": ".github/agents/project-planner.agent.md",
   "02-architecture-assessment.md":
     ".github/agents/azure-principal-architect.agent.md",
   "04-implementation-plan.md": ".github/agents/bicep-plan.agent.md",
