@@ -1,33 +1,33 @@
 # Step 1: Requirements for Simple Web API
 
-**Use this prompt with @plan agent in VS Code Chat**
+**Use this prompt with project-planner agent in VS Code Chat**
 
 ---
 
-Create requirements for a simple web API project:
+Create requirements for a simple web API project with these specifications:
 
+**Architecture Components:**
 - Static web frontend hosted on Azure Static Web Apps (Free tier)
 - Backend REST API using Azure Functions (Consumption plan)
 - Data persistence with Azure Cosmos DB (Serverless, <100 requests/sec)
 - Application monitoring with Application Insights
+
+**Constraints:**
 - Region: swedencentral
-- Budget constraint: $100/month
+- Budget: $100/month
 - No special compliance requirements
 - Expected load: 10 concurrent users, 1000 requests/day
 - SLA target: 99.9%
-- RTO: 4 hours
-- RPO: 1 hour
+- RTO: 4 hours, RPO: 1 hour
 
-Generate requirements content following the template structure at `.github/templates/01-requirements.template.md`
+**Output:**
+Generate complete requirements following template structure at
+`.github/templates/01-requirements.template.md`. After approval, save to
+`agent-output/simple-web-api/01-requirements.md`
 
-Note: @plan will provide the content. After review, I'll save it to `agent-output/simple-web-api/01-requirements.md`
-
-Ensure all invariant H2 sections are included in the correct order:
-
-- ## Project Overview
-- ## Functional Requirements
-- ## Non-Functional Requirements (NFRs)
-- ## Compliance & Security Requirements
-- ## Cost Constraints
-- ## Operational Requirements
-- ## Regional Preferences
+**Workflow:**
+1. Agent researches template structure and constraints
+2. Agent generates draft requirements document
+3. User reviews and provides feedback (iterate as needed)
+4. User approves final version
+5. Agent creates `01-requirements.md` file in correct location
