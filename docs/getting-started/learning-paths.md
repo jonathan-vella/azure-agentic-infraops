@@ -241,13 +241,13 @@ flowchart LR
 
 **Workflow Components:**
 
-| Agent                         | Type   | Access                                |
-| ----------------------------- | ------ | ------------------------------------- |
+| Agent                         | Type   | Access                                  |
+| ----------------------------- | ------ | --------------------------------------- |
 | **Project Planner**           | Custom | Select from agent picker (`Ctrl+Alt+I`) |
-| **adr_generator**             | Custom | Select from agent picker              |
-| **azure-principal-architect** | Custom | Select from agent picker              |
-| **bicep-plan**                | Custom | Select from agent picker              |
-| **bicep-implement**           | Custom | Select from agent picker              |
+| **adr_generator**             | Custom | Select from agent picker                |
+| **azure-principal-architect** | Custom | Select from agent picker                |
+| **bicep-plan**                | Custom | Select from agent picker                |
+| **bicep-implement**           | Custom | Select from agent picker                |
 
 > **Note**: This repository uses a custom **Project Planner** agent (`project-planner.agent.md`)
 > specifically designed for Azure infrastructure requirements gathering. VS Code also has a
@@ -312,13 +312,13 @@ pwsh -File validation/validate.ps1
 
 ### Agent Quick Access
 
-| Agent                       | Type   | Access                     | Use For             |
-| --------------------------- | ------ | -------------------------- | ------------------- |
+| Agent                       | Type   | Access                      | Use For             |
+| --------------------------- | ------ | --------------------------- | ------------------- |
 | `project-planner`           | Custom | Agent picker (`Ctrl+Alt+I`) | Multi-step planning |
-| `adr_generator`             | Custom | Agent picker               | Document decisions  |
-| `azure-principal-architect` | Custom | Agent picker               | WAF assessment      |
-| `bicep-plan`                | Custom | Agent picker               | Module design       |
-| `bicep-implement`           | Custom | Agent picker               | Code generation     |
+| `adr_generator`             | Custom | Agent picker                | Document decisions  |
+| `azure-principal-architect` | Custom | Agent picker                | WAF assessment      |
+| `bicep-plan`                | Custom | Agent picker                | Module design       |
+| `bicep-implement`           | Custom | Agent picker                | Code generation     |
 
 > 📖 **Custom Agents Documentation:** [VS Code Custom Agents](https://code.visualstudio.com/docs/copilot/customization/custom-agents)
 

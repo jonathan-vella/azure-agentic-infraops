@@ -1,11 +1,12 @@
 ---
-applyTo: '**'
-description: 'See process Copilot is following where you can edit this to reshape the interaction or save when follow up may be needed'
+applyTo: "**"
+description: "See process Copilot is following where you can edit this to reshape the interaction or save when follow up may be needed"
 ---
 
 # Copilot Process tracking Instructions
 
 **ABSOLUTE MANDATORY RULES:**
+
 - You must review these instructions in full before executing any steps to understand the full instructions guidelines.
 - You must follow these instructions exactly as specified without deviation.
 - Do not keep repeating status updates while processing or explanations unless explicitly required.
@@ -56,6 +57,7 @@ description: 'See process Copilot is following where you can edit this to reshap
   file when done so it is not added to the repository.
 
 **ENFORCEMENT RULES:**
+
 - NEVER write "# Phase X" headers in responses
 - NEVER repeat the word "Phase" in output unless explicitly required
 - NEVER provide explanations beyond the exact text specified

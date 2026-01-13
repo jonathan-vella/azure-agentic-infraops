@@ -1,6 +1,6 @@
 ---
-description: 'Guidelines for creating high-quality custom instruction files for GitHub Copilot'
-applyTo: '**/*.instructions.md'
+description: "Guidelines for creating high-quality custom instruction files for GitHub Copilot"
+applyTo: "**/*.instructions.md"
 ---
 
 # Custom Instructions File Guidelines
@@ -22,8 +22,8 @@ Every instruction file must include YAML frontmatter with the following fields:
 
 ```yaml
 ---
-description: 'Brief description of the instruction purpose and scope'
-applyTo: 'glob pattern for target files (e.g., **/*.ts, **/*.py)'
+description: "Brief description of the instruction purpose and scope"
+applyTo: "glob pattern for target files (e.g., **/*.ts, **/*.py)"
 ---
 ```
 
@@ -65,12 +65,14 @@ Provide concrete examples with clear labels:
 
 ```markdown
 ### Good Example
+
 \`\`\`language
 // Recommended approach
 code example here
 \`\`\`
 
 ### Bad Example
+
 \`\`\`language
 // Avoid this pattern
 code example here
@@ -143,22 +145,24 @@ code example here
 
 ```markdown
 ### Good Example - Using TypeScript interfaces
+
 \`\`\`typescript
 interface User {
-  id: string;
-  name: string;
-  email: string;
+id: string;
+name: string;
+email: string;
 }
 
 function getUser(id: string): User {
-  // Implementation
+// Implementation
 }
 \`\`\`
 
 ### Bad Example - Using any type
+
 \`\`\`typescript
 function getUser(id: any): any {
-  // Loses type safety
+// Loses type safety
 }
 \`\`\`
 ```
@@ -196,8 +200,8 @@ Here's a minimal example structure for a new instruction file:
 
 ```markdown
 ---
-description: 'Brief description of purpose'
-applyTo: '**/*.ext'
+description: "Brief description of purpose"
+applyTo: "**/*.ext"
 ---
 
 # Technology Name Development
@@ -217,16 +221,19 @@ Brief introduction and context.
 ## Code Standards
 
 ### Naming Conventions
+
 - Rule 1
 - Rule 2
 
 ### File Organization
+
 - Structure 1
 - Structure 2
 
 ## Common Patterns
 
 ### Pattern 1
+
 Description and example
 
 \`\`\`language
@@ -234,6 +241,7 @@ code example
 \`\`\`
 
 ### Pattern 2
+
 Description and example
 
 ## Validation
