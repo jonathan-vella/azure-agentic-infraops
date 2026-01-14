@@ -22,10 +22,10 @@
 
 ### 1.1 Recovery Time Objective (RTO)
 
-| Tier     | RTO Target | Services                   |
-| -------- | ---------- | -------------------------- |
-| Critical | 4 hours    | Full application           |
-| Standard | 8 hours    | Non-critical functions     |
+| Tier     | RTO Target | Services               |
+| -------- | ---------- | ---------------------- |
+| Critical | 4 hours    | Full application       |
+| Standard | 8 hours    | Non-critical functions |
 
 ### 1.2 Recovery Point Objective (RPO)
 
@@ -275,11 +275,11 @@ az sql db list-restore-points \
 
 ## 8. Recovery Runbooks
 
-| Runbook                | Location                   | Owner       |
-| ---------------------- | -------------------------- | ----------- |
-| Database restore       | Section 3.1                | DevOps Team |
-| Application rollback   | Section 3.2                | DevOps Team |
-| Full region failover   | Section 3.3                | DevOps Lead |
+| Runbook              | Location    | Owner       |
+| -------------------- | ----------- | ----------- |
+| Database restore     | Section 3.1 | DevOps Team |
+| Application rollback | Section 3.2 | DevOps Team |
+| Full region failover | Section 3.3 | DevOps Lead |
 
 ---
 

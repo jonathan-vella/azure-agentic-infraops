@@ -458,23 +458,23 @@ AzureMetrics
 
 ## 7. Dependencies
 
-| Dependency        | Failure Impact               | Mitigation                    |
-| ----------------- | ---------------------------- | ----------------------------- |
-| Azure SQL         | No transaction processing    | Geo-replication + failover    |
-| Azure Key Vault   | No secrets access            | Soft delete + purge protection|
-| Azure Front Door  | No traffic routing           | Multi-region endpoints        |
-| Azure AD          | No authentication            | N/A (Azure-wide issue)        |
+| Dependency       | Failure Impact            | Mitigation                     |
+| ---------------- | ------------------------- | ------------------------------ |
+| Azure SQL        | No transaction processing | Geo-replication + failover     |
+| Azure Key Vault  | No secrets access         | Soft delete + purge protection |
+| Azure Front Door | No traffic routing        | Multi-region endpoints         |
+| Azure AD         | No authentication         | N/A (Azure-wide issue)         |
 
 ---
 
 ## 8. Recovery Runbooks
 
-| Runbook                  | Location          | Owner             |
-| ------------------------ | ----------------- | ----------------- |
-| SQL PITR Restore         | Section 3.5       | DBA               |
-| Planned Failover         | Section 3.3       | Platform Engineer |
-| Unplanned Failover       | Section 3.4       | DR Coordinator    |
-| Full Infrastructure      | Section 3.6       | Platform Engineer |
+| Runbook             | Location    | Owner             |
+| ------------------- | ----------- | ----------------- |
+| SQL PITR Restore    | Section 3.5 | DBA               |
+| Planned Failover    | Section 3.3 | Platform Engineer |
+| Unplanned Failover  | Section 3.4 | DR Coordinator    |
+| Full Infrastructure | Section 3.6 | Platform Engineer |
 
 ---
 

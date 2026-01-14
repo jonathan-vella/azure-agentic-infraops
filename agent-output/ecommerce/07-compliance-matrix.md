@@ -223,8 +223,8 @@ access controls, and monitoring capabilities implemented via Azure-native servic
 
 ## 4. Audit Trail
 
-| Date       | Auditor       | Finding                      | Status    |
-| ---------- | ------------- | ---------------------------- | --------- |
+| Date       | Auditor       | Finding                      | Status     |
+| ---------- | ------------- | ---------------------------- | ---------- |
 | 2025-12-17 | Copilot Agent | Initial assessment completed | Documented |
 
 ### Attestation Readiness
@@ -239,13 +239,13 @@ access controls, and monitoring capabilities implemented via Azure-native servic
 
 ## 5. Remediation Tracker
 
-| Finding                    | Owner         | Due Date  | Status   |
-| -------------------------- | ------------- | --------- | -------- |
-| No ASV external scans      | Security Lead | 30 days   | Planned  |
-| No annual pen testing      | Security Lead | 60 days   | Planned  |
-| Defender not fully enabled | Platform Team | 14 days   | Planned  |
-| MFA not enforced           | Security Lead | 14 days   | Planned  |
-| Incident response basic    | Ops Team      | 30 days   | Planned  |
+| Finding                    | Owner         | Due Date | Status  |
+| -------------------------- | ------------- | -------- | ------- |
+| No ASV external scans      | Security Lead | 30 days  | Planned |
+| No annual pen testing      | Security Lead | 60 days  | Planned |
+| Defender not fully enabled | Platform Team | 14 days  | Planned |
+| MFA not enforced           | Security Lead | 14 days  | Planned |
+| Incident response basic    | Ops Team      | 30 days  | Planned |
 
 ---
 

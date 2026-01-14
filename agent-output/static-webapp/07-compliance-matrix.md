@@ -121,12 +121,12 @@ This compliance matrix maps the static-webapp-test security controls to Azure Se
 The following controls are intentionally not implemented due to cost/complexity trade-offs
 for this internal development tool:
 
-| Control           | Risk                   | Mitigation                 |
-| ----------------- | ---------------------- | -------------------------- |
-| Private endpoints | Public SQL endpoint    | Firewall, Azure AD auth    |
-| WAF               | No WAF                 | SWA built-in protections   |
-| DDoS Protection   | Basic DDoS only        | Acceptable for internal    |
-| Network segment   | No VNet isolation      | Service firewalls          |
+| Control           | Risk                | Mitigation               |
+| ----------------- | ------------------- | ------------------------ |
+| Private endpoints | Public SQL endpoint | Firewall, Azure AD auth  |
+| WAF               | No WAF              | SWA built-in protections |
+| DDoS Protection   | Basic DDoS only     | Acceptable for internal  |
+| Network segment   | No VNet isolation   | Service firewalls        |
 
 **Risk Owner**: DevOps Team
 **Review Date**: Quarterly or upon scope change
@@ -135,30 +135,30 @@ for this internal development tool:
 
 ## 3. Evidence Collection
 
-| Control   | Evidence Type   | Location                    | Last Collected |
-| --------- | --------------- | --------------------------- | -------------- |
-| IM-1      | Configuration   | Azure AD tenant             | Automated      |
-| DP-3      | Configuration   | TLS settings                | Automated      |
-| LT-5      | Logs            | Log Analytics workspace     | Continuous     |
-| BR-1      | Backup status   | SQL automated backup        | Daily          |
+| Control | Evidence Type | Location                | Last Collected |
+| ------- | ------------- | ----------------------- | -------------- |
+| IM-1    | Configuration | Azure AD tenant         | Automated      |
+| DP-3    | Configuration | TLS settings            | Automated      |
+| LT-5    | Logs          | Log Analytics workspace | Continuous     |
+| BR-1    | Backup status | SQL automated backup    | Daily          |
 
 ---
 
 ## 4. Audit Trail
 
-| Date       | Auditor       | Finding                      | Status    |
-| ---------- | ------------- | ---------------------------- | --------- |
+| Date       | Auditor       | Finding                      | Status     |
+| ---------- | ------------- | ---------------------------- | ---------- |
 | 2025-12-17 | Copilot Agent | Initial assessment completed | Documented |
 
 ---
 
 ## 5. Remediation Tracker
 
-| Finding           | Owner       | Due Date    | Status     |
-| ----------------- | ----------- | ----------- | ---------- |
-| Private endpoints | DevOps Team | Production  | Deferred   |
-| WAF protection    | DevOps Team | Production  | Deferred   |
-| DDoS Protection   | DevOps Team | Production  | Deferred   |
+| Finding           | Owner       | Due Date   | Status   |
+| ----------------- | ----------- | ---------- | -------- |
+| Private endpoints | DevOps Team | Production | Deferred |
+| WAF protection    | DevOps Team | Production | Deferred |
+| DDoS Protection   | DevOps Team | Production | Deferred |
 
 ---
 
