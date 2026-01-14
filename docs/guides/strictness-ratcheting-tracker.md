@@ -61,8 +61,8 @@ Override with environment variable: `STRICTNESS=standard npm run lint:artifact-t
 | Mode     | standard        |
 
 - All 12 artifact types now at standard strictness
-- Restructured all Wave 2 (07-*) artifacts to match templates
-- Rewrote legacy ecommerce artifacts (02-*, 05-*)
+- Restructured all Wave 2 (07-\*) artifacts to match templates
+- Rewrote legacy ecommerce artifacts (02-_, 05-_)
 - Added optional section allowances for common extra content
 
 ### v3.8.1 - Generalized Validation (2026-01-14)
@@ -82,4 +82,4 @@ Override with environment variable: `STRICTNESS=standard npm run lint:artifact-t
 
 ---
 
-*Last updated: 2026-01-14 (v3.9.0)*
+_Last updated: 2026-01-14 (v3.9.0)_

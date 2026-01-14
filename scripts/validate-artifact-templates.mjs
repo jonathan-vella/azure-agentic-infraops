@@ -134,7 +134,10 @@ const OPTIONAL_ALLOWED = {
   "02-architecture-assessment.md": [],
   "04-implementation-plan.md": [],
   "04-governance-constraints.md": [],
-  "05-implementation-reference.md": ["## Key Implementation Notes", "## Next Steps"],
+  "05-implementation-reference.md": [
+    "## Key Implementation Notes",
+    "## Next Steps",
+  ],
   "06-deployment-summary.md": [],
   "07-design-document.md": [],
   "07-operations-runbook.md": [],

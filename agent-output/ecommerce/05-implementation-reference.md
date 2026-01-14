@@ -30,28 +30,28 @@ infra/bicep/ecommerce/
 
 ## Validation Status
 
-| Check         | Status |
-| ------------- | ------ |
+| Check         | Status  |
+| ------------- | ------- |
 | `bicep build` | ✅ Pass |
 | `bicep lint`  | ✅ Pass |
 
 ## Resources Created
 
-| Resource                | Bicep Type                                  | Module          |
-| ----------------------- | ------------------------------------------- | --------------- |
-| Virtual Network         | Microsoft.Network/virtualNetworks           | network.bicep   |
-| Key Vault               | Microsoft.KeyVault/vaults                   | keyvault.bicep  |
-| SQL Server              | Microsoft.Sql/servers                       | sql.bicep       |
-| SQL Database            | Microsoft.Sql/servers/databases             | sql.bicep       |
-| Redis Cache             | Microsoft.Cache/redis                       | redis.bicep     |
-| App Service Plan        | Microsoft.Web/serverfarms                   | appservice.bicep |
-| Web App                 | Microsoft.Web/sites                         | appservice.bicep |
-| Cognitive Search        | Microsoft.Search/searchServices             | search.bicep    |
-| Service Bus Namespace   | Microsoft.ServiceBus/namespaces             | servicebus.bicep |
-| Function App            | Microsoft.Web/sites                         | functions.bicep |
-| Front Door              | Microsoft.Cdn/profiles                      | frontdoor.bicep |
-| Log Analytics Workspace | Microsoft.OperationalInsights/workspaces    | monitoring.bicep |
-| Application Insights    | Microsoft.Insights/components               | monitoring.bicep |
+| Resource                | Bicep Type                               | Module           |
+| ----------------------- | ---------------------------------------- | ---------------- |
+| Virtual Network         | Microsoft.Network/virtualNetworks        | network.bicep    |
+| Key Vault               | Microsoft.KeyVault/vaults                | keyvault.bicep   |
+| SQL Server              | Microsoft.Sql/servers                    | sql.bicep        |
+| SQL Database            | Microsoft.Sql/servers/databases          | sql.bicep        |
+| Redis Cache             | Microsoft.Cache/redis                    | redis.bicep      |
+| App Service Plan        | Microsoft.Web/serverfarms                | appservice.bicep |
+| Web App                 | Microsoft.Web/sites                      | appservice.bicep |
+| Cognitive Search        | Microsoft.Search/searchServices          | search.bicep     |
+| Service Bus Namespace   | Microsoft.ServiceBus/namespaces          | servicebus.bicep |
+| Function App            | Microsoft.Web/sites                      | functions.bicep  |
+| Front Door              | Microsoft.Cdn/profiles                   | frontdoor.bicep  |
+| Log Analytics Workspace | Microsoft.OperationalInsights/workspaces | monitoring.bicep |
+| Application Insights    | Microsoft.Insights/components            | monitoring.bicep |
 
 ## Deployment Instructions
 

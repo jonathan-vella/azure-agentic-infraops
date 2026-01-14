@@ -4,12 +4,12 @@
 
 ## Requirements Validation ✅
 
-| Requirement Category | Status | Notes |
-|---------------------|--------|-------|
-| NFRs (SLA, RTO, RPO) | ⚠️ Partial | SLA 99.9% defined; RTO/RPO need definition |
-| Compliance Requirements | ✅ Defined | PCI-DSS alignment required |
-| Cost Constraints | ✅ Defined | ~$1,250/month target |
-| Scale Requirements | ✅ Defined | 10,000 concurrent users |
+| Requirement Category    | Status     | Notes                                      |
+| ----------------------- | ---------- | ------------------------------------------ |
+| NFRs (SLA, RTO, RPO)    | ⚠️ Partial | SLA 99.9% defined; RTO/RPO need definition |
+| Compliance Requirements | ✅ Defined | PCI-DSS alignment required                 |
+| Cost Constraints        | ✅ Defined | ~$1,250/month target                       |
+| Scale Requirements      | ✅ Defined | 10,000 concurrent users                    |
 
 ---
 
@@ -40,13 +40,13 @@ Azure Front Door (WAF) → App Service (P1v4 zone-redundant)
 
 ### Overall Scores
 
-| Pillar                    | Score | Confidence | Summary |
-| ------------------------- | ----- | ---------- | ------- |
+| Pillar                    | Score | Confidence | Summary                            |
+| ------------------------- | ----- | ---------- | ---------------------------------- |
 | 🔒 Security               | 9/10  | High       | PCI-DSS aligned, private endpoints |
-| 🔄 Reliability            | 8/10  | High       | Zone redundant, single region |
-| ⚡ Performance            | 8/10  | High       | Meets 10K concurrent users |
-| 💰 Cost Optimization      | 7/10  | Medium     | Room for reserved instances |
-| 🔧 Operational Excellence | 8/10  | High       | IaC, monitoring, CI/CD ready |
+| 🔄 Reliability            | 8/10  | High       | Zone redundant, single region      |
+| ⚡ Performance            | 8/10  | High       | Meets 10K concurrent users         |
+| 💰 Cost Optimization      | 7/10  | Medium     | Room for reserved instances        |
+| 🔧 Operational Excellence | 8/10  | High       | IaC, monitoring, CI/CD ready       |
 
 **Primary Pillar Optimized**: Security (PCI-DSS compliance)
 **Trade-offs Accepted**: Single-region deployment (cost vs. reliability)
@@ -166,27 +166,27 @@ Azure Front Door (WAF) → App Service (P1v4 zone-redundant)
 
 ## Resource SKU Recommendations
 
-| Resource         | Recommended SKU | Justification                        |
-|------------------|-----------------|--------------------------------------|
+| Resource         | Recommended SKU | Justification                          |
+| ---------------- | --------------- | -------------------------------------- |
 | App Service Plan | P1v4            | Zone redundancy, scale to 12 instances |
-| SQL Database     | S3              | 100 DTU, adequate for 10K users      |
-| Redis Cache      | Standard C2     | 6GB, 10K concurrent connections      |
-| Cognitive Search | Standard S1     | 15M documents, vector search         |
-| Service Bus      | Premium         | Private endpoints, high throughput   |
-| Functions        | EP1             | VNet integration, dedicated compute  |
-| Front Door       | Standard        | Global WAF, SSL termination          |
+| SQL Database     | S3              | 100 DTU, adequate for 10K users        |
+| Redis Cache      | Standard C2     | 6GB, 10K concurrent connections        |
+| Cognitive Search | Standard S1     | 15M documents, vector search           |
+| Service Bus      | Premium         | Private endpoints, high throughput     |
+| Functions        | EP1             | VNet integration, dedicated compute    |
+| Front Door       | Standard        | Global WAF, SSL termination            |
 
 ---
 
 ## Architecture Decision Summary
 
-| Decision | Rationale | Trade-off |
-|----------|-----------|-----------|
-| Single region (swedencentral) | Cost optimization | Lower reliability |
-| Premium Service Bus | Private endpoints required | Higher cost |
-| P1v4 App Service | Zone redundancy for SLA | Cannot use cheaper S1 |
-| Azure AD-only SQL auth | Policy compliance | No SQL auth fallback |
-| Private endpoints | PCI-DSS network isolation | VNet complexity |
+| Decision                      | Rationale                  | Trade-off             |
+| ----------------------------- | -------------------------- | --------------------- |
+| Single region (swedencentral) | Cost optimization          | Lower reliability     |
+| Premium Service Bus           | Private endpoints required | Higher cost           |
+| P1v4 App Service              | Zone redundancy for SLA    | Cannot use cheaper S1 |
+| Azure AD-only SQL auth        | Policy compliance          | No SQL auth fallback  |
+| Private endpoints             | PCI-DSS network isolation  | VNet complexity       |
 
 ---
 
@@ -210,12 +210,12 @@ Azure Front Door (WAF) → App Service (P1v4 zone-redundant)
 
 ## Approval Gate
 
-| Checkpoint | Status | Approver |
-|------------|--------|----------|
-| Architecture review complete | ✅ | Azure Principal Architect |
-| Cost estimate within budget | ✅ | ~$1,250/month |
-| Security requirements met | ✅ | PCI-DSS aligned |
-| Ready for bicep-plan | ✅ | Proceed to Step 4 |
+| Checkpoint                   | Status | Approver                  |
+| ---------------------------- | ------ | ------------------------- |
+| Architecture review complete | ✅     | Azure Principal Architect |
+| Cost estimate within budget  | ✅     | ~$1,250/month             |
+| Security requirements met    | ✅     | PCI-DSS aligned           |
+| Ready for bicep-plan         | ✅     | Proceed to Step 4         |
 
 ---
 

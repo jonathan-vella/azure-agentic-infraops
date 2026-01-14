@@ -1,246 +1,136 @@
-# Azure Workload Requirements Template
-
-> **Usage**: Copy this template into Copilot Chat when starting a new project with `@plan`.
-> Fill in the sections below, then submit to begin the 7-step agentic workflow.
-
+---
+description: 'Gather Azure workload requirements through structured interview'
+agent: 'project-planner'
+tools:
+  - createFile
+  - editFiles
 ---
 
-## 📋 Project Overview
+# Plan Requirements
 
-**Project Name**: <!-- e.g., contoso-patient-portal -->
-**Project Type**: <!-- Web App | API | Data Platform | IoT | AI/ML | Hybrid -->
-**Target Environment**: <!-- dev | staging | prod | all -->
-**Timeline**: <!-- Target go-live date or sprint deadline -->
+Conduct a structured requirements gathering session for a new Azure workload.
+Guide the user through all necessary NFR categories and produce a complete
+`01-requirements.md` artifact.
 
-### Business Context
+## Mission
 
-<!-- Describe the business problem this workload solves. What's the value proposition? -->
+Interview the user to capture comprehensive Azure workload requirements,
+ensuring all critical non-functional requirements (NFRs) are addressed before
+proceeding to architecture assessment.
 
-### Stakeholders
+## Scope & Preconditions
 
-| Role           | Name/Team | Responsibility         |
-| -------------- | --------- | ---------------------- |
-| Business Owner |           | Approves requirements  |
-| Technical Lead |           | Architecture decisions |
-| Operations     |           | Day-2 support          |
-| Security       |           | Compliance sign-off    |
+- User has a project concept but may not have documented requirements
+- Output will be saved to `agent-output/${input:projectName}/01-requirements.md`
+- Follow the template structure from `.github/templates/01-requirements.template.md`
 
----
+## Inputs
 
-## 🎯 Functional Requirements
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `${input:projectName}` | Project name (kebab-case) | Required |
+| `${input:projectType}` | Web App, API, Data Platform, IoT, AI/ML | Web App |
 
-### Core Capabilities
+## Workflow
 
-<!-- List the main features/capabilities this workload must provide -->
+### Step 1: Project Context
 
-1.
-2.
-3.
+Ask the user to describe:
 
-### User Types & Load
+1. **Project name** (lowercase, alphanumeric, hyphens only)
+2. **Business problem** this workload solves
+3. **Target environment** (dev, staging, prod, or all)
+4. **Timeline** (target go-live date)
 
-| User Type | Expected Count | Peak Concurrent | Geographic Region |
-| --------- | -------------- | --------------- | ----------------- |
-|           |                |                 |                   |
+### Step 2: Functional Requirements
 
-### Integration Requirements
+Gather information about:
 
-<!-- Systems this workload must integrate with -->
+1. **Core capabilities** - What must this workload do?
+2. **User types and load** - Who uses it and how many?
+3. **Integration requirements** - What systems must it connect to?
+4. **Data requirements** - Volume, retention, sensitivity
 
-| System | Integration Type   | Direction        | Protocol          |
-| ------ | ------------------ | ---------------- | ----------------- |
-|        | API / Event / File | Inbound/Outbound | REST/GraphQL/AMQP |
+### Step 3: Non-Functional Requirements (NFRs)
 
-### Data Requirements
+For each category, prompt the user if not provided:
 
-| Data Type | Volume | Retention  | Sensitivity                             |
-| --------- | ------ | ---------- | --------------------------------------- |
-|           | GB/TB  | Days/Years | Public/Internal/Confidential/Restricted |
+| Category | Key Questions |
+|----------|---------------|
+| **Availability** | SLA target? RTO? RPO? Maintenance window? |
+| **Performance** | Response time target? Throughput? Concurrent users? |
+| **Scalability** | Current vs. 12-month projection for users, data, transactions? |
 
----
+### Step 4: Compliance & Security
 
-## ⚡ Non-Functional Requirements (NFRs)
+Identify applicable requirements:
 
-### Availability & Reliability
+- **Regulatory**: HIPAA, PCI-DSS, GDPR, SOC 2, ISO 27001, FedRAMP, NIST
+- **Data residency**: Primary region, sovereignty requirements
+- **Security controls**: Authentication, encryption, network isolation
 
-| Requirement                        | Target                  | Notes                      |
-| ---------------------------------- | ----------------------- | -------------------------- |
-| **SLA**                            | 99.9% / 99.95% / 99.99% |                            |
-| **RTO** (Recovery Time Objective)  | minutes / hours         | Max acceptable downtime    |
-| **RPO** (Recovery Point Objective) | minutes / hours         | Max acceptable data loss   |
-| **Maintenance Window**             |                         | Preferred time for updates |
+### Step 5: Cost Constraints
 
-### Performance
+Capture budget information:
 
-| Metric                  | Target                   | Notes                  |
-| ----------------------- | ------------------------ | ---------------------- |
-| **Response Time (P95)** | < 200ms / < 500ms / < 2s |                        |
-| **Throughput**          | requests/sec             |                        |
-| **Concurrent Users**    |                          | Peak load              |
-| **Data Processing**     | records/hour             | Batch processing needs |
+- Monthly operational budget
+- Annual budget
+- One-time setup budget
+- Cost optimization priorities (ranked 1-5)
 
-### Scalability
+### Step 6: Operational Requirements
 
-| Dimension    | Current | 12-Month Projection | Notes |
-| ------------ | ------- | ------------------- | ----- |
-| Users        |         |                     |       |
-| Data Volume  |         |                     |       |
-| Transactions |         |                     |       |
+Document operational needs:
 
----
+- Monitoring and observability approach
+- Support model (24/7, business hours, best effort)
+- Backup and DR strategy
 
-## 🔒 Compliance & Security
+### Step 7: Regional Preferences
 
-### Regulatory Requirements
+Confirm deployment regions:
 
-<!-- Check all that apply -->
+- **Primary**: `swedencentral` (default - sustainable, GDPR-compliant)
+- **Secondary**: `germanywestcentral` (for quota or DR)
+- Override reasons if not using defaults
 
-- [ ] **HIPAA** - Healthcare data protection
-- [ ] **PCI-DSS** - Payment card data
-- [ ] **GDPR** - EU personal data
-- [ ] **SOC 2** - Service organization controls
-- [ ] **ISO 27001** - Information security
-- [ ] **FedRAMP** - US federal compliance
-- [ ] **NIST** - Security framework
-- [ ] **Industry-specific**: <!-- specify -->
-- [ ] **None** - No specific compliance requirements
+## Output Expectations
 
-### Data Residency
+Generate `agent-output/{projectName}/01-requirements.md` with:
 
-| Requirement               | Details                                    |
-| ------------------------- | ------------------------------------------ |
-| **Primary Region**        | swedencentral / germanywestcentral / other |
-| **Data Sovereignty**      | Must data stay in specific country/region? |
-| **Cross-border Transfer** | Any restrictions on data movement?         |
+1. All sections from the template populated
+2. Clear ✅/⚠️/❌ indicators for requirement completeness
+3. Summary section ready for architecture assessment handoff
 
-### Security Requirements
+### File Structure
 
-| Control                   | Requirement                          | Notes |
-| ------------------------- | ------------------------------------ | ----- |
-| **Authentication**        | Azure AD / B2C / External IdP        |       |
-| **Authorization**         | RBAC / ABAC / Custom                 |       |
-| **Encryption at Rest**    | Platform / Customer-managed keys     |       |
-| **Encryption in Transit** | TLS 1.2+ / mTLS                      |       |
-| **Network Isolation**     | Private endpoints / VNet integration |       |
-| **WAF**                   | Required / Optional                  |       |
-| **DDoS Protection**       | Standard / Premium                   |       |
+```text
+agent-output/{projectName}/
+├── 01-requirements.md    # Generated requirements document
+└── README.md             # Project folder README
+```
 
----
+## Quality Assurance
 
-## 💰 Cost Constraints
+Before completing, verify:
 
-### Budget
-
-| Period            | Budget | Currency | Notes                         |
-| ----------------- | ------ | -------- | ----------------------------- |
-| **Monthly**       |        | USD/EUR  | Steady-state operational cost |
-| **Annual**        |        | USD/EUR  | Total annual budget           |
-| **Initial Setup** |        | USD/EUR  | One-time deployment costs     |
-
-### Cost Optimization Priorities
-
-<!-- Rank 1-5, where 1 is most important -->
-
-| Priority                    | Rank | Notes |
-| --------------------------- | ---- | ----- |
-| Minimize monthly spend      |      |       |
-| Optimize for performance    |      |       |
-| Reduce operational overhead |      |       |
-| Reserved capacity discounts |      |       |
-| Spot/preemptible instances  |      |       |
-
-### FinOps Considerations
-
-- [ ] Cost alerts required at % of budget
-- [ ] Showback/chargeback to business units
-- [ ] Auto-shutdown for non-prod environments
-- [ ] Right-sizing recommendations needed
-
----
-
-## 🔧 Operational Requirements
-
-### Monitoring & Observability
-
-| Capability     | Requirement                  | Notes                  |
-| -------------- | ---------------------------- | ---------------------- |
-| **Logging**    | Centralized / Per-resource   | Retention period       |
-| **Metrics**    | Platform / Custom            | Key metrics to track   |
-| **Alerting**   | Email / Teams / PagerDuty    | On-call integration    |
-| **Dashboards** | Azure Portal / Grafana       | Stakeholder visibility |
-| **APM**        | Application Insights / Other | Distributed tracing    |
-
-### Support Model
-
-| Aspect               | Requirement                         |
-| -------------------- | ----------------------------------- |
-| **Support Hours**    | 24/7 / Business hours / Best effort |
-| **Response Time**    | P1: / P2: / P3:                     |
-| **Escalation Path**  |                                     |
-| **Runbook Required** | Yes / No                            |
-
-### Backup & DR
-
-| Component | Backup Frequency | Retention  | DR Strategy                       |
-| --------- | ---------------- | ---------- | --------------------------------- |
-|           | Daily/Hourly     | Days/Weeks | Active-Active/Passive/Pilot Light |
-
----
-
-## 🌍 Regional Preferences
-
-**Primary Region**: `swedencentral` (default - sustainable, GDPR-compliant)
-**Secondary Region**: `germanywestcentral` (for quota issues or DR)
-
-### Override Reasons (if not using defaults)
-
-- [ ] **Latency** - Users primarily in Americas/APAC
-- [ ] **Compliance** - Specific data residency requirement
-- [ ] **Service Availability** - Required service not available in default region
-- [ ] **Cost** - Significant savings in alternate region
-
----
-
-## 📝 Additional Context
-
-<!-- Any other information that would help with architecture decisions -->
-
-### Existing Infrastructure
-
-<!-- Describe any existing Azure resources this must integrate with -->
-
-### Constraints & Assumptions
-
-<!-- Known limitations, dependencies, or assumptions -->
-
-### Out of Scope
-
-<!-- Explicitly list what is NOT included in this project -->
-
----
-
-## ✅ Submission Checklist
-
-Before submitting to `@plan`:
-
-- [ ] Project name follows naming convention (lowercase, alphanumeric, hyphens)
+- [ ] Project name follows naming convention
 - [ ] At least one functional requirement defined
 - [ ] SLA/RTO/RPO specified (or explicitly marked N/A)
 - [ ] Compliance requirements identified
 - [ ] Budget range provided
 - [ ] Primary region confirmed
 
----
+## Next Steps
 
-**Ready to start?** Copy this completed template into Copilot Chat and invoke:
+After requirements are captured and approved:
 
-```
-@plan [paste completed template]
-```
+1. User invokes `@azure-principal-architect` for architecture assessment
+2. Architecture agent validates requirements and produces WAF assessment
+3. Workflow continues through remaining 5 steps
 
-The plan agent will:
+## Related Resources
 
-1. Validate requirements completeness
-2. Create `agent-output/{project-name}/` folder
-3. Generate `01-requirements.md` with structured requirements
-4. Prompt for approval before proceeding to Step 2
+- Template: [01-requirements.template.md](../templates/01-requirements.template.md)
+- Agent: [project-planner.agent.md](../agents/project-planner.agent.md)
+- Workflow: [WORKFLOW.md](../../docs/workflow/WORKFLOW.md)

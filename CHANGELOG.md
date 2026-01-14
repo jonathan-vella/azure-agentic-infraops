@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- **Restructured all Wave 2 artifacts** (07-*) to match template standards:
+- **Restructured all Wave 2 artifacts** (07-\*) to match template standards:
   - `07-documentation-index.md` - Added numbered section prefixes
   - `07-design-document.md` - Removed Table of Contents sections
   - `07-operations-runbook.md` - Reordered sections to match template sequence
