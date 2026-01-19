@@ -80,7 +80,7 @@ digraph DetailedWorkflow {
 
     // Step 6 - Deploy
     step6 [
-        label="⑥ Deploy\nAzure CLI/PowerShell"
+        label="⑥ Deploy\nDeploy Agent"
         fillcolor="#f4722b"
         width="2.0"
         height="0.6"
@@ -89,7 +89,7 @@ digraph DetailedWorkflow {
     // Step 7 - As-Built Artifacts
     step7 [
         label="⑦ As-Built Artifacts\n(optional)"
-        fillcolor="#0ea5e9"
+        fillcolor="#f4722b"
         width="2.0"
         height="0.6"
         style="filled,rounded,dashed"
@@ -117,7 +117,7 @@ digraph DetailedWorkflow {
     // Layout - optionals stacked vertically
     { rank=same; opt3a; opt3b }
     { rank=same; opt4gov }
-    { rank=same; opt7a; opt7b }
+    { rank=same; opt6a; opt6b }
     opt3a -> opt3b [style="invis" weight="10"]
-    opt7a -> opt7b [style="invis" weight="10"]
+    opt6a -> opt6b [style="invis" weight="10"]
 }

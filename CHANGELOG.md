@@ -7,7 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [5.2.0] - 2026-01-19
 
-- feat(agents): Activate deploy agent with enhanced workflow and known issues
+### Added
+
+- **Deploy Agent activated** - Step 6 now has a fully operational custom agent
+  - Enhanced deployment workflow with Option 1 (PowerShell) and Option 2 (Azure CLI) paths
+  - Added known issues section for common deployment troubleshooting
+  - Added "Generate As-Built Cost Estimate" handoff option
+
+### Changed
+
+- Updated all workflow diagrams to reference "Deploy Agent" instead of "Azure CLI/PowerShell"
+- Updated agents-overview.md with Deploy Agent section and Quick Reference entry
+- Updated template and instruction references from "Deployment tooling/manual" to "Deploy Agent"
 
 ## [5.1.0] - 2026-01-19
 

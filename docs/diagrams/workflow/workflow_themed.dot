@@ -152,11 +152,11 @@ digraph AgenticInfraOps {
         penwidth="2"
         
         deploy [
-            label="Deploy to Azure\n(Azure CLI/PowerShell)"
+            label="🚀 Deploy\nDeploy Agent"
             fillcolor="#f4722b"
         ]
     }
-    
+
     // Step 7: As-Built Artifacts
     subgraph cluster_step7 {
         label="Step 7: As-Built Artifacts (Optional)"
@@ -187,7 +187,7 @@ digraph AgenticInfraOps {
     adr_design -> bicep_plan [style="dashed" color="#14b8a6"]
     policy -> bicep_plan [style="dashed" xlabel="constraints" color="#06b6d4" fontcolor="#06b6d4"]
     bicep_plan -> bicep_implement [xlabel="plan" color="#10b981" fontcolor="#10b981"]
-    bicep_implement -> deploy [xlabel="templates" color="#ec4899" fontcolor="#ec4899"]
+    bicep_implement -> deploy [xlabel="code" color="#ec4899" fontcolor="#ec4899"]
     deploy -> diagrams_asbuilt [style="dashed" xlabel="optional" color="#f4722b" fontcolor="#94a3b8"]
     
     // Layout hints
@@ -196,6 +196,5 @@ digraph AgenticInfraOps {
     {rank=same; diagrams_design; adr_design}
     {rank=same; bicep_plan; policy}
     {rank=same; bicep_implement}
-    {rank=same; deploy}
     {rank=same; diagrams_asbuilt; adr_asbuilt}
 }

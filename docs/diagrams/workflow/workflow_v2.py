@@ -131,7 +131,7 @@ digraph AgenticInfraOps {{
     // STEP 6: DEPLOY
     // ============================================
     step6 [
-        label="6. Deploy\\nAzure CLI/PowerShell"
+        label="6. Deploy\\nDeploy Agent"
         fillcolor="{COLORS['coral']}"
         width="2.0"
     ]
@@ -334,7 +334,7 @@ digraph DetailedWorkflow {{
 
     // Step 6 - Deploy
     step6 [
-        label="⑥ Deploy\\nAzure CLI/PowerShell"
+        label="⑥ Deploy\\nDeploy Agent"
         fillcolor="{COLORS['coral']}"
         width="2.0"
         height="0.6"

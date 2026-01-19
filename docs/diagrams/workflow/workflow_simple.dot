@@ -38,7 +38,7 @@ digraph SimpleWorkflow {
     bicep_plan [label="bicep-plan" fillcolor="#10b981"]
     bicep_implement [label="bicep-implement" fillcolor="#ec4899"]
     deploy [label="Deploy" fillcolor="#f4722b"]
-    asbuilt_artifacts [label="As-Built\nArtifacts" fillcolor="#0ea5e9" style="filled,rounded,dashed"]
+    asbuilt_artifacts [label="As-Built\nArtifacts" fillcolor="#06b6d4" style="filled,rounded,dashed"]
     
     // Governance indicator
     governance [label="🔒 Governance" fillcolor="#06b6d4"]

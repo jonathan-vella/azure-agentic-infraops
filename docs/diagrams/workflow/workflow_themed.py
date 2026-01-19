@@ -186,7 +186,7 @@ digraph AgenticInfraOps {{
         penwidth="2"
         
         deploy [
-            label="🚀 Deploy\\n(Azure CLI/PowerShell)"
+            label="🚀 Deploy\\nDeploy Agent"
             fillcolor="{COLORS['coral']}"
         ]
     }}

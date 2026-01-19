@@ -50,7 +50,7 @@ graph TB
     end
 
     subgraph "Step 6: Deploy"
-        DEP["🚀 Deploy to Azure<br/>(PowerShell/CLI)"]
+        DEP["🚀 Deploy to Azure<br/>(Deploy Agent)"]
     end
 
     subgraph "Step 7: As-Built Artifacts"

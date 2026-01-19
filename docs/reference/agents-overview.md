@@ -17,6 +17,7 @@ and example prompts.
 | `adr-generator`                    | 3, 7 | Architecture Decision Records | ❌ No         | `03-des-adr-*`, `07-ab-adr-*`         |
 | `bicep-plan`                       | 4    | Implementation planning       | ❌ No         | `04-implementation-plan.md`           |
 | `bicep-implement`                  | 5    | Bicep code generation         | ✅ Yes        | `infra/bicep/{project}/`              |
+| `deploy`                           | 6    | Azure deployment orchestration| ❌ No         | `06-deployment-summary.md`            |
 | `workload-documentation-generator` | 7    | Customer-deliverable docs     | ❌ No         | `07-*.md`                             |
 
 ---
@@ -206,6 +207,37 @@ Follow the implementation plan from Step 4.
 
 ---
 
+### deploy
+
+> **Step 6** | Azure deployment orchestration
+
+**Purpose**: Execute Azure infrastructure deployments using generated Bicep templates. Runs deploy.ps1 scripts,
+performs what-if analysis, and manages deployment lifecycle.
+
+**Workflow**:
+
+1. Pre-deployment validation (Azure CLI auth, Bicep build)
+2. Run what-if analysis for impact assessment
+3. Execute deployment after user approval
+4. Generate deployment summary
+
+**Creates**:
+
+- `06-deployment-summary.md` — Deployment record with resource IDs and endpoints
+
+**Example Prompt**:
+
+```text
+@deploy Deploy the Bicep templates for the ecommerce project to Azure.
+Run what-if analysis first before actual deployment.
+```
+
+**Output**: `agent-output/{project}/06-deployment-summary.md`
+
+**📖 Definition**: [`.github/agents/deploy.agent.md`](../../.github/agents/deploy.agent.md)
+
+---
+
 ### workload-documentation-generator
 
 > **Step 7** | Customer-deliverable documentation
@@ -262,6 +294,7 @@ graph LR
 | Document a decision         | `adr-generator`                    | 3 or 7 |
 | Plan implementation         | `bicep-plan`                       | 4      |
 | Generate Bicep code         | `bicep-implement`                  | 5      |
+| Deploy to Azure             | `deploy`                           | 6      |
 | Create customer docs        | `workload-documentation-generator` | 7      |
 
 ---

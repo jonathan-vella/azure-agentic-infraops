@@ -35,7 +35,7 @@ digraph SimpleWorkflow {
     s4 [label="4. Plan Infra" fillcolor="#10b981"]
     s5 [label="5. Generate" fillcolor="#ec4899"]
     s6 [label="6. Deploy" fillcolor="#f4722b"]
-    s7 [label="7. As-Built\nArtifacts" fillcolor="#0ea5e9" style="filled,rounded,dashed"]
+    s7 [label="7. As-Built\nArtifacts" fillcolor="#f4722b" style="filled,rounded,dashed"]
     
     // Flow
     s1 -> s2 -> s3 [style="dashed"]

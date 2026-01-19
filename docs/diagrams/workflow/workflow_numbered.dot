@@ -101,7 +101,7 @@ digraph AgenticInfraOps {
     // STEP 6: DEPLOY
     // ============================================
     step6 [
-        label="6. Deploy\nAzure CLI/PowerShell"
+        label="6. Deploy\nDeploy Agent"
         fillcolor="#f4722b"
         width="2.0"
     ]
@@ -111,7 +111,7 @@ digraph AgenticInfraOps {
     // ============================================
     step7 [
         label="7. As-Built Artifacts\n(optional)"
-        fillcolor="#0ea5e9"
+        fillcolor="#f4722b"
         width="2.0"
         style="filled,rounded,dashed"
     ]
@@ -136,8 +136,7 @@ digraph AgenticInfraOps {
     step2 -> step4 [color="#FF6B35" penwidth="2.5"]
     step3 -> step4 [color="#8b5cf6" style="dashed" penwidth="2"]
     step4 -> step5 [color="#10b981" penwidth="2.5"]
-    step5 -> step6 [color="#ec4899" penwidth="2.5"]
-    step6 -> step7 [color="#f4722b" style="dashed" penwidth="2"]
+    step5 -> step6 [color="#ec4899" style="dashed" penwidth="2"]
 
     // ============================================
     // OPTIONAL CONNECTIONS (dashed arrows)
@@ -149,16 +148,15 @@ digraph AgenticInfraOps {
     // Step 4 governance
     step4opt -> step4 [style="dashed" color="#06b6d4" dir="back"]
     
-    // Step 7 optional tools
-    step7a -> step7 [style="dashed" color="#8b5cf6" dir="back"]
-    step7b -> step7 [style="dashed" color="#14b8a6" dir="back"]
+    // Step 6 optional tools
+    step6a -> step6 [style="dashed" color="#8b5cf6" dir="back"]
+    step6b -> step6 [style="dashed" color="#14b8a6" dir="back"]
 
     // ============================================
     // LAYOUT HINTS
     // ============================================
     { rank=same; step3a; step3b }
     { rank=same; step4opt }
-    { rank=same; step7a; step7b }
     { rank=same; step6a; step6b }
     
     // Invisible edges for vertical alignment
