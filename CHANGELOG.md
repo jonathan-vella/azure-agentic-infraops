@@ -5,6 +5,10 @@ All notable changes to **Agentic InfraOps** will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.2.0] - 2026-01-19
+
+- feat(agents): Activate deploy agent with enhanced workflow and known issues
+
 ## [5.1.0] - 2026-01-19
 
 - feat: Add dark-themed workflow diagram for presentations
