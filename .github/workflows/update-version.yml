@@ -1,11 +1,12 @@
 name: Update Version Numbers
 
 on:
-  # Trigger when VERSION.md is updated on main
+  # Trigger when version sources are updated on main
   push:
     branches: [main]
     paths:
       - "VERSION.md"
+      - "package.json"
 
   # Manual trigger with version input
   workflow_dispatch:
@@ -41,8 +42,12 @@ jobs:
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             VERSION="${{ github.event.inputs.version }}"
           else
-            # Extract version from VERSION.md (first version number found)
-            VERSION=$(grep -oP '## \[\K\d+\.\d+\.\d+' VERSION.md | head -1)
+            # Extract version from VERSION.md (Current Version: X.Y.Z format)
+            VERSION=$(grep -oP '\*\*Current Version:\*\* \K[0-9]+\.[0-9]+\.[0-9]+' VERSION.md | head -1)
+            # Fallback to package.json if not found
+            if [ -z "$VERSION" ]; then
+              VERSION=$(grep -oP '"version": "\K[0-9]+\.[0-9]+\.[0-9]+' package.json | head -1)
+            fi
           fi
 
           if [ -z "$VERSION" ]; then
