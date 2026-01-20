@@ -26,6 +26,17 @@
 🎯 **[Scenarios](scenarios/)** |
 💰 **[Azure Pricing MCP](mcp/azure-pricing-mcp/)**
 
+## Using the Accelerator
+
+**Primary entry point for new projects.** Use the accelerator template to bootstrap a repository that is already
+configured for the Agentic InfraOps workflow before you dive into the steps below.
+
+- Start with the
+  [azure-agentic-infraops-accelerator](https://github.com/jonathan-vella/azure-agentic-infraops-accelerator)
+  template repository.
+- Select "Use this template" to generate your project repository.
+- Use the generated repository alongside this one for adaptable deployments and workflows.
+
 <details open>
 <summary><h2>🎬 The Workflow</h2></summary>
 
@@ -111,14 +122,6 @@ Each agent asks for approval before proceeding. Say `yes` to continue, or provid
 
 📖 **[Full Quick Start Guide →](docs/getting-started/quickstart.md)**
 (includes troubleshooting, demo scenarios, deployment instructions)
-
-### Using the Accelerator
-
-To simplify bootstrapping agentic infrastructure operations on Azure, we recommend starting with the
-[azure-agentic-infraops-accelerator](https://github.com/jonathan-vella/azure-agentic-infraops-accelerator)
-template repository. Click "Use this template" on the accelerator to generate a new repository
-pre-configured for Azure Agentic InfraOps and use it alongside this repository for adaptable deployments
-and workflows.
 
 ---
 
