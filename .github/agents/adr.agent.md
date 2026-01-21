@@ -19,7 +19,7 @@ tools:
     "ms-azuretools.vscode-azure-github-copilot/azure_set_auth_context",
     "ms-azuretools.vscode-azure-github-copilot/azure_get_dotnet_template_tags",
     "ms-azuretools.vscode-azure-github-copilot/azure_get_dotnet_templates_for_tag",
-    "ms-vscode.vscode-websearchforcopilot/websearch",
+    "ms-azuretools.vscode-azureresourcegroups/azureActivityLog",
   ]
 handoffs:
   - label: Review Against WAF Pillars

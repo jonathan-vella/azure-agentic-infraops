@@ -24,7 +24,6 @@ tools:
     "ms-python.python/getPythonExecutableCommand",
     "ms-python.python/installPythonPackage",
     "ms-python.python/configurePythonEnvironment",
-    "ms-vscode.vscode-websearchforcopilot/websearch",
   ]
 handoffs:
   - label: Return to Architect Review

@@ -7,10 +7,10 @@ tools:
     "execute",
     "read",
     "agent",
+    "azure-pricing/*",
     "edit",
     "search",
     "web",
-    "azure-pricing/*",
     "microsoft-docs/*",
     "azure-mcp/*",
     "todo",
@@ -21,7 +21,6 @@ tools:
     "ms-azuretools.vscode-azure-github-copilot/azure_get_dotnet_template_tags",
     "ms-azuretools.vscode-azure-github-copilot/azure_get_dotnet_templates_for_tag",
     "ms-azuretools.vscode-azureresourcegroups/azureActivityLog",
-    "ms-vscode.vscode-websearchforcopilot/websearch",
   ]
 handoffs:
   - label: Generate Architecture Diagram
@@ -307,15 +306,15 @@ graph LR
 
 **7-Step Workflow Overview:**
 
-| Step | Agent/Phase                   | Purpose                                                |
-| ---- | ----------------------------- | ------------------------------------------------------ |
+| Step | Agent/Phase        | Purpose                                                |
+| ---- | ------------------ | ------------------------------------------------------ |
 | 1    | plan               | Requirements gathering → saved to `01-requirements.md` |
-| 2    | **architect** | WAF assessment (YOU ARE HERE) → `02-*` files           |
-| 3    | Design Artifacts              | Design diagrams + ADRs → `03-des-*` files              |
-| 4    | bicep-plan                    | Implementation planning + governance discovery         |
-| 5    | bicep-code               | Bicep code generation                                  |
-| 6    | Deploy                        | Deployment to Azure → `06-deployment-summary.md`       |
-| 7    | As-Built Artifacts            | As-built diagrams, ADRs, workload docs → `07-*`        |
+| 2    | **architect**      | WAF assessment (YOU ARE HERE) → `02-*` files           |
+| 3    | Design Artifacts   | Design diagrams + ADRs → `03-des-*` files              |
+| 4    | bicep-plan         | Implementation planning + governance discovery         |
+| 5    | bicep-code         | Bicep code generation                                  |
+| 6    | Deploy             | Deployment to Azure → `06-deployment-summary.md`       |
+| 7    | As-Built Artifacts | As-built diagrams, ADRs, workload docs → `07-*`        |
 
 ### Input
 
