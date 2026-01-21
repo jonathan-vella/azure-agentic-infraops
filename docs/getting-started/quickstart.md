@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-> **Version 3.7.8** | 10 minutes to your first AI-assisted infrastructure deployment
+> **Version 5.3.0** | 10 minutes to your first AI-assisted infrastructure deployment
 >
 > ⚡ For a comprehensive learning journey with role-based paths, see [Learning Paths](learning-paths.md).
 
@@ -33,12 +33,12 @@ Before you begin, ensure you have:
 
 ## Defaults for IT Pros
 
-| Setting      | Value                                            | Reference                                       |
-| ------------ | ------------------------------------------------ | ----------------------------------------------- |
-| **Region**   | `swedencentral` (fallback: `germanywestcentral`) | [ADR-004](../adr/ADR-004-region-defaults.md)    |
-| **Naming**   | `uniqueString(resourceGroup().id)` suffix        | [Defaults](../reference/defaults.md)            |
-| **Modules**  | AVM-first approach                               | [ADR-003](../adr/ADR-003-avm-first-approach.md) |
-| **Workflow** | 7-step agent flow                                | [Workflow Guide](../reference/workflow.md)      |
+| Setting      | Value                                            | Reference                                                         |
+| ------------ | ------------------------------------------------ | ----------------------------------------------------------------- |
+| **Region**   | `swedencentral` (fallback: `germanywestcentral`) | [ADR-004](../_superseded/adr/ADR-004-region-defaults.md)          |
+| **Naming**   | `uniqueString(resourceGroup().id)` suffix        | [Defaults](../reference/defaults.md)                              |
+| **Modules**  | AVM-first approach                               | [ADR-003](../_superseded/adr/ADR-003-avm-first-approach.md)       |
+| **Workflow** | 7-step agent flow                                | [Workflow Guide](../reference/workflow.md)                        |
 
 ---
 

@@ -1,5 +1,7 @@
 # MARKDOWN-STYLE-GUIDE
 
+> **Version 5.3.0** | [Back to Guides](README.md)
+
 Concise rules to keep docs consistent and readable.
 
 ## Essentials

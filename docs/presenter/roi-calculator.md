@@ -1,7 +1,9 @@
 # ROI Calculator for GitHub Copilot
 
-> **Build a business case for GitHub Copilot adoption using measured time savings from real Infrastructure-as-Code
-> workflows.**
+> **Version 5.3.0** | [Back to Presenter Resources](README.md)
+>
+> Build a business case for GitHub Copilot adoption using measured time savings from real Infrastructure-as-Code
+> workflows.
 
 This calculator combines scenario-based data with a customizable worksheet to help you calculate expected ROI for your
 team.
@@ -295,7 +297,6 @@ Break-Even Hours = $19 / Hourly_Rate
 ## 📚 Resources
 
 - [Time Savings Evidence](time-savings-evidence.md) — Detailed methodology
-- [Demo Delivery Guide](demo-delivery-guide.md) — Presenting to stakeholders
 - [GitHub Copilot Pricing](https://github.com/features/copilot) — Official pricing page
 - [Objection Handling](objection-handling.md) — Address budget concerns
 

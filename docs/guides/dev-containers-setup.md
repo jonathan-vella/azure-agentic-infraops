@@ -1,6 +1,8 @@
 # Dev Containers Setup Guide
 
-> **Complete guide to setting up VS Code Dev Containers for Agentic InfraOps.**
+> **Version 5.3.0** | [Back to Guides](README.md)
+>
+> Complete guide to setting up VS Code Dev Containers for Agentic InfraOps.
 >
 > Dev Containers provide a consistent, pre-configured development environment
 > that works identically across Windows, macOS, and Linux.
@@ -486,7 +488,7 @@ Personalize your container with dotfiles:
 
 ## Next Steps
 
-- [Quick Start](quickstart.md) — Run your first demo
+- [Quick Start](../getting-started/quickstart.md) — Run your first demo
 - [Prerequisites](prerequisites.md) — Full requirements reference
 - [Troubleshooting](troubleshooting.md) — More solutions
 - [VS Code Dev Containers Documentation](https://code.visualstudio.com/docs/devcontainers/containers)

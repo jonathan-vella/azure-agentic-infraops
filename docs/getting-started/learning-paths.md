@@ -1,6 +1,6 @@
 # Learning Paths
 
-> **Version 3.7.8** | [Changelog](../../VERSION.md)
+> **Version 5.3.0** | [Changelog](../../VERSION.md)
 >
 > **From zero to productive in 30 minutes.** This comprehensive guide covers setup, your first scenario,
 > exploration paths, and mastery.
@@ -65,7 +65,6 @@ code azure-agentic-infraops
 **What happens:** The Dev Container installs all tools automatically:
 
 - Azure CLI + Bicep CLI
-- Terraform + tfsec + Checkov
 - PowerShell 7
 - 25+ VS Code extensions
 
@@ -75,7 +74,7 @@ Once the container is ready, run:
 
 ```bash
 # Verify tools are installed
-az --version && bicep --version && terraform --version && pwsh --version
+az --version && bicep --version && pwsh --version
 ```
 
 ✅ **You're ready!** All tools are configured.
@@ -286,13 +285,13 @@ Delegate entire GitHub Issues to Copilot for autonomous implementation.
 
 ### Key Resources
 
-| Resource            | Location                                                             | Purpose                   |
-| ------------------- | -------------------------------------------------------------------- | ------------------------- |
-| **Prerequisites**   | [docs/getting-started/prerequisites.md](prerequisites.md)            | Tool requirements         |
-| **Model Selection** | [docs/guides/copilot-model-selection.md](copilot-model-selection.md) | Choose the right AI model |
-| **Scenarios**       | [scenarios/](../../scenarios/)                                       | Hands-on learning         |
-| **Demo Script**     | [S01 Demo Script](../../scenarios/S01-bicep-baseline/DEMO-SCRIPT.md) | Presenter guide           |
-| **ROI Calculator**  | [docs/presenter/roi-calculator.md](../presenter/roi-calculator.md)   | Calculate savings         |
+| Resource            | Location                                                                         | Purpose                   |
+| ------------------- | -------------------------------------------------------------------------------- | ------------------------- |
+| **Prerequisites**   | [docs/guides/prerequisites.md](../guides/prerequisites.md)                       | Tool requirements         |
+| **Model Selection** | [docs/guides/copilot-model-selection.md](../guides/copilot-model-selection.md)   | Choose the right AI model |
+| **Scenarios**       | [scenarios/](../../scenarios/)                                                   | Hands-on learning         |
+| **Demo Script**     | [S01 Demo Script](../../scenarios/S01-bicep-baseline/DEMO-SCRIPT.md)             | Presenter guide           |
+| **ROI Calculator**  | [docs/presenter/roi-calculator.md](../presenter/roi-calculator.md)               | Calculate savings         |
 
 ### Common Commands
 
@@ -336,7 +335,7 @@ pwsh -File validation/validate.ps1
 | Azure deployment fails    | Run `az login` then `az account set --subscription "Name"`                           |
 | Agent not appearing       | `Ctrl+Shift+P` → "Reload Window"                                                     |
 
-📖 **Full troubleshooting guide:** [troubleshooting.md](troubleshooting.md)
+📖 **Full troubleshooting guide:** [troubleshooting.md](../guides/troubleshooting.md)
 
 Covers: Dev Container issues, Copilot problems, Azure deployment errors, custom agents, network/proxy
 issues, and a complete error message reference.

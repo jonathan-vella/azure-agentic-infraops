@@ -1,5 +1,7 @@
 # Objection Handling Guide
 
+> **Version 5.3.0** | [Back to Presenter Resources](README.md)
+
 This guide provides evidence-based responses to common concerns about GitHub Copilot for IT Professionals. Each
 objection includes the underlying concern, a recommended response, and supporting evidence.
 
@@ -257,5 +259,4 @@ When handling objections, follow this structure:
 
 - [ROI Calculator](roi-calculator.md) - Build a custom business case
 - [Time Savings Evidence](time-savings-evidence.md) - Methodology and data
-- [Demo Delivery Guide](demo-delivery-guide.md) - Live demo techniques
 - [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/) - Security documentation

@@ -1,8 +1,8 @@
 # Agents Overview
 
-> **Version 3.7.8** | Complete reference for all agents in the Agentic InfraOps workflow
+> **Version 5.3.0** | Complete reference for all agents in the Agentic InfraOps workflow
 
-This document provides a comprehensive overview of all agents in Agentic InfraOps, covering the complete 8-phase
+This document provides a comprehensive overview of all agents in Agentic InfraOps, covering the complete 7-step
 infrastructure development and operations workflow. Each agent is designed for a specific purpose in the lifecycle
 from requirements gathering through post-deployment diagnostics.
 
@@ -20,8 +20,8 @@ from requirements gathering through post-deployment diagnostics.
 
 ## Workflow Visualization
 
-The Agentic InfraOps workflow spans 8 phases, from initial requirements through post-deployment health diagnostics.
-Agents work together in a coordinated workflow, with each specializing in a specific phase or cross-cutting concern.
+The Agentic InfraOps workflow spans 7 steps, from initial requirements through post-deployment health diagnostics.
+Agents work together in a coordinated workflow, with each specializing in a specific step or cross-cutting concern.
 
 ```mermaid
 %%{init: {'theme':'neutral'}}%%
@@ -180,7 +180,7 @@ A comprehensive overview of all agents, their workflow phases, and outputs:
 
 ## Phase-by-Phase Workflow
 
-This section provides a detailed walkthrough of each phase in the 8-phase workflow.
+This section provides a detailed walkthrough of each step in the 7-step workflow.
 
 ### Phase 1: Requirements Definition
 
@@ -709,7 +709,7 @@ in rg-myapp-prod. Check availability, performance, and recent errors.
 
 ### Core Workflow Documents
 
-- [Workflow Guide](workflow.md) — Complete 8-phase workflow with detailed examples
+- [Workflow Guide](workflow.md) — Complete 7-step workflow with detailed examples
 - [Defaults Reference](defaults.md) — Regional standards, naming conventions, tags
 - [Bicep Patterns](bicep-patterns.md) — Infrastructure code best practices
 

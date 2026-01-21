@@ -1,6 +1,8 @@
 # GitHub Copilot Pilot Success Checklist
 
-> **A structured guide for planning, executing, and evaluating a GitHub Copilot pilot for IT Professionals.**
+> **Version 5.3.0** | [Back to Presenter Resources](README.md)
+>
+> A structured guide for planning, executing, and evaluating a GitHub Copilot pilot for IT Professionals.
 
 ---
 

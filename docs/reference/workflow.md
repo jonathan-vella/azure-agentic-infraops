@@ -1,6 +1,6 @@
 # Agentic InfraOps - Agent Workflow
 
-> **Version 3.7.8** | [Changelog](../../VERSION.md)
+> **Version 5.3.0** | [Changelog](../../VERSION.md)
 
 This document describes the 7-step agent workflow for Azure infrastructure development with Agentic InfraOps.
 
@@ -452,9 +452,8 @@ Implementer: [Executes deployment to Azure]
 ## Related Documentation
 
 - [Time Savings Evidence](../presenter/time-savings-evidence.md) — Quantified efficiency gains (45 min vs 18+ hours)
-- [Copilot Portfolio Showcase](../presenter/copilot-portfolio-showcase.md) — Real-world projects
-- [ADR-003: AVM-First Approach](../adr/ADR-003-avm-first-approach.md) — Why we use Azure Verified Modules
-- [ADR-004: Region Defaults](../adr/ADR-004-region-defaults.md) — Default `swedencentral`, fallback guidance
+- [ADR-003: AVM-First Approach](../_superseded/adr/ADR-003-avm-first-approach.md) — Why we use Azure Verified Modules
+- [ADR-004: Region Defaults](../_superseded/adr/ADR-004-region-defaults.md) — Default `swedencentral`, fallback guidance
 - [Copilot Instructions](../../.github/copilot-instructions.md)
 - [Azure Pricing MCP README](../../mcp/azure-pricing-mcp/README.md)
 - [README](../../README.md)

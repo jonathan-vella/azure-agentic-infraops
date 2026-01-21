@@ -1,6 +1,6 @@
 # Presenter Resources
 
-> **Version 3.7.8** | [Back to Documentation Hub](../README.md)
+> **Version 5.3.0** | [Back to Documentation Hub](../README.md)
 
 Complete toolkit for demonstrating Agentic InfraOps to customers, partners, and internal teams.
 
@@ -8,7 +8,6 @@ Complete toolkit for demonstrating Agentic InfraOps to customers, partners, and 
 
 | Resource                                      | Purpose                     | Prep Time |
 | --------------------------------------------- | --------------------------- | --------- |
-| [Demo Delivery Guide](demo-delivery-guide.md) | Step-by-step demo script    | 15 min    |
 | [Executive Pitch](executive-pitch.md)         | C-level presentation        | 10 min    |
 | [Objection Handling](objection-handling.md)   | Common concerns + responses | 5 min     |
 | [ROI Calculator](roi-calculator.md)           | Quantify time/cost savings  | 10 min    |
@@ -19,10 +18,8 @@ Complete toolkit for demonstrating Agentic InfraOps to customers, partners, and 
 
 ### Core Demo Resources
 
-- [Demo Delivery Guide](demo-delivery-guide.md) - Complete walkthrough with timing, talking points, and
-  recovery strategies
-- [Presentation Deck](agentic-infraops-presentation.md) - Markdown source for slides
-- [Visual Elements Guide](visual-elements-guide.md) - Screenshots, diagrams, and visual assets
+- [Presentation Deck](agentic-infraops.pptx) - PowerPoint presentation
+- [Time Savings Evidence](time-savings-evidence.md) - Metrics and methodology
 
 ### Scenario Scripts
 
@@ -40,7 +37,6 @@ Complete toolkit for demonstrating Agentic InfraOps to customers, partners, and 
 - [Time Savings Evidence](time-savings-evidence.md) - Detailed methodology and metrics (78% reduction
   in infrastructure development time)
 - [ROI Calculator](roi-calculator.md) - Interactive calculator for customer-specific projections
-- [Portfolio Showcase](copilot-portfolio-showcase.md) - Real-world projects built with agentic workflows
 
 ### Executive Materials
 
@@ -73,57 +69,22 @@ See [Objection Handling Guide](objection-handling.md) for complete responses wit
 
 ### Interactive Materials
 
-- [Feedback Survey](feedback-survey.md) - Post-demo feedback collection template
 - [Character Reference](character-reference.md) - Persona profiles for role-playing exercises
-
----
-
-## 🎨 Visual Assets
-
-### Infographics
-
-Located in [infographics/](infographics/) folder:
-
-- Architecture diagrams
-- Workflow visualizations
-- Time savings charts
-- Value proposition graphics
-
-### Presentation Files
-
-- [Markdown Presentation](agentic-infraops-presentation.md) - Source content
-- [HTML Presentation](agentic-infraops.html) - Browser-ready slides
-- [PowerPoint Deck](agentic-infraops.pptx) - Offline presentation
 
 ---
 
 ## File Index
 
-### From presenter-toolkit/
-
-| File                               | Description                   |
-| ---------------------------------- | ----------------------------- |
-| `demo-delivery-guide.md`           | Complete demo walkthrough     |
-| `agentic-infraops-presentation.md` | Presentation content          |
-| `agentic-infraops.html`            | HTML slides                   |
-| `agentic-infraops.pptx`            | PowerPoint deck               |
-| `objection-handling.md`            | Common objections + responses |
-| `pilot-success-checklist.md`       | Customer pilot checklist      |
-| `roi-calculator.md`                | ROI calculation guide         |
-| `visual-elements-guide.md`         | Visual asset guidelines       |
-| `workshop-checklist.md`            | Workshop preparation          |
-| `feedback-survey.md`               | Post-demo survey              |
-| `character-reference.md`           | Persona profiles              |
-| `github-copilot-for-itpros.md`     | IT Pro positioning            |
-| `infographics/`                    | Visual assets folder          |
-
-### From value-proposition/
-
-| File                            | Description              |
-| ------------------------------- | ------------------------ |
-| `executive-pitch.md`            | C-level presentation     |
-| `time-savings-evidence.md`      | Time savings methodology |
-| `copilot-portfolio-showcase.md` | Real-world portfolio     |
+| File                          | Description                   |
+| ----------------------------- | ----------------------------- |
+| `agentic-infraops.pptx`       | PowerPoint deck               |
+| `character-reference.md`      | Persona profiles              |
+| `executive-pitch.md`          | C-level presentation          |
+| `objection-handling.md`       | Common objections + responses |
+| `pilot-success-checklist.md`  | Customer pilot checklist      |
+| `roi-calculator.md`           | ROI calculation guide         |
+| `time-savings-evidence.md`    | Time savings methodology      |
+| `workshop-checklist.md`       | Workshop preparation          |
 
 ---
 

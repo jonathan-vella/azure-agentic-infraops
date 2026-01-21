@@ -1,6 +1,6 @@
 # Defaults Reference
 
-> **Version 3.7.8** | Single source of truth for regions, naming, tags, and SKUs
+> **Version 5.3.0** | Single source of truth for regions, naming, tags, and SKUs
 
 This document centralizes all default configuration values for Agentic InfraOps. All other documentation and agent
 files should reference this document rather than duplicating content.
@@ -28,7 +28,7 @@ files should reference this document rather than duplicating content.
 | Americas latency          | `eastus`, `westus2`  | North/South America users       |
 | Preview feature access    | `eastus`, `westus2`  | New Azure features first        |
 
-📖 **Full guidance**: See [ADR-004: Region Defaults](../adr/ADR-004-region-defaults.md)
+📖 **Full guidance**: See [ADR-004: Region Defaults](../_superseded/adr/ADR-004-region-defaults.md)
 
 ---
 
@@ -170,7 +170,7 @@ var tags = {
 | App Service     | `br/public:avm/res/web/site`                       | `0.8.0`     |
 | SQL Server      | `br/public:avm/res/sql/server`                     | `0.8.0`     |
 
-📖 **Full guidance**: See [ADR-003: AVM-First Approach](../adr/ADR-003-avm-first-approach.md)
+📖 **Full guidance**: See [ADR-003: AVM-First Approach](../_superseded/adr/ADR-003-avm-first-approach.md)
 
 ---
 
@@ -202,5 +202,5 @@ All resources should follow these security principles:
 - [Workflow Guide](workflow.md) — 7-step agent workflow
 - [Agents Overview](agents-overview.md) — All 7 agents
 - [Bicep Patterns](bicep-patterns.md) — Deployment patterns
-- [ADR-003: AVM-First](../adr/ADR-003-avm-first-approach.md)
-- [ADR-004: Region Defaults](../adr/ADR-004-region-defaults.md)
+- [ADR-003: AVM-First](../_superseded/adr/ADR-003-avm-first-approach.md)
+- [ADR-004: Region Defaults](../_superseded/adr/ADR-004-region-defaults.md)

@@ -54,7 +54,42 @@ $VersionFiles = @(
         Replace = "> **Agentic InfraOps v$NewVersion**"
     },
     @{
-        Path    = 'docs/guides/getting-started-journey.md'
+        Path    = 'docs/README.md'
+        Pattern = '\*\*Version\*\*: \d+\.\d+\.\d+.*\[Back to Main README\]'
+        Replace = "**Version**: $NewVersion | [Back to Main README]"
+    },
+    @{
+        Path    = 'docs/getting-started/learning-paths.md'
+        Pattern = '> \*\*Version \d+\.\d+\.\d+\*\*'
+        Replace = "> **Version $NewVersion**"
+    },
+    @{
+        Path    = 'docs/getting-started/quickstart.md'
+        Pattern = '> \*\*Version \d+\.\d+\.\d+\*\*'
+        Replace = "> **Version $NewVersion**"
+    },
+    @{
+        Path    = 'docs/getting-started/first-scenario.md'
+        Pattern = '> \*\*Version \d+\.\d+\.\d+\*\*'
+        Replace = "> **Version $NewVersion**"
+    },
+    @{
+        Path    = 'docs/reference/workflow.md'
+        Pattern = '> \*\*Version \d+\.\d+\.\d+\*\*'
+        Replace = "> **Version $NewVersion**"
+    },
+    @{
+        Path    = 'docs/reference/defaults.md'
+        Pattern = '> \*\*Version \d+\.\d+\.\d+\*\*'
+        Replace = "> **Version $NewVersion**"
+    },
+    @{
+        Path    = 'docs/reference/agents-overview.md'
+        Pattern = '> \*\*Version \d+\.\d+\.\d+\*\*'
+        Replace = "> **Version $NewVersion**"
+    },
+    @{
+        Path    = 'docs/reference/bicep-patterns.md'
         Pattern = '> \*\*Version \d+\.\d+\.\d+\*\*'
         Replace = "> **Version $NewVersion**"
     },
@@ -65,11 +100,6 @@ $VersionFiles = @(
     },
     @{
         Path    = 'scenarios/README.md'
-        Pattern = '> \*\*Version \d+\.\d+\.\d+\*\*'
-        Replace = "> **Version $NewVersion**"
-    },
-    @{
-        Path    = 'infra/bicep/contoso-patient-portal/README.md'
         Pattern = '> \*\*Version \d+\.\d+\.\d+\*\*'
         Replace = "> **Version $NewVersion**"
     },

@@ -1,6 +1,6 @@
 # Your First Scenario: S01 Bicep Baseline
 
-> **Version 3.7.8** | Step-by-step walkthrough for absolute beginners
+> **Version 5.3.0** | Step-by-step walkthrough for absolute beginners
 >
 > ⏱️ **Time**: 30 minutes | 🟢 **Difficulty**: Beginner
 

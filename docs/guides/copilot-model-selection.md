@@ -1,10 +1,16 @@
 # Choosing the Right AI Model
 
-**Your guide to selecting the best model for speed, quality, reasoning, and cost.**
+> **Version 5.3.0** | [Back to Guides](README.md)
+>
+> Your guide to selecting the best model for speed, quality, reasoning, and cost.
 
-> **TL;DR**: Use **Claude Sonnet 4.5** for most infrastructure work. Use **Claude Opus 4.5** for complex
-> coding/agentic tasks. Switch to **GPT-5.1** for balanced work or **Gemini 3 Pro** for deep reasoning.
+> **TL;DR**: Use **Claude Sonnet 4** for most infrastructure work. Use **Claude Opus 4** for complex
+> coding/agentic tasks. Switch to **GPT-4o** for balanced work or **Gemini 2.5 Pro** for deep reasoning.
 > The model matters less than your prompt quality.
+
+> **⚠️ Note**: Model names and benchmarks in this guide are illustrative examples. AI models evolve rapidly—
+> check the [Live Leaderboards](#live-leaderboards--sources) section for current model availability and
+> performance data.
 
 ---
 
@@ -372,10 +378,11 @@ Stay current with the latest benchmarks and pricing:
 ## Next Steps
 
 - [Prerequisites](prerequisites.md) - Ensure your environment is ready
-- [Quick Start](QUICKSTART.md) - Get started in 10 minutes
+- [Quick Start](../getting-started/quickstart.md) - Get started in 10 minutes
 - [S01 Bicep Baseline](../../scenarios/S01-bicep-baseline/) - Start your first scenario
 
 ---
 
-**Last Updated:** December 2025
+**Tip**: AI models evolve rapidly. Bookmark the [Live Leaderboards](#live-leaderboards--sources) section
+and revisit your model choices quarterly.
 **Feedback:** Open an issue with label `documentation`

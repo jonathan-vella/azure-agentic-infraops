@@ -1,6 +1,6 @@
 # Bicep Patterns Reference
 
-> **Version 3.7.8** | Critical deployment patterns for Azure Bicep
+> **Version 5.3.0** | Critical deployment patterns for Azure Bicep
 
 This document contains essential Bicep patterns extracted from the copilot instructions. These patterns solve
 common deployment challenges and policy compliance issues.
@@ -343,4 +343,4 @@ resource keyVault 'Microsoft.KeyVault/vaults@2023-07-01' = {
 - [Defaults Reference](defaults.md) — Regions, naming, tags, SKUs
 - [Agents Overview](agents-overview.md) — All 7 agents
 - [Workflow Reference](workflow.md) — 7-step workflow
-- [ADR-003: AVM-First](../adr/ADR-003-avm-first-approach.md) — Use Azure Verified Modules
+- [ADR-003: AVM-First](../_superseded/adr/ADR-003-avm-first-approach.md) — Use Azure Verified Modules

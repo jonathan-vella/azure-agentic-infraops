@@ -1,9 +1,9 @@
 # Workshop Delivery Checklist
 
-> **Version:** 3.6.0 | **Last Updated:** 2025-01-15 | [Back to Presenter Resources](README.md)
-
-A comprehensive checklist for trainers delivering Agentic InfraOps workshops.
-Use this before, during, and after your sessions to ensure smooth delivery.
+> **Version 5.3.0** | [Back to Presenter Resources](README.md)
+>
+> A comprehensive checklist for trainers delivering Agentic InfraOps workshops.
+> Use this before, during, and after your sessions to ensure smooth delivery.
 
 ---
 
@@ -312,6 +312,4 @@ Use this before, during, and after your sessions to ensure smooth delivery.
 **📖 See Also:**
 
 - [Character Reference](character-reference.md) - Scenario personas
-- [Demo Delivery Guide](demo-delivery-guide.md) - Presentation tips
-- [Feedback Survey](feedback-survey.md) - Post-workshop survey template
 - [Troubleshooting Guide](../guides/troubleshooting.md) - Common issues and solutions

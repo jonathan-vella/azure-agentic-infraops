@@ -1,6 +1,8 @@
 # Troubleshooting Guide
 
-**Your single source of truth for resolving issues in this repository.**
+> **Version 5.3.0** | [Back to Guides](README.md)
+>
+> Your single source of truth for resolving issues in this repository.
 
 ---
 
@@ -177,7 +179,7 @@ Instead of asking one agent to do everything:
 **Symptoms:**
 
 - Vague advice ("use best practices")
-- Doesn't understand Azure/Bicep/Terraform specifics
+- Doesn't understand Azure/Bicep specifics
 - Suggests outdated approaches
 
 **Solutions:**
@@ -651,12 +653,12 @@ Quick lookup for common error messages:
 
 ### Self-Service Resources
 
-| Resource                                                  | Use For                        |
-| --------------------------------------------------------- | ------------------------------ |
-| [Getting Started Guide](getting-started-journey.md)       | End-to-end setup walkthrough   |
-| [Workflow Guide](../reference/workflow.md)                | Agent workflow documentation   |
-| [Scenario READMEs](../../scenarios/)                      | Scenario-specific guidance     |
-| [GitHub Copilot Docs](https://docs.github.com/en/copilot) | Official Copilot documentation |
+| Resource                                                        | Use For                        |
+| --------------------------------------------------------------- | ------------------------------ |
+| [Learning Paths](../getting-started/learning-paths.md)          | End-to-end setup walkthrough   |
+| [Workflow Guide](../reference/workflow.md)                      | Agent workflow documentation   |
+| [Scenario READMEs](../../scenarios/)                            | Scenario-specific guidance     |
+| [GitHub Copilot Docs](https://docs.github.com/en/copilot)       | Official Copilot documentation |
 
 ### Community Support
 

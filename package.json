@@ -7,6 +7,7 @@
     "prepare": "lefthook install",
     "lint:md": "markdownlint-cli2 '**/*.md' '#node_modules'",
     "lint:md:fix": "markdownlint-cli2 --fix '**/*.md' '#node_modules'",
+    "lint:links": "find docs -name '*.md' ! -path 'docs/_superseded/*' | xargs -I {} markdown-link-check {} --config .markdown-link-check.json",
     "lint:cost-estimate-templates": "node scripts/validate-cost-estimate-templates.mjs",
     "lint:artifact-templates": "node scripts/validate-artifact-templates.mjs"
   },
@@ -14,6 +15,7 @@
     "@commitlint/cli": "^19.0.0",
     "@commitlint/config-conventional": "^19.0.0",
     "lefthook": "^1.6.0",
+    "markdown-link-check": "^3.12.0",
     "markdownlint-cli2": "^0.17.0"
   },
   "repository": {

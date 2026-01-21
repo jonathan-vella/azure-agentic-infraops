@@ -1,6 +1,6 @@
 # Documentation Hub
 
-> **Agentic InfraOps v4.0.0** |
+> **Agentic InfraOps v5.3.0** |
 > 🔗 [aka.ms/agenticinfraops](https://aka.ms/agenticinfraops)
 
 Welcome to the Agentic InfraOps documentation center. Choose your path based on experience level.
@@ -59,7 +59,7 @@ flowchart LR
 | 3    | Run [S02-agentic-workflow](../scenarios/S02-agentic-workflow/) | 30 min |
 | 4    | [Reference: Bicep Patterns](reference/bicep-patterns.md)       | 10 min |
 
-📚 **Deep Dive**: [ADR-003 AVM-First](adr/ADR-003-avm-first-approach.md) | [ADR-004 Regions](adr/ADR-004-region-defaults.md)
+📚 **Deep Dive**: [ADR-003 AVM-First](_superseded/adr/ADR-003-avm-first-approach.md) | [ADR-004 Regions](_superseded/adr/ADR-004-region-defaults.md)
 
 ---
 
@@ -69,12 +69,12 @@ flowchart LR
 
 | Step | Resource                                                    | Time   |
 | ---- | ----------------------------------------------------------- | ------ |
-| 1    | [Demo Delivery Guide](presenter/demo-delivery-guide.md)     | 15 min |
+| 1    | [Executive Pitch](presenter/executive-pitch.md)             | 10 min |
 | 2    | [Time Savings Evidence](presenter/time-savings-evidence.md) | 10 min |
 | 3    | [Objection Handling](presenter/objection-handling.md)       | 10 min |
 | 4    | [ROI Calculator](presenter/roi-calculator.md)               | 5 min  |
 
-📚 **Full Toolkit**: [Presenter Hub](presenter/) | [Visual Elements](presenter/visual-elements-guide.md)
+📚 **Full Toolkit**: [Presenter Hub](presenter/)
 
 ---
 
@@ -95,9 +95,8 @@ flowchart LR
 | Section                                      | Description                           |
 | -------------------------------------------- | ------------------------------------- |
 | [Workflow Guide](reference/workflow.md)      | Complete 7-step workflow with Mermaid |
-| [Architecture Decisions](adr/)               | ADRs documenting design choices       |
-| [Cost Estimates](cost-estimates/)            | Azure pricing examples                |
-| [Diagrams](diagrams/)                        | Generated architecture diagrams       |
+| [Architecture Decisions](_superseded/adr/)   | ADRs documenting design choices       |
+| [Diagrams](_superseded/diagrams/)            | Generated architecture diagrams       |
 | [All Guides](guides/)                        | Consolidated how-to guides            |
 | [Troubleshooting](guides/troubleshooting.md) | Common issues and solutions           |
 
@@ -108,7 +107,7 @@ flowchart LR
 | Section                                                | Description                |
 | ------------------------------------------------------ | -------------------------- |
 | [Agent Definitions](../.github/agents/)                | Custom agent `.md` files   |
-| [Shared Foundation](../.github/agents/shared/)         | Common patterns for agents |
+| [Shared Foundation](../.github/agents/_shared/)        | Common patterns for agents |
 | [Instructions](../.github/instructions/)               | Coding standards files     |
 | [Markdown Style Guide](guides/markdown-style-guide.md) | Documentation standards    |
 
@@ -117,10 +116,9 @@ flowchart LR
 ## Quick Links
 
 - 📖 [Main README](../README.md) — Repository overview
-- 🎯 [Scenarios](../scenarios/) — Learning scenarios (S01-S11)
+- 🎯 [Scenarios](../scenarios/) — Learning scenarios (S01-S08)
 - 💰 [Azure Pricing MCP](../mcp/azure-pricing-mcp/) — Real-time pricing tools
-- 📚 [Portfolio Showcase](presenter/copilot-portfolio-showcase.md) — Real-world examples
 
 ---
 
-**Version**: 3.6.0 | [Back to Main README](../README.md)
+**Version**: 5.3.0 | [Back to Main README](../README.md)

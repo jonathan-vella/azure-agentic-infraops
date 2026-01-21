@@ -1,9 +1,11 @@
 # Evidence-Based Time Savings Methodology
 
+> **Version 5.3.0** | [Back to Presenter Resources](README.md)
+>
 > **TL;DR**: All time savings estimates in this repository are grounded in peer-reviewed research and industry studies,
 > using conservative lower-bound figures.
 
-![Time Savings Infographic](infographics/generated/time-savings-infographic-web.png)
+![Time Savings Infographic](../_superseded/presenter/infographics/generated/time-savings-infographic-web.png)
 
 ---
 
