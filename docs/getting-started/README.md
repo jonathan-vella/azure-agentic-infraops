@@ -1,6 +1,8 @@
 # Getting Started
 
-> **Your entry point to Agentic InfraOps**
+> **Version 5.3.0** | [Back to Documentation Hub](../README.md)
+>
+> Your entry point to Agentic InfraOps
 
 ## Documents in This Folder
 

@@ -1,5 +1,7 @@
 # Prerequisites
 
+> **Version 5.3.0** | [Back to Guides](README.md)
+>
 > **TL;DR**: You need VS Code with GitHub Copilot, an Azure subscription, and basic familiarity with IaC concepts.
 > The Dev Container handles all tool installation automatically.
 

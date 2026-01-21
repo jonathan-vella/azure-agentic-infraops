@@ -1,6 +1,8 @@
 # GitHub Copilot Best Practices
 
-> **Get the most out of Copilot for infrastructure-as-code work.**
+> **Version 5.3.0** | [Back to Guides](README.md)
+>
+> Get the most out of Copilot for infrastructure-as-code work.
 >
 > These practices are based on
 > [GitHub's official best practices](https://docs.github.com/en/copilot/get-started/best-practices)

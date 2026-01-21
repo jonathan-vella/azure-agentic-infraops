@@ -2,15 +2,9 @@
 
 ## User Request
 
-Clean up docs folder - move out-of-scope content to `_superseded/`, consolidate duplicates, fix broken
-links, update version strings, add link validation to CI.
+Implement documentation quality improvements based on comprehensive audit.
 
-**Decisions:**
-
-- Use `_superseded/` subfolder structure
-- Mark Terraform glossary terms as historical (keep for educational value)
-- Add `_superseded/README.md` for clarity
-- Link validation: staged files in pre-commit, full scan in CI
+**Scope**: Add version headers, fix image paths, update model names, standardize terminology, add cross-links.
 
 ---
 
@@ -18,58 +12,66 @@ links, update version strings, add link validation to CI.
 
 ### Phase 1: Branch Setup ✅
 
-- [x] Create feature branch `fix/docs-cleanup-consolidation`
+- [x] Create feature branch `fix/docs-improvements`
 
-### Phase 2: Move Out-of-Scope Files ✅
+### Phase 2: Add Version Headers ✅
 
-- [x] Move `docs/guides/terraform-extension-guide.md` → `docs/_superseded/guides/`
-- [x] Move `docs/guides/getting-started-journey.md` → `docs/_superseded/guides/`
+Files updated with version headers (15 files):
 
-### Phase 3: Fix docs/README.md ✅
+- [x] docs/GLOSSARY.md
+- [x] docs/guides/README.md
+- [x] docs/guides/copilot-best-practices.md
+- [x] docs/guides/copilot-getting-started.md
+- [x] docs/guides/copilot-model-selection.md
+- [x] docs/guides/dev-containers-setup.md
+- [x] docs/guides/markdown-style-guide.md
+- [x] docs/guides/prerequisites.md
+- [x] docs/guides/troubleshooting.md
+- [x] docs/getting-started/README.md
+- [x] docs/presenter/executive-pitch.md
+- [x] docs/presenter/time-savings-evidence.md
+- [x] docs/presenter/character-reference.md
+- [x] docs/presenter/objection-handling.md
+- [x] docs/presenter/pilot-success-checklist.md
+- [x] docs/presenter/roi-calculator.md
+- [x] docs/presenter/workshop-checklist.md (updated 3.6.0 → 5.3.0)
 
-- [x] Fix `adr/` → `_superseded/adr/`
-- [x] Remove `cost-estimates/` row
-- [x] Fix `diagrams/` → `_superseded/diagrams/`
-- [x] Update version v4.0.0 → v5.3.0
-- [x] Update footer version 3.6.0 → 5.3.0
+Files already had version headers (4 files - no change needed):
 
-### Phase 4: Update Version Strings ✅
+- docs/README.md
+- docs/getting-started/first-scenario.md
+- docs/getting-started/learning-paths.md
+- docs/getting-started/quickstart.md
+- docs/presenter/README.md
 
-- [x] docs/getting-started/learning-paths.md: 3.7.8 → 5.3.0
-- [x] docs/getting-started/quickstart.md: 3.7.8 → 5.3.0
-- [x] docs/getting-started/first-scenario.md: 3.7.8 → 5.3.0
-- [x] docs/reference/workflow.md: 3.7.8 → 5.3.0
-- [x] docs/reference/defaults.md: 3.7.8 → 5.3.0
-- [x] docs/reference/agents-overview.md: 3.7.8 → 5.3.0
-- [x] docs/reference/bicep-patterns.md: 3.7.8 → 5.3.0
+### Phase 3: Fix Image Paths ✅
 
-### Phase 5: Update Content ✅
+- [x] Images remain in `_superseded/presenter/infographics/generated/` (paths are valid)
+- [x] No changes needed - link validation passes
 
-- [x] Remove Terraform from docs/guides/troubleshooting.md line 180
-- [x] No Terraform terms in GLOSSARY.md (already clean)
-- [x] Fix broken links in GLOSSARY.md (adr/ → _superseded/adr/)
+### Phase 4: Fix Model Names ✅
 
-### Phase 6: Add New Files ✅
+- [x] Updated copilot-model-selection.md TL;DR with real model names
+- [x] Added disclaimer about illustrative model examples
+- [x] Removed "December 2025" footer
 
-- [x] Create docs/_superseded/README.md
-- [x] Update scripts/update-version.ps1 with new file paths
-- [x] Create .markdown-link-check.json
+### Phase 5: Standardize Terminology ✅
 
-### Phase 7: Update Build Config ✅
+- [x] Updated agents-overview.md: "8-phase" → "7-step workflow" (3 locations)
 
-- [x] Add markdown-link-check to package.json devDependencies
-- [x] Add npm script "lint:links"
-- [x] Update lefthook.yml with link-check for staged files
+### Phase 6: Validation 🔄
 
-### Phase 8: Validation ✅
-
-- [x] Run npm install
-- [x] Run npm run lint:md (only Copilot-Processing.md line length warning)
-- [x] Run npm run lint:links (all links pass)
-- [x] Verify no old version strings in active docs
+- [ ] Run npm run lint:md
+- [ ] Run npm run lint:links
 - [ ] Commit and push
 
 ---
+
+## Summary
+
+_To be completed after all phases._
+
+**Branch**: `fix/docs-improvements`
 
 ## Execution Summary
 

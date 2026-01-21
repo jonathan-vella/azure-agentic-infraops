@@ -1,6 +1,8 @@
 # Getting Started with GitHub Copilot
 
-> **Your first steps with AI-assisted coding in VS Code.**
+> **Version 5.3.0** | [Back to Guides](README.md)
+>
+> Your first steps with AI-assisted coding in VS Code.
 >
 > This guide helps IT Pros get productive with GitHub Copilot quickly, with a focus on infrastructure-as-code
 > workflows.

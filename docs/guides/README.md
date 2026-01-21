@@ -1,6 +1,8 @@
 # Guides
 
-> **Central hub for all how-to guides, tutorials, and best practices.**
+> **Version 5.3.0** | [Back to Documentation Hub](../README.md)
+>
+> Central hub for all how-to guides, tutorials, and best practices.
 
 This folder consolidates all operational guides for Agentic InfraOps, from getting started to advanced workflows.
 

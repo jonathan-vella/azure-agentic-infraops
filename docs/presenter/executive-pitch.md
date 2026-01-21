@@ -1,5 +1,7 @@
 # GitHub Copilot for IT Pros: Executive Pitch
 
+> **Version 5.3.0** | [Back to Presenter Resources](README.md)
+>
 > **Duration:** 5 minutes | **Audience:** C-level, IT Directors, Partner Leadership
 
 ![78% Time Saved on Infrastructure Tasks](../_superseded/presenter/infographics/generated/exec-pitch-banner.png)

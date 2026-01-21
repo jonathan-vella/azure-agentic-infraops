@@ -1,6 +1,8 @@
 # Troubleshooting Guide
 
-**Your single source of truth for resolving issues in this repository.**
+> **Version 5.3.0** | [Back to Guides](README.md)
+>
+> Your single source of truth for resolving issues in this repository.
 
 ---
 

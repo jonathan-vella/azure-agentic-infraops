@@ -1,6 +1,8 @@
 # Character Reference Card
 
-> Quick reference for all personas used across the 11 Agentic InfraOps scenarios.
+> **Version 5.3.0** | [Back to Presenter Resources](README.md)
+>
+> Quick reference for all personas used across the Agentic InfraOps scenarios.
 > Use these characters to add storytelling depth to your demos and presentations.
 
 ---

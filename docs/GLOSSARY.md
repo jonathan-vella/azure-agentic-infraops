@@ -1,6 +1,6 @@
 # Glossary
 
-> **Quick reference for terms used throughout Agentic InfraOps documentation.**
+> **Version 5.3.0** | Quick reference for terms used throughout Agentic InfraOps documentation.
 
 ---
 
