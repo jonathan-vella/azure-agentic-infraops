@@ -71,20 +71,20 @@ Files already had version headers (4 files - no change needed):
 
 **All phases completed successfully.**
 
-| Category                | Changes                                                 |
-| ----------------------- | ------------------------------------------------------- |
-| Version headers added   | 15 files (guides/, presenter/, getting-started/)        |
-| Version headers updated | 1 file (workshop-checklist.md: 3.6.0 → 5.3.0)           |
-| Model names fixed       | TL;DR updated to real models, disclaimer added          |
-| Terminology fixed       | 3 instances of "8-phase" → "7-step workflow"            |
+| Category                | Changes                                                      |
+| ----------------------- | ------------------------------------------------------------ |
+| Version headers added   | 15 files (guides/, presenter/, getting-started/)             |
+| Version headers updated | 1 file (workshop-checklist.md: 3.6.0 → 5.3.0)                |
+| Model names fixed       | TL;DR updated to real models, disclaimer added               |
+| Terminology fixed       | 3 instances of "8-phase" → "7-step workflow"                 |
 | Footer removed          | "December 2025" date removed from copilot-model-selection.md |
 
 **Branch**: `fix/docs-improvements`
 
 **Known Issues**:
 
-- `markdown-link-check` has a bug with Node.js v24 (program.opts().ignore undefined)
-- Character-reference.md has scenario number mismatches (S09-S11 don't exist, character-scenario mapping incorrect) - separate fix needed
+- ~~`markdown-link-check` Node.js v24 bug~~ → Fixed: use npx instead of global
+- ~~Character-reference.md scenario mismatches~~ → Fixed: remapped to S01-S08
 
 **Next Steps**:
 

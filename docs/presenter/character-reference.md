@@ -12,16 +12,13 @@
 | Scenario | Character           | Role                           | Company                       | Key Challenge                         |
 | -------- | ------------------- | ------------------------------ | ----------------------------- | ------------------------------------- |
 | S01      | **Elena Rodriguez** | Cloud Infrastructure Engineer  | Meridian Financial            | First Azure project, 10 years VMware  |
-| S02      | **Jordan Martinez** | Senior Infrastructure Engineer | CloudBridge Consulting        | Multi-cloud standardization           |
-| S03      | **Jennifer Chen**   | Solutions Architect            | Meridian Systems (SI Partner) | HIPAA-compliant patient portal        |
-| S04      | **Carlos Mendez**   | E-Commerce Architect           | TechRetail Inc                | PCI-DSS compliance, Black Friday prep |
-| S05      | **Priya Sharma**    | Senior Technical Writer        | Enterprise Solutions Corp     | 50-server migration docs in 1 week    |
-| S06      | **Marcus Chen**     | Senior QA Engineer             | ValidationFirst Consulting    | Automated UAT validation              |
-| S07      | **Maya Patel**      | On-Call SRE                    | RetailMax Online              | 2 AM production incident              |
-| S08      | **Sarah Chen**      | Security Engineer              | HealthTech Solutions          | 48-hour SBOM deadline                 |
-| S09      | **David Kim**       | Solutions Architect            | TechVentures Ltd              | Design review in 2 hours              |
-| S10      | **Alex Petrov**     | Cloud Operations Engineer      | InfraScale Solutions          | 24-hour monitoring deadline           |
-| S11      | Various             | Multiple                       | Various                       | Quick reference demos                 |
+| S02      | **Jennifer Chen**   | Solutions Architect            | Meridian Systems (SI Partner) | HIPAA-compliant patient portal        |
+| S03      | **Priya Sharma**    | Senior Technical Writer        | Enterprise Solutions Corp     | 50-server migration docs in 1 week    |
+| S04      | **Marcus Chen**     | Senior QA Engineer             | ValidationFirst Consulting    | Automated UAT validation              |
+| S05      | **Maya Patel**      | On-Call SRE                    | RetailMax Online              | 2 AM production incident              |
+| S06      | **Sarah Chen**      | Security Engineer              | HealthTech Solutions          | 48-hour SBOM deadline                 |
+| S07      | **David Kim**       | Solutions Architect            | TechVentures Ltd              | Design review in 2 hours              |
+| S08      | **Alex Petrov**     | Cloud Operations Engineer      | InfraScale Solutions          | 24-hour monitoring deadline           |
 
 ---
 
@@ -57,22 +54,7 @@ ambitious timeline. Watch how the 7-step workflow becomes her secret weapon."
 
 ---
 
-### Carlos Mendez (S04 - E-Commerce Platform)
-
-> _"Black Friday isn't a drill. When 50,000 users hit checkout simultaneously,
-> there are no second chances."_
-
-- **Background**: E-commerce architect, retail industry veteran
-- **Motivation**: Build infrastructure that survives peak traffic
-- **Pain Point**: PCI-DSS compliance complexity + scalability
-- **Success Metric**: Zero downtime during holiday sales
-
-**Demo Hook**: "Carlos has 90 days until Black Friday. He needs PCI-DSS compliance,
-zone redundancy, and infrastructure that scales to 50K concurrent users."
-
----
-
-### Priya Sharma (S05 - Documentation Generation)
+### Priya Sharma (S03 - Documentation Generation)
 
 > _"I have 50 servers to document and one week to do it.
 > There has to be a better way than interviewing every admin."_
@@ -87,7 +69,7 @@ infrastructure code into comprehensive documentation in hours, not weeks."
 
 ---
 
-### Marcus Chen (S06 - Service Validation)
+### Marcus Chen (S04 - Service Validation)
 
 > _"The code works. The tests pass. But does it actually do what the business needs?
 > That's the question that keeps me up at night."_
@@ -102,7 +84,7 @@ His mission: prove the system actually delivers what stakeholders need."
 
 ---
 
-### Maya Patel (S07 - Troubleshooting)
+### Maya Patel (S05 - Troubleshooting)
 
 > _"It's 2 AM. Checkout is broken. Revenue is bleeding. I have 15 minutes
 > to figure out what's wrong before my VP starts calling."_
@@ -117,7 +99,7 @@ Watch how Copilot becomes her diagnostic partner at 2 AM."
 
 ---
 
-### Sarah Chen (S08 - SBOM Generator)
+### Sarah Chen (S06 - SBOM Generator)
 
 > _"Mayo Clinic needs an SBOM in 48 hours or we lose the $2M contract.
 > I've never created one before. Where do I even start?"_
@@ -132,7 +114,7 @@ An enterprise customer needs a Software Bill of Materials—yesterday."
 
 ---
 
-### David Kim (S09 - Diagrams as Code)
+### David Kim (S07 - Diagrams as Code)
 
 > _"I have a design review in 2 hours. My diagrams are stuck in a Visio file
 > on a laptop that's not here. I need to recreate the architecture—fast."_
@@ -147,7 +129,7 @@ Watch how Python and Copilot save his design review."
 
 ---
 
-### Alex Petrov (S10 - Coding Agent)
+### Alex Petrov (S08 - Coding Agent)
 
 > _"The platform goes live in 24 hours. We just realized we have no monitoring.
 > I can't be in two places at once—but maybe my AI assistant can."_
@@ -175,9 +157,9 @@ can work on monitoring while Alex handles the deployment pipeline."
 
 | Audience             | Recommended Characters  | Why                          |
 | -------------------- | ----------------------- | ---------------------------- |
-| Infrastructure Teams | Elena, Jordan, Maya     | Relatable daily challenges   |
-| Architects           | Jennifer, Carlos, David | Strategic design focus       |
-| Security/Compliance  | Sarah, Carlos           | Regulatory pressure          |
+| Infrastructure Teams | Elena, Maya, Alex       | Relatable daily challenges   |
+| Architects           | Jennifer, David         | Strategic design focus       |
+| Security/Compliance  | Sarah                   | Regulatory pressure          |
 | Technical Writers    | Priya                   | Documentation transformation |
 | QA/Testing           | Marcus                  | Validation mindset           |
 | Executives           | Any (use time savings)  | ROI focus                    |
@@ -186,9 +168,9 @@ can work on monitoring while Alex handles the deployment pipeline."
 
 Some characters can reference each other for continuity:
 
-- **Elena** (S01) could be a colleague of **Jennifer** (S03) at Meridian
-- **Sarah** (S08) works at HealthTech, whose patient portal might be built by **Jennifer's** team
-- **Maya** (S07) and **Alex** (S10) both deal with production operations
+- **Elena** (S01) could be a colleague of **Jennifer** (S02) at Meridian
+- **Sarah** (S06) works at HealthTech, whose patient portal might be built by **Jennifer's** team
+- **Maya** (S05) and **Alex** (S08) both deal with production operations
 
 ---
 
@@ -197,9 +179,7 @@ Some characters can reference each other for continuity:
 | Character       | Traditional | With Copilot | Savings |
 | --------------- | ----------- | ------------ | ------- |
 | Elena Rodriguez | 4-6 hours   | 30 min       | 87%     |
-| Jordan Martinez | 8 hours     | 30 min       | 94%     |
 | Jennifer Chen   | 18 hours    | 45 min       | 96%     |
-| Carlos Mendez   | 3-5 days    | 90 min       | 95%     |
 | Priya Sharma    | 3 days      | 90 min       | 94%     |
 | Marcus Chen     | 4-6 hours   | 30 min       | 88%     |
 | Maya Patel      | 2-4 hours   | 25 min       | 83%     |
