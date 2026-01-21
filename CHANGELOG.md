@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [6.0.0] - 2026-01-21
 
+- feat: remove Terraform and replace Husky with lefthook
+
+## [6.0.0] - 2026-01-21
+
 ### BREAKING CHANGES
 
 - **Terraform support removed** - Project is now Bicep-only
