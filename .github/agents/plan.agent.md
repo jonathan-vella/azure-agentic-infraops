@@ -4,15 +4,25 @@ model: "Claude Opus 4.5"
 description: Researches and captures Azure infrastructure project requirements
 argument-hint: Describe the Azure workload or project you want to plan
 tools:
-  - "search"
-  - "agent"
-  - "search/usages"
-  - "read/problems"
-  - "search/changes"
-  - "web/fetch"
-  - "web/githubRepo"
-  - "github.vscode-pull-request-github/issue_fetch"
-  - "github.vscode-pull-request-github/activePullRequest"
+  [
+    "vscode",
+    "execute",
+    "read",
+    "agent",
+    "edit",
+    "search",
+    "web",
+    "microsoft-docs/*",
+    "azure-mcp/*",
+    "todo",
+    "ms-azuretools.vscode-azure-github-copilot/azure_recommend_custom_modes",
+    "ms-azuretools.vscode-azure-github-copilot/azure_query_azure_resource_graph",
+    "ms-azuretools.vscode-azure-github-copilot/azure_get_auth_context",
+    "ms-azuretools.vscode-azure-github-copilot/azure_set_auth_context",
+    "ms-azuretools.vscode-azure-github-copilot/azure_get_dotnet_template_tags",
+    "ms-azuretools.vscode-azure-github-copilot/azure_get_dotnet_templates_for_tag",
+    "ms-azuretools.vscode-azureresourcegroups/azureActivityLog",
+  ]
 handoffs:
   - label: Architecture Assessment
     agent: Architect
