@@ -1,6 +1,6 @@
 {
   "name": "azure-agentic-infraops",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "Agentic InfraOps - Azure infrastructure engineered by agents. Verified. Well-Architected. Deployable.",
   "private": true,
   "scripts": {
