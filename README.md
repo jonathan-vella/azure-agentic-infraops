@@ -129,12 +129,22 @@ Each agent asks for approval before proceeding. Say `yes` to continue, or provid
 
 | Directory                | Purpose                                      |
 | ------------------------ | -------------------------------------------- |
-| `.github/agents/`        | Agent definitions (7 agents for 7-step flow) |
+| `.github/agents/`        | Agent definitions (9 agents for 7-step flow) |
 | `agent-output/`          | Generated artifacts per project              |
 | `mcp/azure-pricing-mcp/` | 💰 Real-time Azure pricing MCP server        |
 | `infra/bicep/`           | Generated Bicep templates                    |
 | `docs/`                  | Documentation, guides, diagrams              |
 | `scenarios/`             | 8 hands-on learning scenarios                |
+
+### Sample Outputs
+
+Explore complete workflow outputs in `agent-output/`:
+
+| Project                                      | Description                   | Highlights                                    |
+| -------------------------------------------- | ----------------------------- | --------------------------------------------- |
+| [agent-testing](agent-output/agent-testing/) | Agent validation framework    | 16 resources, full 7-step + health validation |
+| [static-webapp](agent-output/static-webapp/) | Static Web App with Functions | Production-ready SWA pattern                  |
+| [ecommerce](agent-output/ecommerce/)         | E-commerce platform           | Multi-tier architecture                       |
 
 ---
 
