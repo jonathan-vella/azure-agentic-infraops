@@ -42,13 +42,10 @@ code azure-agentic-infraops
 | GitHub CLI   | Latest  | GitHub operations         |
 | Checkov      | Latest  | Security scanning         |
 
-> **Note**: Azure CLI and GitHub CLI credentials persist across container rebuilds when you have
-> `az` and `gh` installed on your host machine. The container mounts your host's credential directories:
+> **Note**: Credentials persist across container rebuilds:
 >
-> - **Windows**: `%USERPROFILE%\.azure` and `%APPDATA%\GitHub CLI`
-> - **Linux/macOS**: `~/.azure` and `~/.config/gh`
->
-> Authenticate once on your host (`az login` and `gh auth login`), then credentials will be available in the container.
+> - **Azure CLI**: Mounts your host's credential directory (`~/.azure` or `%USERPROFILE%\.azure`)
+> - **GitHub CLI**: Uses a Docker volume. Run `gh auth login` once inside the container; credentials persist across rebuilds.
 
 ### Option B: Manual Installation
 
