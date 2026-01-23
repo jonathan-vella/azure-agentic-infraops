@@ -1,0 +1,28 @@
+# CODEOWNERS - Define code ownership for review requirements
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repository
+*                           @jonathan-vella
+
+# Agent definitions require additional review
+.github/agents/             @jonathan-vella
+.github/instructions/       @jonathan-vella
+.github/prompts/            @jonathan-vella
+
+# Workflow changes require careful review
+.github/workflows/          @jonathan-vella
+
+# Infrastructure code
+infra/                      @jonathan-vella
+
+# MCP server code
+mcp/                        @jonathan-vella
+
+# Scripts and automation
+scripts/                    @jonathan-vella
+
+# Documentation (lower barrier for contributions)
+docs/                       @jonathan-vella
+
+# Scenarios and examples
+scenarios/                  @jonathan-vella
