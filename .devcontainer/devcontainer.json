@@ -105,6 +105,10 @@
     }
   },
 
+  // Mounts for credential persistence across rebuilds
+  // - Azure CLI: ~/.azure (Linux/macOS) or %USERPROFILE%\.azure (Windows)
+  // - GitHub CLI: ~/.config/gh (Linux/macOS) or %APPDATA%\GitHub CLI (Windows)
+  // The ${localEnv:VAR} syntax uses empty string if VAR is undefined, enabling cross-platform support
   "mounts": [
     {
       "source": "${localEnv:USERPROFILE}${localEnv:HOME}/.azure",
@@ -112,7 +116,7 @@
       "type": "bind"
     },
     {
-      "source": "${localEnv:USERPROFILE}${localEnv:HOME}/.config/gh",
+      "source": "${localEnv:APPDATA}/GitHub CLI${localEnv:HOME}/.config/gh",
       "target": "/home/vscode/.config/gh",
       "type": "bind"
     },
