@@ -10,9 +10,12 @@ exec 2>&1
 # Create directories
 echo "📂 Creating cache directories..."
 mkdir -p "${HOME}/.cache"
-# Fix ownership if needed (may be owned by root from previous installs)
+mkdir -p "${HOME}/.config/gh"
+# Fix ownership if needed (may be owned by root from Docker volumes)
 sudo chown -R vscode:vscode "${HOME}/.cache" 2>/dev/null || true
+sudo chown -R vscode:vscode "${HOME}/.config/gh" 2>/dev/null || true
 chmod 755 "${HOME}/.cache" 2>/dev/null || true
+chmod 755 "${HOME}/.config/gh" 2>/dev/null || true
 
 # Configure Git safe directory (for mounted volumes)
 echo "🔐 Configuring Git..."
