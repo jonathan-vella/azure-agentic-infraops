@@ -73,8 +73,8 @@ The `main` branch is protected with the following rules:
 
 ```bash
 # Clone repository
-git clone https://github.com/jonathan-vella/azure-agentic-infraops-workshop.git
-cd azure-agentic-infraops-workshop
+git clone https://github.com/jonathan-vella/azure-agentic-infraops.git
+cd azure-agentic-infraops
 
 # Open in Dev Container (VS Code)
 # F1 → "Dev Containers: Reopen in Container"

@@ -152,7 +152,7 @@ git show v1.0.0
 
 ### Workflow didn't run
 
-- Check that your commit is on `main` or `main` branch
+- Check that your commit is on the `main` branch
 - Verify commit message follows conventional commits format
 - Check workflow logs in GitHub Actions tab
 
