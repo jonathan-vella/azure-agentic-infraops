@@ -45,6 +45,10 @@ Have `examples/copilot-sbom-conversation.md` open in a separate tab. If live dem
 
 ```bash
 cd /workspaces/azure-agentic-infraops/scenarios/S06-sbom-generator
+
+# Extract sample app if not already done
+unzip -n sample-app.zip
+
 code sample-app/src/api/package.json  # For Phase 2
 code sample-app/src/api/Dockerfile     # For Phase 3
 ```

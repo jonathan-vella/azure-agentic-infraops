@@ -179,16 +179,18 @@ graph TB
 
 ### Sample Application (Included)
 
-- **sample-app/**: Real-world ToDo app from [Azure-Samples/todo-nodejs-mongo](https://github.com/Azure-Samples/todo-nodejs-mongo)
+- **sample-app.zip**: Real-world ToDo app from [Azure-Samples/todo-nodejs-mongo](https://github.com/Azure-Samples/todo-nodejs-mongo)
+- **To use**: Unzip with `unzip sample-app.zip` in this directory
 - **No deployment needed**: Demo uses package.json files and documentation
 - **No Azure costs**: Infrastructure SBOM can use paste approach (no live queries)
 
 ## Demo Components
 
-### 📁 [sample-app/](./sample-app/)
+### � sample-app.zip
 
-Real-world ToDo application from Azure Samples:
+Real-world ToDo application from Azure Samples (zipped to avoid Dependabot alerts):
 
+- **To extract**: `unzip sample-app.zip`
 - **Node.js/TypeScript API** with Express framework
 - **React frontend** with modern JavaScript
 - **Dockerfile** for containerization
@@ -656,7 +658,7 @@ Are there any components we missed? Let's review:
 
 - [Demo Script](./DEMO-SCRIPT.md) - Step-by-step walkthrough
 - [Effective Prompts](./prompts/effective-prompts.md) - Production-tested prompts
-- [Sample App](./sample-app/) - Real-world application from Azure Samples
+- [Sample App](./sample-app.zip) - Real-world application from Azure Samples (unzip before use)
 
 ---
 
