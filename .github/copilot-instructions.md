@@ -151,10 +151,28 @@ code azure-agentic-infraops
 # F1 → "Dev Containers: Reopen in Container"
 ```
 
+## Branch Rulesets
+
+This repository uses [GitHub Rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
+to protect the `main` branch:
+
+| Rule                 | Setting                    |
+| -------------------- | -------------------------- |
+| **Require PR**       | Yes (no direct push)       |
+| **Required reviews** | 1 approval                 |
+| **Status checks**    | `lint` must pass           |
+| **CODEOWNERS**       | Review required            |
+| **Linear history**   | Squash merge only          |
+| **Bypass**           | Admins (via PR only)       |
+
+📖 **Full details**: `docs/guides/development-workflow.md`
+
 ## References
 
 - **Shared Defaults**: `.github/agents/_shared/defaults.md`
 - **Workflow Guide**: `docs/reference/workflow.md`
+- **Development Workflow**: `docs/guides/development-workflow.md`
+- **Automated Versioning**: `docs/guides/automated-versioning.md`
 - **Bicep Patterns**: `docs/reference/bicep-patterns.md`
 - **Agents Overview**: `docs/reference/agents-overview.md`
 - **Troubleshooting**: `docs/guides/troubleshooting.md`
