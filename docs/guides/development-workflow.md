@@ -1,12 +1,12 @@
 # Development Workflow Guide
 
-Complete guide to contributing to this repository, including branch protection, PR workflow,
+Complete guide to contributing to this repository, including branch rulesets, PR workflow,
 automated checks, and version management.
 
 ## Overview
 
-This repository uses a **protected main branch** with automated quality checks and versioning.
-All changes must go through pull requests with passing checks before merging.
+This repository uses **GitHub Rulesets** to protect the main branch with automated quality checks
+and versioning. All changes must go through pull requests with passing checks before merging.
 
 ```mermaid
 %%{init: {'theme':'neutral'}}%%
@@ -45,27 +45,33 @@ graph TB
     style R fill:#c8e6c9
 ```
 
-## Branch Protection Rules
+## Branch Rulesets
 
-The `main` branch is protected with the following rules:
+The `main` branch is protected using [GitHub Rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets),
+the modern replacement for legacy branch protection rules.
 
-| Protection                  | Description                  | Bypass     |
-| --------------------------- | ---------------------------- | ---------- |
-| **Require PR**              | Direct pushes blocked        | Admin only |
-| **Require approval**        | 1 approval needed            | Admin only |
-| **Status checks**           | `markdown-lint` must pass    | None       |
-| **Up-to-date branch**       | Must be current with main    | None       |
-| **Conversation resolution** | All threads must be resolved | None       |
-| **Linear history**          | No merge commits allowed     | None       |
-| **No force push**           | History cannot be rewritten  | None       |
-| **No deletion**             | Branch cannot be deleted     | None       |
+### Ruleset: Main Branch Protection
 
-**Why these rules?**
+| Rule                        | Description                  | Bypass              |
+| --------------------------- | ---------------------------- | ------------------- |
+| **Require PR**              | Direct pushes blocked        | Admin (via PR only) |
+| **Require approval**        | 1 approval needed            | Admin (via PR only) |
+| **Status checks**           | `lint` must pass             | None                |
+| **Up-to-date branch**       | Must be current with main    | None                |
+| **Conversation resolution** | All threads must be resolved | None                |
+| **Linear history**          | No merge commits allowed     | None                |
+| **No force push**           | History cannot be rewritten  | None                |
+| **No deletion**             | Branch cannot be deleted     | None                |
 
-- Ensures code quality through peer review
-- Prevents accidental breaking changes
-- Maintains clean, linear history
-- Enforces documentation standards
+**Why rulesets over branch protection?**
+
+- **Granular bypass**: Control who can bypass rules and how (via PR vs always)
+- **Stackable**: Layer multiple rulesets for complex policies
+- **Portable**: Export/import as JSON for consistency across repos
+- **Organization-level**: Inherit rules from organization (if applicable)
+- **Modern API**: Better tooling and GitHub CLI support
+
+**View/edit ruleset:** Repository Settings → Rules → Rulesets
 
 ## Git Workflow
 

@@ -113,7 +113,7 @@ The version-bump workflow runs on:
 **What happens after workflow runs:**
 
 1. Workflow creates a PR with version bump (e.g., `release/v1.2.0`)
-2. PR requires approval and passing checks (markdown-lint)
+2. PR requires approval and passing checks (`lint`) per [branch rulesets](development-workflow.md#branch-rulesets)
 3. Merge the PR using **squash and merge**
 4. After merge, the `create-release.yml` workflow automatically:
    - Creates a git tag (e.g., `v1.2.0`)
