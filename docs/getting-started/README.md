@@ -1,6 +1,6 @@
 # Getting Started
 
-> **Version 5.3.0** | [Back to Documentation Hub](../README.md)
+> Version: see [VERSION.md](../../VERSION.md) | [Back to Documentation Hub](../README.md)
 >
 > Your entry point to Agentic InfraOps
 

@@ -1,9 +1,11 @@
 # Documentation Hub
 
-> **Agentic InfraOps v7.3.0** |
+> Agentic InfraOps | [Version info](../VERSION.md)
+>
 > 🔗 [aka.ms/agenticinfraops](https://aka.ms/agenticinfraops)
 
-Welcome to the Agentic InfraOps documentation center. Choose your path based on experience level.
+Welcome to the Agentic InfraOps documentation center.
+Choose your path based on experience level.
 
 ```mermaid
 %%{init: {'theme':'neutral'}}%%
@@ -59,7 +61,8 @@ flowchart LR
 | 3    | Run [S02-agentic-workflow](../scenarios/S02-agentic-workflow/) | 30 min |
 | 4    | [Reference: Bicep Patterns](reference/bicep-patterns.md)       | 10 min |
 
-📚 **Deep Dive**: [ADR-003 AVM-First](_superseded/adr/ADR-003-avm-first-approach.md) | [ADR-004 Regions](_superseded/adr/ADR-004-region-defaults.md)
+📚 **Deep Dive**: Use the reference docs above first.
+ADRs are archived and only referenced via explicitly labeled direct links.
 
 ---
 
@@ -90,13 +93,27 @@ flowchart LR
 
 ---
 
+## Docs Inventory
+
+Use this table to understand what's canonical.
+
+| Section            | Purpose                           | Audience                  | Canonical entrypoint                                          |
+| ------------------ | --------------------------------- | ------------------------- | ------------------------------------------------------------- |
+| `getting-started/` | Onboarding and first run          | New users and evaluators  | [docs/getting-started/README.md](getting-started/README.md)   |
+| `guides/`          | How-to guides and troubleshooting | IT Pros and contributors  | [docs/guides/README.md](guides/README.md)                     |
+| `reference/`       | Canonical patterns and workflow   | Platform engineers        | [docs/reference/README.md](reference/README.md)               |
+| `presenter/`       | Demo assets and talk tracks       | Presenters                | [docs/presenter/README.md](presenter/README.md)               |
+| `diagrams/`        | Diagram index for this repo       | IT Pros and presenters    | [docs/diagrams/README.md](diagrams/README.md)                 |
+| `adr/`             | Architecture decision records     | Readers needing rationale | `docs/_superseded/adr/README.md` (Archived; direct link only) |
+
+---
+
 ## 🗂️ Additional Resources
 
 | Section                                      | Description                           |
 | -------------------------------------------- | ------------------------------------- |
 | [Workflow Guide](reference/workflow.md)      | Complete 7-step workflow with Mermaid |
-| [Architecture Decisions](_superseded/adr/)   | ADRs documenting design choices       |
-| [Diagrams](_superseded/diagrams/)            | Generated architecture diagrams       |
+| [Diagrams](diagrams/README.md)               | Diagram catalog and how to regenerate |
 | [All Guides](guides/)                        | Consolidated how-to guides            |
 | [Troubleshooting](guides/troubleshooting.md) | Common issues and solutions           |
 
@@ -121,4 +138,4 @@ flowchart LR
 
 ---
 
-**Version**: 5.3.0 | [Back to Main README](../README.md)
+[Back to Main README](../README.md)

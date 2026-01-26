@@ -1,6 +1,6 @@
 # Reference Documentation
 
-> **Version 5.3.0** | [Back to Documentation Hub](../README.md)
+> Version: see [VERSION.md](../../VERSION.md) | [Back to Documentation Hub](../README.md)
 >
 > **Single source of truth** for Agentic InfraOps patterns and defaults
 
@@ -33,3 +33,15 @@ When creating or updating agent definitions in `.github/agents/`:
 📖 **Region Defaults**: See [docs/reference/defaults.md](../../docs/reference/defaults.md)
 📖 **Naming Conventions**: See [docs/reference/defaults.md#caf-naming-conventions](../../docs/reference/defaults.md)
 ```
+
+---
+
+## IT Pro Voice Checklist
+
+Use this checklist when editing docs so content stays operational, consistent, and low-drama for platform teams.
+
+- Outcome-first intros: start with what the reader gets, then how.
+- Terminology: use WAF/AVM/CAF/MCP consistently; prefer "agent-output artifacts" and "guardrails".
+- Safety framing: approval-first flow, RBAC-aware steps, least privilege, and auditability.
+- Stable CTAs: "Start with the accelerator", "Run a scenario", "Validate with…".
+- UI guidance: avoid brittle click-paths unless necessary; prefer task-based steps and commands.

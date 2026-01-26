@@ -62,6 +62,7 @@ TestResults/
 # Personal notes
 NOTES.md
 TODO.md
+Copilot-Processing.md
 scratch/
 
 # Extracted sample apps (use .zip files instead to avoid Dependabot alerts)

@@ -1,6 +1,6 @@
 # Glossary
 
-> **Version 5.3.0** | Quick reference for terms used throughout Agentic InfraOps documentation.
+> Version: see [VERSION.md](../VERSION.md) | Quick reference for terms used throughout Agentic InfraOps documentation.
 
 ---
 
@@ -11,7 +11,7 @@
 A document that captures an important architectural decision along with its context and consequences.
 Used to record "why" decisions were made for future reference.
 
-📁 **See**: [docs/\_superseded/adr/](_superseded/adr/)
+📁 **See**: docs/\_superseded/adr/ (Archived)
 
 ### Agentic InfraOps
 
@@ -23,7 +23,7 @@ infrastructure. Combines GitHub Copilot with custom agents for structured workfl
 Microsoft's official library of pre-built, tested Bicep modules that follow Azure best
 practices. Using AVM modules ensures policy compliance and reduces custom code.
 
-📁 **See**: [ADR-003 AVM-First Approach](_superseded/adr/ADR-003-avm-first-approach.md)
+📁 **See**: [ADR-003 AVM-First Approach (Archived)](_superseded/adr/ADR-003-avm-first-approach.md)
 
 🔗 **External**: [Azure Verified Modules Registry](https://aka.ms/avm)
 

@@ -1,16 +1,17 @@
 # Presenter Resources
 
-> **Version 5.3.0** | [Back to Documentation Hub](../README.md)
+> Version: see [VERSION.md](../../VERSION.md) | [Back to Documentation Hub](../README.md)
 
 Complete toolkit for demonstrating Agentic InfraOps to customers, partners, and internal teams.
 
 ## Quick Navigation
 
-| Resource                                      | Purpose                     | Prep Time |
-| --------------------------------------------- | --------------------------- | --------- |
-| [Executive Pitch](executive-pitch.md)         | C-level presentation        | 10 min    |
-| [Objection Handling](objection-handling.md)   | Common concerns + responses | 5 min     |
-| [ROI Calculator](roi-calculator.md)           | Quantify time/cost savings  | 10 min    |
+| Resource                                          | Purpose                       | Prep Time |
+| ------------------------------------------------- | ----------------------------- | --------- |
+| [Executive Pitch](executive-pitch.md)             | C-level presentation          | 10 min    |
+| [Objection Handling](objection-handling.md)       | Common concerns + responses   | 5 min     |
+| [ROI Calculator](roi-calculator.md)               | Quantify time/cost savings    | 10 min    |
+| [Visual Elements Guide](visual-elements-guide.md) | Use diagrams and visuals well | 5 min     |
 
 ---
 
@@ -75,16 +76,16 @@ See [Objection Handling Guide](objection-handling.md) for complete responses wit
 
 ## File Index
 
-| File                          | Description                   |
-| ----------------------------- | ----------------------------- |
-| `agentic-infraops.pptx`       | PowerPoint deck               |
-| `character-reference.md`      | Persona profiles              |
-| `executive-pitch.md`          | C-level presentation          |
-| `objection-handling.md`       | Common objections + responses |
-| `pilot-success-checklist.md`  | Customer pilot checklist      |
-| `roi-calculator.md`           | ROI calculation guide         |
-| `time-savings-evidence.md`    | Time savings methodology      |
-| `workshop-checklist.md`       | Workshop preparation          |
+| File                         | Description                   |
+| ---------------------------- | ----------------------------- |
+| `agentic-infraops.pptx`      | PowerPoint deck               |
+| `character-reference.md`     | Persona profiles              |
+| `executive-pitch.md`         | C-level presentation          |
+| `objection-handling.md`      | Common objections + responses |
+| `pilot-success-checklist.md` | Customer pilot checklist      |
+| `roi-calculator.md`          | ROI calculation guide         |
+| `time-savings-evidence.md`   | Time savings methodology      |
+| `workshop-checklist.md`      | Workshop preparation          |
 
 ---
 

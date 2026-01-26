@@ -20,23 +20,23 @@ files are moved here rather than deleted. This approach:
 
 ## Contents
 
-| Folder | Description | Active Replacement |
-|--------|-------------|-------------------|
-| `adr/` | Architecture Decision Records | Referenced from `docs/README.md` |
-| `diagrams/` | Generated architecture diagrams | `agent-output/{project}/` |
-| `getting-started/` | Snapshot of getting-started guides | `docs/getting-started/` |
-| `guides/` | Snapshot of how-to guides | `docs/guides/` |
-| `presenter/` | Snapshot of presenter materials | `docs/presenter/` |
-| `reference/` | Snapshot of reference docs | `docs/reference/` |
+| Folder             | Description                        | Active Replacement                                           |
+| ------------------ | ---------------------------------- | ------------------------------------------------------------ |
+| `adr/`             | Architecture Decision Records      | Linked only via labeled "(Archived)" references where needed |
+| `diagrams/`        | Generated architecture diagrams    | `docs/diagrams/` index + `agent-output/{project}/` evidence  |
+| `getting-started/` | Snapshot of getting-started guides | `docs/getting-started/`                                      |
+| `guides/`          | Snapshot of how-to guides          | `docs/guides/`                                               |
+| `presenter/`       | Snapshot of presenter materials    | `docs/presenter/`                                            |
+| `reference/`       | Snapshot of reference docs         | `docs/reference/`                                            |
 
 ---
 
 ## Notable Archived Files
 
-| File | Reason Archived |
-|------|-----------------|
+| File                                  | Reason Archived                                                      |
+| ------------------------------------- | -------------------------------------------------------------------- |
 | `guides/terraform-extension-guide.md` | Project is Bicep-only; guide preserved for future Terraform adoption |
-| `guides/getting-started-journey.md` | Consolidated with `getting-started/learning-paths.md` |
+| `guides/getting-started-journey.md`   | Consolidated with `getting-started/learning-paths.md`                |
 
 ---
 

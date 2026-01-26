@@ -1,8 +1,10 @@
 # Architecture Diagrams
 
-> **Version 3.7.8** | [Back to Documentation Hub](../README.md)
+> Version: see [VERSION.md](../../VERSION.md) | [Back to Documentation Hub](../README.md)
 
-This folder contains generated architecture diagrams for various scenarios.
+This folder is the canonical index for diagrams in this repository.
+
+For workload-specific, date-stamped evidence, use `agent-output/{project}/` artifacts.
 
 ## Where Diagrams Live
 
@@ -12,8 +14,8 @@ This folder contains generated architecture diagrams for various scenarios.
 | [mcp/](mcp/)             | Azure Pricing MCP server architecture | December 2025 |
 | [workflow/](workflow/)   | Agent workflow visualizations         | December 2025 |
 
-> **Freshness Note**: Diagrams are regenerated when infrastructure changes. Check the `.py` file timestamp or run
-> the diagram agent to refresh.
+> Freshness note: diagrams are regenerated when infrastructure changes.
+> Check the `.py` timestamp or run the diagram agent to refresh.
 
 ## IT Pro Usage
 

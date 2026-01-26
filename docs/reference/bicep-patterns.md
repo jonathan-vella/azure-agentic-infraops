@@ -343,4 +343,4 @@ resource keyVault 'Microsoft.KeyVault/vaults@2023-07-01' = {
 - [Defaults Reference](defaults.md) — Regions, naming, tags, SKUs
 - [Agents Overview](agents-overview.md) — All 7 agents
 - [Workflow Reference](workflow.md) — 7-step workflow
-- [ADR-003: AVM-First](../_superseded/adr/ADR-003-avm-first-approach.md) — Use Azure Verified Modules
+- [ADR-003: AVM-First (Archived)](../_superseded/adr/ADR-003-avm-first-approach.md) — Use Azure Verified Modules
