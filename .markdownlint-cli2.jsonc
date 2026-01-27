@@ -13,7 +13,7 @@
       "tables": false,
       "headings": true,
       "strict": false,
-      "stern": false
+      "stern": false,
     },
 
     // === STRUCTURAL RULES (disabled for agent-generated content flexibility) ===
@@ -105,7 +105,7 @@
 
     // MD051: Link fragments should be valid
     // Disabled: Dynamic links in templates
-    "MD051": false
+    "MD051": false,
   },
 
   // Glob pattern for files to lint
@@ -152,6 +152,6 @@
     "scenarios/**/agents/**",
     "scenarios/**/validation/**",
     "scenarios/**/DEMO-SCRIPT.md",
-    "scenarios/S08-sbom-generator/README.md"
-  ]
+    "scenarios/S08-sbom-generator/README.md",
+  ],
 }
