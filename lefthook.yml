@@ -12,7 +12,8 @@ pre-commit:
         STAGED_MD=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' || true)
         if [ -n "$STAGED_MD" ]; then
           echo "📝 Validating $(echo "$STAGED_MD" | wc -l | tr -d ' ') markdown file(s)..."
-          echo "$STAGED_MD" | xargs markdownlint-cli2
+          # Use --no-globs to lint ONLY staged files, not all files matching glob pattern
+          echo "$STAGED_MD" | xargs markdownlint-cli2 --no-globs
         else
           echo "ℹ️  No markdown files to validate"
         fi

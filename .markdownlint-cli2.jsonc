@@ -1,6 +1,10 @@
 {
+  // Markdownlint configuration for azure-agentic-infraops
+  // Documentation: https://github.com/DavidAnson/markdownlint
   "config": {
     "default": true,
+
+    // Line length configuration - 120 chars for modern displays
     "MD013": {
       "line_length": 120,
       "heading_line_length": 120,
@@ -9,48 +13,136 @@
       "tables": false,
       "headings": true,
       "strict": false,
-      "stern": false,
+      "stern": false
     },
+
+    // === STRUCTURAL RULES (disabled for agent-generated content flexibility) ===
+
+    // MD001: Heading levels should increment by one
+    // Disabled: Agent outputs may skip heading levels for visual hierarchy
     "MD001": false,
-    "MD009": false,
+
+    // MD022: Headings should be surrounded by blank lines
+    // Disabled: Compact formatting in generated artifacts
     "MD022": false,
+
+    // MD024: No duplicate heading text
+    // Disabled: CHANGELOG has duplicate version entries, instruction files have repeated sections
     "MD024": false,
+
+    // MD025: Single H1 per document
+    // Disabled: Some artifacts use attribution headers before main H1
     "MD025": false,
-    "MD026": false,
-    "MD028": false,
-    "MD029": false,
-    "MD030": false,
-    "MD031": false,
-    "MD032": false,
-    "MD033": false,
-    "MD034": false,
-    "MD036": false,
-    "MD037": false,
-    "MD040": false,
+
+    // MD041: First line should be H1
+    // Disabled: Files may start with YAML front matter or attribution
     "MD041": false,
+
+    // === FORMATTING RULES (disabled for flexibility) ===
+
+    // MD009: No trailing spaces
+    // Disabled: Some Markdown editors add trailing spaces for line breaks
+    "MD009": false,
+
+    // MD026: No trailing punctuation in headings
+    // Disabled: Headings like "Requirements Validation ✅" use emoji
+    "MD026": false,
+
+    // MD028: Blank line inside blockquote
+    // Disabled: Multi-paragraph blockquotes in documentation
+    "MD028": false,
+
+    // MD029: Ordered list item prefix (1. 2. 3. vs 1. 1. 1.)
+    // Disabled: Both styles acceptable for maintainability
+    "MD029": false,
+
+    // MD030: Spaces after list markers
+    // Disabled: Flexible list formatting
+    "MD030": false,
+
+    // MD031: Fenced code blocks should be surrounded by blank lines
+    // Disabled: Compact code examples in documentation
+    "MD031": false,
+
+    // MD032: Lists should be surrounded by blank lines
+    // Disabled: Compact list formatting in artifacts
+    "MD032": false,
+
+    // MD036: No emphasis used instead of heading
+    // Disabled: **Bold** used for inline emphasis in tables
+    "MD036": false,
+
+    // MD037: No spaces inside emphasis markers
+    // Disabled: Edge cases in generated content
+    "MD037": false,
+
+    // MD046: Code block style (fenced vs indented)
+    // Disabled: Both styles used depending on context
     "MD046": false,
-    "MD051": false,
+
+    // MD058: Tables should be surrounded by blank lines
+    // Disabled: Compact table formatting
     "MD058": false,
+
+    // MD060: Link fragments should be valid
+    // Disabled: Cross-file references may not resolve during linting
     "MD060": false,
+
+    // === HTML & RAW CONTENT (disabled intentionally) ===
+
+    // MD033: No inline HTML
+    // Disabled: HTML used for badges, anchors, and advanced formatting
+    "MD033": false,
+
+    // MD034: No bare URLs
+    // Disabled: URLs in code comments and examples
+    "MD034": false,
+
+    // MD040: Fenced code blocks should have a language
+    // Disabled: 127+ violations exist - enable after cleanup sprint
+    // TODO: Fix code blocks without language specifiers, then set to true
+    "MD040": false,
+
+    // MD051: Link fragments should be valid
+    // Disabled: Dynamic links in templates
+    "MD051": false
   },
+
+  // Glob pattern for files to lint
   "globs": ["**/*.md"],
+
+  // Directories and files to ignore
+  // Note: .markdownlintignore is NOT used - all ignores defined here
   "ignores": [
+    // Package managers and dependencies
     "node_modules/**",
     "**/node_modules/**",
-    "mcp/azure-pricing-mcp/.archive/**",
+
+    // Python virtual environments
     ".venv/**",
     "venv/**",
     "**/venv/**",
     "**/.venv/**",
+
+    // Build outputs
     "dist/**",
     "build/**",
     "**/*.egg-info/**",
     "__pycache__/**",
     ".pytest_cache/**",
     "coverage/**",
+
+    // Archived content
+    "mcp/azure-pricing-mcp/.archive/**",
+
+    // Presenter/demo content (intentionally less strict)
     "docs/audit-checklists/**",
     "docs/presenter/**",
+
+    // Agent-generated output (validated by artifact-templates validator)
     "agent-output/**",
+
+    // Scenario demo content (examples, not production code)
     "scenarios/**/solution/**",
     "scenarios/**/examples/**",
     "scenarios/**/sample-app/**",
@@ -60,6 +152,6 @@
     "scenarios/**/agents/**",
     "scenarios/**/validation/**",
     "scenarios/**/DEMO-SCRIPT.md",
-    "scenarios/S08-sbom-generator/README.md",
-  ],
+    "scenarios/S08-sbom-generator/README.md"
+  ]
 }
