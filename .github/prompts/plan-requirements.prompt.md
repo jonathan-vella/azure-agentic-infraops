@@ -131,9 +131,4 @@ After requirements are captured and approved:
 1. User invokes `@architect` for architecture assessment
 2. Architecture agent validates requirements and produces WAF assessment
 3. Workflow continues through remaining 5 steps
-
-## Related Resources
-
-- Template: [01-requirements.template.md](../templates/01-requirements.template.md)
-- Agent: [requirements.agent.md](../agents/requirements.agent.md)
-- Workflow: [workflow.md](../../docs/reference/workflow.md)
+---
